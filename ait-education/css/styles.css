@@ -1013,3 +1013,204 @@ summary:focus-visible,
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
+
+/* ===================== v0.3.2 additions ===================== */
+
+/* Read-aloud: moving highlight (CSS Custom Highlight API) */
+::highlight(tts-sentence) {
+  background-color: #fff3a3;
+  color: #0f172a;
+}
+::highlight(tts-word) {
+  background-color: #fbbf24;
+  color: #0f172a;
+}
+.btn-tts {
+  font-size: 1rem;
+  padding-block: 8px;
+  padding-inline: 14px;
+}
+.btn-tts.tts-active {
+  background: var(--accent-tint);
+  border-color: var(--accent);
+}
+
+/* Floating reading bar */
+#tts-bar {
+  position: fixed;
+  inset-block-end: 14px;
+  inset-inline-start: 50%;
+  transform: translateX(-50%);
+  z-index: 900;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  max-inline-size: calc(100vw - 24px);
+  padding-block: 10px;
+  padding-inline: 14px;
+  background: var(--bg-surface);
+  border: 2px solid var(--primary);
+  border-radius: 999px;
+  box-shadow: 0 6px 24px rgba(15, 23, 42, 0.18);
+}
+[dir="rtl"] #tts-bar {
+  transform: translateX(50%);
+}
+#tts-bar[hidden] {
+  display: none;
+}
+#tts-bar button {
+  font: inherit;
+  font-weight: 700;
+  min-block-size: 44px;
+  padding-inline: 14px;
+  border-radius: 999px;
+  border: 1px solid var(--border-color);
+  background: var(--bg-subtle);
+  color: var(--text-main);
+  cursor: pointer;
+}
+#tts-bar .tts-main {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+}
+#tts-bar .tts-speeds {
+  display: inline-flex;
+  gap: 4px;
+}
+#tts-bar .tts-speed.on {
+  background: var(--primary-tint);
+  border-color: var(--primary);
+}
+#tts-bar .tts-tip {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+#tts-bar button:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+@media (max-width: 600px) {
+  #tts-bar {
+    border-radius: var(--radius-lg);
+    inset-block-end: 8px;
+  }
+  #tts-bar .tts-tip {
+    display: none;
+  }
+}
+
+/* Tours */
+.tour-card {
+  text-align: center;
+  max-inline-size: 460px;
+}
+.tour-icon {
+  font-size: 3rem;
+  line-height: 1;
+  margin-block-end: 6px;
+}
+.tour-card h3 {
+  font-size: 1.35rem;
+}
+.tour-card p {
+  font-size: 1.05rem;
+}
+.tour-dots {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin-block: 10px;
+}
+.tour-dot {
+  inline-size: 10px;
+  block-size: 10px;
+  border-radius: 50%;
+  background: var(--border-color);
+}
+.tour-dot.on {
+  background: var(--primary);
+}
+.tour-actions {
+  justify-content: center;
+}
+
+/* Parent area: simple and readable */
+.parent-area .setting-help {
+  margin-block: 4px 12px;
+  font-size: 0.92rem;
+  color: var(--text-muted);
+}
+.parent-setting {
+  padding-block: 10px;
+  border-block-end: 1px solid var(--bg-subtle);
+}
+.big-toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.02rem;
+  cursor: pointer;
+}
+.big-toggle input[type="checkbox"] {
+  inline-size: 22px;
+  block-size: 22px;
+  accent-color: var(--primary);
+}
+.big-number-input {
+  inline-size: 90px;
+  min-block-size: 44px;
+  font-size: 1.05rem;
+  padding-inline: 8px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+}
+.timer-presets {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-block: 4px 10px;
+}
+.timer-preset {
+  min-inline-size: 84px;
+  min-block-size: 44px;
+}
+.child-list {
+  list-style: none;
+  padding: 0;
+  margin-block: 8px 12px;
+}
+.child-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding-block: 8px;
+  border-block-end: 1px solid var(--bg-subtle);
+}
+.status-msg {
+  color: var(--primary);
+  font-weight: 700;
+  background: var(--primary-tint);
+  padding: 10px;
+  border-radius: var(--radius-md);
+}
+.parent-details > summary {
+  cursor: pointer;
+  font-weight: 700;
+  padding-block: 8px;
+}
+.app-main { padding-block-end: 96px; }
+
+/* v0.3.2: bigger tick boxes in the examiner checklist and answers */
+.learn-block input[type="checkbox"],
+.card input[type="checkbox"],
+.card input[type="radio"] {
+  inline-size: 22px;
+  block-size: 22px;
+  accent-color: var(--primary);
+  flex-shrink: 0;
+}
