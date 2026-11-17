@@ -1,0 +1,963 @@
+{
+ "schemaVersion": "0.3",
+ "id": "igcse-ict-c1-u4",
+ "meta": {
+  "mode": "lesson",
+  "qualification": "Cambridge IGCSE",
+  "qualificationCode": "0417",
+  "subject": "Information and Communication Technology",
+  "subjectId": "ict",
+  "syllabusYears": "2026-2028",
+  "syllabusPoints": [
+   "1.5"
+  ],
+  "chapterNumber": 1,
+  "chapterTitle": "Types and components of computer systems",
+  "unit": 4,
+  "title": "Artificial intelligence",
+  "schoolYear": 8,
+  "lang": "en",
+  "dir": "ltr",
+  "sourceRefs": [
+   {
+    "book": "Cambridge IGCSE ICT (Hodder), Chapter 1",
+    "sections": "1.5.1 (artificial intelligence)",
+    "pages": "20-22"
+   }
+  ],
+  "estMinutes": 40,
+  "version": "0.3",
+  "status": "draft"
+ },
+ "topics": {
+  "ai-definition": "What artificial intelligence means",
+  "ai-tasks": "Tasks involving artificial intelligence",
+  "ai-hazardous-work": "Robots doing dangerous work",
+  "ai-benefits": "Positive impacts of AI",
+  "ai-skills": "Loss of human skills",
+  "ai-impacts": "Benefits and drawbacks of AI",
+  "ai-robot-laws": "Asimov's three laws of robotics"
+ },
+ "objectives": [
+  "Describe artificial intelligence and give examples of tasks it can perform",
+  "Identify ways AI and robotics may help people in transport, assistance and dangerous work",
+  "Give positive and negative impacts of AI on everyday life and employment",
+  "Explain how replacing human tasks with AI may lead to dependence or loss of skills"
+ ],
+ "learn": [
+  {
+   "id": "l1",
+   "topic": "ai-definition",
+   "type": "text",
+   "title": "What is artificial intelligence?",
+   "body": "**Artificial intelligence (AI)** is technology that allows a machine or computer program to perform tasks needing some **intelligence**. These can include recognising information, solving problems and making decisions. AI does not always need a robot body."
+  },
+  {
+   "id": "l2",
+   "topic": "ai-tasks",
+   "type": "keypoints",
+   "title": "Four types of AI task",
+   "items": [
+    "**Language:** understand or use words in a task",
+    "**Face recognition:** identify a person from their face",
+    "**Machine control:** help operate vehicles or other equipment",
+    "**Prediction:** examine information to estimate what may happen, such as the weather"
+   ]
+  },
+  {
+   "id": "l3",
+   "topic": "ai-benefits",
+   "type": "image",
+   "src": "images/igcse-ict-c1-u4-ai-uses.png",
+   "alt": "Three examples of AI-related technology: a driverless transport vehicle, an assistive robotic arm and an industrial robot working away from people",
+   "caption": "The textbook highlights transport, assistive technology and robots carrying out risky tasks.",
+   "credit": "AIT Education (AI-generated)",
+   "license": "own",
+   "imagePrompt": "Friendly clean flat educational illustration on a light plain background in three visually separated scenes: left, a compact futuristic unbranded driverless shuttle on a road; centre, an unbranded assistive robotic prosthetic arm next to a person seated at a desk; right, an industrial robot arm welding an unbranded car body in a factory behind a simple safety barrier. Clear visual differences, realistic proportions, soft teal and amber colours. No text, captions, letters, numbers, logos, signs or brand names."
+  },
+  {
+   "id": "l4",
+   "topic": "ai-definition",
+   "type": "text",
+   "title": "AI can make decisions",
+   "body": "Some tasks need a person to **choose what to do** or **work out a solution**. AI can carry out certain parts of these tasks instead. The textbook presents this as one reason AI may change the jobs people do."
+  },
+  {
+   "id": "l13",
+   "topic": "ai-robot-laws",
+   "type": "keypoints",
+   "title": "Asimov's three laws of robotics",
+   "items": [
+    "The science fiction writer **Isaac Asimov** imagined three rules for robots:",
+    "**Law 1:** a robot must not harm a human, or let a human come to harm by doing nothing",
+    "**Law 2:** a robot must obey orders given by humans",
+    "**Law 3:** a robot must protect itself — unless that breaks Law 1 or Law 2"
+   ]
+  },
+  {
+   "id": "l5",
+   "topic": "ai-impacts",
+   "type": "compare",
+   "title": "AI can help people, but it can also cause problems",
+   "columns": [
+    "Possible benefit",
+    "Possible drawback"
+   ],
+   "rows": [
+    {
+     "label": "Safety",
+     "a": "A robot can carry out work that would put people in danger",
+     "b": "People may rely too much on machines for everyday tasks"
+    },
+    {
+     "label": "Quality",
+     "a": "AI may help improve the quality of products or services",
+     "b": "People may stop practising skills when a machine does the work"
+    },
+    {
+     "label": "Jobs",
+     "a": "New technical jobs may be created",
+     "b": "Existing jobs in manufacturing or transport may disappear"
+    },
+    {
+     "label": "Work roles",
+     "a": "Automated machines may take over difficult tasks",
+     "b": "Workers may find it hard to do those tasks themselves later"
+    }
+   ]
+  },
+  {
+   "id": "l6",
+   "topic": "ai-impacts",
+   "type": "keypoints",
+   "title": "AI and robots in everyday life",
+   "items": [
+    "**Transport:** some vehicles can operate without a human controlling every movement",
+    "**Assistive devices:** robotics research may help people who have lost a limb or have disabilities",
+    "**Factories:** robots may perform work such as joining car body parts",
+    "**Dangerous locations:** robots can be sent to deal with explosives or very unsafe areas"
+   ]
+  },
+  {
+   "id": "l7",
+   "topic": "ai-tasks",
+   "type": "text",
+   "title": "AI in transport",
+   "body": "The textbook shows a **driverless vehicle** as an AI example. It also mentions **driverless trains** and **aircraft autopilots** as transport technology that already automates some operations. Driverless cars are described as an area of further development."
+  },
+  {
+   "id": "l8",
+   "topic": "ai-benefits",
+   "type": "text",
+   "title": "Helping people with disabilities",
+   "body": "Researchers are developing robotic equipment to **assist people with disabilities**. For example, a robotic limb may help someone who has lost part of an arm. This shows how intelligent machines may support people with daily activities."
+  },
+  {
+   "id": "l9",
+   "topic": "ai-hazardous-work",
+   "type": "example",
+   "title": "A robot in a dangerous place",
+   "body": "After an industrial accident, a rescue team finds a very unsafe area. They send a robot inside instead of sending a person. The robot can carry out a dangerous task while the team stays at a safer distance. The key advantage is **lower risk to people**."
+  },
+  {
+   "id": "l10",
+   "topic": "ai-skills",
+   "type": "keypoints",
+   "title": "Three negative impacts to remember",
+   "items": [
+    "**Job losses:** robots or AI systems may replace some workers, including factory and transport workers",
+    "**Dependence:** people may become unable to complete tasks without the technology",
+    "**Loss of skills:** people may forget how to do work that machines now do for them"
+   ]
+  },
+  {
+   "id": "l11",
+   "topic": "ai-impacts",
+   "type": "tip",
+   "title": "Give a clear impact and why it matters",
+   "body": "In a **give** question, one clear impact can earn one mark. In an **explain** question, link it to the situation. For example: \"A robot can enter the unsafe building. This keeps the rescue workers away from danger.\" For a balanced answer, include both a benefit and a drawback when asked."
+  },
+  {
+   "id": "l12",
+   "topic": "ai-definition",
+   "type": "mistake",
+   "title": "AI is not just a human-shaped robot",
+   "body": "AI can be part of a **computer program**, a **vehicle** or a **robot**. Do not describe AI only as a machine that looks like a person. Also, do not assume AI has only positive effects. The textbook gives job losses, dependence and lost skills as possible problems."
+  }
+ ],
+ "check": [
+  {
+   "id": "c1",
+   "type": "mcq",
+   "command": "identify",
+   "marks": 1,
+   "prompt": "Which sentence best describes artificial intelligence?",
+   "hint": "Look for a description of what computing systems can do, rather than what they look like or how they receive power.",
+   "options": [
+    "A machine or program doing tasks that need intelligence",
+    "Any machine that uses electricity",
+    "A robot that must look like a human",
+    "A computer used only for storing files"
+   ],
+   "answers": [
+    0
+   ],
+   "topic": "ai-definition",
+   "difficulty": 1,
+   "sourceRef": "p20",
+   "explanation": "AI is about completing tasks involving intelligence, such as recognising information or making decisions. A human-shaped robot is not required."
+  },
+  {
+   "id": "c2",
+   "type": "tick",
+   "command": "identify",
+   "marks": 2,
+   "rowsPerMark": 2,
+   "prompt": "Tick (✓) whether each statement about artificial intelligence is true or false.",
+   "hint": "For each claim, consider whether a program can work without a physical body and how automation affects people and workplaces.",
+   "columns": [
+    "True",
+    "False"
+   ],
+   "rows": [
+    {
+     "id": "r1",
+     "statement": "AI can be used to recognise a person’s face.",
+     "answer": 0,
+     "explanation": "Recognising faces is one of the textbook’s AI examples."
+    },
+    {
+     "id": "r2",
+     "statement": "Every AI system needs a robot body.",
+     "answer": 1,
+     "explanation": "AI can also be software that uses language or analyses information."
+    },
+    {
+     "id": "r3",
+     "statement": "A robot can be sent to work in a place that is dangerous for people.",
+     "answer": 0,
+     "explanation": "The textbook gives bomb disposal and hazardous sites as examples."
+    },
+    {
+     "id": "r4",
+     "statement": "AI can never lead to a worker losing a job.",
+     "answer": 1,
+     "explanation": "Some jobs may be replaced when machines take over human tasks."
+    }
+   ],
+   "topic": "ai-impacts",
+   "difficulty": 1,
+   "sourceRef": "p20-22",
+   "explanation": "Each two correct rows earn one mark."
+  },
+  {
+   "id": "c3",
+   "type": "fill",
+   "command": "complete",
+   "marks": 3,
+   "prompt": "Complete each sentence using the most suitable word from the list. Use each answer once.",
+   "hint": "Each gap is a key word about what AI can do and how it affects people. Read the whole sentence before choosing.",
+   "wordList": [
+    "faces",
+    "prediction",
+    "safety",
+    "weather",
+    "unemployment",
+    "touchscreen"
+   ],
+   "items": [
+    {
+     "id": "i1",
+     "sentence": "An AI system may analyse information to make a ___ about what will happen.",
+     "answer": "prediction"
+    },
+    {
+     "id": "i2",
+     "sentence": "Recognising people from their ___ is an example of an AI task.",
+     "answer": "faces"
+    },
+    {
+     "id": "i3",
+     "sentence": "Replacing workers with machines could increase ___.",
+     "answer": "unemployment"
+    }
+   ],
+   "topic": "ai-tasks",
+   "difficulty": 2,
+   "sourceRef": "p20-21",
+   "explanation": "AI can recognise faces, predict results from information and replace some jobs. The other words are distractors."
+  },
+  {
+   "id": "c4",
+   "type": "match",
+   "command": "match",
+   "marks": 3,
+   "prompt": "Match each use of AI-related robotics to the example described in the textbook.",
+   "hint": "For each example, ask what problem the robot is solving for people.",
+   "left": [
+    {
+     "id": "x1",
+     "text": "Autonomous transport"
+    },
+    {
+     "id": "x2",
+     "text": "Assistive robotics"
+    },
+    {
+     "id": "x3",
+     "text": "Hazardous work"
+    }
+   ],
+   "right": [
+    {
+     "id": "y1",
+     "text": "A vehicle travels without a driver controlling each movement"
+    },
+    {
+     "id": "y2",
+     "text": "A robotic device helps someone who has lost a limb"
+    },
+    {
+     "id": "y3",
+     "text": "A robot handles explosives rather than a person"
+    },
+    {
+     "id": "y4",
+     "text": "A student types a report with a keyboard"
+    }
+   ],
+   "pairs": [
+    [
+     "x1",
+     "y1"
+    ],
+    [
+     "x2",
+     "y2"
+    ],
+    [
+     "x3",
+     "y3"
+    ]
+   ],
+   "topic": "ai-impacts",
+   "difficulty": 1,
+   "sourceRef": "p21",
+   "explanation": "The three textbook examples are automated transport, devices for people with disabilities and robots used for dangerous jobs."
+  },
+  {
+   "id": "c5",
+   "type": "mcq",
+   "command": "identify",
+   "marks": 1,
+   "prompt": "According to Asimov's laws of robotics, when may a robot NOT protect itself?",
+   "hint": "Asimov's laws come in an order. Think about where the robot's own safety sits in that order.",
+   "options": [
+    "When protecting itself would break the first or second law",
+    "When it is switched off",
+    "When it is working in a factory",
+    "A robot must always protect itself"
+   ],
+   "answers": [
+    0
+   ],
+   "topic": "ai-robot-laws",
+   "difficulty": 2,
+   "sourceRef": "p20",
+   "explanation": "Law 3 says a robot protects itself only if this does not break Law 1 (do not harm humans) or Law 2 (obey humans)."
+  }
+ ],
+ "practice": [
+  {
+   "id": "p1",
+   "type": "written",
+   "command": "state",
+   "marks": 3,
+   "prompt": "State three tasks that can be carried out using artificial intelligence.",
+   "markPoints": [
+    {
+     "id": "a1",
+     "point": "Using / processing language",
+     "accept": [
+      "language",
+      "using words",
+      "understand words",
+      "spoken words",
+      "process speech"
+     ],
+     "reject": [
+      "cannot use language",
+      "does not understand words",
+      "no language"
+     ]
+    },
+    {
+     "id": "a2",
+     "point": "Recognising a person’s face / facial recognition",
+     "accept": [
+      "face recognition",
+      "facial recognition",
+      "recognise a face",
+      "recognize faces",
+      "recognise people"
+     ],
+     "reject": [
+      "cannot recognise faces",
+      "cannot recognise people",
+      "no face recognition",
+      "not recognise faces"
+     ]
+    },
+    {
+     "id": "a3",
+     "point": "Controlling / operating a machine or vehicle",
+     "accept": [
+      "control vehicles",
+      "drive a car",
+      "operate machinery",
+      "control a train",
+      "automatic driving",
+      "autonomous vehicle"
+     ],
+     "reject": [
+      "cannot operate machinery",
+      "no machine control"
+     ]
+    },
+    {
+     "id": "a4",
+     "point": "Analysing data to predict an event / weather forecasting",
+     "accept": [
+      "analyse data",
+      "analyze data",
+      "predict weather",
+      "weather forecast",
+      "predict an outcome"
+     ],
+     "reject": [
+      "cannot predict",
+      "not predict weather",
+      "no prediction",
+      "cannot forecast weather"
+     ]
+    }
+   ],
+   "modelAnswer": "AI can be used to understand language. It can recognise people from their faces. It can analyse information to predict the weather.",
+   "topic": "ai-tasks",
+   "difficulty": 1,
+   "sourceRef": "p20",
+   "explanation": "State means name three different tasks. Repeating one task in different words does not earn extra marks."
+  },
+  {
+   "id": "p2",
+   "type": "written",
+   "command": "give",
+   "marks": 2,
+   "prompt": "Give two possible benefits of using artificial intelligence in everyday life.",
+   "markPoints": [
+    {
+     "id": "b1",
+     "point": "Improved safety / robots do dangerous work instead of people",
+     "accept": [
+      "improve safety",
+      "safer for people",
+      "dangerous work",
+      "less risk to people",
+      "protect workers"
+     ],
+     "reject": [
+      "more danger for people",
+      "less safe",
+      "cannot do dangerous work",
+      "makes work dangerous",
+      "more dangerous"
+     ]
+    },
+    {
+     "id": "b2",
+     "point": "Better quality of services / products",
+     "accept": [
+      "better quality",
+      "improved quality",
+      "quality of products",
+      "quality of services"
+     ],
+     "reject": [
+      "worse quality",
+      "lower quality",
+      "poor quality"
+     ]
+    },
+    {
+     "id": "b3",
+     "point": "Assistance for people with disabilities / who have lost a limb",
+     "accept": [
+      "help disabled people",
+      "help people with disabilities",
+      "prosthetic limb",
+      "assistive robot",
+      "help amputees"
+     ],
+     "reject": [
+      "cannot help disabled people",
+      "no support for disabilities"
+     ]
+    }
+   ],
+   "modelAnswer": "AI-controlled robots can do dangerous jobs so that people face less risk. AI can help improve the quality of products and services.",
+   "topic": "ai-benefits",
+   "difficulty": 1,
+   "sourceRef": "p20-21",
+   "explanation": "Give two different benefits; do not just list two different examples of the same safety benefit."
+  },
+  {
+   "id": "p3",
+   "type": "written",
+   "command": "describe",
+   "marks": 4,
+   "prompt": "Describe two different uses of AI-related robotics shown in the textbook. For each use, describe what the technology helps people do.",
+   "markPoints": [
+    {
+     "id": "d1",
+     "point": "Autonomous / driverless vehicle",
+     "accept": [
+      "driverless vehicle",
+      "autonomous vehicle",
+      "driverless train",
+      "self driving vehicle"
+     ],
+     "reject": [
+      "person must drive",
+      "human controls every movement"
+     ],
+     "group": "use"
+    },
+    {
+     "id": "d2",
+     "point": "The vehicle can operate without a person steering every movement / transport people automatically",
+     "accept": [
+      "without a driver",
+      "drive by itself",
+      "travel automatically",
+      "move without a person driving"
+     ],
+     "reject": [
+      "must be driven by a person",
+      "no automatic control",
+      "cannot drive by itself",
+      "not automatic"
+     ],
+     "group": "detail",
+     "requires": "d1"
+    },
+    {
+     "id": "d3",
+     "point": "Robotic technology for people with disabilities / people who have lost a limb",
+     "accept": [
+      "robotic prosthetic",
+      "robotic arm",
+      "assistive robotics",
+      "help amputees",
+      "robotic limb"
+     ],
+     "reject": [
+      "cannot help people with disabilities",
+      "only for healthy people"
+     ],
+     "group": "use"
+    },
+    {
+     "id": "d4",
+     "point": "It helps them move / carry out everyday tasks using an artificial limb",
+     "accept": [
+      "use an artificial arm",
+      "help move arm",
+      "perform daily tasks",
+      "replace lost limb",
+      "help with movement"
+     ],
+     "reject": [
+      "makes disability worse",
+      "prevents movement"
+     ],
+     "group": "detail",
+     "requires": "d3"
+    },
+    {
+     "id": "d5",
+     "point": "Robot used for bomb disposal / welding / entering hazardous places",
+     "accept": [
+      "bomb disposal",
+      "defuse explosives",
+      "welding car",
+      "dangerous area",
+      "nuclear disaster"
+     ],
+     "reject": [
+      "only safe tasks",
+      "cannot enter dangerous areas"
+     ],
+     "group": "use"
+    },
+    {
+     "id": "d6",
+     "point": "It performs risky work so people do not have to enter the danger area",
+     "accept": [
+      "keeps workers safe",
+      "people stay away",
+      "avoid danger",
+      "less risk to workers",
+      "avoid radiation"
+     ],
+     "reject": [
+      "people must enter danger",
+      "more risk to workers"
+     ],
+     "group": "detail",
+     "requires": "d5"
+    }
+   ],
+   "modelAnswer": "A driverless vehicle uses automated control. It can travel without a person steering every movement. A robot may enter a dangerous area. This lets people remain away from the hazard.",
+   "topic": "ai-impacts",
+   "difficulty": 2,
+   "sourceRef": "p21",
+   "explanation": "Award one mark for each valid use and one linked description of what it does. Give no more than two marks for the uses and two for their descriptions.",
+   "rules": [
+    {
+     "type": "maxPerGroup",
+     "group": "use",
+     "max": 2
+    },
+    {
+     "type": "maxPerGroup",
+     "group": "detail",
+     "max": 2
+    }
+   ]
+  },
+  {
+   "id": "p4",
+   "type": "written",
+   "command": "explain",
+   "marks": 2,
+   "prompt": "A rescue team must check an area with dangerous radiation after an accident. Explain why it may be safer to send an AI-controlled robot instead of a person.",
+   "markPoints": [
+    {
+     "id": "e1",
+     "point": "Robot can enter / work in the radioactive danger area",
+     "accept": [
+      "robot can enter",
+      "send a robot",
+      "robot goes inside",
+      "robot in danger area",
+      "robot inspect",
+      "robotic machine enters"
+     ],
+     "reject": [
+      "robot cannot enter",
+      "person must go inside",
+      "robot stays outside",
+      "cannot send a robot",
+      "can not send a robot"
+     ]
+    },
+    {
+     "id": "e2",
+     "point": "Rescuers avoid exposure to harmful radiation / people stay at a safer distance",
+     "accept": [
+      "people stay safe",
+      "avoid radiation",
+      "less exposure",
+      "workers stay away",
+      "keep rescuers safe",
+      "no human exposure"
+     ],
+     "reject": [
+      "people face radiation",
+      "workers enter radioactive area",
+      "higher exposure"
+     ],
+     "requires": "e1"
+    }
+   ],
+   "modelAnswer": "A robot can go into the radiation danger area. The rescue workers can stay away from the harmful radiation.",
+   "topic": "ai-hazardous-work",
+   "difficulty": 2,
+   "sourceRef": "p21",
+   "explanation": "The first mark is for the robot doing the dangerous task. The second is for linking it to reduced radiation exposure for the rescue team."
+  },
+  {
+   "id": "p5",
+   "type": "written",
+   "command": "give",
+   "marks": 3,
+   "prompt": "Give three possible negative impacts of increased use of artificial intelligence.",
+   "markPoints": [
+    {
+     "id": "t1",
+     "point": "Job losses / unemployment if machines replace workers",
+     "accept": [
+      "job losses",
+      "lose jobs",
+      "unemployment",
+      "replace workers",
+      "fewer jobs"
+     ],
+     "reject": [
+      "no job losses",
+      "more jobs only",
+      "cannot replace workers"
+     ]
+    },
+    {
+     "id": "t2",
+     "point": "Dependence on technology / inability to complete a task without it",
+     "accept": [
+      "depend on technology",
+      "too dependent",
+      "rely on machines",
+      "rely on technology",
+      "cannot work without"
+     ],
+     "reject": [
+      "less dependent",
+      "no reliance on technology"
+     ]
+    },
+    {
+     "id": "t3",
+     "point": "Loss of skills / people forget how to do tasks carried out by machines",
+     "accept": [
+      "lose skills",
+      "loss of skills",
+      "forget how",
+      "skills disappear",
+      "stop practising skills"
+     ],
+     "reject": [
+      "gain skills",
+      "improve skills",
+      "more skilled"
+     ]
+    }
+   ],
+   "modelAnswer": "Some workers may lose their jobs when machines replace them. People may become too dependent on technology. People may lose skills they no longer practise.",
+   "topic": "ai-impacts",
+   "difficulty": 1,
+   "sourceRef": "p21-22",
+   "explanation": "The textbook identifies three different drawbacks: unemployment, dependence and loss of human skills."
+  },
+  {
+   "id": "p6",
+   "type": "written",
+   "command": "describe",
+   "marks": 4,
+   "prompt": "A vehicle factory starts using AI-controlled robots. Describe two advantages and two disadvantages of this for the factory and its workers.",
+   "markPoints": [
+    {
+     "id": "f1",
+     "point": "Advantage: robots do dangerous work / welding instead of people",
+     "accept": [
+      "take over dangerous work",
+      "welding instead",
+      "workers safer",
+      "less danger",
+      "reduce risk",
+      "protect workers"
+     ],
+     "reject": [
+      "more dangerous for workers",
+      "workers do dangerous work instead",
+      "robots make welding more dangerous"
+     ],
+     "group": "advantage"
+    },
+    {
+     "id": "f2",
+     "point": "Advantage: AI may improve the quality of products / services",
+     "accept": [
+      "better quality",
+      "improved quality",
+      "good quality products",
+      "better products"
+     ],
+     "reject": [
+      "worse quality",
+      "less reliable products"
+     ],
+     "group": "advantage"
+    },
+    {
+     "id": "f3",
+     "point": "Advantage: new technical roles / jobs may be created",
+     "accept": [
+      "technical jobs",
+      "new technical work",
+      "new roles",
+      "technical workers"
+     ],
+     "reject": [
+      "no new jobs",
+      "all technical jobs lost",
+      "technical jobs disappear",
+      "fewer technical jobs"
+     ],
+     "group": "advantage"
+    },
+    {
+     "id": "f4",
+     "point": "Disadvantage: some factory workers may lose their jobs",
+     "accept": [
+      "job losses",
+      "factory jobs lost",
+      "lose their jobs",
+      "replaced by robots",
+      "unemployment"
+     ],
+     "reject": [
+      "no job losses",
+      "more jobs only"
+     ],
+     "group": "disadvantage"
+    },
+    {
+     "id": "f5",
+     "point": "Disadvantage: workers may become dependent on machines",
+     "accept": [
+      "dependent on machines",
+      "depend on robots",
+      "rely on robots",
+      "cannot work without"
+     ],
+     "reject": [
+      "less dependent",
+      "no dependence"
+     ],
+     "group": "disadvantage"
+    },
+    {
+     "id": "f6",
+     "point": "Disadvantage: workers may lose skills as robots take over tasks",
+     "accept": [
+      "lose skills",
+      "loss of skills",
+      "stop practising",
+      "forget how to",
+      "less skilled"
+     ],
+     "reject": [
+      "gain skills",
+      "improve skills",
+      "skills increase"
+     ],
+     "group": "disadvantage"
+    }
+   ],
+   "modelAnswer": "Robots can complete dangerous factory work instead of people. AI may improve the quality of the products. Some factory employees may lose their jobs. Workers may lose skills when robots do their tasks for them.",
+   "topic": "ai-impacts",
+   "difficulty": 3,
+   "sourceRef": "p21-22",
+   "explanation": "A comparison must cover both sides. Here you are asked for two advantages and two disadvantages. Give different impacts rather than repeating one.",
+   "rules": [
+    {
+     "type": "maxPerGroup",
+     "group": "advantage",
+     "max": 2
+    },
+    {
+     "type": "maxPerGroup",
+     "group": "disadvantage",
+     "max": 2
+    }
+   ]
+  },
+  {
+   "id": "p7",
+   "type": "written",
+   "command": "explain",
+   "marks": 2,
+   "prompt": "A factory has replaced a manual task with AI-controlled machinery. Explain how this could cause workers to lose skills over time.",
+   "markPoints": [
+    {
+     "id": "g1",
+     "point": "The machine carries out a task previously done by workers",
+     "accept": [
+      "machine takes over",
+      "robots do the task",
+      "replaces manual work",
+      "automatic system does",
+      "work is automated"
+     ],
+     "reject": [
+      "workers still do every task",
+      "robots do not replace tasks"
+     ]
+    },
+    {
+     "id": "g2",
+     "point": "Workers no longer practise that task / may forget how to do it",
+     "accept": [
+      "stop practising",
+      "no practice",
+      "forget how",
+      "skills fade",
+      "do not use the skill",
+      "lose practice"
+     ],
+     "reject": [
+      "keep practising",
+      "more practice",
+      "gain skills"
+     ],
+     "requires": "g1"
+    }
+   ],
+   "modelAnswer": "The AI-controlled machine does a task that workers used to perform. The workers may lose the skill because they no longer practise it.",
+   "topic": "ai-skills",
+   "difficulty": 2,
+   "sourceRef": "p22",
+   "explanation": "Explain the link: machines take over the work, so workers get less practice and may lose their ability to do it."
+  }
+ ],
+ "recap": {
+  "summary": [
+   "Artificial intelligence lets machines or programs do tasks that need some intelligence.",
+   "AI tasks include language, face recognition, machine control and prediction from data.",
+   "AI-related examples include driverless transport, assistive robotics and robots doing dangerous work.",
+   "Possible benefits are improved safety, better products and services, and new technical jobs.",
+   "Possible drawbacks are job losses, dependence on technology and loss of human skills."
+  ],
+  "flashcards": [
+   {
+    "id": "f1",
+    "front": "What does AI mean?",
+    "back": "Artificial intelligence: machines or software performing tasks that need some intelligence."
+   },
+   {
+    "id": "f2",
+    "front": "Give two AI tasks from the textbook.",
+    "back": "For example, recognising faces and analysing data to predict the weather."
+   },
+   {
+    "id": "f3",
+    "front": "How can AI-related robotics make dangerous work safer?",
+    "back": "A robot can do the hazardous task while people stay away from the danger."
+   },
+   {
+    "id": "f4",
+    "front": "How may AI affect jobs?",
+    "back": "It can replace some jobs, while new technical jobs may also be created."
+   },
+   {
+    "id": "f5",
+    "front": "What does dependence on technology mean?",
+    "back": "People rely on the technology and may struggle to complete a task without it."
+   },
+   {
+    "id": "f6",
+    "front": "Why can using AI lead to a loss of skills?",
+    "back": "Machines may do tasks that people no longer practise."
+   }
+  ]
+ }
+}

@@ -1,0 +1,1037 @@
+{
+ "schemaVersion": "0.3",
+ "id": "igcse-ict-c1-u1",
+ "meta": {
+  "mode": "lesson",
+  "qualification": "Cambridge IGCSE",
+  "qualificationCode": "0417",
+  "subject": "Information and Communication Technology",
+  "subjectId": "ict",
+  "syllabusYears": "2026-2028",
+  "syllabusPoints": [
+   "1.3"
+  ],
+  "chapterNumber": 1,
+  "chapterTitle": "Types and components of computer systems",
+  "unit": 1,
+  "title": "Dialogue-based and gesture-based interfaces",
+  "schoolYear": 8,
+  "lang": "en",
+  "dir": "ltr",
+  "sourceRefs": [
+   {
+    "book": "Cambridge IGCSE ICT (Hodder), Chapter 1",
+    "sections": "1.3 Operating systems: dialogue-based and gesture-based interfaces",
+    "pages": "13-14"
+   }
+  ],
+  "estMinutes": 40,
+  "version": "0.3",
+  "status": "draft"
+ },
+ "topics": {
+  "dialogue-definition": "How dialogue-based interfaces work",
+  "dialogue-uses": "Uses of spoken commands",
+  "dialogue-advantages": "Advantages of dialogue-based interfaces",
+  "gesture-uses": "Examples of gestures in cars",
+  "gesture-advantages": "Advantages of gesture-based interfaces",
+  "gesture-disadvantages": "Disadvantages of gesture-based interfaces",
+  "interface-comparison": "Comparing dialogue-based and gesture-based interfaces"
+ },
+ "objectives": [
+  "Describe how a dialogue-based interface lets a person control a computer using speech",
+  "Describe how sensors or cameras detect movements in a gesture-based interface",
+  "Give examples of spoken commands and gestures used in a car or at home",
+  "Give advantages and disadvantages of both types of interface",
+  "Compare dialogue-based and gesture-based interfaces using clear differences"
+ ],
+ "learn": [
+  {
+   "id": "l1",
+   "topic": "dialogue-definition",
+   "type": "text",
+   "title": "What is a dialogue-based interface?",
+   "body": "A **dialogue-based interface** lets a person give **spoken commands** to a computer. The system recognises the speech and can carry out a task or give a spoken reply. The user does not have to press a button for every instruction."
+  },
+  {
+   "id": "l2",
+   "topic": "dialogue-definition",
+   "type": "keypoints",
+   "title": "How a voice command is processed",
+   "items": [
+    "A person speaks a question or command to a smart device.",
+    "The device changes the voice input into digital data (a binary stream).",
+    "The computer processes the instruction and chooses an action or answer.",
+    "The device can respond aloud to the person."
+   ]
+  },
+  {
+   "id": "l3",
+   "topic": "dialogue-definition",
+   "type": "image",
+   "src": "images/igcse-ict-c1-u1-voice-gesture.png",
+   "alt": "Two separate scenes: a driver speaking to an in-car navigation system and a person moving a hand near a car radio without touching it",
+   "caption": "Speech controls a dialogue-based interface. Movement controls a gesture-based interface.",
+   "credit": "AIT Education (AI-generated)",
+   "license": "own",
+   "imagePrompt": "Two-panel clean, friendly flat educational illustration for a school lesson. Left panel: driver sitting safely with both hands on the steering wheel, speaking toward a simple in-car navigation display, subtle sound waves. Right panel: close view of a hand making a circular finger motion near a car radio control without touching it, a small sensor visible. Clear, accurate everyday objects; soft teal and amber tones on a white background. No text, no labels, no logos, no brand names."
+  },
+  {
+   "id": "l4",
+   "topic": "dialogue-advantages",
+   "type": "keypoints",
+   "title": "Where spoken commands are useful",
+   "items": [
+    "**In cars:** drivers can control entertainment or navigation while keeping their hands on the steering wheel.",
+    "**At home:** people can speak to turn lights or other electronic equipment on and off.",
+    "**Accessibility:** people who find physical controls difficult can carry out tasks using speech.",
+    "**Security:** recognising a person's voice may help identify who is speaking."
+   ]
+  },
+  {
+   "id": "l5",
+   "topic": "gesture-uses",
+   "type": "text",
+   "title": "What is a gesture-based interface?",
+   "body": "A **gesture-based interface** uses movements of the **hands, head or feet** as commands. A **camera or sensor** detects a movement. **Computer vision** and **image processing** can be used to recognise it, and the computer carries out the linked action. The user does not need to touch a mechanical control."
+  },
+  {
+   "id": "l6",
+   "topic": "gesture-uses",
+   "type": "keypoints",
+   "title": "Four car gestures to remember",
+   "items": [
+    "**Rotate a finger clockwise** near the radio to turn the volume up; rotate it anticlockwise to turn the volume down.",
+    "**Separate the thumb and next finger** to change the music track.",
+    "**Move a foot underneath the rear bumper** to open the boot.",
+    "**Move a hand near the window switch** to open the window."
+   ]
+  },
+  {
+   "id": "l7",
+   "topic": "gesture-uses",
+   "type": "text",
+   "title": "From movement to action",
+   "body": "The camera or sensor notices the gesture and sends a **signal** to the computer. The computer works out which command the movement represents. It then performs the action, such as opening the boot. This can replace several dashboard buttons or dials."
+  },
+  {
+   "id": "l8",
+   "topic": "interface-comparison",
+   "type": "compare",
+   "title": "Dialogue-based vs gesture-based interfaces",
+   "columns": [
+    "Dialogue-based",
+    "Gesture-based"
+   ],
+   "rows": [
+    {
+     "label": "Input",
+     "a": "Spoken words or commands",
+     "b": "Movements of hands, head or feet"
+    },
+    {
+     "label": "How input is handled",
+     "a": "The system recognises speech and processes the instruction",
+     "b": "A sensor or camera detects movement; image processing can recognise it"
+    },
+    {
+     "label": "Main advantage",
+     "a": "A driver can keep both hands on the wheel; useful for people with disabilities",
+     "b": "No touch or mechanical input device is needed; movements can feel natural"
+    },
+    {
+     "label": "Other advantage",
+     "a": "A person's voice may be used for identification",
+     "b": "Little or no training is needed for simple gestures"
+    },
+    {
+     "label": "Recognition problem",
+     "a": "Commands may be missed or need repeating, especially with background noise",
+     "b": "Accidental movement may be treated as a command"
+    },
+    {
+     "label": "Other limit",
+     "a": "Setup can be complex; users need to know available commands",
+     "b": "The textbook gives a short detection range (about 1.5 m) and a limited set of recognised movements"
+    }
+   ]
+  },
+  {
+   "id": "l9",
+   "topic": "dialogue-uses",
+   "type": "example",
+   "title": "Choose the interface for the task",
+   "body": "A driver asks the navigation system for the nearest airport while keeping both hands on the steering wheel. This is **dialogue-based** because the command is spoken. When someone moves a foot under a car's rear bumper to open the boot, that is **gesture-based** because a movement is detected."
+  },
+  {
+   "id": "l10",
+   "topic": "interface-comparison",
+   "type": "tip",
+   "title": "Exam tip: give the reason, not only the label",
+   "body": "If asked to **describe** a gesture, name the movement **and** what it does: \"Moving a foot under the rear bumper makes the boot open.\" For an **explain** question about driving, link the benefit to the driver: \"Spoken commands mean the driver can keep their hands on the wheel.\""
+  },
+  {
+   "id": "l11",
+   "topic": "gesture-advantages",
+   "type": "mistake",
+   "title": "Common mistake: confusing gesture with touch",
+   "body": "Pressing a button is **not** a gesture-based command in the textbook examples. The gesture is detected by a camera or sensor **without touching** the control. Also, speaking a command is dialogue-based, not gesture-based."
+  },
+  {
+   "id": "l12",
+   "topic": "gesture-disadvantages",
+   "type": "realWorld",
+   "title": "In real life",
+   "body": "Modern systems do not all have the same recognition distance or accuracy. The 1.5 m figure is the limitation stated in this textbook's comparison. For an exam question based on these pages, learn the textbook's examples and limitations."
+  }
+ ],
+ "check": [
+  {
+   "id": "c1",
+   "type": "mcq",
+   "command": "identify",
+   "marks": 1,
+   "prompt": "A driver speaks a destination and the navigation system answers aloud. Which interface is being used?",
+   "hint": "Focus on what the person does to send the instruction: are words said aloud, or is a physical movement detected?",
+   "options": [
+    "Gesture-based interface",
+    "Dialogue-based interface",
+    "Mechanical switch interface",
+    "Touch-only interface"
+   ],
+   "answers": [
+    1
+   ],
+   "topic": "dialogue-definition",
+   "difficulty": 1,
+   "sourceRef": "p13",
+   "explanation": "The system receives a spoken command and can reply by voice. That is a dialogue-based interface."
+  },
+  {
+   "id": "c2",
+   "type": "tick",
+   "command": "identify",
+   "marks": 2,
+   "rowsPerMark": 2,
+   "prompt": "Tick (✓) whether each statement is an advantage or a disadvantage of a dialogue-based interface.",
+   "hint": "Decide whether each effect makes the task easier or introduces a difficulty; think about the surroundings and the person using the system.",
+   "afterBlock": "l8",
+   "columns": [
+    "Advantage",
+    "Disadvantage"
+   ],
+   "rows": [
+    {
+     "id": "c2r1",
+     "statement": "A driver can keep their hands on the steering wheel.",
+     "answer": 0,
+     "explanation": "Speech avoids needing to operate a physical control."
+    },
+    {
+     "id": "c2r2",
+     "statement": "Background noise may make spoken commands hard to recognise.",
+     "answer": 1,
+     "explanation": "Noise can reduce speech recognition accuracy."
+    },
+    {
+     "id": "c2r3",
+     "statement": "It may help someone who finds switches difficult to use.",
+     "answer": 0,
+     "explanation": "Many tasks can be done by speech alone."
+    },
+    {
+     "id": "c2r4",
+     "statement": "The user may need to learn which voice commands are available.",
+     "answer": 1,
+     "explanation": "Only supported commands can be recognised."
+    }
+   ],
+   "topic": "dialogue-advantages",
+   "difficulty": 1,
+   "sourceRef": "p14",
+   "explanation": "Four rows; every two correct answers earn one mark."
+  },
+  {
+   "id": "c3",
+   "type": "fill",
+   "command": "complete",
+   "marks": 3,
+   "prompt": "Complete the sentences with words from the list. Use each word once only.",
+   "hint": "Think about how each interface takes its input, and what around you can stop spoken commands from working well.",
+   "wordList": [
+    "voice",
+    "sensor",
+    "noise",
+    "keyboard",
+    "battery",
+    "cable"
+   ],
+   "items": [
+    {
+     "id": "c3i1",
+     "sentence": "A dialogue-based interface uses the human ___ to give commands.",
+     "answer": "voice"
+    },
+    {
+     "id": "c3i2",
+     "sentence": "A car can detect a gesture using a camera or a ___.",
+     "answer": "sensor"
+    },
+    {
+     "id": "c3i3",
+     "sentence": "Background ___ can make spoken instructions hard to recognise.",
+     "answer": "noise"
+    }
+   ],
+   "topic": "interface-comparison",
+   "difficulty": 1,
+   "sourceRef": "p13-14",
+   "explanation": "Voice is the dialogue input; a sensor can detect gestures; noise is a limitation of speech recognition."
+  },
+  {
+   "id": "c4",
+   "type": "match",
+   "command": "match",
+   "marks": 3,
+   "prompt": "Match each car gesture to the action it causes.",
+   "hint": "Picture each movement, then consider which part of the car or its controls the movement is meant to affect.",
+   "left": [
+    {
+     "id": "c4l1",
+     "text": "Rotate a finger clockwise near the radio"
+    },
+    {
+     "id": "c4l2",
+     "text": "Move a foot beneath the rear bumper"
+    },
+    {
+     "id": "c4l3",
+     "text": "Separate the thumb and next finger"
+    }
+   ],
+   "right": [
+    {
+     "id": "c4r1",
+     "text": "Open the boot"
+    },
+    {
+     "id": "c4r2",
+     "text": "Open the side window"
+    },
+    {
+     "id": "c4r3",
+     "text": "Increase the radio volume"
+    },
+    {
+     "id": "c4r4",
+     "text": "Change the music track"
+    }
+   ],
+   "pairs": [
+    [
+     "c4l1",
+     "c4r3"
+    ],
+    [
+     "c4l2",
+     "c4r1"
+    ],
+    [
+     "c4l3",
+     "c4r4"
+    ]
+   ],
+   "topic": "gesture-uses",
+   "difficulty": 1,
+   "sourceRef": "p13-14",
+   "explanation": "These are the gestures and results listed in the textbook; the window action is the extra option."
+  }
+ ],
+ "practice": [
+  {
+   "id": "p1",
+   "type": "written",
+   "command": "give",
+   "marks": 2,
+   "prompt": "Give two uses of a dialogue-based interface. [2]",
+   "markPoints": [
+    {
+     "id": "p1m1",
+     "point": "Control an in-car navigation system / request directions",
+     "accept": [
+      "car navigation",
+      "navigation system",
+      "give directions",
+      "ask for directions",
+      "find a route",
+      "satellite navigation"
+     ]
+    },
+    {
+     "id": "p1m2",
+     "point": "Control a car entertainment system / radio by voice",
+     "accept": [
+      "car entertainment",
+      "radio by voice",
+      "music by voice",
+      "change the music",
+      "in-car entertainment"
+     ]
+    },
+    {
+     "id": "p1m3",
+     "point": "Switch home lights on or off using speech",
+     "accept": [
+      "switch lights",
+      "turn the lights",
+      "lights on",
+      "lights off",
+      "control lighting"
+     ]
+    },
+    {
+     "id": "p1m4",
+     "point": "Operate home electronic equipment by voice",
+     "accept": [
+      "home electronics",
+      "electronic equipment",
+      "home appliances",
+      "control devices at home"
+     ]
+    },
+    {
+     "id": "p1m5",
+     "point": "Support a person with disabilities to carry out tasks by speech",
+     "accept": [
+      "people with disabilities",
+      "person with a disability",
+      "speech only",
+      "without using switches"
+     ]
+    },
+    {
+     "id": "p1m6",
+     "point": "Identify a person using their voice as a security feature",
+     "accept": [
+      "voice identification",
+      "voice recognition for security",
+      "identify a person",
+      "security feature"
+     ]
+    }
+   ],
+   "modelAnswer": "A driver can ask for directions using speech. At home, a person can turn the lights on by voice.",
+   "topic": "dialogue-uses",
+   "difficulty": 1,
+   "sourceRef": "p13",
+   "explanation": "Any two different uses. Name a task or context, not a device brand."
+  },
+  {
+   "id": "p2",
+   "type": "written",
+   "command": "give",
+   "marks": 2,
+   "prompt": "Give two advantages of a dialogue-based interface. [2]",
+   "markPoints": [
+    {
+     "id": "p2m1",
+     "point": "Driver need not take hands off steering wheel",
+     "accept": [
+      "hands on the wheel",
+      "hands on steering wheel",
+      "keep both hands",
+      "without taking hands off"
+     ],
+     "reject": [
+      "needs to take hands off",
+      "must take hands off",
+      "cannot keep hands"
+     ]
+    },
+    {
+     "id": "p2m2",
+     "point": "Useful for people with disabilities / tasks can be performed by spoken words",
+     "accept": [
+      "people with disabilities",
+      "person with a disability",
+      "speech alone",
+      "voice only",
+      "without touching buttons"
+     ],
+     "reject": [
+      "cannot use speech",
+      "not useful"
+     ]
+    },
+    {
+     "id": "p2m3",
+     "point": "Voice recognition may identify a speaker for security",
+     "accept": [
+      "voice security",
+      "recognise a person",
+      "identify the speaker",
+      "identify a person",
+      "security feature",
+      "voice recognition for security"
+     ],
+     "reject": [
+      "no security",
+      "not secure"
+     ]
+    }
+   ],
+   "modelAnswer": "The driver can keep both hands on the steering wheel. Someone with a disability can carry out tasks using speech alone.",
+   "topic": "dialogue-advantages",
+   "difficulty": 1,
+   "sourceRef": "p14",
+   "explanation": "Any two separate advantages from the textbook table."
+  },
+  {
+   "id": "p3",
+   "type": "written",
+   "command": "give",
+   "marks": 2,
+   "prompt": "Give two disadvantages of using a gesture-based interface in a car. [2]",
+   "markPoints": [
+    {
+     "id": "p3m1",
+     "point": "An unintentional movement may be detected / cause an unwanted action",
+     "accept": [
+      "accidental movement",
+      "unintended movement",
+      "unintentional movement",
+      "detects movements by accident",
+      "wrong movement"
+     ],
+     "reject": [
+      "does not detect accidental",
+      "cannot detect accidental"
+     ]
+    },
+    {
+     "id": "p3m2",
+     "point": "Works only fairly near the camera or sensor / textbook gives about 1.5 m",
+     "accept": [
+      "close to camera",
+      "near the sensor",
+      "short range",
+      "limited range",
+      "within 1.5",
+      "maximum of 1.5",
+      "1.5 metres"
+     ],
+     "reject": [
+      "works from far away",
+      "unlimited range",
+      "very long range"
+     ]
+    },
+    {
+     "id": "p3m3",
+     "point": "May recognise only a limited set of movements / requires exact gestures",
+     "accept": [
+      "limited movements",
+      "limited gestures",
+      "only certain gestures",
+      "few movements",
+      "not recognise every movement",
+      "exact gesture"
+     ],
+     "reject": [
+      "any gesture",
+      "every gesture",
+      "unlimited movements"
+     ]
+    }
+   ],
+   "modelAnswer": "An accidental movement may trigger a command. A gesture interface has a limited range, so the user must stay near the sensor.",
+   "topic": "gesture-disadvantages",
+   "difficulty": 1,
+   "sourceRef": "p14",
+   "explanation": "Any two distinct limitations; do not mix in disadvantages of speech input."
+  },
+  {
+   "id": "p4",
+   "type": "written",
+   "command": "describe",
+   "marks": 4,
+   "prompt": "Describe two different gestures used in a car and state what each gesture does. [4]",
+   "markPoints": [
+    {
+     "id": "p4m1",
+     "point": "Rotate a finger clockwise near the radio",
+     "accept": [
+      "rotate finger clockwise",
+      "rotate a finger clockwise",
+      "turn finger clockwise",
+      "finger clockwise",
+      "clockwise near radio"
+     ],
+     "group": "gesture"
+    },
+    {
+     "id": "p4m2",
+     "point": "...the radio volume increases / becomes louder",
+     "accept": [
+      "volume goes up",
+      "increase volume",
+      "increases volume",
+      "turns volume up",
+      "radio louder"
+     ],
+     "requires": "p4m1",
+     "group": "action"
+    },
+    {
+     "id": "p4m3",
+     "point": "Rotate a finger anticlockwise near the radio",
+     "accept": [
+      "rotate finger anticlockwise",
+      "turn finger anticlockwise",
+      "anti-clockwise near radio",
+      "counterclockwise finger"
+     ],
+     "group": "gesture"
+    },
+    {
+     "id": "p4m4",
+     "point": "...the radio volume decreases / becomes quieter",
+     "accept": [
+      "volume goes down",
+      "reduce volume",
+      "lower volume",
+      "turns volume down"
+     ],
+     "requires": "p4m3",
+     "group": "action"
+    },
+    {
+     "id": "p4m5",
+     "point": "Separate the thumb and next finger",
+     "accept": [
+      "spread thumb and finger",
+      "open thumb and finger",
+      "separate thumb and",
+      "thumb and index"
+     ],
+     "group": "gesture"
+    },
+    {
+     "id": "p4m6",
+     "point": "...the music track changes",
+     "accept": [
+      "change music track",
+      "change the track",
+      "next track",
+      "different song"
+     ],
+     "requires": "p4m5",
+     "group": "action"
+    },
+    {
+     "id": "p4m7",
+     "point": "Move a foot underneath the rear bumper",
+     "accept": [
+      "foot under rear bumper",
+      "move a foot under the rear bumper",
+      "foot beneath bumper",
+      "wave foot under",
+      "move foot beneath"
+     ],
+     "group": "gesture"
+    },
+    {
+     "id": "p4m8",
+     "point": "...the car boot opens",
+     "accept": [
+      "opens the boot",
+      "boot opens",
+      "open the trunk",
+      "trunk opens"
+     ],
+     "requires": "p4m7",
+     "group": "action"
+    },
+    {
+     "id": "p4m9",
+     "point": "Move a hand near the window switch",
+     "accept": [
+      "hand near window switch",
+      "wave hand near window",
+      "move hand by window"
+     ],
+     "group": "gesture"
+    },
+    {
+     "id": "p4m10",
+     "point": "...the car window opens",
+     "accept": [
+      "opens the window",
+      "window opens",
+      "open car window"
+     ],
+     "requires": "p4m9",
+     "group": "action"
+    }
+   ],
+   "modelAnswer": "Rotate a finger clockwise near the radio. This increases volume. Move a foot under the rear bumper. This opens the boot.",
+   "topic": "gesture-uses",
+   "difficulty": 2,
+   "sourceRef": "p13-14",
+   "explanation": "For each of two examples: one mark for the movement and one for its linked action. The action needs its matching gesture.",
+   "rules": [
+    {
+     "type": "maxPerGroup",
+     "group": "gesture",
+     "max": 2
+    },
+    {
+     "type": "maxPerGroup",
+     "group": "action",
+     "max": 2
+    }
+   ]
+  },
+  {
+   "id": "p5",
+   "type": "written",
+   "command": "explain",
+   "marks": 3,
+   "prompt": "A driver needs to change a route while driving. Explain why a dialogue-based interface could help, and why it might sometimes fail. [3]",
+   "markPoints": [
+    {
+     "id": "p5m1",
+     "point": "Driver can speak a new destination / route to the navigation system",
+     "accept": [
+      "speak a destination",
+      "say the destination",
+      "voice command",
+      "ask for a new route",
+      "tell the navigation"
+     ],
+     "reject": [
+      "uses gestures",
+      "only touch commands"
+     ]
+    },
+    {
+     "id": "p5m2",
+     "point": "...so the driver keeps hands on the steering wheel / does not need to operate controls",
+     "accept": [
+      "hands on the wheel",
+      "hands on steering wheel",
+      "keep both hands",
+      "no need to touch",
+      "without taking hands off"
+     ],
+     "reject": [
+      "takes hands off",
+      "must remove hands"
+     ],
+     "requires": "p5m1"
+    },
+    {
+     "id": "p5m3",
+     "point": "Road or passenger noise can prevent the spoken command being recognised",
+     "accept": [
+      "background noise",
+      "traffic noise",
+      "road noise",
+      "passenger noise",
+      "not recognised",
+      "misheard because"
+     ],
+     "reject": [
+      "no noise problem",
+      "noise does not affect"
+     ]
+    }
+   ],
+   "modelAnswer": "The driver can say the destination. This means they can keep both hands on the steering wheel. Traffic noise might stop the command being recognised.",
+   "topic": "dialogue-advantages",
+   "difficulty": 2,
+   "sourceRef": "p13-14",
+   "explanation": "Award a point for the spoken command, a linked safety benefit, and a relevant recognition problem."
+  },
+  {
+   "id": "p6",
+   "type": "written",
+   "command": "compare",
+   "marks": 2,
+   "prompt": "Compare dialogue-based and gesture-based interfaces in two ways: the type of input and how it is recognised. [2]",
+   "markPoints": [
+    {
+     "id": "p6m1",
+     "point": "Dialogue uses spoken words whereas gesture uses body movements",
+     "accept": [
+      "voice whereas gestures",
+      "voice whereas a gesture",
+      "speech whereas movement",
+      "spoken commands whereas",
+      "voice but gesture",
+      "voice while gesture",
+      "speaking compared with moving",
+      "speech compared with gesture",
+      "uses voice",
+      "uses speech",
+      "spoken words",
+      "body movement",
+      "uses movement",
+      "hand movement"
+     ],
+     "reject": [
+      "dialogue uses movement",
+      "gesture uses voice",
+      "both use voice",
+      "both use speech"
+     ]
+    },
+    {
+     "id": "p6m2",
+     "point": "Dialogue processes recognised speech whereas gesture uses a sensor/camera and computer vision/image processing",
+     "accept": [
+      "speech recognition whereas",
+      "speech recognition whereas a gesture",
+      "speech recognition but",
+      "speech recognition while",
+      "voice recognition compared with image",
+      "spoken commands compared with sensor",
+      "speech and computer vision",
+      "speech and image processing",
+      "speech recognition",
+      "recognises speech",
+      "recognise speech",
+      "camera",
+      "sensor",
+      "computer vision",
+      "image processing"
+     ],
+     "reject": [
+      "gesture uses spoken",
+      "dialogue uses camera only"
+     ]
+    }
+   ],
+   "modelAnswer": "A dialogue-based interface uses voice whereas a gesture-based interface uses body movements. A dialogue system uses speech recognition whereas a gesture system uses cameras and image processing.",
+   "topic": "interface-comparison",
+   "difficulty": 3,
+   "sourceRef": "p13-14",
+   "explanation": "For each comparison, both sides are needed. Write a full difference using “whereas”."
+  },
+  {
+   "id": "p7",
+   "type": "written",
+   "command": "explain",
+   "marks": 3,
+   "prompt": "A person finds it difficult to operate light switches at home. Explain why a dialogue-based interface could help them, and give one possible difficulty. [3]",
+   "markPoints": [
+    {
+     "id": "p7m1",
+     "point": "Person can speak to switch the lights on or off",
+     "accept": [
+      "say lights on",
+      "say lights off",
+      "tell it to switch",
+      "voice command for lights",
+      "control lights by voice",
+      "speak to turn"
+     ],
+     "reject": [
+      "uses hand gestures",
+      "must press a button"
+     ]
+    },
+    {
+     "id": "p7m2",
+     "point": "...so they do not need to reach / press the physical switch",
+     "accept": [
+      "without pressing",
+      "no need to touch",
+      "without reaching",
+      "does not have to press",
+      "do not need to press",
+      "no physical switch"
+     ],
+     "reject": [
+      "must press switch",
+      "need to reach switch"
+     ],
+     "requires": "p7m1"
+    },
+    {
+     "id": "p7m3",
+     "point": "The command might not be recognised / may need repeating, especially with background noise",
+     "accept": [
+      "background noise",
+      "not recognised",
+      "must repeat",
+      "needs repeating",
+      "repeat command",
+      "misunderstand speech",
+      "may not understand"
+     ],
+     "reject": [
+      "always recognised",
+      "no need to repeat"
+     ],
+     "group": "difficulty"
+    },
+    {
+     "id": "p7m4",
+     "point": "The system may be difficult or complex to set up",
+     "accept": [
+      "complex to set up",
+      "hard to set up",
+      "difficult to set up",
+      "complicated setup"
+     ],
+     "reject": [
+      "easy to set up",
+      "simple setup"
+     ],
+     "group": "difficulty"
+    },
+    {
+     "id": "p7m5",
+     "point": "The person must know which spoken commands are supported",
+     "accept": [
+      "know the commands",
+      "learn which commands",
+      "supported commands",
+      "know what to say"
+     ],
+     "reject": [
+      "no need to know commands"
+     ],
+     "group": "difficulty"
+    }
+   ],
+   "modelAnswer": "They can control lights by voice. This means there is no need to touch the light switch. Background noise may cause the instruction to be missed.",
+   "topic": "dialogue-uses",
+   "difficulty": 2,
+   "sourceRef": "p13-14",
+   "explanation": "Link the advantage to operating the lights without touching switches, and give one textbook limitation.",
+   "rules": [
+    {
+     "type": "maxPerGroup",
+     "group": "difficulty",
+     "max": 1
+    }
+   ]
+  },
+  {
+   "id": "p8",
+   "type": "written",
+   "command": "give",
+   "marks": 2,
+   "prompt": "Give two advantages of using a gesture-based interface.",
+   "markPoints": [
+    {
+     "id": "p8m1",
+     "point": "Replaces mechanical input devices / fewer buttons and dials needed",
+     "accept": [
+      "replaces buttons",
+      "no buttons",
+      "fewer buttons",
+      "no dials",
+      "replaces mechanical",
+      "no switches needed",
+      "fewer controls"
+     ],
+     "reject": [
+      "needs more buttons"
+     ]
+    },
+    {
+     "id": "p8m2",
+     "point": "No physical contact / touch is needed",
+     "accept": [
+      "no physical contact",
+      "without touching",
+      "no need to touch",
+      "doesn't need to touch",
+      "does not need to touch",
+      "no contact"
+     ],
+     "reject": [
+      "must touch",
+      "needs to touch"
+     ]
+    },
+    {
+     "id": "p8m3",
+     "point": "Natural way for a human to give commands",
+     "accept": [
+      "natural",
+      "easy to use",
+      "feels normal"
+     ],
+     "reject": [
+      "not natural",
+      "unnatural"
+     ]
+    },
+    {
+     "id": "p8m4",
+     "point": "No training needed to use it",
+     "accept": [
+      "no training",
+      "without training",
+      "don't need training",
+      "does not need training",
+      "no need to learn"
+     ],
+     "reject": [
+      "needs training"
+     ]
+    }
+   ],
+   "modelAnswer": "No physical contact is needed to give a command. It replaces mechanical controls such as buttons and dials.",
+   "topic": "gesture-advantages",
+   "difficulty": 1,
+   "sourceRef": "p14",
+   "explanation": "Any two valid points. The textbook lists: replaces mechanical input devices, no physical contact, natural for humans, no training needed."
+  }
+ ],
+ "recap": {
+  "summary": [
+   "Dialogue-based interfaces use spoken commands; the system processes speech and may give a spoken reply.",
+   "Voice commands can control navigation, entertainment and home devices; they may also help with accessibility or security.",
+   "Speech input can fail because of noise, complex setup or unfamiliar commands.",
+   "Gesture-based interfaces detect hand, head or foot movements with cameras or sensors and can use image processing.",
+   "Gestures do not need touch, but accidental movements, limited range and limited recognised actions can cause problems."
+  ],
+  "flashcards": [
+   {
+    "id": "f1",
+    "front": "What is a dialogue-based interface?",
+    "back": "An interface that lets a person give spoken commands to a computer."
+   },
+   {
+    "id": "f2",
+    "front": "What does a voice-command system do with speech?",
+    "back": "It converts the input to digital data, processes the instruction and can reply aloud."
+   },
+   {
+    "id": "f3",
+    "front": "Give two advantages of dialogue-based interfaces.",
+    "back": "Drivers keep their hands on the wheel; people with disabilities may control devices through speech."
+   },
+   {
+    "id": "f4",
+    "front": "What detects a gesture?",
+    "back": "A camera or sensor; computer vision and image processing can recognise the movement."
+   },
+   {
+    "id": "f5",
+    "front": "Which car gesture can open the boot?",
+    "back": "Moving a foot under the rear bumper."
+   },
+   {
+    "id": "f6",
+    "front": "Give two limitations of gesture-based interfaces.",
+    "back": "They may detect unintended movements and may work only near the camera or sensor."
+   }
+  ]
+ }
+}

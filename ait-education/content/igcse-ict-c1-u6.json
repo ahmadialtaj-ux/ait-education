@@ -1,0 +1,1109 @@
+{
+ "schemaVersion": "0.3",
+ "id": "igcse-ict-c1-u6",
+ "meta": {
+  "mode": "mock",
+  "qualification": "Cambridge IGCSE",
+  "qualificationCode": "0417",
+  "subject": "Information and Communication Technology",
+  "subjectId": "ict",
+  "syllabusYears": "2026-2028",
+  "syllabusPoints": [
+   "1.3",
+   "1.4",
+   "1.5"
+  ],
+  "chapterNumber": 1,
+  "chapterTitle": "Types and components of computer systems",
+  "unit": 6,
+  "title": "Chapter 1 mock test (pages 14-25)",
+  "schoolYear": 8,
+  "lang": "en",
+  "dir": "ltr",
+  "sourceRefs": [
+   {
+    "book": "Cambridge IGCSE ICT (Hodder), Chapter 1",
+    "sections": "End of 1.3; 1.4 Types of computer; 1.5 Emerging technologies; exam-style questions",
+    "pages": "14-25"
+   }
+  ],
+  "estMinutes": 35,
+  "version": "0.3",
+  "status": "draft"
+ },
+ "topics": {
+  "interface-methods": "Dialogue and gesture input",
+  "computer-types": "Identifying types of computer",
+  "desktop-laptop": "Desktop and laptop advantages",
+  "phone-technology": "Smartphone components and sensors",
+  "phone-limitations": "Smartphone disadvantages",
+  "tablet-benefits": "Advantages of tablets",
+  "phablet-and-uses": "Phablets and uses of mobile devices",
+  "ai-impacts": "Positive and negative effects of artificial intelligence",
+  "xr-applications": "Applications of AR and VR",
+  "mobile-scenario": "Using a smartphone away from school",
+  "ar-versus-vr": "Comparing augmented and virtual reality"
+ },
+ "objectives": [
+  "Recall the features and uses of computer interfaces and mobile computers",
+  "Identify benefits and limitations of desktops, laptops, smartphones and tablets",
+  "State effects of artificial intelligence on people and work",
+  "Give applications of extended reality and compare AR with VR",
+  "Answer eleven original Paper 1-style questions in about 35 minutes"
+ ],
+ "learn": [],
+ "check": [],
+ "practice": [
+  {
+   "id": "p1",
+   "type": "tick",
+   "command": "identify",
+   "marks": 2,
+   "prompt": "Tick (✓) whether each statement gives an advantage or a disadvantage of the named interface.",
+   "columns": [
+    "Advantage",
+    "Disadvantage"
+   ],
+   "rowsPerMark": 2,
+   "rows": [
+    {
+     "id": "r1a",
+     "statement": "Spoken commands can help someone who finds physical controls difficult to use.",
+     "answer": 0,
+     "explanation": "A dialogue-based interface lets someone control equipment by speaking."
+    },
+    {
+     "id": "r1b",
+     "statement": "A dialogue-based interface may misunderstand instructions in a noisy place.",
+     "answer": 1,
+     "explanation": "Background sounds can make spoken instructions difficult to recognise."
+    },
+    {
+     "id": "r1c",
+     "statement": "Gesture controls can work without the person touching a switch.",
+     "answer": 0,
+     "explanation": "A sensor or camera can detect movements instead of requiring contact."
+    },
+    {
+     "id": "r1d",
+     "statement": "A gesture-controlled system may react to a movement the user did not intend as a command.",
+     "answer": 1,
+     "explanation": "Unwanted movements can be detected and trigger the wrong action."
+    }
+   ],
+   "topic": "interface-methods",
+   "difficulty": 1,
+   "sourceRef": "p14",
+   "explanation": "Two correctly classified statements earn one mark. Both interface types have useful features and possible problems."
+  },
+  {
+   "id": "p2",
+   "type": "match",
+   "command": "match",
+   "marks": 3,
+   "prompt": "Match each situation in a school to the most suitable type of computer.",
+   "left": [
+    {
+     "id": "x2a",
+     "text": "A fixed workstation with separate display and input equipment"
+    },
+    {
+     "id": "x2b",
+     "text": "A student carries a computer with a built-in physical keyboard"
+    },
+    {
+     "id": "x2c",
+     "text": "A learner taps an on-screen keyboard on a flat touch-screen device"
+    }
+   ],
+   "right": [
+    {
+     "id": "y2a",
+     "text": "Desktop computer"
+    },
+    {
+     "id": "y2b",
+     "text": "Laptop computer"
+    },
+    {
+     "id": "y2c",
+     "text": "Tablet computer"
+    },
+    {
+     "id": "y2d",
+     "text": "Smartphone"
+    }
+   ],
+   "pairs": [
+    [
+     "x2a",
+     "y2a"
+    ],
+    [
+     "x2b",
+     "y2b"
+    ],
+    [
+     "x2c",
+     "y2c"
+    ]
+   ],
+   "topic": "computer-types",
+   "difficulty": 1,
+   "sourceRef": "p14-16, p18, p24",
+   "explanation": "A desktop has separate parts, a laptop contains its keyboard and screen in one unit, and a tablet normally uses a touch-screen keyboard."
+  },
+  {
+   "id": "p3",
+   "type": "written",
+   "command": "state",
+   "marks": 2,
+   "prompt": "State two advantages of using desktop computers instead of laptops in a permanent school computer room.",
+   "markPoints": [
+    {
+     "id": "a1",
+     "point": "Standardised spare parts / connections can make repairs less expensive",
+     "accept": [
+      "standard parts",
+      "standardised parts",
+      "standard connections",
+      "cheaper repairs",
+      "spare parts"
+     ],
+     "reject": [
+      "parts are not standard",
+      "more expensive repairs",
+      "no spare parts"
+     ]
+    },
+    {
+     "id": "a2",
+     "point": "Easier / cheaper to upgrade or expand than laptops",
+     "accept": [
+      "easier to upgrade",
+      "cheaper to upgrade",
+      "easy upgrades",
+      "expand desktop",
+      "add components"
+     ],
+     "reject": [
+      "harder to upgrade",
+      "cannot upgrade",
+      "more difficult to expand"
+     ]
+    },
+    {
+     "id": "a3",
+     "point": "Higher specification / faster processor for the same amount of money",
+     "accept": [
+      "better performance for price",
+      "faster processor",
+      "better specification",
+      "more powerful for same price"
+     ],
+     "reject": [
+      "slower processor for same price",
+      "lower specification for same price"
+     ]
+    },
+    {
+     "id": "a4",
+     "point": "Better heat removal from the larger case",
+     "accept": [
+      "better cooling",
+      "heat escapes",
+      "larger case for cooling",
+      "less overheating"
+     ],
+     "reject": [
+      "worse cooling",
+      "more difficult to cool"
+     ]
+    },
+    {
+     "id": "a5",
+     "point": "More stable internet because desktop can use a wired connection",
+     "accept": [
+      "wired connection",
+      "stable internet",
+      "steadier internet",
+      "less variable speed"
+     ],
+     "reject": [
+      "unstable wired",
+      "less stable than wifi",
+      "slower wired connection"
+     ]
+    },
+    {
+     "id": "a6",
+     "point": "Less chance of theft / damage because the desktop stays in one place",
+     "accept": [
+      "less likely stolen",
+      "less likely damaged",
+      "stays in one place",
+      "harder to steal"
+     ],
+     "reject": [
+      "more likely stolen",
+      "easy to steal desktop"
+     ]
+    }
+   ],
+   "modelAnswer": "Desktop components are usually easier to replace or upgrade. A desktop may also give a higher specification for the same price.",
+   "topic": "desktop-laptop",
+   "difficulty": 1,
+   "sourceRef": "p15-16",
+   "explanation": "State two different advantages. You do not have to explain them, but the points must favour the desktop rather than the laptop."
+  },
+  {
+   "id": "p4",
+   "type": "fill",
+   "command": "complete",
+   "marks": 3,
+   "prompt": "Complete these statements about smartphone technology. Use each choice only once.",
+   "wordList": [
+    "proximity sensor",
+    "accelerometer",
+    "cloud storage",
+    "Bluetooth",
+    "OLED",
+    "virtual keyboard"
+   ],
+   "items": [
+    {
+     "id": "i4a",
+     "sentence": "A phone may prevent unwanted screen taps near the user’s ear by using a ___.",
+     "answer": "proximity sensor"
+    },
+    {
+     "id": "i4b",
+     "sentence": "A phone can detect a change in its orientation using an ___.",
+     "answer": "accelerometer"
+    },
+    {
+     "id": "i4c",
+     "sentence": "Files can be backed up and kept in sync online using ___.",
+     "answer": "cloud storage"
+    }
+   ],
+   "topic": "phone-technology",
+   "difficulty": 1,
+   "sourceRef": "p17",
+   "explanation": "The proximity sensor detects nearby objects, the accelerometer detects movement or orientation, and cloud storage backs up or synchronises files."
+  },
+  {
+   "id": "p5",
+   "type": "written",
+   "command": "give",
+   "marks": 3,
+   "prompt": "Give three disadvantages of using a smartphone rather than a laptop for schoolwork.",
+   "markPoints": [
+    {
+     "id": "b1",
+     "point": "Smaller display / reading long pages can be harder",
+     "accept": [
+      "small screen",
+      "smaller screen",
+      "harder to read",
+      "difficult to read",
+      "tiny display"
+     ],
+     "reject": [
+      "larger screen",
+      "easier to read than laptop",
+      "bigger display"
+     ]
+    },
+    {
+     "id": "b2",
+     "point": "Typing is slower / more difficult on a small on-screen keyboard",
+     "accept": [
+      "slow typing",
+      "harder to type",
+      "small keyboard",
+      "typing takes longer",
+      "touch keyboard difficult"
+     ],
+     "reject": [
+      "typing is faster",
+      "easier to type than laptop",
+      "large physical keyboard"
+     ]
+    },
+    {
+     "id": "b3",
+     "point": "Battery can run down quickly when browsing / using the camera",
+     "accept": [
+      "battery drains",
+      "battery runs out",
+      "charge often",
+      "camera uses battery",
+      "browsing drains battery"
+     ],
+     "reject": [
+      "battery never runs out",
+      "unlimited battery",
+      "no battery drain"
+     ]
+    },
+    {
+     "id": "b4",
+     "point": "Often has less storage / memory than a laptop",
+     "accept": [
+      "less storage",
+      "limited storage",
+      "smaller memory",
+      "less memory",
+      "storage fills up"
+     ],
+     "reject": [
+      "more storage than laptop",
+      "unlimited memory"
+     ]
+    },
+    {
+     "id": "b5",
+     "point": "Some website functions may not work on the phone",
+     "accept": [
+      "some sites do not work",
+      "website not compatible",
+      "site features missing",
+      "limited website features"
+     ],
+     "reject": [
+      "all websites work",
+      "every site compatible"
+     ]
+    },
+    {
+     "id": "b6",
+     "point": "Phone is easier to misplace / steal because it is small",
+     "accept": [
+      "easy to lose",
+      "easier to steal",
+      "phone gets lost",
+      "small and stolen"
+     ],
+     "reject": [
+      "harder to steal",
+      "impossible to lose"
+     ]
+    },
+    {
+     "id": "b7",
+     "point": "Mobile network data may be slower than Wi-Fi for streaming",
+     "accept": [
+      "mobile data slower",
+      "streaming is slow",
+      "slow mobile network",
+      "buffering video"
+     ],
+     "reject": [
+      "mobile is always faster",
+      "no streaming delay"
+     ]
+    }
+   ],
+   "modelAnswer": "The small screen can make documents harder to read. Typing on a small keyboard can take longer. Using the internet and camera can drain the battery quickly.",
+   "topic": "phone-limitations",
+   "difficulty": 1,
+   "sourceRef": "p18",
+   "explanation": "Give three distinct drawbacks. Repeating that the screen and keyboard are small in different words will not earn more than the separate screen and typing marks."
+  },
+  {
+   "id": "p6",
+   "type": "written",
+   "command": "state",
+   "marks": 3,
+   "prompt": "State three advantages of tablets compared with laptops.",
+   "markPoints": [
+    {
+     "id": "c1",
+     "point": "Can start up / become ready to use quickly",
+     "accept": [
+      "starts quickly",
+      "fast to switch on",
+      "ready quickly",
+      "quick startup"
+     ],
+     "reject": [
+      "starts slower",
+      "takes a long time to start"
+     ]
+    },
+    {
+     "id": "c2",
+     "point": "Lightweight / easy to carry",
+     "accept": [
+      "lightweight",
+      "lighter to carry",
+      "easy to carry",
+      "very portable"
+     ],
+     "reject": [
+      "too heavy to carry",
+      "less portable"
+     ]
+    },
+    {
+     "id": "c3",
+     "point": "Touch screen can be used without a separate pointing device / keyboard",
+     "accept": [
+      "touch screen",
+      "touchscreen",
+      "tap the screen",
+      "no mouse needed",
+      "no keyboard needed"
+     ],
+     "reject": [
+      "must use a mouse",
+      "cannot use touch screen"
+     ]
+    },
+    {
+     "id": "c4",
+     "point": "Built-in programs / camera / media player are available",
+     "accept": [
+      "built-in camera",
+      "built-in apps",
+      "play videos",
+      "media player",
+      "ready apps"
+     ],
+     "reject": [
+      "cannot run apps",
+      "no built-in camera"
+     ]
+    },
+    {
+     "id": "c5",
+     "point": "Produces little heat because of solid-state technology",
+     "accept": [
+      "less heat",
+      "little heat",
+      "low heat",
+      "solid state"
+     ],
+     "reject": [
+      "more heat than laptop",
+      "high heat output"
+     ]
+    },
+    {
+     "id": "c6",
+     "point": "Longer battery life than a laptop",
+     "accept": [
+      "longer battery",
+      "battery lasts longer",
+      "good battery life",
+      "more battery time"
+     ],
+     "reject": [
+      "shorter battery than laptop",
+      "battery lasts less"
+     ]
+    },
+    {
+     "id": "c7",
+     "point": "Standby can stay online / receive alerts",
+     "accept": [
+      "standby alerts",
+      "receive notifications",
+      "stay connected in standby",
+      "online while asleep"
+     ],
+     "reject": [
+      "no alerts in standby",
+      "never connected in standby"
+     ]
+    }
+   ],
+   "modelAnswer": "A tablet is light enough to carry around. It can be controlled directly using a touch screen. It may last longer on its battery than a laptop.",
+   "topic": "tablet-benefits",
+   "difficulty": 1,
+   "sourceRef": "p18-19",
+   "explanation": "State three different advantages from the textbook. Each valid point earns one mark."
+  },
+  {
+   "id": "p7",
+   "type": "written",
+   "command": "state",
+   "marks": 3,
+   "prompt": "(a) State what makes a phablet different in size from a smartphone and a tablet. [1] (b) Give two different everyday uses of mobile devices. [2]",
+   "markPoints": [
+    {
+     "id": "d1",
+     "point": "Phablet screen is larger than a smartphone screen but smaller than a tablet screen / about 5.1 to 7 inches in the textbook guide",
+     "accept": [
+      "between smartphone and tablet",
+      "larger than a phone but smaller",
+      "middle screen size",
+      "5.1 to 7 inches",
+      "5.1 and 7"
+     ],
+     "reject": [
+      "larger than tablet",
+      "smaller than smartphone",
+      "same size as desktop"
+     ],
+     "group": "device"
+    },
+    {
+     "id": "d2",
+     "point": "Using maps / GPS for navigation",
+     "accept": [
+      "gps maps",
+      "map directions",
+      "navigation",
+      "find directions",
+      "route guidance"
+     ],
+     "reject": [
+      "cannot use maps",
+      "no navigation"
+     ],
+     "group": "use"
+    },
+    {
+     "id": "d3",
+     "point": "Sending / receiving emails or instant messages",
+     "accept": [
+      "send email",
+      "receive email",
+      "instant messaging",
+      "send messages",
+      "email people"
+     ],
+     "reject": [
+      "cannot send emails",
+      "no messaging"
+     ],
+     "group": "use"
+    },
+    {
+     "id": "d4",
+     "point": "Online banking / transferring money",
+     "accept": [
+      "online banking",
+      "banking app",
+      "transfer money",
+      "send money online"
+     ],
+     "reject": [
+      "cannot bank online",
+      "no online payments"
+     ],
+     "group": "use"
+    },
+    {
+     "id": "d5",
+     "point": "Education / interactive learning",
+     "accept": [
+      "online lessons",
+      "learning apps",
+      "school learning",
+      "interactive education",
+      "study online"
+     ],
+     "reject": [
+      "cannot learn online",
+      "no education apps"
+     ],
+     "group": "use"
+    },
+    {
+     "id": "d6",
+     "point": "Photography / recording videos",
+     "accept": [
+      "take photos",
+      "record videos",
+      "phone camera",
+      "video camera"
+     ],
+     "reject": [
+      "cannot take photos",
+      "no camera"
+     ],
+     "group": "use"
+    },
+    {
+     "id": "d7",
+     "point": "Watching / listening to online entertainment / playing games",
+     "accept": [
+      "stream music",
+      "watch videos",
+      "play games",
+      "online games",
+      "watch programmes"
+     ],
+     "reject": [
+      "cannot play games",
+      "no video streaming"
+     ],
+     "group": "use"
+    },
+    {
+     "id": "d8",
+     "point": "Using internet apps to control home devices remotely",
+     "accept": [
+      "control home devices",
+      "remote control at home",
+      "turn on devices online",
+      "control appliances"
+     ],
+     "reject": [
+      "cannot control devices",
+      "no remote control"
+     ],
+     "group": "use"
+    }
+   ],
+   "modelAnswer": "A phablet has a screen between the sizes of a smartphone and a tablet. Mobile devices can help people follow a map to a location. They can also control connected home equipment through an app.",
+   "topic": "phablet-and-uses",
+   "difficulty": 1,
+   "sourceRef": "p19-20",
+   "explanation": "Part (a) earns one mark for the phablet size relationship. Part (b) earns one mark for each different everyday use.",
+   "rules": [
+    {
+     "type": "maxPerGroup",
+     "group": "device",
+     "max": 1
+    },
+    {
+     "type": "maxPerGroup",
+     "group": "use",
+     "max": 2
+    }
+   ]
+  },
+  {
+   "id": "p8",
+   "type": "written",
+   "command": "give",
+   "marks": 3,
+   "prompt": "Give three possible effects of artificial intelligence on society. Include at least one benefit and one drawback.",
+   "markPoints": [
+    {
+     "id": "e1",
+     "point": "Benefit: machines may improve safety by carrying out risky work",
+     "accept": [
+      "improve safety",
+      "safer work",
+      "dangerous tasks",
+      "less risk to workers",
+      "keep workers safe"
+     ],
+     "reject": [
+      "less safe",
+      "more dangerous",
+      "increase risk"
+     ],
+     "group": "benefit"
+    },
+    {
+     "id": "e2",
+     "point": "Benefit: products / services may be improved in quality",
+     "accept": [
+      "better quality",
+      "improved services",
+      "improved products",
+      "higher quality"
+     ],
+     "reject": [
+      "worse quality",
+      "lower quality",
+      "poorer products"
+     ],
+     "group": "benefit"
+    },
+    {
+     "id": "e3",
+     "point": "Benefit: new technical jobs may be created",
+     "accept": [
+      "new technical jobs",
+      "new technology jobs",
+      "more technical work",
+      "create new roles"
+     ],
+     "reject": [
+      "no new jobs",
+      "all technical jobs lost"
+     ],
+     "group": "benefit"
+    },
+    {
+     "id": "e4",
+     "point": "Drawback: workers may lose jobs / unemployment may rise",
+     "accept": [
+      "job losses",
+      "lose jobs",
+      "unemployment",
+      "workers replaced",
+      "fewer jobs"
+     ],
+     "reject": [
+      "no job losses",
+      "all jobs are safe"
+     ],
+     "group": "drawback"
+    },
+    {
+     "id": "e5",
+     "point": "Drawback: people could become dependent on machines to complete tasks",
+     "accept": [
+      "depend on technology",
+      "rely on machines",
+      "too dependent",
+      "cannot do tasks without"
+     ],
+     "reject": [
+      "less dependent",
+      "no dependence",
+      "do everything without machines"
+     ],
+     "group": "drawback"
+    },
+    {
+     "id": "e6",
+     "point": "Drawback: people may lose skills because they stop doing tasks themselves",
+     "accept": [
+      "lose skills",
+      "forget how",
+      "stop practising",
+      "skills fade",
+      "skills disappear"
+     ],
+     "reject": [
+      "gain skills",
+      "more skilled",
+      "improve old skills"
+     ],
+     "group": "drawback"
+    }
+   ],
+   "modelAnswer": "Robots may make dangerous jobs safer for people. Some workers may lose jobs when machines take over tasks. People may also lose skills they no longer practise.",
+   "topic": "ai-impacts",
+   "difficulty": 1,
+   "sourceRef": "p20-22",
+   "explanation": "Give three different effects. Since the question asks for both sides, include a benefit and a drawback.",
+   "rules": [
+    {
+     "type": "maxPerGroup",
+     "group": "benefit",
+     "max": 2
+    },
+    {
+     "type": "maxPerGroup",
+     "group": "drawback",
+     "max": 2
+    },
+    {
+     "type": "requireGroup",
+     "group": "benefit",
+     "capWithout": 2,
+     "source": "question"
+    },
+    {
+     "type": "requireGroup",
+     "group": "drawback",
+     "capWithout": 2,
+     "source": "question"
+    }
+   ]
+  },
+  {
+   "id": "p9",
+   "type": "written",
+   "command": "give",
+   "marks": 2,
+   "prompt": "Give one application of augmented reality (AR) and one application of virtual reality (VR). Label each example.",
+   "markPoints": [
+    {
+     "id": "k1",
+     "point": "AR: show a rescue team a 3D model to help plan procedures",
+     "accept": [
+      "ar rescue planning",
+      "ar 3d rescue",
+      "ar rescue model",
+      "augmented reality rescue"
+     ],
+     "reject": [
+      "vr rescue only",
+      "ar cannot help rescue"
+     ],
+     "group": "ar"
+    },
+    {
+     "id": "k2",
+     "point": "AR: preview make-up on a real face before purchase",
+     "accept": [
+      "ar virtual makeup",
+      "ar makeup on face",
+      "ar makeup preview",
+      "augmented reality shopping"
+     ],
+     "reject": [
+      "vr only makeup",
+      "ar no makeup preview"
+     ],
+     "group": "ar"
+    },
+    {
+     "id": "k3",
+     "point": "AR: create a 3D view of a patient using scans",
+     "accept": [
+      "ar patient scans",
+      "ar medical scans",
+      "ar 3d patient",
+      "augmented reality healthcare"
+     ],
+     "reject": [
+      "vr only patient scan",
+      "ar cannot show scans"
+     ],
+     "group": "ar"
+    },
+    {
+     "id": "k4",
+     "point": "VR: train staff / practise a medical or military procedure in a simulated environment",
+     "accept": [
+      "vr medical training",
+      "vr surgery practice",
+      "vr military training",
+      "vr staff roleplay",
+      "virtual reality training"
+     ],
+     "reject": [
+      "ar only medical training",
+      "vr cannot train"
+     ],
+     "group": "vr"
+    },
+    {
+     "id": "k5",
+     "point": "VR: explore a historic place or ancient building in a virtual environment",
+     "accept": [
+      "vr ancient building",
+      "vr history lesson",
+      "vr historic site",
+      "virtual reality heritage"
+     ],
+     "reject": [
+      "ar only historic building",
+      "vr no history use"
+     ],
+     "group": "vr"
+    },
+    {
+     "id": "k6",
+     "point": "VR: examine a digital scientific model of a cell or molecule",
+     "accept": [
+      "vr cell model",
+      "vr molecule",
+      "vr science model",
+      "virtual reality science"
+     ],
+     "reject": [
+      "ar only molecule",
+      "vr no science use"
+     ],
+     "group": "vr"
+    },
+    {
+     "id": "k7",
+     "point": "VR: practise sport with feedback / experience a game",
+     "accept": [
+      "vr sport training",
+      "vr golf practice",
+      "vr game",
+      "virtual reality sport"
+     ],
+     "reject": [
+      "ar only sport",
+      "vr no sport use"
+     ],
+     "group": "vr"
+    }
+   ],
+   "modelAnswer": "AR can be used to preview a digital make-up design on a real face. VR can be used to explore a simulated historic building in a lesson.",
+   "topic": "xr-applications",
+   "difficulty": 1,
+   "sourceRef": "p22-23, p25",
+   "explanation": "Award one mark for an AR example and one for a VR example. Put each use under the correct label.",
+   "rules": [
+    {
+     "type": "maxPerGroup",
+     "group": "ar",
+     "max": 1
+    },
+    {
+     "type": "maxPerGroup",
+     "group": "vr",
+     "max": 1
+    }
+   ]
+  },
+  {
+   "id": "p10",
+   "type": "written",
+   "command": "explain",
+   "marks": 3,
+   "prompt": "A teacher is visiting a nature reserve where there is no Wi-Fi, but a mobile phone network is available. Explain how a smartphone could help her send photographs to students at school.",
+   "markPoints": [
+    {
+     "id": "g1",
+     "point": "Smartphone has a camera / can capture pictures of the reserve",
+     "accept": [
+      "built-in camera",
+      "take photos",
+      "photographs of reserve",
+      "take pictures",
+      "camera on phone"
+     ],
+     "reject": [
+      "no camera",
+      "cannot take photos"
+     ]
+    },
+    {
+     "id": "g2",
+     "point": "Smartphone can connect to the internet through a mobile phone network without Wi-Fi",
+     "accept": [
+      "mobile network",
+      "mobile data",
+      "connect without wifi",
+      "4g connection",
+      "5g connection"
+     ],
+     "reject": [
+      "needs wifi only",
+      "cannot use mobile data",
+      "no mobile internet"
+     ]
+    },
+    {
+     "id": "g3",
+     "point": "Teacher can email / share the pictures with students while away from school",
+     "accept": [
+      "email photos",
+      "send pictures",
+      "share photographs",
+      "send to students",
+      "send photos to school"
+     ],
+     "reject": [
+      "cannot send photos",
+      "only send at school",
+      "must wait for wifi"
+     ],
+     "requires": "g2"
+    }
+   ],
+   "modelAnswer": "The smartphone has a camera for taking photographs at the nature reserve. It can connect to the internet through the available mobile phone network. The teacher can send the pictures to her students while she is away from school.",
+   "topic": "mobile-scenario",
+   "difficulty": 2,
+   "sourceRef": "p17-20",
+   "explanation": "Link the phone features to the trip. A camera captures the images, and mobile internet allows sharing without Wi-Fi."
+  },
+  {
+   "id": "p11",
+   "type": "written",
+   "command": "compare",
+   "marks": 3,
+   "prompt": "Compare augmented reality with virtual reality. Give three differences. In each difference, describe both technologies.",
+   "markPoints": [
+    {
+     "id": "h1",
+     "point": "AR adds digital information to a real scene, whereas VR shows a completely simulated scene",
+     "accept": [
+      "ar adds to real while vr replaces",
+      "ar over real whereas vr virtual",
+      "ar adds objects but vr simulates",
+      "ar real view while vr fully digital"
+     ],
+     "reject": [
+      "ar replaces real world",
+      "vr only adds to reality",
+      "both only real scenes"
+     ]
+    },
+    {
+     "id": "h2",
+     "point": "AR can use a smartphone / phablet screen or special goggles, whereas VR uses a head-mounted display or headset",
+     "accept": [
+      "ar phone while vr headset",
+      "ar smartphone whereas vr headset",
+      "ar can use screen but vr headset",
+      "ar goggles while vr headset"
+     ],
+     "reject": [
+      "vr does not use a headset",
+      "ar only works with vr headset"
+     ]
+    },
+    {
+     "id": "h3",
+     "point": "AR user still sees / interacts with real surroundings, whereas VR user is immersed and visually separated from the real surroundings",
+     "accept": [
+      "ar sees room whereas vr hidden",
+      "ar can see real but vr not",
+      "ar real surroundings while vr immersed",
+      "ar interacts real while vr virtual"
+     ],
+     "reject": [
+      "ar cannot see surroundings",
+      "vr still sees real room",
+      "vr same real view as ar"
+     ]
+    }
+   ],
+   "modelAnswer": "AR adds digital content to the real environment, whereas VR replaces the scene with a simulated one. AR can be viewed through a phone or special goggles, whereas VR uses a head-mounted display. An AR user can still interact with physical surroundings, whereas a VR user is immersed in a virtual world.",
+   "topic": "ar-versus-vr",
+   "difficulty": 3,
+   "sourceRef": "p22-23, p25",
+   "explanation": "A difference needs both sides of the comparison. Three separate contrasts earn three marks. Do not just describe AR without describing VR."
+  }
+ ],
+ "recap": {
+  "summary": [
+   "Dialogue-based interfaces accept speech; gesture-based interfaces detect movements using a sensor or camera.",
+   "Desktops use separate components. Laptops are portable single units with built-in keyboards.",
+   "Smartphones use apps, cameras and sensors; tablets favour touch input; phablets sit between phones and tablets in the textbook size guide.",
+   "AI can make some tasks safer and improve quality, but may also cause job losses, dependence and reduced human skills.",
+   "AR adds digital content to a real view, while VR provides a simulated environment through a headset."
+  ],
+  "flashcards": [
+   {
+    "id": "f1",
+    "front": "What is the main difference between dialogue and gesture interfaces?",
+    "back": "Dialogue uses spoken instructions; gesture control uses movements detected by cameras or sensors."
+   },
+   {
+    "id": "f2",
+    "front": "Why can a desktop be easier to upgrade than a laptop?",
+    "back": "Desktop parts are usually more standard and easier to replace or add."
+   },
+   {
+    "id": "f3",
+    "front": "What do a proximity sensor and an accelerometer detect?",
+    "back": "A proximity sensor detects nearby objects; an accelerometer detects movement and orientation."
+   },
+   {
+    "id": "f4",
+    "front": "What is a phablet?",
+    "back": "A mobile device with a screen between smartphone and tablet sizes in the textbook guide."
+   },
+   {
+    "id": "f5",
+    "front": "Name one benefit and one drawback of AI.",
+    "back": "A benefit is safer dangerous work. A drawback is possible job losses."
+   },
+   {
+    "id": "f6",
+    "front": "How do AR and VR differ?",
+    "back": "AR overlays digital content on the physical world. VR shows a simulated world, usually through a headset."
+   }
+  ]
+ }
+}

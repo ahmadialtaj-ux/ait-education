@@ -1,0 +1,1437 @@
+{
+ "schemaVersion": "0.3",
+ "id": "igcse-ict-c1-u3",
+ "meta": {
+  "mode": "lesson",
+  "qualification": "Cambridge IGCSE",
+  "qualificationCode": "0417",
+  "subject": "Information and Communication Technology",
+  "subjectId": "ict",
+  "syllabusYears": "2026-2028",
+  "syllabusPoints": [
+   "1.4"
+  ],
+  "chapterNumber": 1,
+  "chapterTitle": "Types and components of computer systems",
+  "unit": 3,
+  "title": "Smartphones, tablets and phablets",
+  "schoolYear": 8,
+  "lang": "en",
+  "dir": "ltr",
+  "sourceRefs": [
+   {
+    "book": "Cambridge IGCSE ICT (Hodder), Chapter 1",
+    "sections": "1.4.2 (smartphones, tablets and phablets)",
+    "pages": "17-20"
+   }
+  ],
+  "estMinutes": 50,
+  "version": "0.3",
+  "status": "draft"
+ },
+ "topics": {
+  "smartphone-features": "Smartphone features and sensors",
+  "smartphone-advantages": "Advantages of smartphones",
+  "smartphone-disadvantages": "Disadvantages of smartphones",
+  "tablet-advantages": "Advantages of tablets over laptops",
+  "tablet-disadvantages": "Disadvantages of tablets compared with laptops",
+  "phablet-definition": "What phablets are",
+  "mobile-comparison": "Comparing mobile computers",
+  "mobile-uses": "Uses of smartphones, tablets and phablets"
+ },
+ "objectives": [
+  "Describe smartphones, tablets and phablets and identify their main features",
+  "Describe how a proximity sensor and an accelerometer help a smartphone",
+  "Give advantages and disadvantages of smartphones and tablets compared with laptops",
+  "Compare smartphones, phablets and tablets using the textbook's size guide"
+ ],
+ "learn": [
+  {
+   "id": "l1",
+   "topic": "smartphone-features",
+   "type": "text",
+   "title": "A smartphone is a computer too",
+   "body": "A **smartphone** can make telephone calls, but it also has an **operating system** that runs **apps**. It can send emails, take photos, record video and play music. It connects to the internet through **Wi-Fi** or a **3G, 4G or 5G mobile network**. This means you can use many online services while travelling."
+  },
+  {
+   "id": "l2",
+   "topic": "mobile-comparison",
+   "type": "image",
+   "src": "images/igcse-ict-c1-u3-mobile-devices.png",
+   "alt": "Three plain unbranded touch-screen devices, showing a small smartphone, a medium phablet and a larger tablet in order of screen size",
+   "caption": "Textbook size guide: smartphone, phablet and tablet, from smaller to larger screens.",
+   "credit": "AIT Education (AI-generated)",
+   "license": "own",
+   "imagePrompt": "Clean educational flat illustration on a pale background. Show three unbranded touch-screen mobile devices side by side: a small smartphone, a medium-sized phablet and a larger tablet. Keep their relative sizes clear and realistic. Use simple blank coloured screens, soft teal and amber colours, gentle shadows. No text, no numbers, no logos, no brand names, no symbols or labels."
+  },
+  {
+   "id": "l3",
+   "topic": "smartphone-features",
+   "type": "keypoints",
+   "title": "Smartphone parts and features",
+   "items": [
+    "**Display:** a clear, high-resolution screen, often designed to reduce glare",
+    "**Cameras:** front and rear cameras for photographs, videos and video calls",
+    "**Bluetooth:** a short-range wireless link to devices such as printers",
+    "**Storage:** flash memory in the phone and cloud storage to back up or sync files",
+    "**Proximity sensor:** senses when the phone is close to an ear, helping prevent accidental screen touches",
+    "**Accelerometer:** senses movement and position so the screen can turn between portrait and landscape",
+    "**Speech recognition:** lets a person speak a request instead of typing it",
+    "**OLED screen:** a touch-screen technology the textbook links with thinner and lighter phones"
+   ]
+  },
+  {
+   "id": "l4",
+   "topic": "smartphone-disadvantages",
+   "type": "compare",
+   "title": "Using a smartphone: benefits and limits",
+   "columns": [
+    "Advantage",
+    "Disadvantage"
+   ],
+   "rows": [
+    {
+     "label": "Carrying it",
+     "a": "Small and light, so it is easy to carry",
+     "b": "Its small size makes it easier to lose or steal"
+    },
+    {
+     "label": "Internet",
+     "a": "Can use Wi-Fi and mobile networks while moving",
+     "b": "Mobile data may transfer more slowly than Wi-Fi"
+    },
+    {
+     "label": "Screen and input",
+     "a": "Touch screen and apps are ready to use",
+     "b": "Small screen and keyboard make reading and typing harder"
+    },
+    {
+     "label": "Power",
+     "a": "Battery life is useful compared with a laptop",
+     "b": "Photography and web use can drain the battery quickly"
+    },
+    {
+     "label": "Files and websites",
+     "a": "Cloud storage can back up and sync files",
+     "b": "Less storage than many laptops; some website features may not work"
+    }
+   ]
+  },
+  {
+   "id": "l5",
+   "topic": "tablet-advantages",
+   "type": "text",
+   "title": "What is a tablet?",
+   "body": "A **tablet** is a portable computer with a **touch screen**. It normally uses a **virtual keyboard**: the keys appear on the screen and you tap them with a finger or stylus. A separate keyboard can also be added. Tablets connect using Wi-Fi or, on suitable models, mobile networks. Like smartphones, they can have cameras, microphones and movement sensors."
+  },
+  {
+   "id": "l6",
+   "topic": "tablet-advantages",
+   "type": "keypoints",
+   "title": "Advantages of tablets over laptops",
+   "items": [
+    "**Fast start:** a tablet can be ready to use very quickly",
+    "**Portable:** a tablet is light and easy to take with you",
+    "**Touch input:** you can select items without a separate mouse or keyboard",
+    "**Built-in apps:** a tablet can already take photos and play media",
+    "**Less heat:** solid-state parts produce little heat",
+    "**Battery:** tablets can have longer battery life than laptops",
+    "**Standby:** some tablets stay connected and receive alerts while on standby"
+   ]
+  },
+  {
+   "id": "l7",
+   "topic": "tablet-disadvantages",
+   "type": "keypoints",
+   "title": "Disadvantages of tablets compared with laptops",
+   "items": [
+    "**Typing:** the on-screen keyboard can be slower and cause more mistakes",
+    "**Storage:** tablets often have less space for files",
+    "**Software:** laptops usually run more kinds of programs and open more file formats",
+    "**File transfer:** moving files can be less direct than dragging and dropping on a laptop",
+    "**Mobile data cost:** frequent internet use over a mobile network can be expensive",
+    "**Price:** the textbook notes that tablets can cost more than comparable laptops"
+   ]
+  },
+  {
+   "id": "l8",
+   "topic": "phablet-definition",
+   "type": "text",
+   "title": "Where does a phablet fit?",
+   "body": "A **phablet** is a device between a smartphone and a tablet. It combines a larger screen with smartphone features. In the **textbook's size guide**, a smartphone screen measures **up to 5.1 inches**, a phablet screen measures **between 5.1 and 7 inches**, and a tablet screen measures **over 7 inches**. These measurements refer to screen size."
+  },
+  {
+   "id": "l13",
+   "topic": "mobile-uses",
+   "type": "keypoints",
+   "title": "What people use smartphones, tablets and phablets for",
+   "items": [
+    "**Entertainment and gaming:** streaming music, videos and TV; playing games with friends",
+    "**Camera:** photos and videos almost as good as a digital camera",
+    "**Internet:** online shopping, social networks, scanning QR codes, email and instant messaging",
+    "**Maps (GPS):** finding the way to a place",
+    "**Calendar and banking apps:** organising your day; sending and receiving money",
+    "**VoIP:** phone and video calls over the internet",
+    "**Education and business:** learning apps; quick voice and video meetings",
+    "**Remote control:** using an app to switch home devices on or off from far away, e.g. an oven"
+   ]
+  },
+  {
+   "id": "l9",
+   "topic": "smartphone-advantages",
+   "type": "example",
+   "title": "Choose a device for a school trip",
+   "body": "A student wants to take photos and send an email while walking between museums. A smartphone is easy to carry and can use a mobile network away from school Wi-Fi. Another student wants a larger screen for reading notes on the bus. A tablet gives more screen space, but typing a long report on its virtual keyboard may be slower than using a laptop."
+  },
+  {
+   "id": "l10",
+   "topic": "mobile-comparison",
+   "type": "tip",
+   "title": "Link a feature to its benefit",
+   "body": "In a **describe** or **explain** answer, add how the feature helps. For example: 'The phone has a proximity sensor. It stops accidental taps when the phone is held near the user's ear.' For a comparison, name both devices: 'A tablet uses an on-screen keyboard, whereas a laptop has a physical keyboard.'"
+  },
+  {
+   "id": "l11",
+   "topic": "mobile-comparison",
+   "type": "mistake",
+   "title": "Do not mix up sensors or screen sizes",
+   "body": "A **proximity sensor** detects nearby objects. An **accelerometer** detects movement and orientation. They do different jobs. Also, the textbook does not call a phablet the biggest device: it places phablets **between** smartphones and tablets in screen size."
+  },
+  {
+   "id": "l12",
+   "topic": "smartphone-features",
+   "type": "realWorld",
+   "title": "Textbook predictions versus today's devices",
+   "body": "The textbook describes possible future phone screens with solar power and **Li-Fi**, which sends data using visible light rather than radio waves. It presents faster transfer and less radio interference as possible benefits. These are not features you should assume every smartphone has. The textbook's screen-size limits are also a teaching guide; present-day device categories can overlap. For questions based on these pages, use the textbook's stated categories."
+  }
+ ],
+ "check": [
+  {
+   "id": "c1",
+   "type": "mcq",
+   "command": "identify",
+   "marks": 1,
+   "prompt": "Which feature detects that a phone is held close to the user's ear?",
+   "hint": "Think about what should happen to the display while someone is making a call, rather than how the phone moves.",
+   "options": [
+    "Accelerometer",
+    "Proximity sensor",
+    "Virtual keyboard",
+    "Flash memory"
+   ],
+   "answers": [
+    1
+   ],
+   "topic": "smartphone-features",
+   "difficulty": 1,
+   "sourceRef": "p17",
+   "explanation": "A proximity sensor notices a nearby object, such as an ear. An accelerometer notices movement and orientation."
+  },
+  {
+   "id": "c2",
+   "type": "tick",
+   "command": "identify",
+   "marks": 2,
+   "rowsPerMark": 2,
+   "prompt": "Tick (✓) whether each statement about smartphones is true or false.",
+   "hint": "Separate connection methods from movement detection, then compare the usual display sizes of handheld devices.",
+   "columns": [
+    "True",
+    "False"
+   ],
+   "rows": [
+    {
+     "id": "r1",
+     "statement": "A smartphone can use Wi-Fi to connect to the internet.",
+     "answer": 0,
+     "explanation": "Wi-Fi is one way a smartphone goes online."
+    },
+    {
+     "id": "r2",
+     "statement": "An accelerometer is mainly used to detect when the phone is next to an ear.",
+     "answer": 1,
+     "explanation": "That is the job of a proximity sensor."
+    },
+    {
+     "id": "r3",
+     "statement": "Smartphones can use Bluetooth to connect to another device.",
+     "answer": 0,
+     "explanation": "Bluetooth can link a smartphone to a nearby printer or another device."
+    },
+    {
+     "id": "r4",
+     "statement": "A smartphone always has a larger screen than a tablet.",
+     "answer": 1,
+     "explanation": "The textbook places tablets above smartphones in screen size."
+    }
+   ],
+   "topic": "smartphone-features",
+   "difficulty": 1,
+   "sourceRef": "p17-19",
+   "explanation": "Two correctly classified rows earn one mark."
+  },
+  {
+   "id": "c3",
+   "type": "fill",
+   "command": "complete",
+   "marks": 3,
+   "prompt": "Complete each sentence using one word or phrase from the list. Use each answer once.",
+   "hint": "All three answers are key words from this mission. Read each whole sentence, then pick the word that fits its meaning.",
+   "wordList": [
+    "proximity sensor",
+    "accelerometer",
+    "virtual keyboard",
+    "phablet",
+    "cloud storage",
+    "mobile data"
+   ],
+   "items": [
+    {
+     "id": "i1",
+     "sentence": "A tablet's on-screen keys make up a ___.",
+     "answer": "virtual keyboard"
+    },
+    {
+     "id": "i2",
+     "sentence": "An ___ can tell when a device changes from portrait to landscape position.",
+     "answer": "accelerometer"
+    },
+    {
+     "id": "i3",
+     "sentence": "A device with a screen size between a smartphone and a tablet is a ___.",
+     "answer": "phablet"
+    }
+   ],
+   "topic": "mobile-comparison",
+   "difficulty": 2,
+   "sourceRef": "p17-19",
+   "explanation": "The extra terms were distractors. A phablet is the middle-sized category in the textbook's guide."
+  },
+  {
+   "id": "c4",
+   "type": "match",
+   "command": "match",
+   "marks": 3,
+   "prompt": "Match each smartphone or tablet feature to its main purpose.",
+   "hint": "Think about what each feature actually does when you use it on a phone or tablet.",
+   "left": [
+    {
+     "id": "x1",
+     "text": "Cloud storage"
+    },
+    {
+     "id": "x2",
+     "text": "Front-facing camera"
+    },
+    {
+     "id": "x3",
+     "text": "Speech recognition"
+    }
+   ],
+   "right": [
+    {
+     "id": "y1",
+     "text": "Back up and synchronise files"
+    },
+    {
+     "id": "y2",
+     "text": "Take part in a video call"
+    },
+    {
+     "id": "y3",
+     "text": "Control a device with spoken requests"
+    },
+    {
+     "id": "y4",
+     "text": "Detect when a device is tilted"
+    }
+   ],
+   "pairs": [
+    [
+     "x1",
+     "y1"
+    ],
+    [
+     "x2",
+     "y2"
+    ],
+    [
+     "x3",
+     "y3"
+    ]
+   ],
+   "topic": "smartphone-features",
+   "difficulty": 1,
+   "sourceRef": "p17",
+   "explanation": "Cloud storage handles files, the front camera can show the user in a call, and speech recognition processes spoken commands."
+  }
+ ],
+ "practice": [
+  {
+   "id": "p1",
+   "type": "written",
+   "command": "give",
+   "marks": 3,
+   "prompt": "Give three features of a smartphone other than making telephone calls.",
+   "markPoints": [
+    {
+     "id": "a1",
+     "point": "Can send and receive email",
+     "accept": [
+      "email",
+      "send messages by email",
+      "receive email"
+     ],
+     "reject": [
+      "cannot email",
+      "can't email",
+      "no email"
+     ]
+    },
+    {
+     "id": "a2",
+     "point": "Has cameras for photos / videos / video calls",
+     "accept": [
+      "camera",
+      "photos",
+      "video call",
+      "record video"
+     ],
+     "reject": [
+      "no camera",
+      "cannot take photos",
+      "can't record video"
+     ]
+    },
+    {
+     "id": "a3",
+     "point": "Uses Wi-Fi / 3G / 4G / 5G for internet access",
+     "accept": [
+      "wi-fi",
+      "wifi",
+      "internet",
+      "mobile network",
+      "4g mobile network",
+      "5g mobile network"
+     ],
+     "reject": [
+      "no wifi",
+      "no wi-fi",
+      "cannot connect",
+      "no internet"
+     ]
+    },
+    {
+     "id": "a4",
+     "point": "Runs applications / apps",
+     "accept": [
+      "apps",
+      "applications",
+      "run apps"
+     ],
+     "reject": [
+      "cannot run apps",
+      "no apps"
+     ]
+    },
+    {
+     "id": "a5",
+     "point": "Uses Bluetooth to connect to nearby devices",
+     "accept": [
+      "bluetooth",
+      "wireless printer"
+     ],
+     "reject": [
+      "no bluetooth",
+      "cannot use bluetooth"
+     ]
+    },
+    {
+     "id": "a6",
+     "point": "Has flash memory / cloud backup and syncing",
+     "accept": [
+      "flash memory",
+      "cloud storage",
+      "back up",
+      "sync files"
+     ],
+     "reject": [
+      "no storage",
+      "cannot back up"
+     ]
+    },
+    {
+     "id": "a7",
+     "point": "Has a proximity sensor / accelerometer / speech recognition",
+     "accept": [
+      "proximity sensor",
+      "accelerometer",
+      "speech recognition"
+     ],
+     "reject": [
+      "no sensors",
+      "cannot recognise speech"
+     ]
+    }
+   ],
+   "modelAnswer": "A smartphone can send and receive email. It has front and rear cameras for photographs or video calls. It can use Bluetooth to communicate with nearby devices.",
+   "topic": "smartphone-features",
+   "difficulty": 1,
+   "sourceRef": "p17",
+   "explanation": "Give three separate features. Naming the same camera feature in several ways does not earn extra marks."
+  },
+  {
+   "id": "p2",
+   "type": "written",
+   "command": "state",
+   "marks": 2,
+   "prompt": "State two advantages of using a smartphone rather than a laptop when travelling.",
+   "markPoints": [
+    {
+     "id": "b1",
+     "point": "Smaller / lighter / easier to carry than a laptop",
+     "accept": [
+      "small",
+      "light",
+      "easy to carry",
+      "fits in pocket",
+      "portable"
+     ],
+     "reject": [
+      "heavier than laptop",
+      "larger than laptop",
+      "harder to carry"
+     ]
+    },
+    {
+     "id": "b2",
+     "point": "Can make telephone calls on the move",
+     "accept": [
+      "phone calls",
+      "make calls",
+      "call people"
+     ],
+     "reject": [
+      "cannot call",
+      "no calls"
+     ]
+    },
+    {
+     "id": "b3",
+     "point": "Can use mobile phone networks to go online away from Wi-Fi",
+     "accept": [
+      "mobile network",
+      "mobile data",
+      "3g mobile network",
+      "4g mobile network",
+      "5g mobile network",
+      "internet on the move"
+     ],
+     "reject": [
+      "needs wifi only",
+      "only works on wifi",
+      "cannot use mobile data"
+     ]
+    },
+    {
+     "id": "b4",
+     "point": "Apps can use sensor information / location to show maps",
+     "accept": [
+      "location",
+      "maps",
+      "sensor data",
+      "navigation"
+     ],
+     "reject": [
+      "cannot use maps",
+      "no location"
+     ]
+    },
+    {
+     "id": "b5",
+     "point": "Has useful battery life compared with laptops",
+     "accept": [
+      "battery lasts",
+      "longer battery",
+      "battery life"
+     ],
+     "reject": [
+      "shorter battery than laptop"
+     ]
+    }
+   ],
+   "modelAnswer": "A smartphone is small and light enough to carry easily. It can use a mobile phone network to access the internet while travelling.",
+   "topic": "smartphone-advantages",
+   "difficulty": 1,
+   "sourceRef": "p17-18",
+   "explanation": "The question asks for advantages while travelling, so focus on portability and using phone or internet services on the move."
+  },
+  {
+   "id": "p3",
+   "type": "written",
+   "command": "describe",
+   "marks": 4,
+   "prompt": "Describe how two different smartphone sensors help a user. Name each sensor and describe what it does.",
+   "markPoints": [
+    {
+     "id": "d1",
+     "point": "Proximity sensor",
+     "group": "feature",
+     "accept": [
+      "proximity sensor",
+      "proximity"
+     ],
+     "reject": [
+      "no proximity sensor",
+      "not proximity"
+     ]
+    },
+    {
+     "id": "d2",
+     "point": "Detects the phone near the ear / blocks accidental screen touches",
+     "group": "reason",
+     "requires": "d1",
+     "accept": [
+      "near the ear",
+      "close to ear",
+      "accidental touch",
+      "unwanted touches",
+      "turns screen off"
+     ],
+     "reject": [
+      "rotates the screen",
+      "detects tilting"
+     ]
+    },
+    {
+     "id": "d3",
+     "point": "Accelerometer",
+     "group": "feature",
+     "accept": [
+      "accelerometer"
+     ],
+     "reject": [
+      "no accelerometer",
+      "not accelerometer"
+     ]
+    },
+    {
+     "id": "d4",
+     "point": "Detects movement / orientation so the display can change between portrait and landscape",
+     "group": "reason",
+     "requires": "d3",
+     "accept": [
+      "movement",
+      "orientation",
+      "rotates the screen",
+      "portrait",
+      "landscape",
+      "tilting"
+     ],
+     "reject": [
+      "detects ear",
+      "near the ear"
+     ]
+    }
+   ],
+   "rules": [
+    {
+     "type": "maxPerGroup",
+     "group": "feature",
+     "max": 2
+    },
+    {
+     "type": "maxPerGroup",
+     "group": "reason",
+     "max": 2
+    }
+   ],
+   "modelAnswer": "A proximity sensor detects nearby objects. It helps prevent accidental screen touches when the phone is by the user's ear. An accelerometer detects the phone's movement and orientation. It allows the display to change between portrait and landscape.",
+   "topic": "smartphone-features",
+   "difficulty": 2,
+   "sourceRef": "p17",
+   "explanation": "One mark is for naming each correct sensor. A second mark for each is earned by describing the correct function. Do not swap the two functions."
+  },
+  {
+   "id": "p4",
+   "type": "written",
+   "command": "explain",
+   "marks": 4,
+   "prompt": "A field worker visits several remote sites each day. She must take photographs and send reports to her office while travelling. Explain two ways a smartphone would help her do this work.",
+   "markPoints": [
+    {
+     "id": "e1",
+     "point": "Smartphone has a built-in camera",
+     "group": "feature",
+     "accept": [
+      "camera",
+      "take photos",
+      "photographs"
+     ],
+     "reject": [
+      "no camera",
+      "cannot take photos"
+     ]
+    },
+    {
+     "id": "e2",
+     "point": "So she can photograph site conditions without carrying a separate camera",
+     "group": "reason",
+     "requires": "e1",
+     "accept": [
+      "site photos",
+      "pictures of the site",
+      "record what she sees",
+      "no separate camera",
+      "photos at the site"
+     ],
+     "reject": [
+      "cannot photograph",
+      "does not take photos"
+     ]
+    },
+    {
+     "id": "e3",
+     "point": "Smartphone can connect through a 3G / 4G / 5G mobile network",
+     "group": "feature",
+     "accept": [
+      "mobile network",
+      "mobile data",
+      "3g mobile network",
+      "4g mobile network",
+      "5g mobile network",
+      "internet while travelling"
+     ],
+     "reject": [
+      "wifi only",
+      "needs wi-fi",
+      "cannot use mobile data"
+     ]
+    },
+    {
+     "id": "e4",
+     "point": "So she can email / send reports from sites without Wi-Fi",
+     "group": "reason",
+     "requires": "e3",
+     "accept": [
+      "send reports",
+      "email the office",
+      "send to office",
+      "away from wifi",
+      "without wi-fi",
+      "while travelling"
+     ],
+     "reject": [
+      "cannot email",
+      "unable to send",
+      "only from office"
+     ]
+    },
+    {
+     "id": "e5",
+     "point": "Smartphone is small / light",
+     "group": "feature",
+     "accept": [
+      "small",
+      "lightweight",
+      "easy to carry",
+      "portable"
+     ],
+     "reject": [
+      "too heavy",
+      "larger than laptop"
+     ]
+    },
+    {
+     "id": "e6",
+     "point": "So she can keep it with her when moving between sites",
+     "group": "reason",
+     "requires": "e5",
+     "accept": [
+      "between sites",
+      "carry around",
+      "carry to each site",
+      "keep in pocket"
+     ],
+     "reject": [
+      "leave it at office",
+      "cannot carry"
+     ]
+    }
+   ],
+   "rules": [
+    {
+     "type": "maxPerGroup",
+     "group": "feature",
+     "max": 2
+    },
+    {
+     "type": "maxPerGroup",
+     "group": "reason",
+     "max": 2
+    }
+   ],
+   "modelAnswer": "A smartphone has a built-in camera. She can take pictures of site conditions without carrying another camera. A smartphone can use a mobile phone network. She can send reports to her office while travelling away from Wi-Fi.",
+   "topic": "smartphone-advantages",
+   "difficulty": 2,
+   "sourceRef": "p17-18",
+   "explanation": "Explain means give the feature and link it to this worker's job. Two different feature-and-benefit pairs earn four marks."
+  },
+  {
+   "id": "p5",
+   "type": "written",
+   "command": "give",
+   "marks": 3,
+   "prompt": "Give three disadvantages of using a tablet instead of a laptop for schoolwork.",
+   "markPoints": [
+    {
+     "id": "t1",
+     "point": "Typing on the touch keyboard is slower / more error-prone",
+     "accept": [
+      "slow typing",
+      "typing is slower",
+      "typing mistakes",
+      "more errors",
+      "touch keyboard"
+     ],
+     "reject": [
+      "faster typing",
+      "fewer mistakes"
+     ]
+    },
+    {
+     "id": "t2",
+     "point": "Often has less memory / storage than a laptop",
+     "accept": [
+      "less storage",
+      "limited storage",
+      "less memory",
+      "small storage"
+     ],
+     "reject": [
+      "more storage than laptop",
+      "unlimited storage"
+     ]
+    },
+    {
+     "id": "t3",
+     "point": "Supports fewer file formats / less software than a laptop",
+     "accept": [
+      "fewer file formats",
+      "less software",
+      "fewer programs",
+      "not support some files",
+      "limited programs"
+     ],
+     "reject": [
+      "more file formats than laptop",
+      "more software than laptop"
+     ]
+    },
+    {
+     "id": "t4",
+     "point": "File transfer can be harder / drag-and-drop may be unavailable",
+     "accept": [
+      "file transfer",
+      "drag and drop",
+      "hard to move files",
+      "transfer files"
+     ],
+     "reject": [
+      "easier file transfer",
+      "always drag and drop"
+     ]
+    },
+    {
+     "id": "t5",
+     "point": "Mobile network use can be expensive",
+     "accept": [
+      "mobile data costs",
+      "data is expensive",
+      "cost of internet",
+      "expensive mobile data"
+     ],
+     "reject": [
+      "mobile data is free"
+     ]
+    },
+    {
+     "id": "t6",
+     "point": "Tablets may cost more than comparable laptops",
+     "accept": [
+      "more expensive",
+      "higher price",
+      "cost more"
+     ],
+     "reject": [
+      "always cheaper than laptop"
+     ]
+    }
+   ],
+   "modelAnswer": "Typing on a tablet's virtual keyboard can be slower and cause mistakes. A tablet often has less storage space than a laptop. A laptop usually supports more kinds of software and file formats.",
+   "topic": "tablet-disadvantages",
+   "difficulty": 2,
+   "sourceRef": "p19",
+   "explanation": "Give three different drawbacks. They must be disadvantages compared with using a laptop for school tasks."
+  },
+  {
+   "id": "p6",
+   "type": "written",
+   "command": "compare",
+   "marks": 4,
+   "prompt": "Compare a tablet and a laptop for entering text and working with files. Give four differences, stating both sides of each comparison.",
+   "markPoints": [
+    {
+     "id": "g1",
+     "point": "Tablet usually uses on-screen keyboard whereas laptop has a physical keyboard",
+     "group": "difference",
+     "accept": [
+      "virtual keyboard whereas",
+      "on-screen keyboard whereas",
+      "tablet screen keyboard",
+      "laptop physical keyboard"
+     ],
+     "reject": [
+      "laptop virtual keyboard and tablet physical",
+      "tablet always has physical keyboard"
+     ]
+    },
+    {
+     "id": "g2",
+     "point": "Typing on a tablet is slower / less accurate whereas typing on a laptop is quicker / more accurate",
+     "group": "difference",
+     "accept": [
+      "tablet slower typing",
+      "typing slower on tablet",
+      "laptop faster typing",
+      "more mistakes on tablet"
+     ],
+     "reject": [
+      "tablet faster typing",
+      "more mistakes on laptop"
+     ]
+    },
+    {
+     "id": "g3",
+     "point": "Tablet often has less storage whereas laptop often has more",
+     "group": "difference",
+     "accept": [
+      "tablet less storage",
+      "less space on tablet",
+      "laptop more storage",
+      "tablet limited memory"
+     ],
+     "reject": [
+      "tablet more storage than laptop"
+     ]
+    },
+    {
+     "id": "g4",
+     "point": "Tablet may support fewer file formats whereas laptop supports more",
+     "group": "difference",
+     "accept": [
+      "tablet fewer file",
+      "laptop more file",
+      "laptop supports more formats",
+      "tablet limited file formats"
+     ],
+     "reject": [
+      "tablet supports more formats"
+     ]
+    },
+    {
+     "id": "g5",
+     "point": "Tablet file transfer may lack drag-and-drop whereas laptop can drag and drop files",
+     "group": "difference",
+     "accept": [
+      "tablet no drag and drop",
+      "laptop drag and drop",
+      "harder to transfer on tablet"
+     ],
+     "reject": [
+      "laptop cannot drag and drop"
+     ]
+    },
+    {
+     "id": "g6",
+     "point": "Tablet may need app-based transfer whereas laptop allows more direct file handling",
+     "group": "difference",
+     "accept": [
+      "tablet app transfer",
+      "application store",
+      "laptop easier file transfer"
+     ],
+     "reject": [
+      "tablet always easier to transfer"
+     ]
+    }
+   ],
+   "modelAnswer": "A tablet normally has a virtual keyboard, whereas a laptop has a physical keyboard. Typing can be slower on a tablet, whereas it is usually faster on a laptop. A tablet often has less file storage, whereas a laptop has more. A tablet may open fewer file formats, whereas a laptop supports a wider range.",
+   "topic": "mobile-comparison",
+   "difficulty": 3,
+   "sourceRef": "p18-19",
+   "explanation": "Each difference needs both devices. A statement about only tablets is not a complete comparison."
+  },
+  {
+   "id": "p7",
+   "type": "written",
+   "command": "explain",
+   "marks": 3,
+   "prompt": "A student wants a device that can make phone calls and use apps, but has a larger screen than a smartphone and is smaller than a tablet. Explain why a phablet fits these needs.",
+   "markPoints": [
+    {
+     "id": "h1",
+     "point": "Phablet combines features of a smartphone and tablet / is a hybrid",
+     "accept": [
+      "hybrid",
+      "mix of phone and tablet",
+      "combines features",
+      "both phone and tablet"
+     ],
+     "reject": [
+      "only a tablet",
+      "cannot be a phone"
+     ]
+    },
+    {
+     "id": "h2",
+     "point": "Has a larger screen than a smartphone",
+     "accept": [
+      "larger than smartphone",
+      "bigger than phone",
+      "more screen space than phone"
+     ],
+     "reject": [
+      "smaller than smartphone",
+      "same size as phone"
+     ]
+    },
+    {
+     "id": "h3",
+     "point": "Has a smaller screen than a tablet",
+     "accept": [
+      "smaller than tablet",
+      "not as big as tablet",
+      "less big than tablet"
+     ],
+     "reject": [
+      "larger than tablet",
+      "bigger than tablet"
+     ]
+    },
+    {
+     "id": "h4",
+     "point": "Keeps smartphone features such as apps / calls",
+     "accept": [
+      "make calls",
+      "phone calls",
+      "runs apps",
+      "has apps"
+     ],
+     "reject": [
+      "cannot call",
+      "no apps"
+     ]
+    }
+   ],
+   "modelAnswer": "A phablet combines phone and tablet features. It has a larger screen than a smartphone. Its screen is smaller than a tablet's screen, so it meets the student's size requirement.",
+   "topic": "phablet-definition",
+   "difficulty": 2,
+   "sourceRef": "p19",
+   "explanation": "A phablet sits between the other two devices in the textbook's screen-size guide, while keeping smartphone functions."
+  },
+  {
+   "id": "p8",
+   "type": "written",
+   "command": "give",
+   "marks": 2,
+   "prompt": "Give two disadvantages of using a smartphone rather than a laptop.",
+   "markPoints": [
+    {
+     "id": "k1",
+     "point": "Small screen / keyboard makes pages difficult to read",
+     "accept": [
+      "small screen",
+      "screen is small",
+      "hard to read",
+      "difficult to read",
+      "tiny screen"
+     ],
+     "reject": [
+      "big screen",
+      "larger screen"
+     ]
+    },
+    {
+     "id": "k2",
+     "point": "Typing is slower / more difficult",
+     "accept": [
+      "slower typing",
+      "typing is slower",
+      "hard to type",
+      "difficult to type",
+      "small keyboard"
+     ],
+     "reject": [
+      "faster typing",
+      "easier to type"
+     ]
+    },
+    {
+     "id": "k3",
+     "point": "Web browsing / photography quickly drains the battery",
+     "accept": [
+      "drains the battery",
+      "battery runs out",
+      "battery drains",
+      "uses battery quickly"
+     ],
+     "reject": [
+      "battery lasts longer"
+     ]
+    },
+    {
+     "id": "k4",
+     "point": "Smaller memory / storage than a laptop",
+     "accept": [
+      "less memory",
+      "less storage",
+      "small memory",
+      "limited storage",
+      "limited memory"
+     ],
+     "reject": [
+      "more memory",
+      "more storage"
+     ]
+    },
+    {
+     "id": "k5",
+     "point": "Not all website features work on smartphones",
+     "accept": [
+      "website features",
+      "websites don't work",
+      "some websites",
+      "not compatible"
+     ],
+     "reject": [
+      "all websites work"
+     ]
+    },
+    {
+     "id": "k6",
+     "point": "Easier to lose / be stolen",
+     "accept": [
+      "easier to lose",
+      "easy to lose",
+      "lost",
+      "stolen",
+      "easier to steal"
+     ],
+     "reject": [
+      "harder to lose",
+      "harder to steal"
+     ]
+    },
+    {
+     "id": "k7",
+     "point": "Mobile network data rate can be slower than Wi-Fi / streaming suffers",
+     "accept": [
+      "slower than wi-fi",
+      "slower than wifi",
+      "mobile data is slower",
+      "streaming",
+      "buffering"
+     ],
+     "reject": [
+      "faster than wi-fi",
+      "faster than wifi"
+     ]
+    }
+   ],
+   "modelAnswer": "The small screen makes web pages difficult to read. It is easier to lose a smartphone or have it stolen.",
+   "topic": "smartphone-disadvantages",
+   "difficulty": 1,
+   "sourceRef": "p18",
+   "explanation": "Any two valid points. Each must be a disadvantage of the smartphone, not of the laptop."
+  },
+  {
+   "id": "p9",
+   "type": "written",
+   "command": "give",
+   "marks": 3,
+   "prompt": "Give three advantages of using a tablet rather than a laptop.",
+   "markPoints": [
+    {
+     "id": "n1",
+     "point": "Very fast to switch on / no wait for the operating system to load",
+     "accept": [
+      "fast to switch on",
+      "quick to switch on",
+      "turns on quickly",
+      "starts quickly",
+      "switches on fast",
+      "no waiting"
+     ],
+     "reject": [
+      "slow to switch on",
+      "slower to start"
+     ]
+    },
+    {
+     "id": "n2",
+     "point": "Fully portable / lightweight",
+     "accept": [
+      "lightweight",
+      "light",
+      "portable",
+      "easy to carry"
+     ],
+     "reject": [
+      "heavier",
+      "harder to carry"
+     ]
+    },
+    {
+     "id": "n3",
+     "point": "Touch screen is simple to use / no other input devices needed",
+     "accept": [
+      "touch screen",
+      "touchscreen",
+      "no mouse",
+      "no other input",
+      "simple to use",
+      "easy to use"
+     ],
+     "reject": [
+      "needs a mouse"
+     ]
+    },
+    {
+     "id": "n4",
+     "point": "Several apps as standard, e.g. built-in camera, media player",
+     "accept": [
+      "built-in camera",
+      "built in camera",
+      "apps as standard",
+      "built-in apps",
+      "media player"
+     ],
+     "reject": []
+    },
+    {
+     "id": "n5",
+     "point": "Produces little heat (solid-state technology)",
+     "accept": [
+      "less heat",
+      "little heat",
+      "not much heat",
+      "doesn't get hot",
+      "solid-state",
+      "solid state"
+     ],
+     "reject": [
+      "more heat",
+      "gets hot"
+     ]
+    },
+    {
+     "id": "n6",
+     "point": "Much longer battery life",
+     "accept": [
+      "longer battery",
+      "battery lasts",
+      "battery life"
+     ],
+     "reject": [
+      "shorter battery"
+     ]
+    },
+    {
+     "id": "n7",
+     "point": "Stays connected in standby so alerts are still received",
+     "accept": [
+      "standby",
+      "alerts",
+      "notifications",
+      "stays connected"
+     ],
+     "reject": []
+    }
+   ],
+   "modelAnswer": "A tablet is very fast to switch on. It is lightweight, so it is easy to carry anywhere. It has a much longer battery life.",
+   "topic": "tablet-advantages",
+   "difficulty": 1,
+   "sourceRef": "p18-19",
+   "explanation": "Any three valid points. The book lists: fast to switch on, portable, simple touch screen, built-in apps, little heat, long battery life, alerts in standby."
+  },
+  {
+   "id": "p10",
+   "type": "written",
+   "command": "give",
+   "marks": 3,
+   "prompt": "Give three uses of smartphones, tablets or phablets.",
+   "markPoints": [
+    {
+     "id": "u1",
+     "point": "Entertainment / streaming music, video, TV",
+     "accept": [
+      "stream",
+      "music",
+      "videos",
+      "watch tv",
+      "entertainment"
+     ]
+    },
+    {
+     "id": "u2",
+     "point": "Gaming",
+     "accept": [
+      "games",
+      "gaming",
+      "play games"
+     ]
+    },
+    {
+     "id": "u3",
+     "point": "Camera / taking photos or videos",
+     "accept": [
+      "camera",
+      "take photos",
+      "taking photos",
+      "record video"
+     ]
+    },
+    {
+     "id": "u4",
+     "point": "Internet use / online shopping / social networks / QR codes",
+     "accept": [
+      "online shopping",
+      "social network",
+      "social media",
+      "qr code",
+      "browse the internet",
+      "internet"
+     ]
+    },
+    {
+     "id": "u5",
+     "point": "Sending / receiving emails / instant messaging",
+     "accept": [
+      "email",
+      "instant messag",
+      "send messages",
+      "texting"
+     ]
+    },
+    {
+     "id": "u6",
+     "point": "GPS / maps to navigate",
+     "accept": [
+      "gps",
+      "maps",
+      "navigat",
+      "directions"
+     ]
+    },
+    {
+     "id": "u7",
+     "point": "Calendar functions",
+     "accept": [
+      "calendar",
+      "reminders",
+      "appointments"
+     ]
+    },
+    {
+     "id": "u8",
+     "point": "Telephone / mobile banking",
+     "accept": [
+      "banking",
+      "bank app",
+      "send money",
+      "pay bills"
+     ]
+    },
+    {
+     "id": "u9",
+     "point": "VoIP / video calling",
+     "accept": [
+      "voip",
+      "video call",
+      "internet calls"
+     ]
+    },
+    {
+     "id": "u10",
+     "point": "Education / business management",
+     "accept": [
+      "education",
+      "learning apps",
+      "studying",
+      "business",
+      "office work"
+     ]
+    },
+    {
+     "id": "u11",
+     "point": "Remotely controlling devices at home",
+     "accept": [
+      "remote control",
+      "control devices",
+      "switch on the oven",
+      "smart home",
+      "from far away"
+     ]
+    }
+   ],
+   "modelAnswer": "Streaming music and videos. Using maps to find the way. Remotely switching on devices at home using an app.",
+   "topic": "mobile-uses",
+   "difficulty": 1,
+   "sourceRef": "p20",
+   "explanation": "Any three different uses from the textbook list."
+  }
+ ],
+ "recap": {
+  "summary": [
+   "Smartphones make calls and run apps; they use Wi-Fi or mobile networks to get online.",
+   "Smartphone hardware includes cameras, Bluetooth, flash memory, cloud syncing and sensors.",
+   "Proximity sensor: nearby object. Accelerometer: movement and orientation.",
+   "Smartphones are light and easy to use on the move, but small screens and keyboards make some tasks harder.",
+   "Tablets use touch screens and virtual keyboards; they start quickly but can be awkward for typing and file work.",
+   "Textbook screen-size guide: smartphone up to 5.1 inches; phablet 5.1–7 inches; tablet over 7 inches."
+  ],
+  "flashcards": [
+   {
+    "id": "f1",
+    "front": "How can a smartphone connect to the internet?",
+    "back": "Through Wi-Fi or a mobile phone network such as 3G, 4G or 5G."
+   },
+   {
+    "id": "f2",
+    "front": "What does a proximity sensor do?",
+    "back": "It detects nearby objects, helping prevent accidental touches when the phone is near an ear."
+   },
+   {
+    "id": "f3",
+    "front": "What does an accelerometer do?",
+    "back": "It detects movement and orientation, allowing the screen to rotate."
+   },
+   {
+    "id": "f4",
+    "front": "What is a virtual keyboard?",
+    "back": "A keyboard shown on a touch screen and operated by tapping the keys."
+   },
+   {
+    "id": "f5",
+    "front": "Give two tablet disadvantages compared with laptops.",
+    "back": "Typing may be slower and less accurate; tablets often support fewer file formats."
+   },
+   {
+    "id": "f6",
+    "front": "What is a phablet in the textbook's size guide?",
+    "back": "A phone-tablet hybrid with a screen between 5.1 and 7 inches."
+   }
+  ]
+ }
+}

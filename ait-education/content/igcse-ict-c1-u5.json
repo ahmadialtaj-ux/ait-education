@@ -1,0 +1,1055 @@
+{
+ "schemaVersion": "0.3",
+ "id": "igcse-ict-c1-u5",
+ "meta": {
+  "mode": "lesson",
+  "qualification": "Cambridge IGCSE",
+  "qualificationCode": "0417",
+  "subject": "Information and Communication Technology",
+  "subjectId": "ict",
+  "syllabusYears": "2026-2028",
+  "syllabusPoints": [
+   "1.5"
+  ],
+  "chapterNumber": 1,
+  "chapterTitle": "Types and components of computer systems",
+  "unit": 5,
+  "title": "Extended reality: AR and VR",
+  "schoolYear": 8,
+  "lang": "en",
+  "dir": "ltr",
+  "sourceRefs": [
+   {
+    "book": "Cambridge IGCSE ICT (Hodder), Chapter 1",
+    "sections": "1.5.1 (extended reality, augmented reality and virtual reality)",
+    "pages": "22-23"
+   }
+  ],
+  "estMinutes": 40,
+  "version": "0.3",
+  "status": "draft"
+ },
+ "topics": {
+  "xr-types": "Types of extended reality",
+  "ar-definition": "How augmented reality works",
+  "ar-rescue": "Augmented reality for rescue planning",
+  "vr-equipment": "Headsets and 360-degree views",
+  "vr-training": "Using virtual reality for training",
+  "vr-uses": "Applications of virtual reality",
+  "ar-vs-vr": "Comparing AR and VR"
+ },
+ "objectives": [
+  "State what extended reality means and identify AR, VR and MR",
+  "Describe how AR combines real surroundings with computer-generated information",
+  "Describe how VR uses a headset to create a simulated environment",
+  "Give textbook examples of AR and VR in learning, work and everyday life",
+  "Compare AR and VR by explaining what the user sees and the equipment used"
+ ],
+ "learn": [
+  {
+   "id": "l1",
+   "topic": "xr-types",
+   "type": "text",
+   "title": "What is extended reality?",
+   "body": "**Extended reality (XR)** is a name for technologies that change how we experience a real or computer-created environment. The textbook names three forms: **augmented reality (AR)**, **virtual reality (VR)** and **mixed reality (MR)**. This lesson focuses on AR and VR."
+  },
+  {
+   "id": "l2",
+   "topic": "ar-vs-vr",
+   "type": "image",
+   "src": "images/igcse-ict-c1-u5-ar-vr.png",
+   "alt": "Two side-by-side scenes: one shows a person using a handheld screen to see a digital object over a real room; the other shows a person wearing a headset inside a fully imagined underwater world",
+   "caption": "AR adds digital objects to a real scene; VR surrounds the user with a computer-created scene.",
+   "credit": "AIT Education (AI-generated)",
+   "license": "own",
+   "imagePrompt": "A clean, child-friendly educational illustration split into two equal scenes with no border or labels. Left: a student holds a plain unbranded tablet and can still see an ordinary classroom behind it; a glowing three-dimensional model of a small bridge appears over the real desk through the tablet display. Right: a student wears a simple plain virtual-reality headset; show a soft cutaway bubble around them containing an immersive underwater world with fish and coral, with the actual room fading outside the bubble. Clear difference between real-world overlay and fully simulated environment. Muted teal and amber palette, no text, no writing, no numbers, no labels, no logos, no brand names."
+  },
+  {
+   "id": "l3",
+   "topic": "ar-definition",
+   "type": "text",
+   "title": "Augmented reality keeps the real world visible",
+   "body": "**Augmented reality (AR)** adds **digital objects or information** to a view of the **real world**. The extra content might be a picture, moving animation or information on the display. The person can still see what is happening around them and respond to real objects."
+  },
+  {
+   "id": "l4",
+   "topic": "ar-definition",
+   "type": "keypoints",
+   "title": "Key features of AR",
+   "items": [
+    "**Real surroundings remain visible** — the person is not cut off from the physical world",
+    "**Digital overlays** — computer-made images, information or animations appear with the real scene",
+    "**Viewing devices** — a smartphone, phablet or special goggles can display AR",
+    "**Interaction** — the user can continue to move around and deal with real objects"
+   ]
+  },
+  {
+   "id": "l5",
+   "topic": "ar-vs-vr",
+   "type": "compare",
+   "title": "AR and VR at a glance",
+   "columns": [
+    "Augmented reality (AR)",
+    "Virtual reality (VR)"
+   ],
+   "rows": [
+    {
+     "label": "What you see",
+     "a": "Your real surroundings with added digital content",
+     "b": "A scene made by a computer instead of your real surroundings"
+    },
+    {
+     "label": "Feeling of being there",
+     "a": "You stay aware of the physical world",
+     "b": "You feel surrounded by the simulated world"
+    },
+    {
+     "label": "Typical equipment",
+     "a": "Smartphone, phablet or special goggles",
+     "b": "VR headset or head-mounted display"
+    },
+    {
+     "label": "Example",
+     "a": "Trying a digital make-up look while seeing your face",
+     "b": "Exploring a computer-made ancient building"
+    },
+    {
+     "label": "How you use it",
+     "a": "Adds details to a place you can still see",
+     "b": "Lets you look all around a virtual place, often through a 360° view"
+    }
+   ]
+  },
+  {
+   "id": "l6",
+   "topic": "ar-rescue",
+   "type": "example",
+   "title": "AR for a rescue team",
+   "body": "A rescue team studies a possible route into a damaged building. An AR view shows a **3D model** of the area. The team can study the layout and practise a rescue plan before entering the real site. This helps the team plan the operation."
+  },
+  {
+   "id": "l7",
+   "topic": "ar-rescue",
+   "type": "keypoints",
+   "title": "Uses of augmented reality",
+   "items": [
+    "**Rescue work:** show 3D views of a site to plan and try out procedures",
+    "**Shopping:** preview make-up on a face before choosing a product",
+    "**Vehicle sales:** explore a digital view of a car interior before buying",
+    "**Entertainment:** make digital characters appear in the place around the viewer",
+    "**Healthcare:** build 3D views from patient scans to support diagnosis or surgery planning"
+   ]
+  },
+  {
+   "id": "l8",
+   "topic": "vr-equipment",
+   "type": "text",
+   "title": "Virtual reality replaces the scene around you",
+   "body": "**Virtual reality (VR)** puts a person inside a **simulated digital environment**. A **VR headset** or **head-mounted display** shows the virtual world. A **360-degree view** lets the user look in different directions. Unlike AR, the user is visually separated from the normal surroundings."
+  },
+  {
+   "id": "l9",
+   "topic": "vr-uses",
+   "type": "keypoints",
+   "title": "Where virtual reality can be used",
+   "items": [
+    "**Training:** rehearse military tasks or practise a medical operation",
+    "**Education and heritage:** explore an old building or historic site without being there",
+    "**Healthcare:** use a simulated scene to help with diagnosis or treatment planning",
+    "**Business:** practise conversations or workplace situations with role-play",
+    "**Engineering:** inspect how a proposed structure may look",
+    "**Sport:** practise a movement and receive feedback",
+    "**Science:** examine an enlarged digital model of a cell or molecule",
+    "**Entertainment and fashion:** experience games or preview a fashion show"
+   ]
+  },
+  {
+   "id": "l10",
+   "topic": "vr-training",
+   "type": "example",
+   "title": "A VR history trip",
+   "body": "A class is learning about a building from the past. The students put on VR headsets and move their view around a computer-created version of it. They can explore the inside without travelling to the real building. The surroundings they see are **simulated**, not overlaid on their classroom."
+  },
+  {
+   "id": "l11",
+   "topic": "ar-vs-vr",
+   "type": "tip",
+   "title": "To compare, say what happens in both technologies",
+   "body": "A **compare** answer needs a clear link between AR and VR. Write: \"AR adds computer images to the real scene, whereas VR shows a fully digital scene.\" In **explain** questions, connect the technology to the job: what it shows, then how that helps the named person."
+  },
+  {
+   "id": "l12",
+   "topic": "ar-vs-vr",
+   "type": "mistake",
+   "title": "Do not swap AR and VR",
+   "body": "**AR does not usually hide the whole physical world**: it adds digital content to it. **VR does not simply add an object to the room**: it creates the scene the user sees. A VR headset gives an all-around virtual view; a phone or phablet screen can be used to view AR."
+  }
+ ],
+ "check": [
+  {
+   "id": "c1",
+   "type": "mcq",
+   "command": "identify",
+   "marks": 1,
+   "prompt": "Which description best fits augmented reality?",
+   "hint": "Ask whether the person can still observe the physical surroundings while computer-created elements appear in their view.",
+   "options": [
+    "A computer scene completely replaces the surroundings",
+    "Digital information is added to a view of a real place",
+    "A computer only stores a photograph",
+    "A person sees no digital content at all"
+   ],
+   "answers": [
+    1
+   ],
+   "topic": "ar-definition",
+   "difficulty": 1,
+   "sourceRef": "p22",
+   "explanation": "AR keeps the physical world visible and places computer-created information or objects over it."
+  },
+  {
+   "id": "c2",
+   "type": "tick",
+   "command": "identify",
+   "marks": 2,
+   "rowsPerMark": 2,
+   "prompt": "Tick (✓) whether each statement describes augmented reality (AR) or virtual reality (VR).",
+   "hint": "For each one, ask: can the user still see the real room, or are they inside a made-up world?",
+   "columns": [
+    "AR",
+    "VR"
+   ],
+   "rows": [
+    {
+     "id": "r1",
+     "statement": "The user sees their room with a digital object added to the view.",
+     "answer": 0,
+     "explanation": "AR adds a virtual layer to the real scene."
+    },
+    {
+     "id": "r2",
+     "statement": "A headset shows an all-around simulated world instead of the room.",
+     "answer": 1,
+     "explanation": "VR replaces the surroundings with a digital environment."
+    },
+    {
+     "id": "r3",
+     "statement": "A shopper previews a digital make-up look on their face.",
+     "answer": 0,
+     "explanation": "AR can add a digital preview to an image of the real face."
+    },
+    {
+     "id": "r4",
+     "statement": "A learner explores a computer-made ancient building as if inside it.",
+     "answer": 1,
+     "explanation": "VR can place the learner within a simulated historic building."
+    }
+   ],
+   "topic": "ar-vs-vr",
+   "difficulty": 1,
+   "sourceRef": "p22-23",
+   "explanation": "Two correct classifications earn one mark."
+  },
+  {
+   "id": "c3",
+   "type": "fill",
+   "command": "complete",
+   "marks": 3,
+   "prompt": "Complete each sentence using the most suitable word or phrase. Use each choice only once.",
+   "hint": "Think about how much of the real world the user can still see in AR and in VR.",
+   "wordList": [
+    "augmented reality",
+    "virtual reality",
+    "mixed reality",
+    "360-degree",
+    "keyboard",
+    "printer"
+   ],
+   "items": [
+    {
+     "id": "i1",
+     "sentence": "The technology that overlays computer images on a real scene is ___.",
+     "answer": "augmented reality"
+    },
+    {
+     "id": "i2",
+     "sentence": "A headset that makes the user feel inside a simulated world is used for ___.",
+     "answer": "virtual reality"
+    },
+    {
+     "id": "i3",
+     "sentence": "A VR headset may provide a ___ view of the virtual environment.",
+     "answer": "360-degree"
+    }
+   ],
+   "topic": "ar-vs-vr",
+   "difficulty": 2,
+   "sourceRef": "p22-23",
+   "explanation": "AR adds to reality, VR replaces the user’s view, and a 360-degree view lets someone look around a virtual environment."
+  },
+  {
+   "id": "c4",
+   "type": "match",
+   "command": "match",
+   "marks": 3,
+   "prompt": "Match each textbook use to its example.",
+   "hint": "For each use, think about who is using it and what they are trying to learn or see.",
+   "left": [
+    {
+     "id": "x1",
+     "text": "AR in healthcare"
+    },
+    {
+     "id": "x2",
+     "text": "VR in business"
+    },
+    {
+     "id": "x3",
+     "text": "VR in science"
+    }
+   ],
+   "right": [
+    {
+     "id": "y1",
+     "text": "Create a 3D view from a patient scan"
+    },
+    {
+     "id": "y2",
+     "text": "Practise staff role-play in a digital environment"
+    },
+    {
+     "id": "y3",
+     "text": "Explore a computer-made cell or molecule"
+    },
+    {
+     "id": "y4",
+     "text": "Print a paper report from a computer"
+    }
+   ],
+   "pairs": [
+    [
+     "x1",
+     "y1"
+    ],
+    [
+     "x2",
+     "y2"
+    ],
+    [
+     "x3",
+     "y3"
+    ]
+   ],
+   "topic": "vr-uses",
+   "difficulty": 2,
+   "sourceRef": "p22-23",
+   "explanation": "Patient scans are an AR healthcare example; staff role-play and scientific models are VR examples."
+  }
+ ],
+ "practice": [
+  {
+   "id": "p1",
+   "type": "written",
+   "command": "state",
+   "marks": 3,
+   "prompt": "State the three types of extended reality named in the textbook.",
+   "markPoints": [
+    {
+     "id": "a1",
+     "point": "Augmented reality / AR",
+     "accept": [
+      "augmented reality",
+      "augmented"
+     ],
+     "reject": [
+      "not augmented",
+      "no augmented reality",
+      "cannot use augmented reality"
+     ]
+    },
+    {
+     "id": "a2",
+     "point": "Virtual reality / VR",
+     "accept": [
+      "virtual reality",
+      "virtual"
+     ],
+     "reject": [
+      "not virtual",
+      "no virtual reality",
+      "cannot use virtual reality"
+     ]
+    },
+    {
+     "id": "a3",
+     "point": "Mixed reality / MR",
+     "accept": [
+      "mixed reality",
+      "mixed"
+     ],
+     "reject": [
+      "not mixed",
+      "no mixed reality",
+      "not a type of reality"
+     ]
+    }
+   ],
+   "modelAnswer": "Augmented reality is one form of extended reality. Virtual reality is another form. Mixed reality is the third form.",
+   "topic": "xr-types",
+   "difficulty": 1,
+   "sourceRef": "p22",
+   "explanation": "The textbook lists three XR categories. This unit teaches AR and VR in detail."
+  },
+  {
+   "id": "p2",
+   "type": "written",
+   "command": "give",
+   "marks": 2,
+   "prompt": "Give two features of augmented reality.",
+   "markPoints": [
+    {
+     "id": "b1",
+     "point": "Adds computer-generated images / data / animation to a real-world view",
+     "accept": [
+      "digital objects over",
+      "computer images over",
+      "overlay",
+      "adds digital",
+      "virtual objects over",
+      "information over real"
+     ],
+     "reject": [
+      "no digital",
+      "no virtual images",
+      "replaces real world",
+      "only virtual world"
+     ]
+    },
+    {
+     "id": "b2",
+     "point": "User can still see / interact with their real surroundings",
+     "accept": [
+      "still see real",
+      "real surroundings remain",
+      "real world visible",
+      "not cut off",
+      "interact with real",
+      "see the room"
+     ],
+     "reject": [
+      "cannot see real",
+      "unable to see real",
+      "isolated from real",
+      "replaces surroundings"
+     ]
+    },
+    {
+     "id": "b3",
+     "point": "Can be experienced through goggles / smartphone / phablet screen",
+     "accept": [
+      "smartphone screen",
+      "phone screen",
+      "phablet",
+      "special goggles",
+      "ar goggles",
+      "mobile screen"
+     ],
+     "reject": [
+      "only needs a vr headset",
+      "cannot use phone",
+      "no goggles"
+     ]
+    }
+   ],
+   "modelAnswer": "AR puts digital objects over the view of a real place. The user can still see and interact with the physical surroundings.",
+   "topic": "ar-definition",
+   "difficulty": 1,
+   "sourceRef": "p22",
+   "explanation": "Give two different characteristics, not two phrasings of the same overlay feature."
+  },
+  {
+   "id": "p3",
+   "type": "written",
+   "command": "describe",
+   "marks": 4,
+   "prompt": "Describe the equipment and the visual experience used in virtual reality. Give two features and describe what each provides.",
+   "markPoints": [
+    {
+     "id": "d1",
+     "point": "Uses a VR headset / head-mounted display",
+     "accept": [
+      "vr headset",
+      "virtual reality headset",
+      "head mounted display",
+      "head-mounted display",
+      "wear a headset"
+     ],
+     "reject": [
+      "no headset",
+      "does not need a headset",
+      "only smartphone screen"
+     ],
+     "group": "feature"
+    },
+    {
+     "id": "d2",
+     "point": "The headset provides a 360° / all-around view of the computer-generated world",
+     "accept": [
+      "360 degree",
+      "360-degree",
+      "360°",
+      "look all around",
+      "view in all directions",
+      "look around the virtual"
+     ],
+     "reject": [
+      "only a flat view",
+      "cannot look around",
+      "no 360 view"
+     ],
+     "group": "detail",
+     "requires": "d1"
+    },
+    {
+     "id": "d3",
+     "point": "Shows a simulated / computer-created digital environment",
+     "accept": [
+      "simulated world",
+      "virtual environment",
+      "digital world",
+      "computer generated scene",
+      "computer-created world",
+      "unreal environment"
+     ],
+     "reject": [
+      "only real world",
+      "just the real room",
+      "no computer environment"
+     ],
+     "group": "feature"
+    },
+    {
+     "id": "d4",
+     "point": "The user feels immersed / the real environment is visually replaced",
+     "accept": [
+      "immersed",
+      "feel inside",
+      "not see the real world",
+      "real surroundings replaced",
+      "isolated from real",
+      "seems to be there"
+     ],
+     "reject": [
+      "real surroundings are still visible",
+      "only adds objects to real world",
+      "see the real room"
+     ],
+     "group": "detail",
+     "requires": "d3"
+    }
+   ],
+   "modelAnswer": "VR uses a head-mounted headset. It can show the digital scene in every direction. The scene is simulated by a computer. The user feels surrounded by that virtual scene rather than the real room.",
+   "topic": "vr-equipment",
+   "difficulty": 2,
+   "sourceRef": "p23",
+   "explanation": "One mark is for each correct feature. A linked description of what it provides earns the second mark.",
+   "rules": [
+    {
+     "type": "maxPerGroup",
+     "group": "feature",
+     "max": 2
+    },
+    {
+     "type": "maxPerGroup",
+     "group": "detail",
+     "max": 2
+    }
+   ]
+  },
+  {
+   "id": "p4",
+   "type": "written",
+   "command": "explain",
+   "marks": 3,
+   "prompt": "A rescue team is planning how to enter a damaged building. Explain how augmented reality could help the team prepare before entering.",
+   "markPoints": [
+    {
+     "id": "e1",
+     "point": "AR can display a 3D image / plan of the area over a real-world view",
+     "accept": [
+      "3d image",
+      "3d model",
+      "3d view",
+      "3d layout",
+      "digital plan",
+      "virtual image of building"
+     ],
+     "reject": [
+      "only a headset showing a fake world",
+      "no 3d image",
+      "no digital plan"
+     ]
+    },
+    {
+     "id": "e2",
+     "point": "Rescuers can examine the layout / test rescue steps before entering",
+     "accept": [
+      "try rescue procedures",
+      "practise rescue",
+      "plan the route",
+      "test the plan",
+      "explore the layout",
+      "rehearse a rescue"
+     ],
+     "reject": [
+      "cannot practise",
+      "must enter first",
+      "no planning"
+     ],
+     "requires": "e1"
+    },
+    {
+     "id": "e3",
+     "point": "Planning in advance helps the team prepare / reduces the risk during the real rescue",
+     "accept": [
+      "better prepared",
+      "safer rescue",
+      "reduce risks",
+      "avoid hazards",
+      "before real rescue",
+      "plan safely"
+     ],
+     "reject": [
+      "more dangerous",
+      "worse prepared",
+      "cannot prepare"
+     ],
+     "requires": "e2"
+    }
+   ],
+   "modelAnswer": "AR can show a 3D view of the damaged building. The rescue team can study the layout and practise the procedure before going inside. This helps them prepare for the real rescue operation.",
+   "topic": "ar-rescue",
+   "difficulty": 2,
+   "sourceRef": "p22",
+   "explanation": "Link the digital view to practising procedures and preparing for the actual rescue."
+  },
+  {
+   "id": "p5",
+   "type": "written",
+   "command": "explain",
+   "marks": 3,
+   "prompt": "Students are studying a historic building but cannot visit it. Explain why a virtual reality lesson could help them learn about the building.",
+   "markPoints": [
+    {
+     "id": "h1",
+     "point": "A VR headset displays a simulated / virtual historic building",
+     "accept": [
+      "vr headset",
+      "virtual building",
+      "digital building",
+      "simulated building",
+      "computer made building",
+      "computer-generated building"
+     ],
+     "reject": [
+      "only a photograph on paper",
+      "cannot show building",
+      "no virtual scene"
+     ]
+    },
+    {
+     "id": "h2",
+     "point": "Students can look around / explore the building as if they were inside it",
+     "accept": [
+      "look around",
+      "explore inside",
+      "walk around",
+      "360 degree",
+      "360-degree view",
+      "view different rooms",
+      "see the inside"
+     ],
+     "reject": [
+      "cannot explore",
+      "only read about it",
+      "no view inside"
+     ],
+     "requires": "h1"
+    },
+    {
+     "id": "h3",
+     "point": "They can experience it without travelling / being at the real location",
+     "accept": [
+      "without travel",
+      "without going there",
+      "cannot visit",
+      "from classroom",
+      "stay at school",
+      "no need to travel"
+     ],
+     "reject": [
+      "must travel there",
+      "only by visiting",
+      "need to go there"
+     ],
+     "requires": "h2"
+    }
+   ],
+   "modelAnswer": "VR can show a computer-created version of the historic building. Students can explore the inside using an all-around view. They can study it without travelling to the real site.",
+   "topic": "vr-training",
+   "difficulty": 2,
+   "sourceRef": "p23",
+   "explanation": "Explain how VR creates an experience of a building that students cannot visit."
+  },
+  {
+   "id": "p6",
+   "type": "written",
+   "command": "compare",
+   "marks": 4,
+   "prompt": "Compare augmented reality and virtual reality. Your answer must include similarities and differences.",
+   "markPoints": [
+    {
+     "id": "f1",
+     "point": "Both are extended reality / immersive technologies",
+     "accept": [
+      "both are extended reality",
+      "both are xr",
+      "both immersive",
+      "both are digital technologies"
+     ],
+     "reject": [
+      "only ar is xr",
+      "vr is not xr",
+      "ar is not xr"
+     ],
+     "group": "similarity"
+    },
+    {
+     "id": "f2",
+     "point": "Both use computer-created / virtual images or environments",
+     "accept": [
+      "both use digital",
+      "both use virtual",
+      "both use computer generated",
+      "both show digital",
+      "both create digital"
+     ],
+     "reject": [
+      "vr has no digital content",
+      "ar has no digital content",
+      "neither uses digital"
+     ],
+     "group": "similarity"
+    },
+    {
+     "id": "f3",
+     "point": "AR adds digital objects to the real world whereas VR replaces it with a simulated world",
+     "accept": [
+      "ar adds digital whereas vr",
+      "ar overlays but vr",
+      "ar shows real world while vr",
+      "vr replaces real world while ar",
+      "ar mixes real and vr",
+      "ar combines real whereas vr"
+     ],
+     "reject": [
+      "ar replaces the real world",
+      "vr only adds to real world",
+      "ar shows only a fake world"
+     ],
+     "group": "difference"
+    },
+    {
+     "id": "f4",
+     "point": "AR user can see physical surroundings whereas VR user is separated from them",
+     "accept": [
+      "ar can see the real",
+      "ar still sees the room",
+      "vr cannot see the real",
+      "vr blocks the real",
+      "ar not isolated but vr",
+      "ar aware of surroundings"
+     ],
+     "reject": [
+      "ar cannot see surroundings",
+      "vr can still see real surroundings",
+      "both fully block real surroundings"
+     ],
+     "group": "difference"
+    },
+    {
+     "id": "f5",
+     "point": "AR may use a phone / phablet / goggles whereas VR needs a headset",
+     "accept": [
+      "ar phone vr headset",
+      "ar smartphone whereas vr",
+      "ar phone screen but vr",
+      "ar can use goggles while vr",
+      "phone for ar headset for vr"
+     ],
+     "reject": [
+      "vr only uses a phone",
+      "ar only uses a vr headset"
+     ],
+     "group": "difference"
+    },
+    {
+     "id": "f6",
+     "point": "AR can preview a digital object in a real setting whereas VR can show a complete simulated place",
+     "accept": [
+      "ar previews real vr simulated",
+      "ar virtual makeup vr",
+      "ar adds to room vr",
+      "ar uses actual surroundings vr"
+     ],
+     "reject": [
+      "ar only simulated",
+      "vr just overlays real objects"
+     ],
+     "group": "difference"
+    }
+   ],
+   "modelAnswer": "Both technologies use computer-created information. AR adds virtual objects to a view of the real world, whereas VR shows a complete simulated environment. In AR the user can still see real surroundings, whereas in VR those surroundings are hidden. AR can be viewed on a phone screen, whereas VR uses a headset.",
+   "topic": "ar-vs-vr",
+   "difficulty": 3,
+   "sourceRef": "p22-23",
+   "explanation": "Each comparison must identify the shared point or state both sides of a difference. The question requires at least one similarity and one difference.",
+   "rules": [
+    {
+     "type": "maxPerGroup",
+     "group": "similarity",
+     "max": 2
+    },
+    {
+     "type": "maxPerGroup",
+     "group": "difference",
+     "max": 3
+    },
+    {
+     "type": "requireGroup",
+     "group": "similarity",
+     "capWithout": 3,
+     "source": "question"
+    },
+    {
+     "type": "requireGroup",
+     "group": "difference",
+     "capWithout": 3,
+     "source": "question"
+    }
+   ]
+  },
+  {
+   "id": "p7",
+   "type": "written",
+   "command": "give",
+   "marks": 4,
+   "prompt": "Give two applications of AR and two applications of VR from the textbook. Label the AR and VR examples.",
+   "markPoints": [
+    {
+     "id": "g1",
+     "point": "AR: trying on / previewing make-up digitally before purchase",
+     "accept": [
+      "ar make-up",
+      "ar makeup",
+      "virtual makeup on face",
+      "try on make up",
+      "try makeup on face",
+      "makeup before buying"
+     ],
+     "reject": [
+      "vr makeup show",
+      "no makeup preview",
+      "makeup only in fake world"
+     ],
+     "group": "ar"
+    },
+    {
+     "id": "g2",
+     "point": "AR: 3D images for rescue planning / practising rescue procedures",
+     "accept": [
+      "ar rescue",
+      "3d rescue map",
+      "rescue route with ar",
+      "rehearse rescue with ar",
+      "rescue plan over real"
+     ],
+     "reject": [
+      "vr only rescue",
+      "no rescue planning",
+      "cannot plan rescue"
+     ],
+     "group": "ar"
+    },
+    {
+     "id": "g3",
+     "point": "AR: patient scans into 3D views for diagnosis / surgery",
+     "accept": [
+      "ar patient scan",
+      "3d patient body",
+      "3d scan for surgery",
+      "ar surgery planning",
+      "patient scans in 3d"
+     ],
+     "reject": [
+      "vr only scans",
+      "no patient scan"
+     ],
+     "group": "ar"
+    },
+    {
+     "id": "g4",
+     "point": "AR: virtual car interior / digital characters added to real situations",
+     "accept": [
+      "ar car interior",
+      "virtual car preview",
+      "digital characters in room",
+      "ar entertainment",
+      "ar car tour"
+     ],
+     "reject": [
+      "vr only car view",
+      "no digital characters"
+     ],
+     "group": "ar"
+    },
+    {
+     "id": "g5",
+     "point": "VR: training for military / medical operations",
+     "accept": [
+      "vr military training",
+      "vr surgery training",
+      "virtual operation practice",
+      "vr tank training",
+      "vr medical training"
+     ],
+     "reject": [
+      "ar only training",
+      "cannot train in vr"
+     ],
+     "group": "vr"
+    },
+    {
+     "id": "g6",
+     "point": "VR: explore ancient buildings / heritage places for learning",
+     "accept": [
+      "vr history lesson",
+      "vr ancient building",
+      "explore ancient building",
+      "vr heritage",
+      "vr historic building"
+     ],
+     "reject": [
+      "ar only historical building",
+      "no history exploration"
+     ],
+     "group": "vr"
+    },
+    {
+     "id": "g7",
+     "point": "VR: business role-play / staff training",
+     "accept": [
+      "vr business training",
+      "vr staff roleplay",
+      "vr workplace practice",
+      "vr staff training",
+      "vr role play"
+     ],
+     "reject": [
+      "ar only roleplay",
+      "no staff training"
+     ],
+     "group": "vr"
+    },
+    {
+     "id": "g8",
+     "point": "VR: practise a sport / receive feedback on movement",
+     "accept": [
+      "vr sports training",
+      "vr golf",
+      "vr swing feedback",
+      "virtual sports practice"
+     ],
+     "reject": [
+      "ar only golf",
+      "no feedback"
+     ],
+     "group": "vr"
+    },
+    {
+     "id": "g9",
+     "point": "VR: inspect a digital model of a cell / molecule",
+     "accept": [
+      "vr cell model",
+      "vr molecule",
+      "virtual cell structure",
+      "vr science model"
+     ],
+     "reject": [
+      "ar only cell",
+      "no scientific model"
+     ],
+     "group": "vr"
+    }
+   ],
+   "modelAnswer": "AR can help shoppers preview make-up on their face before buying. AR can also show 3D information for rescue planning. VR can train people to carry out medical procedures. VR can also let students explore an ancient building.",
+   "topic": "ar-vs-vr",
+   "difficulty": 2,
+   "sourceRef": "p22-23",
+   "explanation": "Give two correct examples for each technology. The examples must be put under the correct AR or VR label.",
+   "rules": [
+    {
+     "type": "maxPerGroup",
+     "group": "ar",
+     "max": 2
+    },
+    {
+     "type": "maxPerGroup",
+     "group": "vr",
+     "max": 2
+    }
+   ]
+  }
+ ],
+ "recap": {
+  "summary": [
+   "XR includes augmented reality, virtual reality and mixed reality.",
+   "AR adds digital information to the real world, so the user can still see physical surroundings.",
+   "AR can support rescue planning, shopping, entertainment and healthcare.",
+   "VR uses a headset and a 360-degree view to place the user in a simulated digital environment.",
+   "VR can support training, lessons, heritage visits, sport, engineering and scientific models."
+  ],
+  "flashcards": [
+   {
+    "id": "f1",
+    "front": "What does XR stand for?",
+    "back": "Extended reality, including AR, VR and MR."
+   },
+   {
+    "id": "f2",
+    "front": "What does augmented reality show?",
+    "back": "Digital information placed over a view of the real world."
+   },
+   {
+    "id": "f3",
+    "front": "Can an AR user still see the real world?",
+    "back": "Yes. AR adds to the physical surroundings rather than fully replacing them."
+   },
+   {
+    "id": "f4",
+    "front": "What does a VR headset provide?",
+    "back": "A computer-created environment, often with an all-around 360-degree view."
+   },
+   {
+    "id": "f5",
+    "front": "Give one AR use from the textbook.",
+    "back": "For example, previewing make-up on a person before buying it."
+   },
+   {
+    "id": "f6",
+    "front": "Give one VR use from the textbook.",
+    "back": "For example, exploring a simulated ancient building in a history lesson."
+   }
+  ]
+ }
+}

@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "0.3",
+  "subjects": [
+    {
+      "subjectId": "ict",
+      "title": "Information and Communication Technology",
+      "chapters": [
+        {
+          "chapterNumber": 1,
+          "chapterKey": "igcse-ict-c1",
+          "title": "Types and components of computer systems",
+          "units": [
+            {
+              "id": "igcse-ict-c1-u1",
+              "file": "igcse-ict-c1-u1.json",
+              "order": 1
+            },
+            {
+              "id": "igcse-ict-c1-u2",
+              "file": "igcse-ict-c1-u2.json",
+              "order": 2
+            },
+            {
+              "id": "igcse-ict-c1-u3",
+              "file": "igcse-ict-c1-u3.json",
+              "order": 3
+            },
+            {
+              "id": "igcse-ict-c1-u4",
+              "file": "igcse-ict-c1-u4.json",
+              "order": 4
+            },
+            {
+              "id": "igcse-ict-c1-u5",
+              "file": "igcse-ict-c1-u5.json",
+              "order": 5
+            },
+            {
+              "id": "igcse-ict-c1-u6",
+              "file": "igcse-ict-c1-u6.json",
+              "order": 6
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

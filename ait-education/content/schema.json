@@ -1,0 +1,780 @@
+{
+ "$schema": "http://json-schema.org/draft-07/schema#",
+ "$id": "https://ait-education/schema/unit-0.3.json",
+ "title": "AIT Education lesson unit v0.3 (accepts 0.2 and 0.3 files)",
+ "type": "object",
+ "required": [
+  "schemaVersion",
+  "id",
+  "meta",
+  "topics",
+  "objectives",
+  "learn",
+  "check",
+  "practice",
+  "recap"
+ ],
+ "additionalProperties": false,
+ "properties": {
+  "schemaVersion": {
+   "enum": [
+    "0.2",
+    "0.3"
+   ]
+  },
+  "id": {
+   "type": "string",
+   "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+  },
+  "meta": {
+   "type": "object",
+   "required": [
+    "mode",
+    "qualification",
+    "qualificationCode",
+    "subject",
+    "subjectId",
+    "syllabusYears",
+    "syllabusPoints",
+    "chapterNumber",
+    "chapterTitle",
+    "unit",
+    "title",
+    "schoolYear",
+    "lang",
+    "dir",
+    "sourceRefs",
+    "estMinutes",
+    "version",
+    "status"
+   ],
+   "additionalProperties": false,
+   "properties": {
+    "mode": {
+     "enum": [
+      "lesson",
+      "mock"
+     ]
+    },
+    "qualification": {
+     "type": "string"
+    },
+    "qualificationCode": {
+     "type": "string"
+    },
+    "subject": {
+     "type": "string"
+    },
+    "subjectId": {
+     "type": "string",
+     "pattern": "^[a-z0-9-]+$"
+    },
+    "syllabusYears": {
+     "type": "string"
+    },
+    "syllabusPoints": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     },
+     "minItems": 1
+    },
+    "chapterNumber": {
+     "type": "integer",
+     "minimum": 1
+    },
+    "chapterTitle": {
+     "type": "string"
+    },
+    "unit": {
+     "type": "integer",
+     "minimum": 1
+    },
+    "title": {
+     "type": "string"
+    },
+    "schoolYear": {
+     "type": "integer",
+     "minimum": 1,
+     "maximum": 13
+    },
+    "lang": {
+     "type": "string",
+     "pattern": "^[a-z]{2}$"
+    },
+    "dir": {
+     "enum": [
+      "ltr",
+      "rtl"
+     ]
+    },
+    "sourceRefs": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "required": [
+       "book",
+       "pages"
+      ],
+      "properties": {
+       "book": {
+        "type": "string"
+       },
+       "sections": {
+        "type": "string"
+       },
+       "pages": {
+        "type": "string"
+       }
+      },
+      "additionalProperties": false
+     }
+    },
+    "estMinutes": {
+     "type": "integer",
+     "minimum": 1
+    },
+    "version": {
+     "type": "string"
+    },
+    "status": {
+     "enum": [
+      "draft",
+      "ai-reviewed",
+      "teacher-approved"
+     ]
+    }
+   }
+  },
+  "topics": {
+   "type": "object",
+   "minProperties": 1,
+   "propertyNames": {
+    "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+   },
+   "additionalProperties": {
+    "type": "string"
+   }
+  },
+  "objectives": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  },
+  "learn": {
+   "type": "array",
+   "items": {
+    "$ref": "#/definitions/block"
+   }
+  },
+  "check": {
+   "type": "array",
+   "items": {
+    "$ref": "#/definitions/question"
+   }
+  },
+  "practice": {
+   "type": "array",
+   "items": {
+    "$ref": "#/definitions/question"
+   },
+   "minItems": 1
+  },
+  "recap": {
+   "type": "object",
+   "required": [
+    "summary",
+    "flashcards"
+   ],
+   "additionalProperties": false,
+   "properties": {
+    "summary": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    "flashcards": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "required": [
+       "id",
+       "front",
+       "back"
+      ],
+      "additionalProperties": false,
+      "properties": {
+       "id": {
+        "$ref": "#/definitions/localId"
+       },
+       "front": {
+        "type": "string"
+       },
+       "back": {
+        "type": "string"
+       }
+      }
+     }
+    }
+   }
+  }
+ },
+ "definitions": {
+  "localId": {
+   "type": "string",
+   "pattern": "^[a-z][a-z0-9]*$"
+  },
+  "block": {
+   "type": "object",
+   "required": [
+    "id",
+    "type"
+   ],
+   "properties": {
+    "id": {
+     "$ref": "#/definitions/localId"
+    },
+    "type": {
+     "enum": [
+      "text",
+      "keypoints",
+      "compare",
+      "example",
+      "tip",
+      "mistake",
+      "realWorld",
+      "image"
+     ]
+    },
+    "title": {
+     "type": "string"
+    },
+    "topic": {
+     "type": "string",
+     "description": "v0.3 optional: key in topics"
+    }
+   },
+   "allOf": [
+    {
+     "if": {
+      "properties": {
+       "type": {
+        "enum": [
+         "text",
+         "example",
+         "tip",
+         "mistake",
+         "realWorld"
+        ]
+       }
+      }
+     },
+     "then": {
+      "required": [
+       "body"
+      ],
+      "properties": {
+       "body": {
+        "type": "string"
+       }
+      }
+     }
+    },
+    {
+     "if": {
+      "properties": {
+       "type": {
+        "const": "keypoints"
+       }
+      }
+     },
+     "then": {
+      "required": [
+       "items"
+      ],
+      "properties": {
+       "items": {
+        "type": "array",
+        "items": {
+         "type": "string"
+        },
+        "minItems": 1
+       }
+      }
+     }
+    },
+    {
+     "if": {
+      "properties": {
+       "type": {
+        "const": "compare"
+       }
+      }
+     },
+     "then": {
+      "required": [
+       "columns",
+       "rows"
+      ],
+      "properties": {
+       "columns": {
+        "type": "array",
+        "items": {
+         "type": "string"
+        },
+        "minItems": 2,
+        "maxItems": 2
+       },
+       "rows": {
+        "type": "array",
+        "items": {
+         "type": "object",
+         "required": [
+          "label",
+          "a",
+          "b"
+         ],
+         "properties": {
+          "label": {
+           "type": "string"
+          },
+          "a": {
+           "type": "string"
+          },
+          "b": {
+           "type": "string"
+          }
+         }
+        }
+       }
+      }
+     }
+    },
+    {
+     "if": {
+      "properties": {
+       "type": {
+        "const": "image"
+       }
+      }
+     },
+     "then": {
+      "required": [
+       "src",
+       "alt",
+       "license"
+      ],
+      "properties": {
+       "src": {
+        "type": "string",
+        "pattern": "^images/[a-z0-9-]+\\.(png|jpg|jpeg|webp|svg)$"
+       },
+       "alt": {
+        "type": "string"
+       },
+       "caption": {
+        "type": "string"
+       },
+       "credit": {
+        "type": "string"
+       },
+       "license": {
+        "type": "string"
+       },
+       "imagePrompt": {
+        "type": "string"
+       }
+      }
+     }
+    }
+   ]
+  },
+  "question": {
+   "type": "object",
+   "required": [
+    "id",
+    "type",
+    "command",
+    "marks",
+    "prompt",
+    "topic",
+    "difficulty",
+    "sourceRef",
+    "explanation"
+   ],
+   "properties": {
+    "id": {
+     "$ref": "#/definitions/localId"
+    },
+    "type": {
+     "enum": [
+      "mcq",
+      "tick",
+      "fill",
+      "match",
+      "written"
+     ]
+    },
+    "command": {
+     "enum": [
+      "state",
+      "give",
+      "identify",
+      "name",
+      "describe",
+      "explain",
+      "compare",
+      "complete",
+      "match",
+      "define",
+      "outline",
+      "discuss",
+      "evaluate",
+      "calculate"
+     ]
+    },
+    "marks": {
+     "type": "integer",
+     "minimum": 1
+    },
+    "prompt": {
+     "type": "string"
+    },
+    "topic": {
+     "type": "string"
+    },
+    "difficulty": {
+     "enum": [
+      1,
+      2,
+      3
+     ]
+    },
+    "sourceRef": {
+     "type": "string"
+    },
+    "explanation": {
+     "type": "string"
+    },
+    "hint": {
+     "type": "string",
+     "minLength": 5,
+     "maxLength": 220,
+     "description": "v0.3 optional: <=25 words, teaches the idea, never the answer"
+    },
+    "afterBlock": {
+     "$ref": "#/definitions/localId",
+     "description": "v0.3 optional: learn block id this question must follow"
+    }
+   },
+   "allOf": [
+    {
+     "if": {
+      "properties": {
+       "type": {
+        "const": "mcq"
+       }
+      }
+     },
+     "then": {
+      "required": [
+       "options",
+       "answers"
+      ],
+      "properties": {
+       "options": {
+        "type": "array",
+        "items": {
+         "type": "string"
+        },
+        "minItems": 2
+       },
+       "answers": {
+        "type": "array",
+        "items": {
+         "type": "integer",
+         "minimum": 0
+        },
+        "minItems": 1
+       }
+      }
+     }
+    },
+    {
+     "if": {
+      "properties": {
+       "type": {
+        "const": "tick"
+       }
+      }
+     },
+     "then": {
+      "required": [
+       "columns",
+       "rows"
+      ],
+      "properties": {
+       "columns": {
+        "type": "array",
+        "items": {
+         "type": "string"
+        },
+        "minItems": 2
+       },
+       "rowsPerMark": {
+        "type": "integer",
+        "minimum": 1
+       },
+       "rows": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+         "type": "object",
+         "required": [
+          "id",
+          "statement",
+          "answer"
+         ],
+         "properties": {
+          "id": {
+           "$ref": "#/definitions/localId"
+          },
+          "statement": {
+           "type": "string"
+          },
+          "answer": {
+           "type": "integer",
+           "minimum": 0
+          },
+          "explanation": {
+           "type": "string"
+          }
+         }
+        }
+       }
+      }
+     }
+    },
+    {
+     "if": {
+      "properties": {
+       "type": {
+        "const": "fill"
+       }
+      }
+     },
+     "then": {
+      "required": [
+       "wordList",
+       "items"
+      ],
+      "properties": {
+       "wordList": {
+        "type": "array",
+        "items": {
+         "type": "string"
+        },
+        "minItems": 2
+       },
+       "items": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+         "type": "object",
+         "required": [
+          "id",
+          "sentence",
+          "answer"
+         ],
+         "properties": {
+          "id": {
+           "$ref": "#/definitions/localId"
+          },
+          "sentence": {
+           "type": "string",
+           "pattern": "^[^_]*___[^_]*$"
+          },
+          "answer": {
+           "type": "string"
+          }
+         }
+        }
+       }
+      }
+     }
+    },
+    {
+     "if": {
+      "properties": {
+       "type": {
+        "const": "match"
+       }
+      }
+     },
+     "then": {
+      "required": [
+       "left",
+       "right",
+       "pairs"
+      ],
+      "properties": {
+       "left": {
+        "type": "array",
+        "items": {
+         "type": "object",
+         "required": [
+          "id",
+          "text"
+         ]
+        }
+       },
+       "right": {
+        "type": "array",
+        "items": {
+         "type": "object",
+         "required": [
+          "id",
+          "text"
+         ]
+        }
+       },
+       "pairs": {
+        "type": "array",
+        "items": {
+         "type": "array",
+         "items": {
+          "type": "string"
+         },
+         "minItems": 2,
+         "maxItems": 2
+        }
+       }
+      }
+     }
+    },
+    {
+     "if": {
+      "properties": {
+       "type": {
+        "const": "written"
+       }
+      }
+     },
+     "then": {
+      "required": [
+       "markPoints",
+       "modelAnswer"
+      ],
+      "properties": {
+       "modelAnswer": {
+        "type": "string"
+       },
+       "markPoints": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+         "type": "object",
+         "required": [
+          "id",
+          "point",
+          "accept"
+         ],
+         "additionalProperties": false,
+         "properties": {
+          "id": {
+           "$ref": "#/definitions/localId"
+          },
+          "point": {
+           "type": "string"
+          },
+          "group": {
+           "type": "string"
+          },
+          "accept": {
+           "type": "array",
+           "items": {
+            "type": "string",
+            "minLength": 3
+           },
+           "minItems": 1
+          },
+          "reject": {
+           "type": "array",
+           "items": {
+            "type": "string"
+           }
+          },
+          "requires": {
+           "type": [
+            "string",
+            "null"
+           ]
+          }
+         }
+        }
+       },
+       "rules": {
+        "type": "array",
+        "items": {
+         "oneOf": [
+          {
+           "type": "object",
+           "required": [
+            "type",
+            "group",
+            "capWithout",
+            "source"
+           ],
+           "additionalProperties": false,
+           "properties": {
+            "type": {
+             "const": "requireGroup"
+            },
+            "group": {
+             "type": "string"
+            },
+            "capWithout": {
+             "type": "integer",
+             "minimum": 0
+            },
+            "source": {
+             "enum": [
+              "question",
+              "app"
+             ]
+            }
+           }
+          },
+          {
+           "type": "object",
+           "required": [
+            "type",
+            "group",
+            "max"
+           ],
+           "additionalProperties": false,
+           "properties": {
+            "type": {
+             "const": "maxPerGroup"
+            },
+            "group": {
+             "type": "string"
+            },
+            "max": {
+             "type": "integer",
+             "minimum": 0
+            }
+           }
+          }
+         ]
+        }
+       }
+      }
+     }
+    }
+   ]
+  }
+ }
+}

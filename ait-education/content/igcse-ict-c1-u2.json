@@ -1,0 +1,973 @@
+{
+ "schemaVersion": "0.3",
+ "id": "igcse-ict-c1-u2",
+ "meta": {
+  "mode": "lesson",
+  "qualification": "Cambridge IGCSE",
+  "qualificationCode": "0417",
+  "subject": "Information and Communication Technology",
+  "subjectId": "ict",
+  "syllabusYears": "2026-2028",
+  "syllabusPoints": [
+   "1.4"
+  ],
+  "chapterNumber": 1,
+  "chapterTitle": "Types and components of computer systems",
+  "unit": 2,
+  "title": "Desktop vs laptop computers",
+  "schoolYear": 8,
+  "lang": "en",
+  "dir": "ltr",
+  "sourceRefs": [
+   {
+    "book": "Cambridge IGCSE ICT (Hodder), Chapter 1",
+    "sections": "1.4.1, 1.4.2 (laptops)",
+    "pages": "14-16"
+   }
+  ],
+  "estMinutes": 40,
+  "version": "0.3",
+  "status": "draft"
+ },
+ "topics": {
+  "desktop-definition": "What a desktop computer is",
+  "laptop-features": "Laptop design features",
+  "desktop-advantages": "Advantages of desktops over laptops",
+  "laptop-advantages": "Advantages of laptops over desktops",
+  "laptop-disadvantages": "Disadvantages of laptops",
+  "desktop-vs-laptop": "Comparing desktops and laptops",
+  "laptop-for-monitoring": "Using laptops for control and monitoring"
+ },
+ "objectives": [
+  "Describe what a desktop computer is and what a laptop computer is",
+  "Give advantages and disadvantages of desktops compared with laptops",
+  "Describe the design features of a laptop and why each is needed",
+  "Give typical uses of desktop and laptop computers"
+ ],
+ "learn": [
+  {
+   "id": "l1",
+   "topic": "desktop-definition",
+   "type": "text",
+   "title": "What is a desktop computer?",
+   "body": "A traditional **desktop computer** is a general-purpose computer built from **separate parts**: a monitor, a keyboard, a mouse and a processor unit (often called the 'tower'). Because the parts are separate and joined by cables, a desktop usually stays in **one place**."
+  },
+  {
+   "id": "l2",
+   "topic": "laptop-features",
+   "type": "text",
+   "title": "What is a laptop computer?",
+   "body": "A **laptop** (also called a **notebook**) has the screen, keyboard, pointing device (touchpad) and processor **all in one unit**. This makes it very **portable** — you can close it and carry it anywhere."
+  },
+  {
+   "id": "l3",
+   "topic": "desktop-definition",
+   "type": "image",
+   "src": "images/igcse-ict-c1-u2-desktop-laptop.png",
+   "alt": "A desktop computer with separate monitor, keyboard, mouse and tower next to an open laptop",
+   "caption": "Desktop: separate parts. Laptop: everything in one unit.",
+   "credit": "AIT Education (AI-generated)",
+   "license": "own",
+   "imagePrompt": "Clean flat illustration on a white background: on the left a desktop computer with a separate monitor, keyboard, mouse and tower unit joined by cables; on the right an open laptop. Friendly educational style, soft teal and amber colours, no text, no logos, no brand names."
+  },
+  {
+   "id": "l4",
+   "topic": "laptop-features",
+   "type": "keypoints",
+   "title": "Three design features of a laptop",
+   "items": [
+    "**Lightweight** — so it is easy to carry",
+    "**Low power consumption** — so the battery lasts longer",
+    "**Low heat output** — because there is little space inside for cooling"
+   ]
+  },
+  {
+   "id": "l5",
+   "topic": "desktop-vs-laptop",
+   "type": "compare",
+   "title": "Desktop vs laptop at a glance",
+   "columns": [
+    "Desktop",
+    "Laptop"
+   ],
+   "rows": [
+    {
+     "label": "Build",
+     "a": "Separate parts joined by cables",
+     "b": "Everything in one single unit"
+    },
+    {
+     "label": "Portability",
+     "a": "Stays in one place",
+     "b": "Can be used almost anywhere, e.g. a café"
+    },
+    {
+     "label": "Upgrading",
+     "a": "Easier and cheaper; parts are standard",
+     "b": "Not always possible, e.g. adding more RAM"
+    },
+    {
+     "label": "Value",
+     "a": "Usually a better specification (e.g. faster processor) for the same price",
+     "b": "Less performance for the money, because parts must be small"
+    },
+    {
+     "label": "Power",
+     "a": "Plugs into the mains; power use is not critical",
+     "b": "Runs on a battery with limited life"
+    },
+    {
+     "label": "Heat",
+     "a": "Large case lets heat escape easily",
+     "b": "Small case, so cooling is a challenge"
+    },
+    {
+     "label": "Internet",
+     "a": "More likely to be wired, so the connection is steadier",
+     "b": "Usually Wi-Fi, so the speed can vary"
+    },
+    {
+     "label": "Risk",
+     "a": "Less likely to be stolen or damaged",
+     "b": "Easier to steal, drop or damage"
+    },
+    {
+     "label": "Desk space",
+     "a": "Cables clutter the desk",
+     "b": "Only one cord; takes little space"
+    }
+   ]
+  },
+  {
+   "id": "l6",
+   "topic": "laptop-for-monitoring",
+   "type": "keypoints",
+   "title": "What are they used for?",
+   "items": [
+    "**Both:** office work (word processing, spreadsheets, databases), education, games, and entertainment such as streaming TV",
+    "**Laptops also:** control and monitoring away from a desk, because they can run on their own battery"
+   ]
+  },
+  {
+   "id": "l7",
+   "topic": "laptop-for-monitoring",
+   "type": "example",
+   "body": "A heating engineer visits a customer's home to service a gas boiler. She takes a laptop, connects it to the boiler and records how well it is working. Carrying a desktop to the boiler would not be practical — it has separate parts and needs a mains socket."
+  },
+  {
+   "id": "l8",
+   "topic": "laptop-advantages",
+   "type": "text",
+   "title": "Working in two places",
+   "body": "If you use a desktop at home and want to keep working at school, you need to move your files, for example on a **memory stick** or through **cloud storage**. Cloud storage helps, but some organisations do not allow **sensitive files** to be stored on the cloud. With a laptop, your files simply go with you."
+  },
+  {
+   "id": "l9",
+   "topic": "desktop-advantages",
+   "type": "tip",
+   "title": "Be specific",
+   "body": "One-word answers like 'cheaper' or 'faster' often get no mark. Say what is cheaper or faster: 'spare parts are standard, so repairs cost less'."
+  },
+  {
+   "id": "l10",
+   "topic": "desktop-vs-laptop",
+   "type": "tip",
+   "title": "Comparing? Say both sides",
+   "body": "In a compare question, write each difference with both sides: 'A desktop is made of separate parts **whereas** a laptop is one single unit.'"
+  },
+  {
+   "id": "l11",
+   "topic": "desktop-vs-laptop",
+   "type": "mistake",
+   "body": "Read which way the question asks! 'Advantages of a desktop compared with a laptop' — don't write 'it is portable'. That is a laptop advantage."
+  },
+  {
+   "id": "l12",
+   "topic": "desktop-vs-laptop",
+   "type": "realWorld",
+   "body": "Some modern desktops are 'all-in-one' (the computer is built into the screen), and both desktops and laptops can use either a cable or Wi-Fi. For the exam, use the textbook's comparison: a traditional desktop with separate parts versus a laptop."
+  }
+ ],
+ "check": [
+  {
+   "id": "c1",
+   "type": "mcq",
+   "command": "identify",
+   "marks": 1,
+   "prompt": "Which description best fits a traditional desktop computer?",
+   "hint": "Picture a desktop computer on a school desk. Is it one single unit, or made of separate parts?",
+   "options": [
+    "All parts are built into one single unit",
+    "It has a separate monitor, keyboard, mouse and processor unit",
+    "It always runs on an internal battery",
+    "It can only be controlled using a touch screen"
+   ],
+   "answers": [
+    1
+   ],
+   "topic": "desktop-definition",
+   "difficulty": 1,
+   "sourceRef": "p14",
+   "explanation": "Desktops are made of separate parts joined by cables. 'All parts in one unit' describes a laptop."
+  },
+  {
+   "id": "c2",
+   "type": "tick",
+   "command": "identify",
+   "marks": 2,
+   "rowsPerMark": 2,
+   "prompt": "Tick (✓) whether each statement is true or false.",
+   "hint": "Compare how the machines are powered, connected, carried and repaired; then decide whether each claim matches their usual design.",
+   "columns": [
+    "True",
+    "False"
+   ],
+   "rows": [
+    {
+     "id": "r1",
+     "statement": "Desktops are usually easier and cheaper to upgrade than laptops.",
+     "answer": 0,
+     "explanation": "Desktop parts are standard and easy to reach."
+    },
+    {
+     "id": "r2",
+     "statement": "Laptops usually have a steadier internet connection than desktops.",
+     "answer": 1,
+     "explanation": "Desktops are more likely to be wired, so their connection is steadier."
+    },
+    {
+     "id": "r3",
+     "statement": "A laptop is easier to steal than a desktop.",
+     "answer": 0,
+     "explanation": "Laptops are small and portable, so they are easier to steal."
+    },
+    {
+     "id": "r4",
+     "statement": "Power use is critical for a desktop because it runs on a battery.",
+     "answer": 1,
+     "explanation": "Desktops plug into the mains, so power use is not critical."
+    }
+   ],
+   "topic": "desktop-vs-laptop",
+   "difficulty": 1,
+   "sourceRef": "p15",
+   "explanation": "2 correct rows = 1 mark."
+  },
+  {
+   "id": "c3",
+   "type": "tick",
+   "command": "identify",
+   "marks": 2,
+   "rowsPerMark": 2,
+   "prompt": "Tick (✓) whether each statement describes a desktop or a laptop.",
+   "hint": "Use clues about mobility, replaceable components, cables and performance for the money to identify the better fit.",
+   "columns": [
+    "Desktop",
+    "Laptop"
+   ],
+   "rows": [
+    {
+     "id": "r1",
+     "statement": "Only needs one cord, so there are fewer trailing wires",
+     "answer": 1,
+     "explanation": "Everything is in one unit, so a laptop needs just one cord."
+    },
+    {
+     "id": "r2",
+     "statement": "Spare parts and connections are usually standard",
+     "answer": 0,
+     "explanation": "Standard parts make desktops cheaper to repair and upgrade."
+    },
+    {
+     "id": "r3",
+     "statement": "Can easily be used in a café",
+     "answer": 1,
+     "explanation": "Laptops are portable."
+    },
+    {
+     "id": "r4",
+     "statement": "Usually has a faster processor for the same price",
+     "answer": 0,
+     "explanation": "Desktops give a better specification for the money."
+    }
+   ],
+   "topic": "desktop-vs-laptop",
+   "difficulty": 1,
+   "sourceRef": "p15-16",
+   "explanation": "2 correct rows = 1 mark."
+  },
+  {
+   "id": "c4",
+   "type": "fill",
+   "command": "complete",
+   "marks": 3,
+   "prompt": "Complete each sentence using the most appropriate word from the list. Each word may be used once only.",
+   "hint": "Recall how small computers manage cooling, how a fixed workstation may connect online, and whether hardware changes are always possible.",
+   "afterBlock": "l5",
+   "wordList": [
+    "battery",
+    "heat",
+    "portable",
+    "stolen",
+    "upgrade",
+    "wired"
+   ],
+   "items": [
+    {
+     "id": "i1",
+     "sentence": "Laptops are designed to have a low ___ output because cooling is difficult in a small case.",
+     "answer": "heat"
+    },
+    {
+     "id": "i2",
+     "sentence": "Desktops are more likely to use a ___ internet connection, so the connection is steadier.",
+     "answer": "wired"
+    },
+    {
+     "id": "i3",
+     "sentence": "It is not always possible to ___ a laptop, for example by adding more RAM.",
+     "answer": "upgrade"
+    }
+   ],
+   "topic": "laptop-features",
+   "difficulty": 2,
+   "sourceRef": "p15-16",
+   "explanation": "'battery', 'portable' and 'stolen' were distractors."
+  }
+ ],
+ "practice": [
+  {
+   "id": "p1",
+   "type": "written",
+   "command": "give",
+   "marks": 2,
+   "prompt": "Give two advantages of using a desktop computer rather than a laptop computer.",
+   "markPoints": [
+    {
+     "id": "m1",
+     "point": "Spare parts/connections are standardised / so repairs cost less",
+     "accept": [
+      "standard",
+      "spare parts",
+      "cheaper to repair",
+      "cheaper parts"
+     ],
+     "reject": [
+      "laptop parts are"
+     ]
+    },
+    {
+     "id": "m2",
+     "point": "Easier / cheaper to upgrade or expand",
+     "accept": [
+      "easier to upgrad",
+      "cheaper to upgrad",
+      "can be upgraded",
+      "expand",
+      "add more ram"
+     ],
+     "reject": [
+      "not",
+      "harder"
+     ]
+    },
+    {
+     "id": "m3",
+     "point": "Better specification / faster processor for the same price",
+     "accept": [
+      "specification",
+      "faster processor",
+      "better value",
+      "more powerful for"
+     ],
+     "reject": [
+      "laptop is",
+      "laptops are"
+     ]
+    },
+    {
+     "id": "m4",
+     "point": "Power use is not critical / uses mains electricity",
+     "accept": [
+      "mains",
+      "wall socket",
+      "no battery",
+      "does not need a battery",
+      "doesn't need a battery"
+     ]
+    },
+    {
+     "id": "m5",
+     "point": "Larger case gives better heat dissipation / cooling",
+     "accept": [
+      "better cooling",
+      "cools better",
+      "heat escape",
+      "dissipat",
+      "does not overheat",
+      "less likely to overheat"
+     ]
+    },
+    {
+     "id": "m6",
+     "point": "Less likely to be stolen / damaged as it stays in one place",
+     "accept": [
+      "less likely to be stolen",
+      "harder to steal",
+      "less likely to be damaged",
+      "not easily stolen"
+     ]
+    },
+    {
+     "id": "m7",
+     "point": "Steadier / more stable internet connection as usually wired",
+     "accept": [
+      "wired",
+      "stable connection",
+      "steadier",
+      "more stable",
+      "ethernet",
+      "cable connection"
+     ]
+    }
+   ],
+   "modelAnswer": "Spare parts are standard, so repairs cost less. It is usually wired, so its internet connection is steadier.",
+   "topic": "desktop-advantages",
+   "difficulty": 1,
+   "sourceRef": "p15",
+   "explanation": "Any two different valid points. Make each one specific — 'cheaper' alone is too vague."
+  },
+  {
+   "id": "p2",
+   "type": "written",
+   "command": "give",
+   "marks": 2,
+   "prompt": "Give two disadvantages of laptop computers compared with desktop computers.",
+   "markPoints": [
+    {
+     "id": "m1",
+     "point": "Easier to steal",
+     "accept": [
+      "easier to steal",
+      "easily stolen",
+      "more likely to be stolen",
+      "theft"
+     ],
+     "reject": [
+      "desktop"
+     ]
+    },
+    {
+     "id": "m2",
+     "point": "Limited battery life / may need to carry a heavy power adaptor",
+     "accept": [
+      "battery runs out",
+      "battery life",
+      "limited battery",
+      "power adaptor",
+      "power adapter",
+      "charger"
+     ]
+    },
+    {
+     "id": "m3",
+     "point": "Keyboard / pointing device can be awkward to use",
+     "accept": [
+      "keyboard is",
+      "small keyboard",
+      "touchpad",
+      "awkward",
+      "hard to type"
+     ]
+    },
+    {
+     "id": "m4",
+     "point": "Not always possible to upgrade (e.g. add RAM)",
+     "accept": [
+      "cannot upgrad",
+      "can't upgrad",
+      "hard to upgrad",
+      "difficult to upgrad",
+      "not upgrad"
+     ]
+    },
+    {
+     "id": "m5",
+     "point": "Lower specification for the same price",
+     "accept": [
+      "lower specification",
+      "less powerful",
+      "slower for the same",
+      "more expensive for"
+     ],
+     "reject": [
+      "desktop"
+     ]
+    },
+    {
+     "id": "m6",
+     "point": "Wi-Fi connection / data rate can vary",
+     "accept": [
+      "signal can vary",
+      "variable",
+      "unstable",
+      "weak signal"
+     ]
+    },
+    {
+     "id": "m7",
+     "point": "Harder / more expensive to repair",
+     "accept": [
+      "hard to repair",
+      "harder to repair",
+      "expensive to repair",
+      "difficult to repair"
+     ]
+    }
+   ],
+   "modelAnswer": "Laptops are easier to steal. The battery has limited life, so the user may need to carry a power adaptor.",
+   "topic": "laptop-disadvantages",
+   "difficulty": 1,
+   "sourceRef": "p16",
+   "explanation": "Any two different valid points."
+  },
+  {
+   "id": "p3",
+   "type": "written",
+   "command": "state",
+   "marks": 3,
+   "prompt": "State three design features of a laptop computer that help to make it portable.",
+   "markPoints": [
+    {
+     "id": "m1",
+     "point": "Lightweight",
+     "accept": [
+      "lightweight",
+      "light weight",
+      "light to carry",
+      "not heavy"
+     ],
+     "reject": [
+      "heavy weight",
+      "heavier"
+     ]
+    },
+    {
+     "id": "m2",
+     "point": "Low power consumption / long battery life / energy efficient",
+     "accept": [
+      "low power",
+      "uses less power",
+      "power consumption",
+      "long battery",
+      "battery lasts",
+      "energy efficient"
+     ],
+     "reject": [
+      "high power"
+     ]
+    },
+    {
+     "id": "m3",
+     "point": "Low heat output",
+     "accept": [
+      "low heat",
+      "less heat",
+      "does not get hot",
+      "doesn't get hot",
+      "produces little heat"
+     ],
+     "reject": [
+      "high heat",
+      "lots of heat"
+     ]
+    }
+   ],
+   "modelAnswer": "Lightweight. Low power consumption. Low heat output.",
+   "topic": "laptop-features",
+   "difficulty": 1,
+   "sourceRef": "p16",
+   "explanation": "The three design features are lightweight, low power consumption and low heat output."
+  },
+  {
+   "id": "p4",
+   "type": "written",
+   "command": "describe",
+   "marks": 4,
+   "prompt": "Describe two design features of a laptop computer and why each one is needed.",
+   "markPoints": [
+    {
+     "id": "m1",
+     "point": "Lightweight",
+     "accept": [
+      "lightweight",
+      "light weight",
+      "not heavy"
+     ],
+     "reject": [
+      "heavy weight"
+     ],
+     "group": "feature"
+    },
+    {
+     "id": "m2",
+     "point": "…so it is easy to carry / helps portability",
+     "accept": [
+      "easy to carry",
+      "portab",
+      "carry it"
+     ],
+     "requires": "m1",
+     "group": "reason"
+    },
+    {
+     "id": "m3",
+     "point": "Low power consumption",
+     "accept": [
+      "low power",
+      "uses less power",
+      "power consumption",
+      "energy efficient"
+     ],
+     "reject": [
+      "high power"
+     ],
+     "group": "feature"
+    },
+    {
+     "id": "m4",
+     "point": "…so the battery lasts longer",
+     "accept": [
+      "battery lasts",
+      "longer battery",
+      "battery life"
+     ],
+     "requires": "m3",
+     "group": "reason"
+    },
+    {
+     "id": "m5",
+     "point": "Low heat output",
+     "accept": [
+      "low heat",
+      "less heat",
+      "produces little heat"
+     ],
+     "reject": [
+      "high heat"
+     ],
+     "group": "feature"
+    },
+    {
+     "id": "m6",
+     "point": "…because cooling is difficult in a small case / to avoid overheating",
+     "accept": [
+      "cooling",
+      "overheat",
+      "small case",
+      "little space"
+     ],
+     "requires": "m5",
+     "group": "reason"
+    }
+   ],
+   "rules": [
+    {
+     "type": "maxPerGroup",
+     "group": "feature",
+     "max": 2
+    },
+    {
+     "type": "maxPerGroup",
+     "group": "reason",
+     "max": 2
+    }
+   ],
+   "modelAnswer": "A laptop is lightweight. This makes it easy to carry around. It has low power consumption. This makes the battery last longer.",
+   "topic": "laptop-features",
+   "difficulty": 2,
+   "sourceRef": "p16",
+   "explanation": "Describe = feature (1 mark) + why it is needed (1 mark), for two features. A reason only counts if you named its feature."
+  },
+  {
+   "id": "p5",
+   "type": "written",
+   "command": "explain",
+   "marks": 3,
+   "prompt": "Omar does his school projects both at school and at home. Explain why a laptop may be more suitable for Omar than a desktop computer.",
+   "markPoints": [
+    {
+     "id": "m1",
+     "point": "Laptop is portable / he can carry it between school and home",
+     "accept": [
+      "portab",
+      "carry it",
+      "take it to school",
+      "take it home",
+      "between school and home"
+     ]
+    },
+    {
+     "id": "m2",
+     "point": "All parts are in one unit / nothing to disconnect and set up again",
+     "accept": [
+      "one unit",
+      "single unit",
+      "all in one",
+      "set up again",
+      "no wires to"
+     ]
+    },
+    {
+     "id": "m3",
+     "point": "His files stay on the laptop / no need to copy files to a memory stick",
+     "accept": [
+      "files stay",
+      "files are on",
+      "files with him",
+      "no need to copy",
+      "don't need to copy",
+      "doesn't need to copy",
+      "same files"
+     ]
+    },
+    {
+     "id": "m4",
+     "point": "Does not depend on cloud storage, which may not allow some files",
+     "accept": [
+      "without the cloud",
+      "not need the cloud",
+      "no need for cloud",
+      "doesn't need cloud"
+     ]
+    },
+    {
+     "id": "m5",
+     "point": "Battery means he can work where there is no socket, e.g. while travelling",
+     "accept": [
+      "on the bus",
+      "in the car",
+      "while travelling",
+      "no socket",
+      "own battery"
+     ]
+    }
+   ],
+   "modelAnswer": "A laptop is portable, so Omar can carry it between school and home. His project files stay on the laptop, so he does not need to copy them onto a memory stick. It runs on its battery, so he can work while travelling.",
+   "topic": "laptop-advantages",
+   "difficulty": 2,
+   "sourceRef": "p15-16",
+   "explanation": "Explain = a point AND how it helps Omar (school and home). General facts not linked to Omar are weaker."
+  },
+  {
+   "id": "p6",
+   "type": "written",
+   "command": "compare",
+   "marks": 4,
+   "prompt": "Compare desktop and laptop computers. Your answer must include similarities and differences.",
+   "markPoints": [
+    {
+     "id": "m1",
+     "point": "Both are used for office work / education / games / entertainment",
+     "group": "similarity",
+     "accept": [
+      "both are used",
+      "both used",
+      "both can be used",
+      "both can"
+     ]
+    },
+    {
+     "id": "m2",
+     "point": "Both have a processor, keyboard, screen and pointing device",
+     "group": "similarity",
+     "accept": [
+      "both have a",
+      "both have the",
+      "both contain",
+      "both have keyboard",
+      "both have a processor"
+     ]
+    },
+    {
+     "id": "m3",
+     "point": "Desktop has separate parts whereas a laptop is a single unit",
+     "group": "difference",
+     "accept": [
+      "separate parts",
+      "separate components",
+      "single unit",
+      "one unit"
+     ]
+    },
+    {
+     "id": "m4",
+     "point": "Laptop is portable whereas a desktop stays in one place",
+     "group": "difference",
+     "accept": [
+      "portab",
+      "one place",
+      "carry"
+     ]
+    },
+    {
+     "id": "m5",
+     "point": "Desktop is easier / cheaper to upgrade than a laptop",
+     "group": "difference",
+     "accept": [
+      "upgrad"
+     ]
+    },
+    {
+     "id": "m6",
+     "point": "Desktop has a better specification for the same price",
+     "group": "difference",
+     "accept": [
+      "specification",
+      "faster processor",
+      "better value"
+     ]
+    },
+    {
+     "id": "m7",
+     "point": "Laptop runs on a battery whereas a desktop uses the mains",
+     "group": "difference",
+     "accept": [
+      "battery",
+      "mains"
+     ]
+    },
+    {
+     "id": "m8",
+     "point": "Desktop usually wired / steadier whereas laptop usually Wi-Fi / variable",
+     "group": "difference",
+     "accept": [
+      "wired",
+      "wi-fi",
+      "wifi",
+      "steadier",
+      "variable"
+     ]
+    },
+    {
+     "id": "m9",
+     "point": "Laptop is easier to steal / damage than a desktop",
+     "group": "difference",
+     "accept": [
+      "steal",
+      "stolen",
+      "theft",
+      "damage"
+     ]
+    }
+   ],
+   "rules": [
+    {
+     "type": "requireGroup",
+     "group": "similarity",
+     "capWithout": 3,
+     "source": "question"
+    },
+    {
+     "type": "maxPerGroup",
+     "group": "similarity",
+     "max": 2
+    }
+   ],
+   "modelAnswer": "Both are used for office work and education. A desktop has separate parts whereas a laptop is one single unit. A laptop is portable whereas a desktop stays in one place. A desktop is easier to upgrade than a laptop.",
+   "topic": "desktop-vs-laptop",
+   "difficulty": 3,
+   "sourceRef": "p14-16",
+   "explanation": "This question says you MUST include similarities and differences, so with differences only the most you can get is 3 out of 4. Write each difference with both sides, using 'whereas'."
+  },
+  {
+   "id": "p7",
+   "type": "written",
+   "command": "explain",
+   "marks": 2,
+   "prompt": "A heating engineer visits customers' homes to check how well their gas boilers are working. Explain why a laptop is more suitable than a desktop computer for this job.",
+   "markPoints": [
+    {
+     "id": "m1",
+     "point": "Laptop can be carried to the boiler / used at the customer's home",
+     "accept": [
+      "carry it",
+      "carried",
+      "take it to",
+      "portab",
+      "at the customer",
+      "on site"
+     ]
+    },
+    {
+     "id": "m2",
+     "point": "Runs on its own battery / no mains socket needed",
+     "accept": [
+      "battery",
+      "no socket",
+      "no plug",
+      "without a socket"
+     ]
+    },
+    {
+     "id": "m3",
+     "point": "Can be connected to the boiler to record / monitor its performance directly",
+     "accept": [
+      "connect it to the boiler",
+      "connected to the boiler",
+      "plug it into the boiler",
+      "monitor the boiler",
+      "record how",
+      "collect data from"
+     ]
+    }
+   ],
+   "modelAnswer": "The laptop can be carried to the customer's boiler. It runs on its battery, so it can be connected to the boiler to monitor how it is working.",
+   "topic": "laptop-for-monitoring",
+   "difficulty": 2,
+   "sourceRef": "p16",
+   "explanation": "This is the 'control and monitoring' use of laptops — link your points to the engineer visiting homes."
+  }
+ ],
+ "recap": {
+  "summary": [
+   "Desktop = separate parts, stays in one place. Laptop = everything in one unit, portable.",
+   "Desktop wins on: standard parts, upgrading, value for money, power, cooling, steadier wired internet, security.",
+   "Laptop wins on: portability, one cord, small desk space, Wi-Fi in different places.",
+   "Laptop design features: lightweight, low power consumption, low heat output.",
+   "Both: office work, education, gaming, entertainment. Laptops also: monitoring on site."
+  ],
+  "flashcards": [
+   {
+    "id": "f1",
+    "front": "What is a desktop computer?",
+    "back": "A general-purpose computer made of separate parts (monitor, keyboard, mouse, processor unit)."
+   },
+   {
+    "id": "f2",
+    "front": "What is a laptop computer?",
+    "back": "A computer with the screen, keyboard, pointing device and processor all in one unit."
+   },
+   {
+    "id": "f3",
+    "front": "Three design features of a laptop",
+    "back": "Lightweight, low power consumption, low heat output."
+   },
+   {
+    "id": "f4",
+    "front": "Why is a desktop's internet often steadier?",
+    "back": "It is more likely to be wired, so the data transfer rate varies less."
+   },
+   {
+    "id": "f5",
+    "front": "Two laptop disadvantages",
+    "back": "Easier to steal; limited battery life (may need a power adaptor)."
+   },
+   {
+    "id": "f6",
+    "front": "How do you write a difference in a compare answer?",
+    "back": "State both sides: 'A desktop … whereas a laptop …'."
+   }
+  ]
+ }
+}
