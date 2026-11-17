@@ -1223,3 +1223,6 @@ summary:focus-visible,
 .subject-card .progress-ring-svg { width: 54px; height: 54px; }
 /* v0.3.3: keep line breaks written in lesson text (worked-example steps, lists) */
 .block-body { white-space: pre-line; }
+
+/* v0.3.3: keep a diagram and its caption on one laptop screen */
+.learn-image { max-height: 340px; width: auto; max-width: 100%; display: block; margin-inline: auto; }
