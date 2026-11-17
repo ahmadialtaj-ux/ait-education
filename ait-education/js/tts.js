@@ -222,6 +222,14 @@ function clearPaint(includeBlockClass = true) {
 }
 
 // ---------- speaking ----------
+// v0.3.3: voices read emoji aloud ("electric light bulb", "cat face"). Blank them out with spaces of the
+// same length (so word-highlight positions still line up) and turn arrows into a pause.
+const EMOJI_RE = /[\p{Extended_Pictographic}\u{1F1E6}-\u{1F1FF}\u{1F3FB}-\u{1F3FF}\uFE0F\u20E3\u200D]/gu;
+function speakable(text) {
+  return String(text || "")
+    .replace(EMOJI_RE, (m) => " ".repeat(m.length))
+    .replace(/[\u2190-\u21FF]/g, ",");
+}
 function speakCurrent() {
   const myToken = state.token;
   if (state.idx >= state.sentences.length) {
@@ -229,9 +237,15 @@ function speakCurrent() {
     return;
   }
   const sen = state.sentences[state.idx];
-  const say = state.domMode ? state.text.slice(sen.start, sen.end).replace(/\n/g, " ") : sen.say;
+  const say = speakable(state.domMode ? state.text.slice(sen.start, sen.end).replace(/\n/g, " ") : sen.say);
   paintSentence();
   updateBar();
+  if (!/[\p{L}\p{N}]/u.test(say)) {
+    // v0.3.3: nothing readable left (e.g. a sentence that was only emoji) -> skip it
+    state.idx += 1;
+    speakCurrent();
+    return;
+  }
 
   const u = new SpeechSynthesisUtterance(say);
   u.voice = state.voice;
