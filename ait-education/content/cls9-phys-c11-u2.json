@@ -1,0 +1,961 @@
+{
+ "schemaVersion": "0.3",
+ "id": "cls9-phys-c11-u2",
+ "meta": {
+  "mode": "lesson",
+  "qualification": "Cambridge Lower Secondary",
+  "qualificationCode": "0893",
+  "subject": "Physics",
+  "subjectId": "physics",
+  "syllabusYears": "Stage 9",
+  "syllabusPoints": [
+   "Stage 9 Physics, Forces: density",
+   "Science in context: how scientists worked in the past and work now"
+  ],
+  "chapterNumber": 11,
+  "chapterTitle": "Forces: density, floating and sinking",
+  "unit": 2,
+  "title": "Using ideas about density: the gem detectives",
+  "schoolYear": 8,
+  "lang": "en",
+  "dir": "ltr",
+  "sourceRefs": [
+   {
+    "book": "Complete Physics for Cambridge Lower Secondary (Oxford), Chapter 11 Forces",
+    "sections": "11.2 Science in context: Using ideas about density",
+    "pages": "192-193"
+   },
+   {
+    "book": "Complete Physics for Cambridge Lower Secondary Workbook, Chapter 11",
+    "sections": "11.2 Using ideas about density",
+    "pages": "80"
+   }
+  ],
+  "estMinutes": 35,
+  "version": "0.3",
+  "status": "draft"
+ },
+ "topics": {
+  "identify-materials": "Using density to identify materials",
+  "overflow-method": "Measuring the volume of an irregular object",
+  "al-biruni": "Al-Biruni and how he studied gemstones",
+  "precision": "Precise and accurate measurements",
+  "science-now": "How scientists worked in the past and how they work now"
+ },
+ "objectives": [
+  "Describe how density can be used to identify materials such as gemstones.",
+  "Describe Al-Biruni's overflow method for measuring the volume of an irregular stone.",
+  "Explain the difference between precise and accurate measurements.",
+  "Describe how scientists worked in the past and how they work now."
+ ],
+ "learn": [
+  {
+   "id": "b1",
+   "topic": "identify-materials",
+   "type": "text",
+   "title": "Brief: the fake-diamond scam",
+   "body": "A thousand years ago, a sneaky trader could pick up a shiny lump of **quartz**, call it a **diamond**, and be rich by lunchtime. 😬\n\nQuartz is the most common mineral on Earth, and by eye a rough diamond and a lump of quartz are hard to tell apart. Glass can pass for a gemstone too. You can't ask a stone to show its ID card. But you CAN measure its **density**. Every material has its own density, like a fingerprint. 🔎\n\nYour mission today: become a **gem detective** and catch the fakes."
+  },
+  {
+   "id": "b7",
+   "topic": "identify-materials",
+   "type": "realWorld",
+   "title": "Is that gold ring real?",
+   "body": "Pure gold is very dense: about **19.3 g/cm³**. Many fakes are a cheaper, less dense metal with a thin gold coating. Measure the ring's mass and volume, work out its density, and the fake gets caught. Jewellers still use Al-Biruni's idea today. 💍"
+  },
+  {
+   "id": "b2",
+   "topic": "al-biruni",
+   "type": "text",
+   "title": "Meet Al-Biruni: the original gem detective",
+   "body": "**Al-Biruni** was a Muslim scientist and mathematician, born **over 1000 years ago** in a place that is now part of **Uzbekistan**. He wrote books on a huge range of topics, from astronomy to geography. (Imagine having homework in ALL of those subjects.) 📚\n\nHe loved rocks and minerals, and he knew people needed a reliable way to **identify gemstones**. His idea: identify them by their **density**."
+  },
+  {
+   "id": "b3",
+   "topic": "overflow-method",
+   "type": "text",
+   "title": "The problem: gemstones aren't cubes",
+   "body": "Finding the **mass** of a stone is easy: put it on a balance. ⚖️ Finding its **volume** is the hard part. A cube? Length × width × height. A bumpy, lumpy gemstone? No ruler in the world can do that.\n\nAl-Biruni's clever fix: let the stone **push water out of the way**, then measure that water. The volume of water pushed out is the same as the volume of the stone. This is called **displacement**."
+  },
+  {
+   "id": "b4",
+   "topic": "overflow-method",
+   "type": "image",
+   "src": "images/cls9-phys-c11-u2-overflow-flask.svg",
+   "alt": "A flask full of water with a side arm spout near the top. A stone hangs on a thread and is being lowered into the flask. Water flows out of the side arm into a small beaker",
+   "caption": "The overflow method: the water pushed out of the side arm has the same volume as the stone.",
+   "credit": "AIT Education",
+   "license": "AIT Education original diagram"
+  },
+  {
+   "id": "b5",
+   "topic": "overflow-method",
+   "type": "keypoints",
+   "title": "The overflow method, step by step",
+   "items": [
+    "**1.** Fill a **flask with a side arm** (a spout near the top) with water, until water starts to flow out of the side arm into a beaker.",
+    "**2.** **Empty the beaker** and put it back under the side arm.",
+    "**3.** Gently **lower the stone** into the flask.",
+    "**4.** Collect the water that **overflows** through the side arm and **measure its volume**. That volume = the volume of the stone.",
+    "**5.** Measure the stone's mass, then calculate **density = mass ÷ volume**."
+   ]
+  },
+  {
+   "id": "b6",
+   "topic": "overflow-method",
+   "type": "mistake",
+   "title": "Why empty the beaker first?",
+   "body": "If you skip step 2, the water that dribbled out while you were filling the flask gets added to your result, and the stone seems bigger than it is. And lower the stone **gently**: a big splash throws extra water out (and soaks your notebook, your shoes and possibly the cat). 💦🐈"
+  },
+  {
+   "id": "b8",
+   "topic": "precision",
+   "type": "text",
+   "title": "Al-Biruni's superpower: precision",
+   "body": "Al-Biruni used **density = mass ÷ volume** to work out the density of many minerals, such as quartz, ruby and pearl. His results were incredibly close to the values scientists measure today. We say his measurements were very **precise**.\n\nHere's the jaw-dropper: it took about **700 years** before scientists in Europe measured densities that precisely. That's like a phone made in the year 1000 still beating every phone made until 1700. 📱🤯"
+  },
+  {
+   "id": "b9",
+   "topic": "precision",
+   "type": "compare",
+   "title": "Precise vs accurate: not the same thing!",
+   "columns": [
+    "Precise",
+    "Accurate"
+   ],
+   "rows": [
+    {
+     "label": "What it means",
+     "a": "Readings are taken to small steps (more decimal places), and repeated readings agree closely with each other",
+     "b": "The reading is close to the TRUE value"
+    },
+    {
+     "label": "Darts",
+     "a": "All the darts land close together, even if they are nowhere near the bullseye",
+     "b": "The darts land on or near the bullseye"
+    },
+    {
+     "label": "Earth's density",
+     "a": "5.513 g/cm³ (three decimal places) is more precise than 5.48 g/cm³",
+     "b": "Today's value is closer to the Earth's true density"
+    }
+   ]
+  },
+  {
+   "id": "b10",
+   "topic": "precision",
+   "type": "image",
+   "src": "images/cls9-phys-c11-u2-precise-accurate.svg",
+   "alt": "Three dartboards. The first has darts spread all over (not precise, not accurate). The second has darts tightly grouped in one corner away from the centre (precise, not accurate). The third has darts tightly grouped on the bullseye (precise and accurate)",
+   "caption": "Precise = tightly grouped. Accurate = on target. The best measurements are both.",
+   "credit": "AIT Education",
+   "license": "AIT Education original diagram"
+  },
+  {
+   "id": "b11",
+   "topic": "precision",
+   "type": "text",
+   "title": "Another density detective: Henry Cavendish",
+   "body": "In **1798**, the English scientist **Henry Cavendish** worked out the density of the **whole Earth**. (You can't exactly put a planet on a kitchen scale.) 🌍\n\nCavendish was very shy, worked **alone at home** and spent many hours on experiments. He used Newton's law of gravitation and another scientist's measurement of the Earth's volume, and got **5.48 g/cm³**. Today's value is **5.513 g/cm³**.\n\nToday's value is **more precise** (more decimal places) and **more accurate** (closer to the true value), because scientists now have better technology and much more information. Like Al-Biruni, Cavendish did his experiments himself and was interested in calculating density."
+  },
+  {
+   "id": "b12",
+   "topic": "al-biruni",
+   "type": "keypoints",
+   "title": "Al-Biruni's gem checklist: more than density",
+   "items": [
+    "Density was not his only test. Building on the work of earlier scientists, he also sorted gemstones by:",
+    "🎨 their **colour**",
+    "🌈 how **white light splits into a spectrum** when it passes through the gem",
+    "💪 their **hardness**",
+    "💎 their **crystal shape**"
+   ]
+  },
+  {
+   "id": "b13",
+   "topic": "science-now",
+   "type": "text",
+   "title": "Then and now: how scientists work",
+   "body": "**Then:** scientists like Al-Biruni and Cavendish often worked **alone**, and many studied **lots of different topics**.\n\n**Now:** most scientists **specialise** in one area and work in **teams**, often with people all over the world. They **publish** their results so others can read them, check them and build on them.\n\n**Always:** scientists **build on the ideas of earlier scientists**. Al-Biruni built on older work on classifying gems, and today's scientists build on his. Science is one giant relay race that has been going for thousands of years. 🏃‍♂️🏃‍♀️"
+  },
+  {
+   "id": "b14",
+   "topic": "science-now",
+   "type": "compare",
+   "title": "Gem detectives: then vs now",
+   "columns": [
+    "Al-Biruni (over 1000 years ago)",
+    "Scientists today"
+   ],
+   "rows": [
+    {
+     "label": "Who does the work",
+     "a": "Often one scientist working alone",
+     "b": "Usually a team of people"
+    },
+    {
+     "label": "Topics",
+     "a": "Many topics: astronomy, geography, maths, minerals…",
+     "b": "Specialise in one area"
+    },
+    {
+     "label": "Sharing",
+     "a": "Wrote books",
+     "b": "Publish results that are read all over the world and checked by others"
+    },
+    {
+     "label": "Gem tests",
+     "a": "Density, colour, hardness, crystal shape, splitting light into a spectrum",
+     "b": "Still density! Plus refractive index (how light bends in the gem) and how well it conducts electricity"
+    },
+    {
+     "label": "The same",
+     "a": "Built on earlier scientists' work",
+     "b": "Build on earlier scientists' work"
+    }
+   ]
+  },
+  {
+   "id": "b15",
+   "topic": "science-now",
+   "type": "text",
+   "title": "Why did precision stand still for 700 years?",
+   "body": "Good scientists ask \"why?\". Here are some sensible suggestions:\n\n🔧 Measuring **instruments** didn't improve much for a long time.\n🐌 **Ideas spread slowly.** No internet, no printing presses for most of that time: books were copied by hand, and many had to be translated into other languages first.\n🧍 Scientists mostly worked **alone**, so fewer people checked and improved each other's methods.\n\nToday a result published in the morning can be read on the other side of the world by lunchtime."
+  },
+  {
+   "id": "b16",
+   "topic": "science-now",
+   "type": "realWorld",
+   "title": "The density of the Sun (no ladder needed)",
+   "body": "You can't drop the Sun into an overflow flask. 🌞 So scientists used observations from **telescopes all over the world**, and many scientists combined all those measurements to work out the Sun's density. That's modern science: big teams, shared data, a lot of maths."
+  },
+  {
+   "id": "b17",
+   "topic": "science-now",
+   "type": "tip",
+   "title": "Exam tip: similarities AND differences",
+   "body": "If a question asks for one way Al-Biruni's work was **similar** to scientists today and one way it was **different**, give one of each. Two similarities and no difference = only half the marks. Use **whereas** to make the difference crystal clear: \"Al-Biruni often worked alone, **whereas** scientists today usually work in teams.\""
+  }
+ ],
+ "check": [
+  {
+   "id": "c1",
+   "type": "mcq",
+   "command": "identify",
+   "marks": 1,
+   "prompt": "Why did Al-Biruni need a special method to find the volume of gemstones?",
+   "hint": "Which was easy to measure, mass or volume? Think about measuring a bumpy shape with a ruler.",
+   "options": [
+    "Gemstones are too heavy to go on a balance",
+    "Gemstones have irregular shapes, so a ruler can't measure their volume",
+    "He had no water",
+    "Gemstones refuse to sit still"
+   ],
+   "answers": [
+    1
+   ],
+   "topic": "overflow-method",
+   "difficulty": 1,
+   "sourceRef": "p192",
+   "explanation": "Mass was easy (use a balance). Volume was the problem, because the stones had bumpy, irregular shapes.",
+   "afterBlock": "b3"
+  },
+  {
+   "id": "c2",
+   "type": "fill",
+   "command": "complete",
+   "marks": 3,
+   "prompt": "Complete Al-Biruni's method. Not every word is used.",
+   "hint": "Picture the diagram: where does the water leave the flask, and what must you do so only the stone's water is collected?",
+   "wordList": [
+    "side arm",
+    "empty",
+    "overflows",
+    "evaporates",
+    "top",
+    "fill"
+   ],
+   "items": [
+    {
+     "id": "i1",
+     "sentence": "Fill the flask until water starts to flow out of the ___.",
+     "answer": "side arm"
+    },
+    {
+     "id": "i2",
+     "sentence": "Next, ___ the beaker and put it back.",
+     "answer": "empty"
+    },
+    {
+     "id": "i3",
+     "sentence": "Lower the stone in and measure the volume of the water that ___.",
+     "answer": "overflows"
+    }
+   ],
+   "topic": "overflow-method",
+   "difficulty": 1,
+   "sourceRef": "p192",
+   "explanation": "The water pushed out through the side arm has the same volume as the stone.",
+   "afterBlock": "b6"
+  },
+  {
+   "id": "c3",
+   "type": "fill",
+   "command": "complete",
+   "marks": 3,
+   "prompt": "Gem detective case: a trader's \"diamond\" has a mass of 13.2 g and pushes 5 cm³ of water out of the flask. Diamond is about 3.5 g/cm³ and quartz is about 2.65 g/cm³. Complete the case file. Not every word is used.",
+   "hint": "Divide the mass by the volume of water pushed out, then compare your answer with the two values given.",
+   "wordList": [
+    "5 cm³",
+    "13.2 cm³",
+    "2.64 g/cm³",
+    "0.38 g/cm³",
+    "quartz",
+    "diamond"
+   ],
+   "items": [
+    {
+     "id": "i1",
+     "sentence": "density = 13.2 g ÷ ___",
+     "answer": "5 cm³"
+    },
+    {
+     "id": "i2",
+     "sentence": "density = ___",
+     "answer": "2.64 g/cm³"
+    },
+    {
+     "id": "i3",
+     "sentence": "Verdict: the stone is probably ___.",
+     "answer": "quartz"
+    }
+   ],
+   "topic": "identify-materials",
+   "difficulty": 2,
+   "sourceRef": "p192",
+   "explanation": "13.2 ÷ 5 = 2.64 g/cm³. That's almost exactly quartz, not diamond. Case closed: the trader is busted. 🚨",
+   "afterBlock": "b6"
+  },
+  {
+   "id": "c4",
+   "type": "mcq",
+   "command": "state",
+   "marks": 1,
+   "prompt": "Cavendish (1798) found the Earth's density was 5.48 g/cm³. Today's value is 5.513 g/cm³. Which statement is correct?",
+   "hint": "Count the decimal places in each value. Then think about which scientists have better technology and more information.",
+   "options": [
+    "Cavendish's value is more precise because it is shorter",
+    "Today's value is more precise and more accurate",
+    "Both values are equally precise",
+    "Cavendish's value is more accurate because he was shy"
+   ],
+   "answers": [
+    1
+   ],
+   "topic": "precision",
+   "difficulty": 2,
+   "sourceRef": "p193; workbook p80",
+   "explanation": "5.513 has more decimal places (more precise), and today's scientists have better technology and more information (more accurate). Being shy, sadly, does not improve your measurements.",
+   "afterBlock": "b11"
+  },
+  {
+   "id": "c5",
+   "type": "tick",
+   "command": "identify",
+   "marks": 2,
+   "prompt": "Tick (✓) whether each statement describes a PRECISE measurement or an ACCURATE measurement.",
+   "hint": "One word is about readings agreeing with each other; the other is about hitting the true value.",
+   "columns": [
+    "Precise",
+    "Accurate"
+   ],
+   "rowsPerMark": 2,
+   "rows": [
+    {
+     "id": "r1",
+     "statement": "Three repeat readings are 2.61, 2.62 and 2.61: very close together.",
+     "answer": 0,
+     "explanation": "Readings that agree closely are precise."
+    },
+    {
+     "id": "r2",
+     "statement": "The measured value is very close to the true value.",
+     "answer": 1,
+     "explanation": "Close to the true value = accurate."
+    },
+    {
+     "id": "r3",
+     "statement": "A balance that reads to 0.01 g instead of to 1 g.",
+     "answer": 0,
+     "explanation": "Smaller steps on the scale give more precise readings."
+    },
+    {
+     "id": "r4",
+     "statement": "All the darts hit the bullseye.",
+     "answer": 1,
+     "explanation": "On target = accurate."
+    }
+   ],
+   "topic": "precision",
+   "difficulty": 2,
+   "sourceRef": "p193",
+   "explanation": "Precise = small steps and readings close together. Accurate = close to the true value.",
+   "afterBlock": "b10"
+  },
+  {
+   "id": "c6",
+   "type": "mcq",
+   "command": "identify",
+   "marks": 1,
+   "prompt": "Which of these is a way scientists usually work TODAY that is different from Al-Biruni?",
+   "hint": "Two options are things Al-Biruni ALSO did. Look for the one that only describes modern science.",
+   "options": [
+    "They build on the work of earlier scientists",
+    "They usually work in teams and specialise in one area",
+    "They use density to identify materials",
+    "They never write anything down"
+   ],
+   "answers": [
+    1
+   ],
+   "topic": "science-now",
+   "difficulty": 1,
+   "sourceRef": "p193",
+   "explanation": "Building on earlier work and using density are things Al-Biruni did too. Teams and specialising are the modern difference.",
+   "afterBlock": "b14"
+  },
+  {
+   "id": "c7",
+   "type": "match",
+   "command": "match",
+   "marks": 3,
+   "prompt": "Match each gem-detective tool or test to what it tells you.",
+   "hint": "Think about what each tool measures: water, light or electricity.",
+   "left": [
+    {
+     "id": "x1",
+     "text": "Overflow flask with a side arm"
+    },
+    {
+     "id": "x2",
+     "text": "Refractive index"
+    },
+    {
+     "id": "x3",
+     "text": "Testing conductivity"
+    }
+   ],
+   "right": [
+    {
+     "id": "y1",
+     "text": "The volume of an irregular stone"
+    },
+    {
+     "id": "y2",
+     "text": "How light bends inside the gem"
+    },
+    {
+     "id": "y3",
+     "text": "How well the gem conducts electricity"
+    },
+    {
+     "id": "y4",
+     "text": "How good the gem is at football"
+    }
+   ],
+   "pairs": [
+    [
+     "x1",
+     "y1"
+    ],
+    [
+     "x2",
+     "y2"
+    ],
+    [
+     "x3",
+     "y3"
+    ]
+   ],
+   "topic": "science-now",
+   "difficulty": 1,
+   "sourceRef": "p192-193",
+   "explanation": "The flask measures volume; refractive index is about light bending; conductivity is about electricity. (No gem has ever been picked for a football team.)",
+   "afterBlock": "b14"
+  },
+  {
+   "id": "c8",
+   "type": "mcq",
+   "command": "identify",
+   "marks": 1,
+   "prompt": "Which of these was NOT one of the ways Al-Biruni classified gemstones?",
+   "hint": "He was a scientist. Which option tells you about the trader rather than about the stone itself?",
+   "options": [
+    "Their colour",
+    "Their hardness",
+    "How much they cost at the market",
+    "Their crystal shape"
+   ],
+   "answers": [
+    2
+   ],
+   "topic": "al-biruni",
+   "difficulty": 2,
+   "sourceRef": "p193",
+   "explanation": "He used colour, how white light splits into a spectrum, hardness and crystal shape. Price tells you about the trader, not the stone.",
+   "afterBlock": "b12"
+  }
+ ],
+ "practice": [
+  {
+   "id": "p1",
+   "type": "written",
+   "command": "explain",
+   "marks": 2,
+   "prompt": "Explain why Al-Biruni wanted to find a method to measure the density of gemstones.",
+   "markPoints": [
+    {
+     "id": "a1",
+     "point": "To identify gemstones / tell which gem a stone is, because each material has its own density",
+     "accept": [
+      "identify",
+      "tell which",
+      "tell what",
+      "tell the difference",
+      "find out what",
+      "work out what",
+      "recognise",
+      "know which",
+      "classify"
+     ]
+    },
+    {
+     "id": "a2",
+     "point": "Because fakes (quartz, glass) look like real gems, so people could cheat / make money by pretending",
+     "accept": [
+      "fake",
+      "cheat",
+      "trick",
+      "pretend",
+      "look the same",
+      "look alike",
+      "looks like",
+      "look similar",
+      "mistaken",
+      "quartz",
+      "glass",
+      "make money",
+      "lot of money",
+      "real or not",
+      "real gem",
+      "genuine",
+      "scam",
+      "counterfeit",
+      "imitation"
+     ]
+    }
+   ],
+   "modelAnswer": "Al-Biruni wanted to identify gemstones correctly, because cheaper stones such as quartz or glass look like diamonds and other gems, and people could make a lot of money by pretending a fake was real.",
+   "topic": "identify-materials",
+   "difficulty": 1,
+   "sourceRef": "p192",
+   "explanation": "Two parts: the aim (identify gems) + the reason (fakes look real, people cheat)."
+  },
+  {
+   "id": "p2",
+   "type": "written",
+   "command": "describe",
+   "marks": 4,
+   "prompt": "Describe how Al-Biruni measured the volume of an irregular stone.",
+   "markPoints": [
+    {
+     "id": "a1",
+     "point": "Fill the flask with water until it overflows through the side arm",
+     "accept": [
+      "fill the flask",
+      "filled the flask",
+      "filled a flask",
+      "fill a flask",
+      "fill it with water",
+      "filled it with water",
+      "fill with water",
+      "until water overflows",
+      "until it overflows",
+      "until water flow",
+      "flows out of the side",
+      "flowed out of the side",
+      "out of the side arm",
+      "up to the side arm",
+      "to the spout"
+     ]
+    },
+    {
+     "id": "a2",
+     "point": "Empty the beaker and put it back under the side arm",
+     "accept": [
+      "empty the beaker",
+      "emptied the beaker",
+      "emptying the beaker",
+      "empty beaker",
+      "empty it",
+      "emptied it",
+      "pour away",
+      "poured away",
+      "pour out the water",
+      "poured out the water"
+     ]
+    },
+    {
+     "id": "a3",
+     "point": "Lower the stone into the flask",
+     "accept": [
+      "lower the stone",
+      "lowered the stone",
+      "lowering the stone",
+      "put the stone",
+      "place the stone",
+      "placed the stone",
+      "drop the stone",
+      "dropped the stone",
+      "add the stone",
+      "stone in",
+      "lower it",
+      "lowered it"
+     ]
+    },
+    {
+     "id": "a4",
+     "point": "Measure the volume of water that overflows into the beaker (= volume of stone)",
+     "accept": [
+      "measure the volume of the water",
+      "measured the volume of the water",
+      "measure the water",
+      "measured the water",
+      "volume of water that",
+      "volume of the water that",
+      "overflows into the beaker",
+      "overflowed into the beaker",
+      "water collected",
+      "measure how much water",
+      "measured how much water",
+      "water that came out",
+      "displaced"
+     ]
+    }
+   ],
+   "modelAnswer": "He filled a flask with a side arm with water until water flowed out of the side arm. He emptied the beaker and put it back under the side arm. He lowered the stone into the flask. Then he measured the volume of the water that overflowed into the beaker, which is the same as the volume of the stone.",
+   "topic": "overflow-method",
+   "difficulty": 2,
+   "sourceRef": "p192",
+   "explanation": "Four steps, four marks: fill to overflowing → empty beaker → lower stone → measure overflowed water."
+  },
+  {
+   "id": "p3",
+   "type": "written",
+   "command": "describe",
+   "marks": 2,
+   "prompt": "Describe one way Al-Biruni's way of working was SIMILAR to the way scientists work today, and one way it was DIFFERENT.",
+   "markPoints": [
+    {
+     "id": "s1",
+     "point": "Similar: built on the work of earlier scientists",
+     "accept": [
+      "built on",
+      "build on",
+      "earlier scientists",
+      "other scientists' work",
+      "ideas of other"
+     ],
+     "group": "same"
+    },
+    {
+     "id": "s2",
+     "point": "Similar: did experiments / careful (precise) measurements / used density",
+     "accept": [
+      "experiment",
+      "measure",
+      "precise",
+      "density",
+      "test"
+     ],
+     "group": "same"
+    },
+    {
+     "id": "d1",
+     "point": "Different: he often worked alone, whereas today scientists work in teams",
+     "accept": [
+      "alone",
+      "by himself",
+      "on his own",
+      "teams",
+      "team",
+      "groups"
+     ],
+     "group": "diff"
+    },
+    {
+     "id": "d2",
+     "point": "Different: he studied many topics, whereas today scientists specialise",
+     "accept": [
+      "many topics",
+      "lots of topics",
+      "different topics",
+      "many subjects",
+      "specialise",
+      "specialize",
+      "one area"
+     ],
+     "group": "diff"
+    },
+    {
+     "id": "d3",
+     "point": "Different: today results are published and shared worldwide / new tests (refractive index, conductivity)",
+     "accept": [
+      "publish",
+      "share",
+      "internet",
+      "all over the world",
+      "refractive",
+      "conductiv",
+      "technology"
+     ],
+     "group": "diff"
+    }
+   ],
+   "modelAnswer": "Similar: like scientists today, Al-Biruni built on the work of earlier scientists. Different: Al-Biruni often worked alone, whereas scientists today usually work in teams.",
+   "topic": "science-now",
+   "difficulty": 2,
+   "sourceRef": "p193",
+   "explanation": "One mark for a similarity, one for a difference. Two similarities only score 1.",
+   "rules": [
+    {
+     "type": "maxPerGroup",
+     "group": "same",
+     "max": 1
+    },
+    {
+     "type": "maxPerGroup",
+     "group": "diff",
+     "max": 1
+    }
+   ]
+  },
+  {
+   "id": "p4",
+   "type": "written",
+   "command": "explain",
+   "marks": 2,
+   "prompt": "Suggest why scientists did not improve on the precision of Al-Biruni's measurements for hundreds of years.",
+   "markPoints": [
+    {
+     "id": "a1",
+     "point": "Instruments / equipment / technology did not improve",
+     "accept": [
+      "instrument",
+      "equipment",
+      "technology",
+      "tools",
+      "better apparatus",
+      "measuring devices",
+      "no computers",
+      "computers"
+     ]
+    },
+    {
+     "id": "a2",
+     "point": "Ideas / books spread slowly (no internet or printing, needed translating), so others did not know his methods",
+     "accept": [
+      "spread slowly",
+      "slow",
+      "communicat",
+      "no internet",
+      "printing",
+      "translat",
+      "didn't know",
+      "did not know",
+      "not shared",
+      "weren't shared",
+      "were not shared",
+      "hand",
+      "couldn't read",
+      "could not read",
+      "different language",
+      "language",
+      "few books",
+      "books were rare",
+      "rare"
+     ]
+    },
+    {
+     "id": "a3",
+     "point": "Scientists worked alone, so fewer people checked and improved the methods",
+     "accept": [
+      "alone",
+      "on their own",
+      "by themselves",
+      "no teams",
+      "not in teams",
+      "nobody checked",
+      "no one checked"
+     ]
+    }
+   ],
+   "modelAnswer": "The measuring instruments did not get much better for a long time, and ideas spread slowly because books were copied by hand and needed translating, so other scientists did not learn his methods.",
+   "topic": "precision",
+   "difficulty": 3,
+   "sourceRef": "p193",
+   "explanation": "This is a 'suggest' question: any two sensible reasons score."
+  },
+  {
+   "id": "p5",
+   "type": "written",
+   "command": "explain",
+   "marks": 2,
+   "prompt": "Cavendish measured the Earth's density as 5.48 g/cm³. Today's value is 5.513 g/cm³. State whether today's value is more or less precise than Cavendish's value, and explain your answer.",
+   "markPoints": [
+    {
+     "id": "a1",
+     "point": "More precise",
+     "accept": [
+      "more precise"
+     ],
+     "reject": [
+      "less precise",
+      "not more precise"
+     ]
+    },
+    {
+     "id": "a2",
+     "point": "It has more decimal places / significant figures (measured to smaller steps)",
+     "accept": [
+      "decimal",
+      "significant",
+      "more digits",
+      "more numbers",
+      "smaller steps",
+      "smaller units",
+      "more detail",
+      "three places",
+      "3 places"
+     ],
+     "requires": "a1"
+    }
+   ],
+   "modelAnswer": "Today's value is more precise, because it is given to more decimal places (three instead of two).",
+   "topic": "precision",
+   "difficulty": 2,
+   "sourceRef": "workbook p80; p193",
+   "explanation": "Precision is about how fine the measurement is: 5.513 has three decimal places, 5.48 has two."
+  },
+  {
+   "id": "p6",
+   "type": "written",
+   "command": "calculate",
+   "marks": 3,
+   "prompt": "A jeweller tests a clear stone. Its mass is 7.0 g and it pushes 2.0 cm³ of water out of an overflow flask. Diamond is about 3.5 g/cm³ and glass is about 2.5 g/cm³. Calculate the stone's density and say which material it is most likely to be.",
+   "markPoints": [
+    {
+     "id": "a1",
+     "point": "3.5",
+     "accept": [
+      "3.5"
+     ],
+     "reject": [
+      "0.28",
+      "0.29"
+     ]
+    },
+    {
+     "id": "a2",
+     "point": "Unit g/cm³",
+     "accept": [
+      "g/cm3",
+      "g/cm³",
+      "g/cm^3",
+      "g / cm3",
+      "g / cm³",
+      "g per cm3",
+      "g per cm³",
+      "grams per cubic",
+      "gram per cubic",
+      "g per cubic",
+      "g cm-3",
+      "g cm^-3",
+      "gcm-3"
+     ]
+    },
+    {
+     "id": "a3",
+     "point": "It is (most likely) diamond, because its density matches diamond's",
+     "accept": [
+      "diamond",
+      "it is a diamond",
+      "it's a diamond"
+     ],
+     "reject": [
+      "not a diamond",
+      "not diamond",
+      "isn't a diamond"
+     ]
+    }
+   ],
+   "modelAnswer": "density = mass ÷ volume = 7.0 g ÷ 2.0 cm³ = 3.5 g/cm³. This matches diamond, so the stone is most likely a diamond.",
+   "topic": "identify-materials",
+   "difficulty": 2,
+   "sourceRef": "p192-193",
+   "explanation": "7.0 ÷ 2.0 = 3.5 g/cm³ → diamond. Lucky jeweller! 💎"
+  }
+ ],
+ "recap": {
+  "summary": [
+   "Every material has its own density, so density can be used to identify materials, like a fingerprint.",
+   "Al-Biruni (born over 1000 years ago, in what is now Uzbekistan) used density to identify gemstones.",
+   "Overflow method: fill a flask with a side arm until it overflows, empty the beaker, lower the stone in, measure the overflowed water = the stone's volume.",
+   "His results were very precise. European scientists didn't match that precision for about 700 years.",
+   "Precise = small steps and repeat readings close together. Accurate = close to the true value.",
+   "Then: often alone, many topics. Now: teams, specialise, publish. Always: build on earlier scientists' work."
+  ],
+  "flashcards": [
+   {
+    "id": "f1",
+    "front": "Why can density be used to identify a material?",
+    "back": "Each material has its own density, so measuring density tells you what it might be."
+   },
+   {
+    "id": "f2",
+    "front": "What did Al-Biruni use to measure the volume of irregular stones?",
+    "back": "A flask with a side arm (the overflow / displacement method)."
+   },
+   {
+    "id": "f3",
+    "front": "In the overflow method, why must you empty the beaker before lowering the stone in?",
+    "back": "So that only the water pushed out by the stone is measured."
+   },
+   {
+    "id": "f4",
+    "front": "What does 'precise' mean?",
+    "back": "Measured to small steps, with repeat readings that agree closely."
+   },
+   {
+    "id": "f5",
+    "front": "What does 'accurate' mean?",
+    "back": "Close to the true value."
+   },
+   {
+    "id": "f6",
+    "front": "Name two ways, besides density, that Al-Biruni classified gems.",
+    "back": "Any two: colour, how white light splits into a spectrum, hardness, crystal shape."
+   },
+   {
+    "id": "f7",
+    "front": "Give one difference between how scientists worked then and now.",
+    "back": "Then often alone (many topics); now in teams, specialising, publishing their results."
+   },
+   {
+    "id": "f8",
+    "front": "Give one similarity between Al-Biruni and scientists today.",
+    "back": "They build on the work of earlier scientists."
+   }
+  ]
+ }
+}

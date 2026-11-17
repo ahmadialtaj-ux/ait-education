@@ -1214,3 +1214,12 @@ summary:focus-visible,
   accent-color: var(--primary);
   flex-shrink: 0;
 }
+
+/* v0.3.3 subject picker */
+.subject-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+.subject-card-head { display: flex; align-items: center; gap: 14px; margin-block-end: 14px; }
+.subject-card-head > div { flex: 1; }
+.subject-icon { font-size: 2.6rem; line-height: 1; }
+.subject-card .progress-ring-svg { width: 54px; height: 54px; }
+/* v0.3.3: keep line breaks written in lesson text (worked-example steps, lists) */
+.block-body { white-space: pre-line; }

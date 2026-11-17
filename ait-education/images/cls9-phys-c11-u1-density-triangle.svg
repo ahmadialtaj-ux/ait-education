@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="640" height="360" rx="18" fill="#f0f7ff"/>
+  <polygon points="200,40 340,300 60,300" fill="#ffd166" stroke="#1d3557" stroke-width="5" stroke-linejoin="round"/>
+  <line x1="122" y1="185" x2="278" y2="185" stroke="#1d3557" stroke-width="5"/>
+  <line x1="200" y1="185" x2="200" y2="300" stroke="#1d3557" stroke-width="5"/>
+  <text x="200" y="148" text-anchor="middle" font-size="34" font-weight="800" fill="#1d3557">mass</text>
+  <text x="200" y="174" text-anchor="middle" font-size="16" fill="#1d3557">(g)</text>
+  <text x="142" y="252" text-anchor="middle" font-size="24" font-weight="800" fill="#e63946">density</text>
+  <text x="142" y="276" text-anchor="middle" font-size="15" fill="#1d3557">(g/cm³)</text>
+  <text x="256" y="252" text-anchor="middle" font-size="21" font-weight="800" fill="#2a9d8f">volume</text>
+  <text x="262" y="276" text-anchor="middle" font-size="15" fill="#1d3557">(cm³)</text>
+  <g font-size="21" fill="#1d3557">
+    <rect x="370" y="60" width="245" height="64" rx="12" fill="#ffffff" stroke="#e63946" stroke-width="3"/>
+    <text x="492" y="87" text-anchor="middle" font-weight="700">Find density?</text>
+    <text x="492" y="112" text-anchor="middle">mass ÷ volume</text>
+    <rect x="370" y="140" width="245" height="64" rx="12" fill="#ffffff" stroke="#2a9d8f" stroke-width="3"/>
+    <text x="492" y="167" text-anchor="middle" font-weight="700">Find volume?</text>
+    <text x="492" y="192" text-anchor="middle">mass ÷ density</text>
+    <rect x="370" y="220" width="245" height="64" rx="12" fill="#ffffff" stroke="#f4a261" stroke-width="3"/>
+    <text x="492" y="247" text-anchor="middle" font-weight="700">Find mass?</text>
+    <text x="492" y="272" text-anchor="middle">density × volume</text>
+  </g>
+  <text x="200" y="336" text-anchor="middle" font-size="17" fill="#1d3557">⛰️ Mass sits on the mountain top</text>
+</svg>

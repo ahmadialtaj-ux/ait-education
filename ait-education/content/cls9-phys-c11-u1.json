@@ -1,0 +1,1123 @@
+{
+ "schemaVersion": "0.3",
+ "id": "cls9-phys-c11-u1",
+ "meta": {
+  "mode": "lesson",
+  "qualification": "Cambridge Lower Secondary",
+  "qualificationCode": "0893",
+  "subject": "Physics",
+  "subjectId": "physics",
+  "syllabusYears": "Stage 9",
+  "syllabusPoints": [
+   "Stage 9 Physics, Forces: density, floating and sinking, upthrust"
+  ],
+  "chapterNumber": 11,
+  "chapterTitle": "Forces: density, floating and sinking",
+  "unit": 1,
+  "title": "Floating and sinking: the great sink-or-float mystery",
+  "schoolYear": 8,
+  "lang": "en",
+  "dir": "ltr",
+  "sourceRefs": [
+   {
+    "book": "Complete Physics for Cambridge Lower Secondary (Oxford), Chapter 11 Forces",
+    "sections": "11.1 Floating and sinking",
+    "pages": "190-191"
+   },
+   {
+    "book": "Complete Physics for Cambridge Lower Secondary Workbook, Chapter 11",
+    "sections": "11.1 Floating and sinking",
+    "pages": "79"
+   }
+  ],
+  "estMinutes": 40,
+  "version": "0.3",
+  "status": "draft"
+ },
+ "topics": {
+  "density": "What density is and how to calculate it",
+  "float-rule": "Predicting floating and sinking with density",
+  "liquids": "Different liquids have different densities",
+  "upthrust": "Upthrust, weight and the particle model",
+  "ice": "Why ice floats",
+  "submarines": "How submarines dive and come back up"
+ },
+ "objectives": [
+  "Calculate density with density = mass ÷ volume, and give the unit g/cm³.",
+  "Predict whether an object floats or sinks by comparing its density with the liquid's density.",
+  "Explain floating with forces: an object floats when upthrust equals weight.",
+  "Use the particle model to explain where upthrust comes from.",
+  "Explain why ice floats and how a submarine dives and surfaces."
+ ],
+ "learn": [
+  {
+   "id": "l1",
+   "topic": "density",
+   "type": "text",
+   "title": "Brief: the 100 000-tonne question",
+   "body": "An iceberg can have a mass of more than **100 000 tonnes**. A coin has a mass of a few grams. Drop both into the sea: the coin sinks and the iceberg floats. 🧊 So the famous rule **\"heavy things sink\"** is… wrong. Totally, gloriously wrong.\n\nYour mission: find the REAL rule, so you can predict what floats and what sinks before it even touches the water. You'll be helped (and mostly distracted) by **Sir Floats-a-Lot**, the lab cat, who keeps knocking things into the test tank. 🐈"
+  },
+  {
+   "id": "l2",
+   "topic": "density",
+   "type": "text",
+   "title": "Density = how tightly the stuff is packed",
+   "body": "Picture two shoeboxes the same size. One is full of popcorn, one is full of sand. Same **volume**, but the sand box has far more **mass** squashed into it. The sand box is **denser**.\n\n**Density** tells you how much mass is packed into each cubic centimetre of a material. The equation is:\n\n**density = mass ÷ volume**\n\nMass in grams (**g**), volume in cubic centimetres (**cm³**), so density comes out in grams per cubic centimetre (**g/cm³**)."
+  },
+  {
+   "id": "l3",
+   "topic": "density",
+   "type": "image",
+   "src": "images/cls9-phys-c11-u1-density-triangle.svg",
+   "alt": "A triangle split into three parts: mass on top, density and volume underneath, with arrows showing that density equals mass divided by volume",
+   "caption": "The density triangle: mass sits on top. Cover what you want to find and the triangle shows you the sum.",
+   "credit": "AIT Education",
+   "license": "AIT Education original diagram"
+  },
+  {
+   "id": "l4",
+   "topic": "density",
+   "type": "example",
+   "title": "Worked example: the coconut",
+   "body": "A coconut has a mass of 600 g and a volume of 750 cm³. Does it float?\n\n1️⃣ Formula: density = mass ÷ volume\n2️⃣ Substitute: density = 600 g ÷ 750 cm³\n3️⃣ Answer + unit: density = **0.8 g/cm³**\n\nPure water is **1.0 g/cm³**. The coconut (0.8) is **less dense than** water, so it **floats**. Coconut 1, Gravity 0. 🥥"
+  },
+  {
+   "id": "l5",
+   "topic": "density",
+   "type": "mistake",
+   "title": "The three classic mark-losers",
+   "body": "❌ **No unit.** \"0.8\" on its own can lose a mark. Write **0.8 g/cm³**.\n❌ **Upside-down sum.** volume ÷ mass gives nonsense. **M**ass goes on top, like the **M**ountain top. ⛰️\n❌ **\"Heavy things sink.\"** A giant steel ship is VERY heavy and floats. It's about density, not weight."
+  },
+  {
+   "id": "l6",
+   "topic": "float-rule",
+   "type": "text",
+   "title": "The sink-or-float rule",
+   "body": "Here's the rule scientists use. Compare the object's density with the liquid's density:\n\n✅ Object **less dense than** the liquid → it **floats**.\n⬇️ Object **denser than** the liquid → it **sinks**.\n\nFor water, the magic number is **1.0 g/cm³**. Rocks don't ALWAYS sink: **pumice** is a volcanic rock full of tiny gas bubbles, about **0.3 g/cm³**, so it floats. Wood doesn't ALWAYS float: **ironwood** is about **1.3 g/cm³**, so it sinks. A floating rock and a sinking tree. Nature loves a plot twist. 🌋🌳"
+  },
+  {
+   "id": "l7",
+   "topic": "float-rule",
+   "type": "image",
+   "src": "images/cls9-phys-c11-u1-density-ladder.svg",
+   "alt": "A density ladder with a blue line at 1.0 g/cm³ for water. Above the line: pumice 0.3, petrol 0.7, coconut 0.8, ice 0.92. Below the line: salt water 1.2, ironwood 1.3, bromine 3.12, steel 7.8, mercury 13.6",
+   "caption": "The density ladder: anything above the water line floats in water, anything below it sinks.",
+   "credit": "AIT Education",
+   "license": "AIT Education original diagram"
+  },
+  {
+   "id": "l8",
+   "topic": "float-rule",
+   "type": "example",
+   "title": "Iron that floats?!",
+   "body": "Harbours use floating **buoys** made of iron to mark the safe channel for boats. Iron is about 7.9 g/cm³, so how?! The buoys are **hollow**. The iron plus all the air inside gives the whole buoy an **average density less than water**, so it floats. Same trick for steel ships: mostly air inside, so the ship as a whole is less dense than seawater. ⚓"
+  },
+  {
+   "id": "l9",
+   "topic": "float-rule",
+   "type": "realWorld",
+   "title": "Why a football floats in the pool",
+   "body": "A football is a thin skin of material filled with air. Its average density is tiny compared with water, so it sits on top of the pool however hard you try to dunk it. Push it under and let go: it shoots up like it has somewhere to be. ⚽"
+  },
+  {
+   "id": "l17",
+   "topic": "float-rule",
+   "type": "image",
+   "src": "images/cls9-phys-c11-u1-cat-tank.svg",
+   "alt": "A tank of water with four blocks of the same size: block A floats high with most of it above the water, block B floats half under, block C floats almost completely under the surface, and block D lies on the bottom. A cat watches from the side",
+   "caption": "Sir Floats-a-Lot knocked four blocks into the tank. All four blocks have the same volume.",
+   "credit": "AIT Education",
+   "license": "AIT Education original diagram"
+  },
+  {
+   "id": "l10",
+   "topic": "liquids",
+   "type": "compare",
+   "title": "Not all liquids are equal",
+   "columns": [
+    "Density (g/cm³)",
+    "What that means"
+   ],
+   "rows": [
+    {
+     "label": "Petrol",
+     "a": "0.7",
+     "b": "Less dense than water, so it floats on top of it"
+    },
+    {
+     "label": "Pure water",
+     "a": "1.0",
+     "b": "The number to compare everything with"
+    },
+    {
+     "label": "Salt water",
+     "a": "1.2",
+     "b": "Denser than pure water, so it holds you up better"
+    },
+    {
+     "label": "Bromine",
+     "a": "3.12",
+     "b": "A heavy, orange-brown, dangerous liquid"
+    },
+    {
+     "label": "Mercury",
+     "a": "13.6",
+     "b": "So dense that a steel bolt (7.8) FLOATS on it"
+    }
+   ]
+  },
+  {
+   "id": "l11",
+   "topic": "liquids",
+   "type": "realWorld",
+   "title": "The Dead Sea: the lazy swimmer's dream",
+   "body": "The Dead Sea, on Jordan's western border, is one of the saltiest lakes on Earth. Its water is so dense that people float on their backs and read a newspaper without even trying. Pro tip: don't get that water in your eyes. Ever. 🧂📰"
+  },
+  {
+   "id": "l12",
+   "topic": "upthrust",
+   "type": "text",
+   "title": "Tug-of-war: weight vs upthrust",
+   "body": "Two forces fight over everything in a liquid:\n\n⬇️ **Weight** pulls it **down** (that's gravity).\n⬆️ **Upthrust** pushes it **up** (that's the liquid pushing back).\n\nAn object **floats** when the **upthrust is equal to the weight**: the forces are balanced, so it stays put. If the weight is bigger than the upthrust the liquid can give, the object sinks. Remember: **weight** is a force, measured in newtons. **Mass** is the amount of stuff, measured in grams or kilograms. Different things!"
+  },
+  {
+   "id": "l13",
+   "topic": "upthrust",
+   "type": "image",
+   "src": "images/cls9-phys-c11-u1-upthrust.svg",
+   "alt": "Left: a boat floating with a weight arrow pointing down and an equal upthrust arrow pointing up. Right: a stone sinking with a long weight arrow down and a short upthrust arrow up. Water particles hit the objects from below",
+   "caption": "Floating: upthrust = weight (balanced). Sinking: weight is bigger than upthrust.",
+   "credit": "AIT Education",
+   "license": "AIT Education original diagram"
+  },
+  {
+   "id": "l14",
+   "topic": "upthrust",
+   "type": "text",
+   "title": "Where does upthrust come from? Particles!",
+   "body": "Liquids and gases are made of tiny particles that never stop moving and **colliding** with anything in their way.\n\n• **Air particles** hit a floating object from **above**.\n• **Water particles** hit it from **below**.\n\nThe push from below is bigger, and the **difference** between the two pushes is the upthrust. In a **denser liquid** the particles are **more massive**, so every collision hits harder, giving a **bigger upthrust**. That's why salt water holds you up better than a pool. Think of it as being pushed by a crowd of heavier ping-pong balls. 🏓"
+  },
+  {
+   "id": "l15",
+   "topic": "ice",
+   "type": "text",
+   "title": "Ice: the rule-breaker",
+   "body": "Most solids are **denser** than their own liquid. Drop a lump of solid wax into melted wax and it sinks. Water is the rebel of the class. 😎 When water freezes, its molecules lock into an open pattern that takes up **more space**. Same mass, bigger volume → **lower density**. So ice is **less dense than water**, and it **floats**.\n\nThis is why ice cubes bob at the top of your drink, why icebergs float, and why lakes freeze from the top down, keeping the fish safe underneath. The fish would like to say thank you. 🐟"
+  },
+  {
+   "id": "l16",
+   "topic": "ice",
+   "type": "realWorld",
+   "title": "The freezer bottle disaster",
+   "body": "Ever left a full glass bottle of water in the freezer? As the water freezes it expands, and the bottle cracks. That's the same expansion that makes ice less dense. Physics: 1, Mum's freezer: 0. 🥶"
+  },
+  {
+   "id": "l18",
+   "topic": "submarines",
+   "type": "text",
+   "title": "Submarine control: become a density DJ",
+   "body": "A submarine can't change its **volume**, but it CAN change its **mass**. Around the crew's inner hull are big **ballast tanks**. 🎛️\n\n⬇️ **To dive:** open the tanks and let seawater flood in. The mass goes **up**, the volume stays the same, so the density becomes **greater than** seawater's. Down it goes.\n\n⬆️ **To come back up:** pump **air** into the tanks to push the water out. The mass goes **down**, so the density becomes **less than** seawater's. Up it comes.\n\nFish do something similar with a gas-filled bag inside them called a swim bladder. Nature invented the submarine first. 🐠"
+  },
+  {
+   "id": "l19",
+   "topic": "submarines",
+   "type": "image",
+   "src": "images/cls9-phys-c11-u1-submarine.svg",
+   "alt": "Two submarines side by side. The left one has ballast tanks full of water and an arrow pointing down labelled dive. The right one has ballast tanks full of air and an arrow pointing up labelled surface",
+   "caption": "Tanks full of water: denser than seawater, so it dives. Tanks full of air: less dense, so it rises.",
+   "credit": "AIT Education",
+   "license": "AIT Education original diagram"
+  },
+  {
+   "id": "l20",
+   "topic": "submarines",
+   "type": "example",
+   "title": "Engineer maths: big numbers in kg/m³",
+   "body": "For huge objects, engineers use **kilograms** and **cubic metres**. Water's density is **1000 kg/m³** (the same as 1.0 g/cm³).\n\nA submarine has a mass of 6 000 000 kg and a volume of 8 000 m³.\nDensity = 6 000 000 ÷ 8 000 = **750 kg/m³**. That's less than 1000, so it floats. 🛟\n\nNow flood the tanks with 4 000 000 kg of seawater. Mass = 10 000 000 kg, volume still 8 000 m³.\nDensity = 10 000 000 ÷ 8 000 = **1250 kg/m³**. More than 1000, so it dives. 🌊"
+  },
+  {
+   "id": "l21",
+   "topic": "submarines",
+   "type": "realWorld",
+   "title": "Scuba divers are density DJs too",
+   "body": "A scuba diver wears a jacket called a **BCD** that can be filled with air. More air → bigger volume, lower density → the diver rises. Let air out → the diver sinks. A **weight belt** adds mass so the diver can go down in the first place. Divers practise this until they can hover in mid-water, like an astronaut in space. 🤿"
+  },
+  {
+   "id": "l22",
+   "topic": "upthrust",
+   "type": "realWorld",
+   "title": "Pilots: floating in air",
+   "body": "Upthrust doesn't only happen in water: air gives upthrust too. A **hot-air balloon** rises because the hot air inside is less dense than the cooler air around it, so the whole balloon is less dense than the air. Same rule, different fluid. 🎈✈️"
+  },
+  {
+   "id": "l23",
+   "topic": "submarines",
+   "type": "tip",
+   "title": "The 3-step answer that wins density marks",
+   "body": "For any \"will it float?\" question:\n1️⃣ Give the object's density (calculate it if you need to).\n2️⃣ Compare it with the liquid's density, using **more dense than** or **less dense than**.\n3️⃣ Conclude: **floats** or **sinks**.\nExaminers LOVE the word **\"than\"**. Never say \"it's dense\" on its own: dense compared with WHAT?"
+  }
+ ],
+ "check": [
+  {
+   "id": "c1",
+   "type": "mcq",
+   "command": "identify",
+   "marks": 1,
+   "prompt": "Sir Floats-a-Lot wants the density equation. Which one is correct?",
+   "hint": "Density is the mass packed into each cubic centimetre. Which sum shares the mass out between the cubic centimetres?",
+   "options": [
+    "density = volume ÷ mass",
+    "density = mass ÷ volume",
+    "density = mass × volume",
+    "density = how scared the object is of water"
+   ],
+   "answers": [
+    1
+   ],
+   "topic": "density",
+   "difficulty": 1,
+   "sourceRef": "p190",
+   "explanation": "Density is mass divided by volume. Mass goes on top. (Objects don't get scared of water. We checked.)",
+   "afterBlock": "l5"
+  },
+  {
+   "id": "c2",
+   "type": "fill",
+   "command": "complete",
+   "marks": 3,
+   "prompt": "A toy boat has a mass of 120 g and a volume of 200 cm³. Complete the working. Not every word is used.",
+   "hint": "Follow the three steps: formula, substitute the numbers, then work out the answer with its unit.",
+   "wordList": [
+    "mass",
+    "weight",
+    "200 cm³",
+    "120 cm³",
+    "0.6 g/cm³",
+    "1.67 g/cm³"
+   ],
+   "items": [
+    {
+     "id": "i1",
+     "sentence": "density = ___ ÷ volume",
+     "answer": "mass"
+    },
+    {
+     "id": "i2",
+     "sentence": "density = 120 g ÷ ___",
+     "answer": "200 cm³"
+    },
+    {
+     "id": "i3",
+     "sentence": "density = ___",
+     "answer": "0.6 g/cm³"
+    }
+   ],
+   "topic": "density",
+   "difficulty": 2,
+   "sourceRef": "p190",
+   "explanation": "density = mass ÷ volume = 120 g ÷ 200 cm³ = 0.6 g/cm³. 1.67 is what you get if you divide the wrong way round.",
+   "afterBlock": "l5"
+  },
+  {
+   "id": "c3",
+   "type": "tick",
+   "command": "identify",
+   "marks": 2,
+   "prompt": "Sir Floats-a-Lot drops these into pure water (1.0 g/cm³). Tick (✓) whether each one floats or sinks.",
+   "hint": "Compare each number with water's magic number. Is it smaller or bigger?",
+   "columns": [
+    "Floats",
+    "Sinks"
+   ],
+   "rowsPerMark": 2,
+   "rows": [
+    {
+     "id": "r1",
+     "statement": "Cork, density 0.24 g/cm³",
+     "answer": 0,
+     "explanation": "0.24 is less than 1.0, so it floats."
+    },
+    {
+     "id": "r2",
+     "statement": "Steel bolt, density 7.8 g/cm³",
+     "answer": 1,
+     "explanation": "7.8 is more than 1.0, so it sinks."
+    },
+    {
+     "id": "r3",
+     "statement": "Pumice rock, density 0.3 g/cm³",
+     "answer": 0,
+     "explanation": "A rock that floats: 0.3 is less than 1.0."
+    },
+    {
+     "id": "r4",
+     "statement": "Ironwood, density 1.3 g/cm³",
+     "answer": 1,
+     "explanation": "Wood that sinks: 1.3 is more than 1.0."
+    }
+   ],
+   "topic": "float-rule",
+   "difficulty": 1,
+   "sourceRef": "p190",
+   "explanation": "Two correct rows earn one mark. Compare each density with 1.0: less floats, more sinks.",
+   "afterBlock": "l9"
+  },
+  {
+   "id": "c4",
+   "type": "mcq",
+   "command": "identify",
+   "marks": 1,
+   "prompt": "Why does a swimmer float more easily in the Dead Sea than in a swimming pool?",
+   "hint": "Look at the liquids table. How does salt water compare with pure water?",
+   "options": [
+    "Salt water is less dense than pool water",
+    "Salt water is denser than pool water",
+    "The swimmer's mass is smaller in the Dead Sea",
+    "The Dead Sea is too lazy to let you sink"
+   ],
+   "answers": [
+    1
+   ],
+   "topic": "liquids",
+   "difficulty": 1,
+   "sourceRef": "p191",
+   "explanation": "Salt water (about 1.2 g/cm³) is denser than pure water (1.0 g/cm³), so it gives a bigger upthrust. Your mass doesn't change when you go on holiday.",
+   "afterBlock": "l11"
+  },
+  {
+   "id": "c5",
+   "type": "fill",
+   "command": "complete",
+   "marks": 3,
+   "prompt": "Complete the sentences about forces on a floating object. Not every word is used.",
+   "hint": "Picture the tug-of-war diagram. Which way does gravity pull, and what does balanced mean?",
+   "wordList": [
+    "down",
+    "up",
+    "sideways",
+    "the same size as",
+    "smaller than",
+    "colliding"
+   ],
+   "items": [
+    {
+     "id": "i1",
+     "sentence": "Weight pulls an object ___.",
+     "answer": "down"
+    },
+    {
+     "id": "i2",
+     "sentence": "Upthrust pushes an object ___.",
+     "answer": "up"
+    },
+    {
+     "id": "i3",
+     "sentence": "An object floats when the upthrust is ___ the weight.",
+     "answer": "the same size as"
+    }
+   ],
+   "topic": "upthrust",
+   "difficulty": 1,
+   "sourceRef": "p191",
+   "explanation": "Weight acts downwards, upthrust acts upwards, and floating means they are balanced.",
+   "afterBlock": "l14"
+  },
+  {
+   "id": "c6",
+   "type": "mcq",
+   "command": "identify",
+   "marks": 1,
+   "prompt": "Why does ice float on water?",
+   "hint": "When water freezes, does it take up more space or less? Then think: same mass, different volume.",
+   "options": [
+    "Ice is colder, so it has no mass",
+    "Water expands when it freezes, so ice is less dense than water",
+    "Ice is denser than water",
+    "Ice cubes are secretly good swimmers"
+   ],
+   "answers": [
+    1
+   ],
+   "topic": "ice",
+   "difficulty": 1,
+   "sourceRef": "p191",
+   "explanation": "Freezing makes water take up more space. Same mass, bigger volume, so lower density. Ice has plenty of mass: drop one on your toe and see.",
+   "afterBlock": "l16"
+  },
+  {
+   "id": "c7",
+   "type": "tick",
+   "command": "identify",
+   "marks": 2,
+   "prompt": "Look at Sir Floats-a-Lot's tank. All four blocks have the same volume. Tick (✓) whether each statement is true or false.",
+   "hint": "Same size blocks: the more of a block that is under the water, the more mass it has packed in.",
+   "columns": [
+    "True",
+    "False"
+   ],
+   "rowsPerMark": 2,
+   "rows": [
+    {
+     "id": "r1",
+     "statement": "Block A is the least dense block.",
+     "answer": 0,
+     "explanation": "A floats highest, so it is the least dense."
+    },
+    {
+     "id": "r2",
+     "statement": "Block D is denser than water.",
+     "answer": 0,
+     "explanation": "D sank to the bottom, so it is denser than water."
+    },
+    {
+     "id": "r3",
+     "statement": "Block C is less dense than block B.",
+     "answer": 1,
+     "explanation": "C sits lower in the water than B, so C is denser than B."
+    },
+    {
+     "id": "r4",
+     "statement": "All four blocks are less dense than water.",
+     "answer": 1,
+     "explanation": "D sank, so D is denser than water."
+    }
+   ],
+   "topic": "float-rule",
+   "difficulty": 3,
+   "sourceRef": "p190; workbook p79",
+   "explanation": "A block that floats lower in the water is denser. A block on the bottom is denser than water.",
+   "afterBlock": "l17"
+  },
+  {
+   "id": "c8",
+   "type": "match",
+   "command": "match",
+   "marks": 3,
+   "prompt": "Match each submarine event to what happens.",
+   "hint": "A submarine is a density DJ. Which part of the density sum can it change, and which part is fixed?",
+   "left": [
+    {
+     "id": "x1",
+     "text": "Seawater floods into the ballast tanks"
+    },
+    {
+     "id": "x2",
+     "text": "Air pushes the water out of the ballast tanks"
+    },
+    {
+     "id": "x3",
+     "text": "The volume of the submarine while the tanks fill"
+    }
+   ],
+   "right": [
+    {
+     "id": "y1",
+     "text": "The mass increases, so the submarine dives"
+    },
+    {
+     "id": "y2",
+     "text": "The mass decreases, so the submarine rises"
+    },
+    {
+     "id": "y3",
+     "text": "It stays the same"
+    },
+    {
+     "id": "y4",
+     "text": "It doubles"
+    }
+   ],
+   "pairs": [
+    [
+     "x1",
+     "y1"
+    ],
+    [
+     "x2",
+     "y2"
+    ],
+    [
+     "x3",
+     "y3"
+    ]
+   ],
+   "topic": "submarines",
+   "difficulty": 2,
+   "sourceRef": "p191",
+   "explanation": "Filling the tanks with water adds mass (dive). Air pushes the water out, so the mass falls (rise). The hull's volume never changes.",
+   "afterBlock": "l20"
+  },
+  {
+   "id": "c9",
+   "type": "fill",
+   "command": "complete",
+   "marks": 3,
+   "prompt": "Engineer maths: a submarine has a mass of 4 000 000 kg and a volume of 5 000 m³. Seawater is about 1000 kg/m³. Complete the working. Not every word is used.",
+   "hint": "Same three steps as always, just bigger numbers: mass on top, volume underneath, then compare with seawater.",
+   "wordList": [
+    "5 000 m³",
+    "4 000 000 m³",
+    "800 kg/m³",
+    "1.25 kg/m³",
+    "float",
+    "sink"
+   ],
+   "items": [
+    {
+     "id": "i1",
+     "sentence": "density = 4 000 000 kg ÷ ___",
+     "answer": "5 000 m³"
+    },
+    {
+     "id": "i2",
+     "sentence": "density = ___",
+     "answer": "800 kg/m³"
+    },
+    {
+     "id": "i3",
+     "sentence": "800 is less than 1000, so the submarine will ___.",
+     "answer": "float"
+    }
+   ],
+   "topic": "submarines",
+   "difficulty": 2,
+   "sourceRef": "workbook p79",
+   "explanation": "4 000 000 ÷ 5 000 = 800 kg/m³. That's less dense than seawater, so it floats until the tanks take in water.",
+   "afterBlock": "l20"
+  },
+  {
+   "id": "c10",
+   "type": "mcq",
+   "command": "identify",
+   "marks": 1,
+   "prompt": "Exam skills! A ball has a density of 1.5 g/cm³. Which answer would get FULL marks for 'Will it float in water? Explain.'",
+   "hint": "Check each answer for a decision AND a comparison of two densities.",
+   "options": [
+    "It sinks because it is heavy.",
+    "It sinks because its density (1.5 g/cm³) is greater than water's density (1.0 g/cm³).",
+    "It floats because it is dense.",
+    "It sinks because Sir Floats-a-Lot said so."
+   ],
+   "answers": [
+    1
+   ],
+   "topic": "float-rule",
+   "difficulty": 2,
+   "sourceRef": "p190",
+   "explanation": "The winning answer gives the decision AND compares the two densities using 'greater than'. 'Heavy' is the classic trap.",
+   "afterBlock": "l23"
+  }
+ ],
+ "practice": [
+  {
+   "id": "p1",
+   "type": "written",
+   "command": "calculate",
+   "marks": 3,
+   "prompt": "A stone has a mass of 260 g and a volume of 100 cm³. Calculate its density. Show your working and give the unit.",
+   "markPoints": [
+    {
+     "id": "a1",
+     "point": "Correct formula or substitution (density = mass ÷ volume, or 260 ÷ 100)",
+     "accept": [
+      "mass ÷ volume",
+      "mass / volume",
+      "mass/volume",
+      "mass divided by volume",
+      "m ÷ v",
+      "m / v",
+      "m/v",
+      "density = m",
+      "d = m",
+      "260 ÷ 100",
+      "260 / 100",
+      "260/100",
+      "260 divided by 100"
+     ]
+    },
+    {
+     "id": "a2",
+     "point": "Answer: 2.6",
+     "accept": [
+      "2.6"
+     ],
+     "reject": [
+      "0.38",
+      "0.385"
+     ]
+    },
+    {
+     "id": "a3",
+     "point": "Unit: g/cm³",
+     "accept": [
+      "g/cm3",
+      "g/cm³",
+      "g/cm^3",
+      "g / cm3",
+      "g / cm³",
+      "g per cm3",
+      "g per cm³",
+      "grams per cubic",
+      "gram per cubic",
+      "g per cubic",
+      "g cm-3",
+      "g cm^-3",
+      "gcm-3"
+     ]
+    }
+   ],
+   "modelAnswer": "density = mass ÷ volume = 260 g ÷ 100 cm³ = 2.6 g/cm³",
+   "topic": "density",
+   "difficulty": 1,
+   "sourceRef": "p190",
+   "explanation": "Formula, substitute, answer with unit. If you got 0.38, you divided volume by mass: flip it."
+  },
+  {
+   "id": "p2",
+   "type": "written",
+   "command": "explain",
+   "marks": 2,
+   "prompt": "The stone in the last question has a density of 2.6 g/cm³. Will it float or sink in water? Explain your answer.",
+   "markPoints": [
+    {
+     "id": "a1",
+     "point": "It sinks",
+     "accept": [
+      "sink",
+      "it will sink",
+      "goes to the bottom"
+     ],
+     "reject": [
+      "not sink",
+      "won't sink",
+      "will not sink",
+      "doesn't sink",
+      "does not sink"
+     ]
+    },
+    {
+     "id": "a2",
+     "point": "Its density (2.6 g/cm³) is greater than water's density (1.0 g/cm³)",
+     "accept": [
+      "denser than water",
+      "more dense than water",
+      "greater than water",
+      "higher than water",
+      "bigger than water",
+      "more than water",
+      "greater than 1",
+      "more than 1",
+      "bigger than 1",
+      "higher than 1",
+      "greater than the density of water",
+      "more than the density of water",
+      "higher than the density of water",
+      "bigger than the density of water",
+      "> 1",
+      "2.6 is more",
+      "2.6 is greater",
+      "2.6 is bigger",
+      "2.6 is higher"
+     ],
+     "reject": [
+      "less dense than water",
+      "less than water",
+      "lower than water",
+      "smaller than water",
+      "less than 1",
+      "lower than 1",
+      "smaller than 1",
+      "not denser",
+      "not more dense"
+     ]
+    }
+   ],
+   "modelAnswer": "It sinks, because its density (2.6 g/cm³) is greater than the density of water (1.0 g/cm³).",
+   "topic": "float-rule",
+   "difficulty": 1,
+   "sourceRef": "p190",
+   "explanation": "Always compare: object density THAN liquid density. 2.6 is more than 1.0, so it sinks."
+  },
+  {
+   "id": "p3",
+   "type": "written",
+   "command": "explain",
+   "marks": 2,
+   "prompt": "Explain why a person floats more easily in the Dead Sea than in a swimming pool.",
+   "markPoints": [
+    {
+     "id": "a1",
+     "point": "Salt water / the Dead Sea is denser than pool (pure) water",
+     "accept": [
+      "salt water is denser",
+      "salt water is more dense",
+      "sea is denser",
+      "dead sea is denser",
+      "denser than pool",
+      "denser than pure",
+      "more dense than pool",
+      "salty water is denser",
+      "higher density",
+      "greater density",
+      "salt water has a higher density",
+      "salt water has a greater density",
+      "more dense"
+     ],
+     "reject": [
+      "less dense",
+      "lower density"
+     ]
+    },
+    {
+     "id": "a2",
+     "point": "So there is a bigger upthrust (its more massive particles push harder)",
+     "accept": [
+      "bigger upthrust",
+      "more upthrust",
+      "greater upthrust",
+      "larger upthrust",
+      "stronger upthrust",
+      "upthrust is bigger",
+      "upthrust is greater",
+      "pushes harder",
+      "push harder",
+      "more massive particles",
+      "heavier particles",
+      "bigger force",
+      "buoyancy",
+      "buoyant force",
+      "more buoyant",
+      "pushes up more",
+      "push up more",
+      "upward force is greater",
+      "upward force is bigger",
+      "bigger upward force",
+      "greater upward force",
+      "more particles"
+     ],
+     "reject": [
+      "less upthrust",
+      "smaller upthrust"
+     ]
+    }
+   ],
+   "modelAnswer": "Salt water is denser than the pure water in a pool, so it gives a bigger upthrust on the person.",
+   "topic": "liquids",
+   "difficulty": 2,
+   "sourceRef": "p191",
+   "explanation": "Two links: denser liquid → bigger upthrust."
+  },
+  {
+   "id": "p4",
+   "type": "written",
+   "command": "explain",
+   "marks": 3,
+   "prompt": "Explain how a submarine uses its ballast tanks to dive below the surface. Use ideas about density in your answer.",
+   "markPoints": [
+    {
+     "id": "a1",
+     "point": "Water is let into / fills the ballast tanks",
+     "accept": [
+      "water fills",
+      "fill with water",
+      "filled with water",
+      "fills with water",
+      "fill with seawater",
+      "filled with seawater",
+      "fills with seawater",
+      "with seawater",
+      "let water in",
+      "lets water in",
+      "take in water",
+      "takes in water",
+      "water into the tank",
+      "water enters",
+      "seawater enters",
+      "flood",
+      "pump water in",
+      "water goes in",
+      "water comes in",
+      "tanks with water",
+      "tank with water",
+      "tanks with seawater",
+      "fill the tank",
+      "fills the tank",
+      "filled the tank"
+     ],
+     "reject": [
+      "water out",
+      "pump air in"
+     ]
+    },
+    {
+     "id": "a2",
+     "point": "The mass of the submarine increases (volume stays the same)",
+     "accept": [
+      "mass increase",
+      "increases its mass",
+      "increases the mass",
+      "increases the submarine",
+      "increase in mass",
+      "increasing its mass",
+      "more mass",
+      "gains mass",
+      "adds mass",
+      "mass goes up",
+      "heavier",
+      "mass is bigger",
+      "mass gets bigger",
+      "mass is greater",
+      "bigger mass",
+      "greater mass"
+     ],
+     "reject": [
+      "mass decrease",
+      "less mass",
+      "lighter"
+     ]
+    },
+    {
+     "id": "a3",
+     "point": "Its density becomes greater than the density of (sea)water, so it sinks",
+     "accept": [
+      "denser than water",
+      "denser than the water",
+      "denser than sea",
+      "more dense than",
+      "density increases",
+      "density is more",
+      "density becomes more",
+      "more than water",
+      "more than the water",
+      "more than sea",
+      "greater than water",
+      "greater than the water",
+      "bigger than water",
+      "density is greater",
+      "density becomes greater",
+      "density is bigger",
+      "density goes up",
+      "higher density",
+      "greater density",
+      "increases its density",
+      "increases the density"
+     ],
+     "reject": [
+      "less dense",
+      "density decreases",
+      "lower density"
+     ]
+    }
+   ],
+   "modelAnswer": "The ballast tanks are filled with seawater. This increases the submarine's mass while its volume stays the same, so its density becomes greater than the density of the seawater and it sinks.",
+   "topic": "submarines",
+   "difficulty": 2,
+   "sourceRef": "p191; workbook p79",
+   "explanation": "Chain of three: water in → mass up → density more than water → dives."
+  },
+  {
+   "id": "p5",
+   "type": "written",
+   "command": "explain",
+   "marks": 2,
+   "prompt": "Explain why ice floats on water.",
+   "markPoints": [
+    {
+     "id": "a1",
+     "point": "Water expands / takes up more space / volume increases when it freezes",
+     "accept": [
+      "expand",
+      "more space",
+      "more room",
+      "volume increase",
+      "bigger volume",
+      "larger volume",
+      "volume gets bigger",
+      "takes up more",
+      "open pattern",
+      "open structure"
+     ],
+     "reject": [
+      "contract",
+      "less space",
+      "smaller volume"
+     ]
+    },
+    {
+     "id": "a2",
+     "point": "So ice is less dense than (liquid) water",
+     "accept": [
+      "less dense than water",
+      "less dense than liquid",
+      "lower density",
+      "less dense",
+      "density is less",
+      "density is lower",
+      "smaller density",
+      "density decreases"
+     ],
+     "reject": [
+      "more dense",
+      "denser than water"
+     ]
+    }
+   ],
+   "modelAnswer": "When water freezes it expands, so the same mass takes up more volume. This makes ice less dense than water, so it floats.",
+   "topic": "ice",
+   "difficulty": 1,
+   "sourceRef": "p191",
+   "explanation": "Expands → less dense → floats. (Colder does not mean lighter.)"
+  },
+  {
+   "id": "p6",
+   "type": "written",
+   "command": "explain",
+   "marks": 3,
+   "prompt": "Use the particle model to explain where the upthrust on a floating object comes from.",
+   "markPoints": [
+    {
+     "id": "a1",
+     "point": "Particles of the liquid (and air) collide with / hit the object",
+     "accept": [
+      "collide",
+      "collision",
+      "hit the object",
+      "hit it",
+      "bump",
+      "particles hit",
+      "strike"
+     ]
+    },
+    {
+     "id": "a2",
+     "point": "Water particles hit it from below and air particles hit it from above",
+     "accept": [
+      "from below",
+      "from underneath",
+      "from the bottom",
+      "underneath",
+      "below it",
+      "from above",
+      "from the top",
+      "water pushes up",
+      "air pushes down",
+      "pushes up from"
+     ]
+    },
+    {
+     "id": "a3",
+     "point": "The force from below is bigger, so the difference in forces pushes it up",
+     "accept": [
+      "difference",
+      "bigger from below",
+      "more from below",
+      "greater from below",
+      "bigger force from below",
+      "stronger from below",
+      "bigger push",
+      "net force",
+      "resultant"
+     ]
+    }
+   ],
+   "modelAnswer": "Particles in the water and the air keep colliding with the object. Water particles collide with it from below and air particles from above. The force from the water particles is bigger, and the difference between the two forces is the upthrust.",
+   "topic": "upthrust",
+   "difficulty": 3,
+   "sourceRef": "p191",
+   "explanation": "Collisions → from below (water) and above (air) → the difference is the upthrust."
+  },
+  {
+   "id": "p7",
+   "type": "written",
+   "command": "state",
+   "marks": 1,
+   "prompt": "State, in terms of forces, when an object floats.",
+   "markPoints": [
+    {
+     "id": "a1",
+     "point": "When the upthrust is equal to the weight",
+     "accept": [
+      "upthrust equals weight",
+      "upthrust is equal to",
+      "upthrust = weight",
+      "equal to its weight",
+      "equal to the weight",
+      "equals its weight",
+      "equals the weight",
+      "equal to weight",
+      "same as the weight",
+      "same size as the weight",
+      "upthrust and weight are equal",
+      "weight equals upthrust",
+      "weight = upthrust",
+      "balanced",
+      "weight is equal to"
+     ],
+     "reject": [
+      "not equal",
+      "upthrust is bigger",
+      "weight is bigger"
+     ]
+    }
+   ],
+   "modelAnswer": "An object floats when the upthrust on it is equal to its weight.",
+   "topic": "upthrust",
+   "difficulty": 1,
+   "sourceRef": "p191; workbook p79",
+   "explanation": "Floating = balanced forces: upthrust = weight."
+  }
+ ],
+ "recap": {
+  "summary": [
+   "density = mass ÷ volume. With grams and cm³, the unit is g/cm³.",
+   "Less dense than the liquid → floats. Denser than the liquid → sinks. Water = 1.0 g/cm³.",
+   "Some rocks float (pumice) and some wood sinks (ironwood). Hollow iron buoys and steel ships float because their average density is less than water.",
+   "An object floats when upthrust = weight. Particles hitting from below push harder than those from above: the difference is upthrust.",
+   "A denser liquid (like salt water) has more massive particles, so it gives a bigger upthrust.",
+   "Ice floats because water expands when it freezes, so ice is less dense than water.",
+   "Submarines: water into the ballast tanks → mass up → denser than seawater → dive. Air in, water out → less dense → rise."
+  ],
+  "flashcards": [
+   {
+    "id": "f1",
+    "front": "What is the equation for density?",
+    "back": "density = mass ÷ volume"
+   },
+   {
+    "id": "f2",
+    "front": "What is the unit of density when mass is in g and volume in cm³?",
+    "back": "g/cm³ (grams per cubic centimetre)"
+   },
+   {
+    "id": "f3",
+    "front": "When does an object float on a liquid (density rule)?",
+    "back": "When its density is less than the density of the liquid."
+   },
+   {
+    "id": "f4",
+    "front": "When does an object float (forces rule)?",
+    "back": "When the upthrust is equal to its weight."
+   },
+   {
+    "id": "f5",
+    "front": "What is upthrust?",
+    "back": "The upward force a liquid or gas exerts on an object, caused by particles colliding with it."
+   },
+   {
+    "id": "f6",
+    "front": "Why do people float more easily in salt water?",
+    "back": "Salt water is denser than pure water, so it gives a bigger upthrust."
+   },
+   {
+    "id": "f7",
+    "front": "Why does ice float?",
+    "back": "Water expands when it freezes, so ice is less dense than water."
+   },
+   {
+    "id": "f8",
+    "front": "How does a submarine dive?",
+    "back": "Its ballast tanks fill with water, its mass increases, and its density becomes greater than seawater's."
+   }
+  ]
+ }
+}

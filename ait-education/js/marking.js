@@ -17,7 +17,8 @@ export function normaliseText(text) {
 export function splitSentences(normalisedText) {
   if (!normalisedText) return [];
   return normalisedText
-    .split(/[.!?;]+|\r?\n+/)
+    // v0.3.3: a dot between digits (2.6, 0.75) is a decimal point, not the end of a sentence
+    .split(/[!?;]+|\.+(?!\d)|\r?\n+/)
     .map((s) => s.trim())
     .filter(Boolean);
 }

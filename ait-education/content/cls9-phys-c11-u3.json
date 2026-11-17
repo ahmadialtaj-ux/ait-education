@@ -1,0 +1,760 @@
+{
+ "schemaVersion": "0.3",
+ "id": "cls9-phys-c11-u3",
+ "meta": {
+  "mode": "mock",
+  "qualification": "Cambridge Lower Secondary",
+  "qualificationCode": "0893",
+  "subject": "Physics",
+  "subjectId": "physics",
+  "syllabusYears": "Stage 9",
+  "syllabusPoints": [
+   "Stage 9 Physics, Forces: density, floating and sinking, upthrust",
+   "Science in context: how scientists worked in the past and work now"
+  ],
+  "chapterNumber": 11,
+  "chapterTitle": "Forces: density, floating and sinking",
+  "unit": 3,
+  "title": "Chapter 11 mock test: density, floating and sinking (11.1 + 11.2)",
+  "schoolYear": 8,
+  "lang": "en",
+  "dir": "ltr",
+  "sourceRefs": [
+   {
+    "book": "Complete Physics for Cambridge Lower Secondary (Oxford), Chapter 11 Forces",
+    "sections": "11.1 Floating and sinking; 11.2 Using ideas about density",
+    "pages": "190-193"
+   },
+   {
+    "book": "Complete Physics for Cambridge Lower Secondary Workbook, Chapter 11",
+    "sections": "11.1 and 11.2",
+    "pages": "79-80"
+   }
+  ],
+  "estMinutes": 30,
+  "version": "0.3",
+  "status": "draft"
+ },
+ "topics": {
+  "density-calc": "Calculating density",
+  "float-sink": "Predicting floating and sinking",
+  "upthrust": "Upthrust, weight and particles",
+  "ice": "Why ice floats",
+  "submarines": "Submarines",
+  "overflow-method": "The overflow method",
+  "al-biruni": "Al-Biruni and identifying gemstones",
+  "precision": "Precise and accurate",
+  "science-now": "Scientists then and now"
+ },
+ "objectives": [
+  "Show everything from 11.1 Floating and sinking and 11.2 Using ideas about density, exam style."
+ ],
+ "learn": [],
+ "check": [],
+ "practice": [
+  {
+   "id": "q1",
+   "type": "fill",
+   "command": "complete",
+   "marks": 3,
+   "prompt": "Complete the sentences. Not every word is used.",
+   "wordList": [
+    "less dense",
+    "more dense",
+    "equal to",
+    "bigger",
+    "smaller",
+    "heavier"
+   ],
+   "items": [
+    {
+     "id": "i1",
+     "sentence": "An object floats on a liquid if it is ___ than the liquid.",
+     "answer": "less dense"
+    },
+    {
+     "id": "i2",
+     "sentence": "An object floats when the upthrust is ___ its weight.",
+     "answer": "equal to"
+    },
+    {
+     "id": "i3",
+     "sentence": "A denser liquid has more massive particles, so it gives a ___ upthrust.",
+     "answer": "bigger"
+    }
+   ],
+   "topic": "upthrust",
+   "difficulty": 1,
+   "sourceRef": "p190-191",
+   "explanation": "Less dense floats; floating means upthrust = weight; denser liquid → bigger upthrust."
+  },
+  {
+   "id": "q2",
+   "type": "written",
+   "command": "calculate",
+   "marks": 3,
+   "prompt": "A block of wood has a mass of 450 g and a volume of 600 cm³. Calculate its density. Show your working and give the unit.",
+   "markPoints": [
+    {
+     "id": "a1",
+     "point": "Correct formula or substitution (mass ÷ volume, or 450 ÷ 600)",
+     "accept": [
+      "mass ÷ volume",
+      "mass / volume",
+      "mass/volume",
+      "mass divided by volume",
+      "m ÷ v",
+      "m / v",
+      "m/v",
+      "density = m",
+      "d = m",
+      "450 ÷ 600",
+      "450 / 600",
+      "450/600",
+      "450 divided by 600"
+     ]
+    },
+    {
+     "id": "a2",
+     "point": "Answer: 0.75",
+     "accept": [
+      "0.75",
+      ".75"
+     ],
+     "reject": [
+      "1.33",
+      "1.3"
+     ]
+    },
+    {
+     "id": "a3",
+     "point": "Unit: g/cm³",
+     "accept": [
+      "g/cm3",
+      "g/cm³",
+      "g/cm^3",
+      "g / cm3",
+      "g / cm³",
+      "g per cm3",
+      "g per cm³",
+      "grams per cubic",
+      "gram per cubic",
+      "g per cubic",
+      "g cm-3",
+      "g cm^-3",
+      "gcm-3"
+     ]
+    }
+   ],
+   "modelAnswer": "density = mass ÷ volume = 450 g ÷ 600 cm³ = 0.75 g/cm³",
+   "topic": "density-calc",
+   "difficulty": 1,
+   "sourceRef": "p190",
+   "explanation": "1 mark working, 1 mark answer, 1 mark unit. 1.33 means the sum was upside down."
+  },
+  {
+   "id": "q3",
+   "type": "written",
+   "command": "explain",
+   "marks": 2,
+   "prompt": "Will the block of wood in question 2 float or sink in water? Explain your answer.",
+   "markPoints": [
+    {
+     "id": "a1",
+     "point": "It floats",
+     "accept": [
+      "float"
+     ],
+     "reject": [
+      "not float",
+      "won't float",
+      "will not float",
+      "doesn't float",
+      "does not float"
+     ]
+    },
+    {
+     "id": "a2",
+     "point": "Its density (0.75 g/cm³) is less than water's (1.0 g/cm³)",
+     "accept": [
+      "less dense than water",
+      "less than water",
+      "lower than water",
+      "smaller than water",
+      "less than 1",
+      "lower than 1",
+      "smaller than 1",
+      "less than the density of water",
+      "lower than the density of water",
+      "smaller than the density of water",
+      "< 1",
+      "0.75 is less",
+      "0.75 is smaller",
+      "0.75 is lower"
+     ],
+     "reject": [
+      "not less dense",
+      "denser than water",
+      "more dense than water",
+      "greater than water",
+      "more than water",
+      "greater than 1",
+      "more than 1"
+     ]
+    }
+   ],
+   "modelAnswer": "It floats, because its density (0.75 g/cm³) is less than the density of water (1.0 g/cm³).",
+   "topic": "float-sink",
+   "difficulty": 1,
+   "sourceRef": "p190",
+   "explanation": "Compare with water: 0.75 is less than 1.0 → floats."
+  },
+  {
+   "id": "q4",
+   "type": "tick",
+   "command": "identify",
+   "marks": 2,
+   "prompt": "Use these densities: petrol 0.7 g/cm³, water 1.0 g/cm³, mercury 13.6 g/cm³. Tick (✓) whether each object floats or sinks.",
+   "columns": [
+    "Floats",
+    "Sinks"
+   ],
+   "rowsPerMark": 2,
+   "rows": [
+    {
+     "id": "r1",
+     "statement": "Wood (0.75 g/cm³) in water",
+     "answer": 0,
+     "explanation": "0.75 is less than 1.0."
+    },
+    {
+     "id": "r2",
+     "statement": "Wood (0.75 g/cm³) in petrol",
+     "answer": 1,
+     "explanation": "0.75 is more than 0.7, so the wood sinks in petrol."
+    },
+    {
+     "id": "r3",
+     "statement": "Steel (7.8 g/cm³) in mercury",
+     "answer": 0,
+     "explanation": "7.8 is less than 13.6, so steel floats on mercury."
+    },
+    {
+     "id": "r4",
+     "statement": "Ironwood (1.3 g/cm³) in water",
+     "answer": 1,
+     "explanation": "1.3 is more than 1.0."
+    }
+   ],
+   "topic": "float-sink",
+   "difficulty": 3,
+   "sourceRef": "p190-191",
+   "explanation": "Compare the object with the liquid it is in, not always with water. Two correct rows = 1 mark."
+  },
+  {
+   "id": "q5",
+   "type": "written",
+   "command": "explain",
+   "marks": 3,
+   "prompt": "A submarine is under the water. Explain how it uses its ballast tanks to return to the surface. Use ideas about density.",
+   "markPoints": [
+    {
+     "id": "a1",
+     "point": "Air is pumped into the tanks and pushes the water out",
+     "accept": [
+      "air",
+      "water out",
+      "push the water out",
+      "pushes water out",
+      "pumped out",
+      "remove the water",
+      "empty the tank"
+     ],
+     "reject": [
+      "water in",
+      "fill with water",
+      "filled with water"
+     ]
+    },
+    {
+     "id": "a2",
+     "point": "The mass of the submarine decreases (volume stays the same)",
+     "accept": [
+      "mass decrease",
+      "decreases its mass",
+      "decreases the mass",
+      "decreases the submarine",
+      "reduces the submarine",
+      "decrease in mass",
+      "loses mass",
+      "less mass",
+      "mass goes down",
+      "lighter",
+      "mass is smaller",
+      "mass gets smaller",
+      "reduces its mass",
+      "reduces the mass",
+      "lower mass"
+     ],
+     "reject": [
+      "mass increase",
+      "more mass"
+     ]
+    },
+    {
+     "id": "a3",
+     "point": "Its density becomes less than the density of (sea)water, so it rises",
+     "accept": [
+      "less dense",
+      "density decreases",
+      "density is less",
+      "density becomes less",
+      "lower density",
+      "density goes down",
+      "smaller density",
+      "density is lower",
+      "reduces its density",
+      "reduces the density"
+     ],
+     "reject": [
+      "more dense",
+      "denser",
+      "density increases"
+     ]
+    }
+   ],
+   "modelAnswer": "Air is pumped into the ballast tanks, pushing the water out. This decreases the submarine's mass, while its volume stays the same, so its density becomes less than the density of seawater and it rises to the surface.",
+   "topic": "submarines",
+   "difficulty": 2,
+   "sourceRef": "p191; workbook p79",
+   "explanation": "Air in, water out → mass down → less dense than seawater → rises."
+  },
+  {
+   "id": "q6",
+   "type": "written",
+   "command": "explain",
+   "marks": 2,
+   "prompt": "Most solids are denser than their liquid form. Explain why ice is different and floats on water.",
+   "markPoints": [
+    {
+     "id": "a1",
+     "point": "Water expands / takes up more space when it freezes",
+     "accept": [
+      "expand",
+      "more space",
+      "more room",
+      "volume increase",
+      "bigger volume",
+      "larger volume",
+      "volume gets bigger",
+      "takes up more",
+      "open pattern",
+      "open structure"
+     ],
+     "reject": [
+      "contract",
+      "less space",
+      "smaller volume"
+     ]
+    },
+    {
+     "id": "a2",
+     "point": "So ice is less dense than water",
+     "accept": [
+      "less dense than water",
+      "less dense than liquid",
+      "lower density",
+      "less dense",
+      "density is less",
+      "density is lower",
+      "smaller density"
+     ],
+     "reject": [
+      "more dense",
+      "denser than water"
+     ]
+    }
+   ],
+   "modelAnswer": "When water freezes it expands and takes up more space, so ice is less dense than liquid water and floats.",
+   "topic": "ice",
+   "difficulty": 1,
+   "sourceRef": "p191",
+   "explanation": "Expands → less dense → floats."
+  },
+  {
+   "id": "q7",
+   "type": "written",
+   "command": "explain",
+   "marks": 2,
+   "prompt": "Use the particle model to explain why a boat floats higher in salt water than in fresh water.",
+   "markPoints": [
+    {
+     "id": "a1",
+     "point": "Salt water is denser / its particles are more massive",
+     "accept": [
+      "salt water is denser",
+      "salt water is more dense",
+      "more massive",
+      "heavier particles",
+      "particles are heavier",
+      "more particles",
+      "denser liquid",
+      "higher density",
+      "greater density",
+      "more dense"
+     ],
+     "reject": [
+      "less dense",
+      "lower density"
+     ]
+    },
+    {
+     "id": "a2",
+     "point": "Its particles collide with the boat with a bigger force, giving a bigger upthrust",
+     "accept": [
+      "bigger force",
+      "greater force",
+      "more force",
+      "stronger force",
+      "push harder",
+      "hit harder",
+      "bigger upthrust",
+      "more upthrust",
+      "greater upthrust",
+      "larger upthrust",
+      "stronger upthrust",
+      "buoyancy",
+      "buoyant force",
+      "more buoyant",
+      "pushes up more",
+      "push up more",
+      "upward force is greater",
+      "upward force is bigger",
+      "bigger upward force",
+      "greater upward force",
+      "more particles"
+     ],
+     "reject": [
+      "less upthrust",
+      "smaller upthrust"
+     ]
+    }
+   ],
+   "modelAnswer": "Salt water is denser, so its particles are more massive. When they collide with the boat from below they exert a bigger force, so the upthrust is bigger and the boat floats higher.",
+   "topic": "upthrust",
+   "difficulty": 3,
+   "sourceRef": "p191",
+   "explanation": "Denser liquid → more massive particles → bigger push from collisions → bigger upthrust."
+  },
+  {
+   "id": "q8",
+   "type": "written",
+   "command": "describe",
+   "marks": 3,
+   "prompt": "Al-Biruni used a flask with a side arm to measure the volume of a gemstone. Describe his method.",
+   "markPoints": [
+    {
+     "id": "a1",
+     "point": "Fill the flask until water overflows through the side arm",
+     "accept": [
+      "fill the flask",
+      "filled the flask",
+      "filled a flask",
+      "fill a flask",
+      "fill it with water",
+      "filled it with water",
+      "fill with water",
+      "until water overflows",
+      "until it overflows",
+      "until water flow",
+      "flows out of the side",
+      "flowed out of the side",
+      "out of the side arm",
+      "up to the side arm",
+      "to the spout"
+     ]
+    },
+    {
+     "id": "a2",
+     "point": "Empty the beaker and put it back",
+     "accept": [
+      "empty the beaker",
+      "emptied the beaker",
+      "emptying the beaker",
+      "empty beaker",
+      "empty it",
+      "emptied it",
+      "pour away",
+      "poured away",
+      "pour out the water",
+      "poured out the water"
+     ]
+    },
+    {
+     "id": "a3",
+     "point": "Lower the stone into the flask",
+     "accept": [
+      "lower the stone",
+      "lowered the stone",
+      "lowering the stone",
+      "put the stone",
+      "place the stone",
+      "placed the stone",
+      "drop the stone",
+      "dropped the stone",
+      "add the stone",
+      "stone in",
+      "lower it",
+      "lowered it"
+     ]
+    },
+    {
+     "id": "a4",
+     "point": "Measure the volume of water that overflows into the beaker",
+     "accept": [
+      "measure the volume of the water",
+      "measured the volume of the water",
+      "measure the water",
+      "measured the water",
+      "volume of water that",
+      "volume of the water that",
+      "overflows into the beaker",
+      "overflowed into the beaker",
+      "water collected",
+      "measure how much water",
+      "measured how much water",
+      "water that came out",
+      "displaced"
+     ]
+    }
+   ],
+   "modelAnswer": "Fill the flask with water until it overflows through the side arm. Empty the beaker and put it back under the side arm. Lower the stone into the flask. Measure the volume of the water that overflows into the beaker: this equals the volume of the stone.",
+   "topic": "overflow-method",
+   "difficulty": 2,
+   "sourceRef": "p192",
+   "explanation": "Any three of the four steps, one mark each."
+  },
+  {
+   "id": "q9",
+   "type": "written",
+   "command": "explain",
+   "marks": 2,
+   "prompt": "Explain why people in Al-Biruni's time needed a reliable way to identify gemstones.",
+   "markPoints": [
+    {
+     "id": "a1",
+     "point": "Cheaper stones (quartz, glass) look like real gems / diamond",
+     "accept": [
+      "look the same",
+      "look alike",
+      "looks like",
+      "look like",
+      "look similar",
+      "hard to tell",
+      "difficult to tell",
+      "mistaken",
+      "quartz",
+      "glass"
+     ]
+    },
+    {
+     "id": "a2",
+     "point": "So people could cheat / make a lot of money by pretending a fake was real",
+     "accept": [
+      "money",
+      "cheat",
+      "trick",
+      "pretend",
+      "fake",
+      "sell",
+      "scam",
+      "lie",
+      "counterfeit",
+      "imitation"
+     ]
+    }
+   ],
+   "modelAnswer": "Cheaper stones such as quartz and glass look like real gems such as diamonds, so people could make a lot of money by pretending that a fake stone was real.",
+   "topic": "al-biruni",
+   "difficulty": 1,
+   "sourceRef": "p192",
+   "explanation": "Looks alike → people cheat for money."
+  },
+  {
+   "id": "q10",
+   "type": "tick",
+   "command": "identify",
+   "marks": 2,
+   "prompt": "Tick (✓) whether each statement is about PRECISION or ACCURACY.",
+   "columns": [
+    "Precision",
+    "Accuracy"
+   ],
+   "rowsPerMark": 2,
+   "rows": [
+    {
+     "id": "r1",
+     "statement": "How close a measurement is to the true value.",
+     "answer": 1,
+     "explanation": "Close to the true value = accurate."
+    },
+    {
+     "id": "r2",
+     "statement": "How close repeat measurements are to each other.",
+     "answer": 0,
+     "explanation": "Repeat readings that agree = precise."
+    },
+    {
+     "id": "r3",
+     "statement": "Giving 5.513 instead of 5.48.",
+     "answer": 0,
+     "explanation": "More decimal places = more precise."
+    },
+    {
+     "id": "r4",
+     "statement": "A thermometer that shows the correct temperature.",
+     "answer": 1,
+     "explanation": "Correct = close to the true value = accurate."
+    }
+   ],
+   "topic": "precision",
+   "difficulty": 2,
+   "sourceRef": "p193; workbook p80",
+   "explanation": "Precision: small steps, readings agree. Accuracy: close to the true value."
+  },
+  {
+   "id": "q11",
+   "type": "written",
+   "command": "describe",
+   "marks": 2,
+   "prompt": "Describe one way scientists worked in the past that is SIMILAR to how they work today, and one way that is DIFFERENT.",
+   "markPoints": [
+    {
+     "id": "s1",
+     "point": "Similar: they build on the work of earlier scientists",
+     "accept": [
+      "built on",
+      "build on",
+      "earlier scientists",
+      "other scientists' work",
+      "ideas of other"
+     ],
+     "group": "same"
+    },
+    {
+     "id": "s2",
+     "point": "Similar: they do experiments / take careful measurements / use density",
+     "accept": [
+      "experiment",
+      "measure",
+      "precise",
+      "density"
+     ],
+     "group": "same"
+    },
+    {
+     "id": "d1",
+     "point": "Different: then often alone, now usually in teams",
+     "accept": [
+      "alone",
+      "by himself",
+      "by themselves",
+      "on his own",
+      "on their own",
+      "teams",
+      "team",
+      "groups"
+     ],
+     "group": "diff"
+    },
+    {
+     "id": "d2",
+     "point": "Different: then many topics, now they specialise",
+     "accept": [
+      "many topics",
+      "lots of topics",
+      "different topics",
+      "many subjects",
+      "specialise",
+      "specialize",
+      "one area"
+     ],
+     "group": "diff"
+    },
+    {
+     "id": "d3",
+     "point": "Different: now they publish and share results worldwide / use new technology",
+     "accept": [
+      "publish",
+      "share",
+      "internet",
+      "all over the world",
+      "technology",
+      "refractive",
+      "conductiv",
+      "telescope"
+     ],
+     "group": "diff"
+    }
+   ],
+   "modelAnswer": "Similar: scientists then and now build on the work of earlier scientists. Different: in the past scientists often worked alone, whereas today they usually work in teams.",
+   "topic": "science-now",
+   "difficulty": 2,
+   "sourceRef": "p193",
+   "explanation": "One similarity + one difference. Two of the same kind only scores 1.",
+   "rules": [
+    {
+     "type": "maxPerGroup",
+     "group": "same",
+     "max": 1
+    },
+    {
+     "type": "maxPerGroup",
+     "group": "diff",
+     "max": 1
+    }
+   ]
+  }
+ ],
+ "recap": {
+  "summary": [
+   "density = mass ÷ volume, in g/cm³. Always show working and the unit.",
+   "Compare the object's density with the LIQUID it is in: less dense floats, denser sinks.",
+   "Floating: upthrust = weight. Denser liquid → more massive particles → bigger upthrust.",
+   "Ice floats because water expands when it freezes. Submarines change their mass with ballast tanks.",
+   "Al-Biruni: overflow method for volume, very precise densities. Precise ≠ accurate. Then alone, now teams."
+  ],
+  "flashcards": [
+   {
+    "id": "f1",
+    "front": "Wood (0.75 g/cm³) is put in petrol (0.7 g/cm³). Float or sink?",
+    "back": "Sink: 0.75 is more than 0.7."
+   },
+   {
+    "id": "f2",
+    "front": "Steel (7.8 g/cm³) is put in mercury (13.6 g/cm³). Float or sink?",
+    "back": "Float: 7.8 is less than 13.6."
+   },
+   {
+    "id": "f3",
+    "front": "How does a submarine return to the surface?",
+    "back": "Air pushes water out of the ballast tanks, its mass decreases, and it becomes less dense than seawater."
+   },
+   {
+    "id": "f4",
+    "front": "What are the 4 steps of the overflow method?",
+    "back": "Fill the flask until it overflows; empty the beaker; lower the stone in; measure the water that overflows."
+   },
+   {
+    "id": "f5",
+    "front": "Precise or accurate: close to the true value?",
+    "back": "Accurate."
+   },
+   {
+    "id": "f6",
+    "front": "What is the same about scientists then and now?",
+    "back": "They build on the work of earlier scientists."
+   }
+  ]
+ }
+}

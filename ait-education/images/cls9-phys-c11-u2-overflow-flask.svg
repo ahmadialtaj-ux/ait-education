@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 380" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="640" height="380" rx="18" fill="#fdf6e3"/>
+  <rect x="150" y="300" width="200" height="60" fill="#c8a165" stroke="#7f5539" stroke-width="3"/>
+  <path d="M190 120 L190 300 L310 300 L310 120" fill="#bde0fe" stroke="#1d3557" stroke-width="5"/>
+  <rect x="193" y="128" width="114" height="169" fill="#48cae4" opacity="0.8"/>
+  <path d="M310 135 L400 175" stroke="#1d3557" stroke-width="14" stroke-linecap="round"/>
+  <path d="M310 135 L400 175" stroke="#bde0fe" stroke-width="7" stroke-linecap="round"/>
+  <path d="M402 178 q6 20 2 40" stroke="#48cae4" stroke-width="5" fill="none"/>
+  <path d="M380 250 L380 345 L450 345 L450 250" fill="#ffffff" stroke="#1d3557" stroke-width="4"/>
+  <rect x="383" y="305" width="64" height="38" fill="#48cae4" opacity="0.85"/>
+  <line x1="250" y1="62" x2="250" y2="210" stroke="#495057" stroke-width="2"/>
+  <path d="M225 210 q25 -22 52 2 q12 26 -18 40 q-35 6 -38 -20 z" fill="#8d99ae" stroke="#1d3557" stroke-width="3"/>
+  <g font-size="17" fill="#1d3557" font-weight="700">
+    <text x="60" y="210">flask</text><line x1="105" y1="205" x2="188" y2="205" stroke="#1d3557" stroke-width="2"/>
+    <text x="420" y="140">side arm</text><line x1="418" y1="145" x2="372" y2="162" stroke="#1d3557" stroke-width="2"/>
+    <text x="470" y="300">beaker</text><line x1="468" y1="296" x2="452" y2="296" stroke="#1d3557" stroke-width="2"/>
+    <text x="330" y="262">stone</text><line x1="328" y1="256" x2="282" y2="236" stroke="#1d3557" stroke-width="2"/>
+  </g>
+  <g font-size="15" fill="#1d3557">
+    <text x="470" y="330">overflow water</text>
+    <text x="470" y="350">= volume of stone ✅</text>
+  </g>
+  <text x="320" y="40" text-anchor="middle" font-size="20" font-weight="800" fill="#1d3557">Al-Biruni's overflow method</text>
+</svg>

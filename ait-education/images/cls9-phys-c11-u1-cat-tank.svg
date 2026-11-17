@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="640" height="360" rx="18" fill="#f8f9fa"/>
+  <rect x="60" y="80" width="460" height="250" fill="none" stroke="#495057" stroke-width="6"/>
+  <rect x="63" y="140" width="454" height="187" fill="#90e0ef" opacity="0.85"/>
+  <line x1="63" y1="140" x2="517" y2="140" stroke="#0077b6" stroke-width="3"/>
+  <g font-size="26" font-weight="800" text-anchor="middle" fill="#fff">
+    <rect x="95" y="90" width="70" height="70" rx="6" fill="#f4a261"/><text x="130" y="128">A</text>
+    <rect x="200" y="105" width="70" height="70" rx="6" fill="#2a9d8f"/><text x="235" y="135">B</text>
+    <rect x="305" y="128" width="70" height="70" rx="6" fill="#8338ec"/><text x="340" y="173">C</text>
+    <rect x="410" y="252" width="70" height="70" rx="6" fill="#e63946"/><text x="445" y="297">D</text>
+  </g>
+  <rect x="200" y="140" width="70" height="35" fill="#90e0ef" opacity="0.55"/>
+  <rect x="95" y="140" width="70" height="20" fill="#90e0ef" opacity="0.55"/>
+  <rect x="305" y="140" width="70" height="58" fill="#90e0ef" opacity="0.55"/>
+  <rect x="410" y="252" width="70" height="70" fill="#90e0ef" opacity="0.35"/>
+  <g transform="translate(545,180)">
+    <ellipse cx="40" cy="90" rx="38" ry="55" fill="#ff9f1c"/>
+    <circle cx="40" cy="25" r="30" fill="#ff9f1c"/>
+    <polygon points="16,6 22,-22 34,0" fill="#ff9f1c"/>
+    <polygon points="46,0 58,-22 64,6" fill="#ff9f1c"/>
+    <circle cx="30" cy="22" r="4" fill="#1d3557"/><circle cx="51" cy="22" r="4" fill="#1d3557"/>
+    <path d="M34 34 q6 6 12 0" stroke="#1d3557" stroke-width="3" fill="none"/>
+    <path d="M75 120 q30 -10 20 -50" stroke="#ff9f1c" stroke-width="10" fill="none" stroke-linecap="round"/>
+  </g>
+  <text x="290" y="46" text-anchor="middle" font-size="20" font-weight="800" fill="#1d3557">Four blocks, all the SAME volume</text>
+  <text x="590" y="146" text-anchor="middle" font-size="13" fill="#495057">Sir Floats-a-Lot</text>
+</svg>

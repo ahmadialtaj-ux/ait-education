@@ -231,6 +231,26 @@ export async function bootApp() {
   renderApp();
 }
 
+// v0.3.3: find the subject + chapter that contain a unit, and make them active (multi-subject support)
+function locateUnit(unitId) {
+  for (const subj of appState.manifest?.subjects || []) {
+    for (const ch of subj.chapters || []) {
+      if ((ch.units || []).some((u) => u.id === unitId)) return { subjectId: subj.subjectId, chapterKey: ch.chapterKey };
+    }
+  }
+  return null;
+}
+function syncActiveFromUnit(unitId) {
+  const loc = locateUnit(unitId);
+  if (loc) {
+    appState.activeSubjectId = loc.subjectId;
+    appState.activeChapterKey = loc.chapterKey;
+  }
+}
+function chapterKeyForUnit(unit) {
+  return locateUnit(unit?.id)?.chapterKey || appState.activeChapterKey;
+}
+
 function getActiveChapterObj() {
   const subj = (appState.manifest?.subjects || []).find((s) => s.subjectId === appState.activeSubjectId) || appState.manifest?.subjects?.[0];
   if (!subj) return null;
@@ -429,15 +449,27 @@ function renderHeader(prog) {
 
 function renderSubjectsView() {
   const subjects = appState.manifest?.subjects || [];
+  const prog = getProgress();
   const cards = subjects
-    .map(
-      (s) => `<div class="card">
-        <h2>${escapeHtml(s.title)}</h2>
-        <button type="button" class="btn btn-primary" data-action="select-subject" data-subject-id="${escapeHtml(s.subjectId)}">Open subject →</button>
-      </div>`
-    )
+    .map((s) => {
+      const unitIds = (s.chapters || []).flatMap((c) => (c.units || []).map((u) => u.id));
+      const lessonIds = unitIds.filter((id) => appState.unitsById[id] && appState.unitsById[id].meta?.mode !== "mock");
+      const cleared = lessonIds.filter((id) => prog.units?.[id]?.cleared).length;
+      const pct = lessonIds.length ? Math.round((cleared / lessonIds.length) * 100) : 0;
+      return `<div class="card subject-card">
+        <div class="subject-card-head">
+          <span class="subject-icon" aria-hidden="true">${escapeHtml(s.icon || "📘")}</span>
+          <div>
+            <h2 style="margin:0;">${escapeHtml(s.title)}</h2>
+            ${s.tagline ? `<p style="margin:4px 0 0;">${escapeHtml(s.tagline)}</p>` : ""}
+          </div>
+          ${renderProgressRingSvg(pct)}
+        </div>
+        <button type="button" class="btn btn-primary" data-action="select-subject" data-subject-id="${escapeHtml(s.subjectId)}">${escapeHtml(STRINGS.openSubjectBtn)}</button>
+      </div>`;
+    })
     .join("");
-  return `<section><h2>${escapeHtml(STRINGS.subjectsHeading)}</h2>${cards}</section>`;
+  return `<section><h2>${escapeHtml(STRINGS.subjectsHeading)}</h2><div class="subject-grid">${cards}</div></section>`;
 }
 
 function renderChaptersView() {
@@ -625,6 +657,7 @@ function renderChapterMapView(prog) {
           <div style="font-size:0.9rem;font-weight:700;color:var(--primary);">${escapeHtml(STRINGS.chapterPrefix)} ${ch.chapterNumber} · ${escapeHtml(ch.title)}</div>
           <h2 class="world-title">${escapeHtml(chTheme.worldName)}</h2>
           <p class="world-story">${escapeHtml(chTheme.story)}</p>
+          ${(appState.manifest?.subjects || []).length > 1 ? `<button type="button" class="btn btn-secondary" data-action="nav-subjects">${escapeHtml(STRINGS.switchSubjectBtn)}</button>` : ""}
         </div>
       </div>
     </div>
@@ -680,7 +713,7 @@ function renderLessonUnitView(prog) {
 
   const themeId = prog.profile?.themeId || "explorer";
   const nickname = prog.profile?.nickname || "Explorer";
-  const uTheme = getUnitThemeText(themeId, appState.activeChapterKey, unit, nickname);
+  const uTheme = getUnitThemeText(themeId, chapterKeyForUnit(unit), unit, nickname);
   const missions = buildMissions(unit, prog.settings?.missionCapMin || 8);
   const doneKeys = new Set(prog.missions?.[unit.id]?.done || []);
   const allMissionsDone = missions.every((m) => doneKeys.has(m.key));
@@ -1024,7 +1057,7 @@ function renderBossView(prog) {
 
   const themeId = prog.profile?.themeId || "explorer";
   const nickname = prog.profile?.nickname || "Explorer";
-  const uTheme = getUnitThemeText(themeId, appState.activeChapterKey, unit, nickname);
+  const uTheme = getUnitThemeText(themeId, chapterKeyForUnit(unit), unit, nickname);
   const allowOnlineVoices = Boolean(prog.settings?.onlineVoices);
 
   const session = prog.mock?.[unit.id];
@@ -1577,6 +1610,16 @@ function renderParentView(prog) {
 
   const mockUnits = Object.values(appState.unitsById).filter((u) => u.meta?.mode === "mock");
   const timerOn = Boolean(prog.settings?.mockTimer);
+  // v0.3.3: one timer switch for all mock tests (it is a single setting), shown once above the per-test controls
+  const mockTimerToggleHtml = mockUnits.length
+    ? `<div class="parent-setting">
+        <label class="big-toggle">
+          <input type="checkbox" ${timerOn ? "checked" : ""} data-action="parent-toggle-mock-timer" />
+          <span>Use a countdown timer</span>
+        </label>
+        <p class="setting-help">Off by default, so your child can take their time. Turn it on to practise exam timing. If a paper is already open, the clock starts when your child goes back to it.</p>
+      </div>`
+    : "";
   const mockControlsHtml = mockUnits
     .map((mu) => {
       const unlocked = Boolean(prog.settings?.mockUnlocked?.[mu.id]);
@@ -1593,11 +1636,6 @@ function renderParentView(prog) {
           <span>Let ${escapeHtml(childName)} take the <strong>${escapeHtml(mu.meta.title)}</strong> now</span>
         </label>
         <p class="setting-help">Normally the mock test (the "Boss") opens after all learning zones are finished. Tick this to open it early, for example a few days before the real test.</p>
-        <label class="big-toggle">
-          <input type="checkbox" ${timerOn ? "checked" : ""} data-action="parent-toggle-mock-timer" />
-          <span>Use a countdown timer</span>
-        </label>
-        <p class="setting-help">Off by default, so your child can take their time. Turn it on to practise exam timing. If a paper is already open, the clock starts when your child goes back to it.</p>
         ${
           timerOn
             ? `<div class="timer-presets" role="group" aria-label="${escapeHtml(STRINGS.timerPresetsLabel)}">
@@ -1656,7 +1694,7 @@ function renderParentView(prog) {
         </label>
         <p class="setting-help">How many days a week ${escapeHtml(childName)} aims to study. A missed week never resets progress or XP.</p>
       </div>
-      ${mockControlsHtml}
+      ${mockTimerToggleHtml}${mockControlsHtml}
     </div>
 
     <div class="card">
@@ -2066,6 +2104,11 @@ function handleAction(action, el, event) {
     stopSpeech();
   }
 
+  if (action === "nav-subjects") {
+    appState.view = "subjects";
+    renderApp();
+    return;
+  }
   if (action === "nav-map") {
     appState.view = "map";
     renderApp();
@@ -2126,7 +2169,13 @@ function handleAction(action, el, event) {
 
   if (action === "select-subject") {
     appState.activeSubjectId = el.getAttribute("data-subject-id");
-    appState.view = "chapters";
+    const subjChapters = (appState.manifest?.subjects || []).find((sj) => sj.subjectId === appState.activeSubjectId)?.chapters || [];
+    if (subjChapters.length === 1) {
+      appState.activeChapterKey = subjChapters[0].chapterKey;
+      appState.view = "map";
+    } else {
+      appState.view = "chapters";
+    }
     renderApp();
     return;
   }
@@ -2184,6 +2233,7 @@ function handleAction(action, el, event) {
   if (action === "open-unit") {
     const unitId = el.getAttribute("data-unit-id");
     appState.activeUnitId = unitId;
+    syncActiveFromUnit(unitId);
     hydrateUnitStateFromStorage(unitId);
     const unit = appState.unitsById[unitId];
     const missions = buildMissions(unit, prog.settings?.missionCapMin || 8);
@@ -2515,6 +2565,7 @@ function handleAction(action, el, event) {
   if (action === "open-boss") {
     const unitId = el.getAttribute("data-unit-id");
     appState.activeUnitId = unitId;
+    syncActiveFromUnit(unitId);
     const unit = appState.unitsById[unitId];
     appState.draftAnswers = {};
     updateProgress((p) => {

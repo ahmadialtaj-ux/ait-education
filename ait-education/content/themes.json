@@ -1,169 +1,554 @@
 {
-  "schemaVersion": "0.3.1",
-  "xpLevels": [0, 100, 250, 500, 900, 1400],
-  "tokens": "{name} = child's nickname. {marks} = total marks of the unit, {minutes} = meta.estMinutes; both filled by the app from the unit JSON.",
-  "themes": [
-    {
-      "id": "explorer",
-      "label": "Explorer",
-      "pickerLine": "Not sure yet? Explore everything.",
-      "addressAs": "{name}",
-      "whyTitle": "Where will you see this?",
-      "ranks": ["Scout", "Pathfinder", "Navigator", "Trailblazer", "Expedition Leader", "Legend Explorer"],
-      "breakName": "Camp break",
-      "correct": ["Correct!", "That's right.", "Yes, that's it."],
-      "notYet": ["Not yet. Check the clue.", "Close. Have another look.", "Not quite. Here's a clue."],
-      "debrief": ["Zone cleared, {name}. Here's how it went.", "Good expedition, {name}. Let's look at what you found."],
-      "avatarImagePrompt": "Friendly cartoon young explorer, about 13 years old, backpack and map, flat vector style, plain light background, no text, no logos",
-      "chapters": {
-        "igcse-ict-c1": {
-          "worldName": "Reboot the City",
-          "story": "A glitch has crashed the city's computers. Clear every zone to bring the city back online.",
-          "units": {
-            "igcse-ict-c1-u1": { "zone": "Interfaces Tower", "intro": "The tower's controls answer to voice and hand movements. Learn how they work to switch it back on.", "why": "You may already use these: asking a voice assistant a question, or playing a motion-sensing game." },
-            "igcse-ict-c1-u2": { "zone": "Device Lab: Desk Wing", "intro": "The lab has two kinds of computer, and each job needs the right one. Work out which is which.", "why": "In schools and offices, big computers often stay on desks, while laptops can travel in bags. Each is chosen for a reason." },
-            "igcse-ict-c1-u3": { "zone": "Device Lab: Mobile Wing", "intro": "Phones and tablets keep the city connected. Find out what each one is best at.", "why": "Paying in a shop, a map in the car, a video call with family: mobile devices can do all of it." },
-            "igcse-ict-c1-u4": { "zone": "AI Core", "intro": "The city's AI brain is offline. Learn what AI can and can't do before you restart it.", "why": "AI helps pick the videos you're shown, filters spam emails and helps some cars park themselves." },
-            "igcse-ict-c1-u5": { "zone": "VR Arena", "intro": "The arena mixes real and virtual worlds. Learn the difference between AR and VR to reopen it.", "why": "A phone filter that puts sunglasses on your face uses AR. A headset that puts you inside a game uses VR." },
-            "igcse-ict-c1-u6": { "zone": "Boss: The Glitch", "intro": "Boss challenge: {marks} marks, about {minutes} minutes, no hints. Show everything you've learned.", "why": null }
-          }
-        }
+ "schemaVersion": "0.3.1",
+ "xpLevels": [
+  0,
+  100,
+  250,
+  500,
+  900,
+  1400
+ ],
+ "tokens": "{name} = child's nickname. {marks} = total marks of the unit, {minutes} = meta.estMinutes; both filled by the app from the unit JSON.",
+ "themes": [
+  {
+   "id": "explorer",
+   "label": "Explorer",
+   "pickerLine": "Not sure yet? Explore everything.",
+   "addressAs": "{name}",
+   "whyTitle": "Where will you see this?",
+   "ranks": [
+    "Scout",
+    "Pathfinder",
+    "Navigator",
+    "Trailblazer",
+    "Expedition Leader",
+    "Legend Explorer"
+   ],
+   "breakName": "Camp break",
+   "correct": [
+    "Correct!",
+    "That's right.",
+    "Yes, that's it."
+   ],
+   "notYet": [
+    "Not yet. Check the clue.",
+    "Close. Have another look.",
+    "Not quite. Here's a clue."
+   ],
+   "debrief": [
+    "Zone cleared, {name}. Here's how it went.",
+    "Good expedition, {name}. Let's look at what you found."
+   ],
+   "avatarImagePrompt": "Friendly cartoon young explorer, about 13 years old, backpack and map, flat vector style, plain light background, no text, no logos",
+   "chapters": {
+    "igcse-ict-c1": {
+     "worldName": "Reboot the City",
+     "story": "A glitch has crashed the city's computers. Clear every zone to bring the city back online.",
+     "units": {
+      "igcse-ict-c1-u1": {
+       "zone": "Interfaces Tower",
+       "intro": "The tower's controls answer to voice and hand movements. Learn how they work to switch it back on.",
+       "why": "You may already use these: asking a voice assistant a question, or playing a motion-sensing game."
+      },
+      "igcse-ict-c1-u2": {
+       "zone": "Device Lab: Desk Wing",
+       "intro": "The lab has two kinds of computer, and each job needs the right one. Work out which is which.",
+       "why": "In schools and offices, big computers often stay on desks, while laptops can travel in bags. Each is chosen for a reason."
+      },
+      "igcse-ict-c1-u3": {
+       "zone": "Device Lab: Mobile Wing",
+       "intro": "Phones and tablets keep the city connected. Find out what each one is best at.",
+       "why": "Paying in a shop, a map in the car, a video call with family: mobile devices can do all of it."
+      },
+      "igcse-ict-c1-u4": {
+       "zone": "AI Core",
+       "intro": "The city's AI brain is offline. Learn what AI can and can't do before you restart it.",
+       "why": "AI helps pick the videos you're shown, filters spam emails and helps some cars park themselves."
+      },
+      "igcse-ict-c1-u5": {
+       "zone": "VR Arena",
+       "intro": "The arena mixes real and virtual worlds. Learn the difference between AR and VR to reopen it.",
+       "why": "A phone filter that puts sunglasses on your face uses AR. A headset that puts you inside a game uses VR."
+      },
+      "igcse-ict-c1-u6": {
+       "zone": "Boss: The Glitch",
+       "intro": "Boss challenge: {marks} marks, about {minutes} minutes, no hints. Show everything you've learned.",
+       "why": null
       }
+     }
     },
-    {
-      "id": "doctor",
-      "label": "Doctor",
-      "pickerLine": "Help people get better.",
-      "addressAs": "Dr. {name}",
-      "whyTitle": "Why does a doctor need this?",
-      "ranks": ["Lab Rookie", "Care Cadet", "Health Scout", "Clinic Captain", "Healing Hero", "Health Legend"],
-      "breakName": "Recharge break",
-      "correct": ["Spot on, Dr. {name}.", "That's right.", "Correct. Nice thinking."],
-      "notYet": ["Not yet. Check the clue.", "Close. Have another look.", "Not quite. Try once more."],
-      "debrief": ["Shift complete, Dr. {name}. Here's how it went.", "Good work today, Dr. {name}. Let's debrief."],
-      "avatarImagePrompt": "Friendly cartoon young doctor, about 13 years old, white coat and stethoscope, flat vector style, plain light background, no text, no logos",
-      "chapters": {
-        "igcse-ict-c1": {
-          "worldName": "Hospital Tech Upgrade",
-          "story": "The city hospital is getting brand-new technology. Learn how each system works and help set it up, Dr. {name}.",
-          "units": {
-            "igcse-ict-c1-u1": { "zone": "Operating Theatre", "intro": "The theatre's new screens can be controlled by voice and gesture. Learn how these controls work.", "why": "Sterile gloves make touching a normal screen tricky during an operation, so some operating theatres use voice or gesture control to work hands-free." },
-            "igcse-ict-c1-u2": { "zone": "Records Office", "intro": "Some hospital computers stay put and others move. Choose the right one for each job.", "why": "A desktop can stay at the nurses' station, while a laptop on a trolley moves from bed to bed. The job decides the device." },
-            "igcse-ict-c1-u3": { "zone": "Ward Round", "intro": "Doctors carry their information with them. Find out which mobile device fits each task.", "why": "Doctors can check test results on a tablet at the bedside and get urgent alerts on a smartphone." },
-            "igcse-ict-c1-u4": { "zone": "Diagnosis Lab", "intro": "The lab's new AI helps read scans. Learn what AI is good at, and where a doctor is still needed.", "why": "AI can help doctors spot signs of illness in X-rays and scans, and a doctor usually checks the result and makes the final decision." },
-            "igcse-ict-c1-u5": { "zone": "Simulation Centre", "intro": "Trainees practise here before working with real patients. Learn how AR and VR make that possible.", "why": "Trainee doctors can practise an operation in VR many times before they ever help with a real one." },
-            "igcse-ict-c1-u6": { "zone": "Boss: The Big System Check", "intro": "Boss challenge: {marks} marks, about {minutes} minutes, no hints. Show everything you've learned.", "why": null }
-          }
-        }
+    "cls9-phys-c11": {
+     "worldName": "Mystery of the Floating Island",
+     "story": "Strange things float near a secret island, and others vanish into the deep. Solve the sink-or-float mystery, {name}.",
+     "units": {
+      "cls9-phys-c11-u1": {
+       "zone": "Sink-or-Float Lagoon",
+       "intro": "Why do icebergs float while a tiny coin sinks? Crack the density code.",
+       "why": "Explorers judge rafts, boats and ice before trusting them. Density tells you what will hold you up."
+      },
+      "cls9-phys-c11-u2": {
+       "zone": "The Gem Cave",
+       "intro": "A cave full of 'diamonds'. Some are fakes. Use a 1000-year-old trick to catch them.",
+       "why": "Explorers find strange stones all the time. Measuring density is how you tell treasure from trash."
+      },
+      "cls9-phys-c11-u3": {
+       "zone": "Boss: The Deep Mystery",
+       "intro": "Boss challenge: {marks} marks, about {minutes} minutes, no hints. Show everything you've learned.",
+       "why": null
       }
-    },
-    {
-      "id": "engineer",
-      "label": "Engineer",
-      "pickerLine": "Design and build things that work.",
-      "addressAs": "Engineer {name}",
-      "whyTitle": "Why does an engineer need this?",
-      "ranks": ["Bolt Rookie", "Gear Cadet", "Circuit Builder", "System Fixer", "Master Builder", "Engineering Legend"],
-      "breakName": "Tools-down break",
-      "correct": ["Nailed it.", "That's correct.", "Correct. Solid work."],
-      "notYet": ["Not yet. Let's troubleshoot.", "Almost. Check the clue and retry.", "Engineers test again. Try once more."],
-      "debrief": ["System done, Engineer {name}. Here's how it went.", "Shift done, Engineer {name}. Let's check the build."],
-      "avatarImagePrompt": "Friendly cartoon young engineer, about 13 years old, safety helmet and tablet, flat vector style, plain light background, no text, no logos",
-      "chapters": {
-        "igcse-ict-c1": {
-          "worldName": "City Grid Upgrade",
-          "story": "The city's control systems are getting a big upgrade, and you're on the build team, Engineer {name}.",
-          "units": {
-            "igcse-ict-c1-u1": { "zone": "Control Room", "intro": "The new control room uses voice commands and gestures. Learn how they work, and when they don't.", "why": "With gloves on and hands full, an engineer can check a plan by voice or gesture. But on a noisy site, voice control can mishear: a real disadvantage." },
-            "igcse-ict-c1-u2": { "zone": "Design Office", "intro": "Big design jobs and site visits need different computers. Pick the right one.", "why": "Heavy 3D design often runs on a powerful desktop in the office, while a laptop can go to the site to show the client." },
-            "igcse-ict-c1-u3": { "zone": "Site Visit", "intro": "Out on site, mobile devices are part of your toolkit. Find out what each one does best.", "why": "A tablet can show the plans on site, and a phone photo of a problem can reach the team in seconds." },
-            "igcse-ict-c1-u4": { "zone": "Robotics Workshop", "intro": "The workshop's robots need a smart brain. Learn how AI works and where it has limits.", "why": "Engineers design robots and smart systems that can use AI to spot faults before a machine breaks down." },
-            "igcse-ict-c1-u5": { "zone": "Build Site", "intro": "See the building before it's built. Learn how AR and VR help engineers plan.", "why": "With AR, an engineer can point a tablet at an empty room and see where the walls and pipes will go." },
-            "igcse-ict-c1-u6": { "zone": "Boss: The Grand Test", "intro": "Boss challenge: {marks} marks, about {minutes} minutes, no hints. Show everything you've learned.", "why": null }
-          }
-        }
-      }
-    },
-    {
-      "id": "astronaut",
-      "label": "Astronaut",
-      "pickerLine": "Explore space.",
-      "addressAs": "Astronaut {name}",
-      "whyTitle": "Why does an astronaut need this?",
-      "ranks": ["Star Rookie", "Launch Cadet", "Orbit Runner", "Moon Walker", "Mars Pioneer", "Galaxy Legend"],
-      "breakName": "Oxygen check",
-      "correct": ["Confirmed, {name}. Correct.", "Right on target.", "That's correct."],
-      "notYet": ["Not yet. Recalculating course.", "Close. Check the clue and retry.", "Not quite. Try once more."],
-      "debrief": ["Mission complete, {name}. Here's how it went.", "Good flight, Astronaut {name}. Time to debrief."],
-      "avatarImagePrompt": "Friendly cartoon young astronaut, about 13 years old, white spacesuit with helmet under one arm, flat vector style, plain light background, no text, no logos, no flags",
-      "chapters": {
-        "igcse-ict-c1": {
-          "worldName": "Space Base Prep",
-          "story": "The space base is preparing for a new mission. Get every system ready, Astronaut {name}.",
-          "units": {
-            "igcse-ict-c1-u1": { "zone": "Mission Control", "intro": "Mission Control is testing voice and gesture controls. Learn how these interfaces work.", "why": "Spacesuit gloves are thick, so small buttons are hard to press. Voice control is being tested to help astronauts work hands-free." },
-            "igcse-ict-c1-u2": { "zone": "Launch Base", "intro": "Some computers stay on the ground and some fly. Decide which computer goes where.", "why": "Mission Control uses big desktop workstations, while astronauts take laptops up to the space station." },
-            "igcse-ict-c1-u3": { "zone": "Station Module", "intro": "On the station, every device must earn its place. Find out what phones and tablets do best.", "why": "Astronauts have used tablets to read step-by-step instructions while their hands do the work." },
-            "igcse-ict-c1-u4": { "zone": "Rover Garage", "intro": "The rover must drive a long way from home. Learn what AI can and can't do.", "why": "Mars is so far away that signals take minutes to arrive, so rovers can steer around nearby rocks on their own while the team on Earth plans the route." },
-            "igcse-ict-c1-u5": { "zone": "Training Centre", "intro": "Before any spacewalk, astronauts rehearse. Learn how AR and VR help them train.", "why": "Astronauts practise spacewalks in VR before they ever step outside the station." },
-            "igcse-ict-c1-u6": { "zone": "Boss: Launch Check", "intro": "Boss challenge: {marks} marks, about {minutes} minutes, no hints. Show everything you've learned.", "why": null }
-          }
-        }
-      }
-    },
-    {
-      "id": "ocean-explorer",
-      "label": "Ocean Explorer",
-      "pickerLine": "Dive and discover the sea.",
-      "addressAs": "Diver {name}",
-      "whyTitle": "Why does an ocean explorer need this?",
-      "ranks": ["Reef Rookie", "Wave Rider", "Kelp Explorer", "Reef Ranger", "Abyss Explorer", "Deep Sea Legend"],
-      "breakName": "Surface interval",
-      "correct": ["OK signal! That's right.", "Correct.", "That's right. Smooth work."],
-      "notYet": ["Not yet. Let's fix it, like in training.", "Good try. Here's a clue, then go again.", "Stop, breathe, think. Try once more."],
-      "debrief": ["Back on the boat, {name}. Let's debrief.", "Dive logged, Diver {name}. Here's what went well."],
-      "avatarImagePrompt": "Friendly cartoon young scuba diver, about 13 years old, wetsuit with mask pushed up on forehead, flat vector style, plain light background, no text, no logos",
-      "chapters": {
-        "igcse-ict-c1": {
-          "worldName": "Sea Lab Setup",
-          "story": "The underwater research station is getting new technology. Dive in and set up each system, Diver {name}.",
-          "units": {
-            "igcse-ict-c1-u1": { "zone": "Dive Deck", "intro": "Divers already talk with their hands. Learn how computers understand voice and gestures.", "why": "Most divers can't talk underwater, so they use hand signals like 'OK' and 'go up'. A gesture interface uses sensors to read hand movements in a similar way." },
-            "igcse-ict-c1-u2": { "zone": "Research Ship", "intro": "The ship's lab needs the right computers on board. Choose the best one for each job.", "why": "A desktop can stay fixed in the ship's lab, and a laptop can go out on the small boat to log the dive." },
-            "igcse-ict-c1-u3": { "zone": "Dive Boat", "intro": "On the boat, small devices do big jobs. Find out what phones and tablets are best at.", "why": "In a waterproof case, a tablet can show the dive plan and a fish chart, and a phone on the boat can record where each dive site is." },
-            "igcse-ict-c1-u4": { "zone": "Deep Sea Lab", "intro": "Robots explore where divers can't go. Learn how AI helps them.", "why": "Underwater robots can use AI to map the seabed and recognise fish and coral in thousands of photos." },
-            "igcse-ict-c1-u5": { "zone": "Wreck Dive", "intro": "Explore a shipwreck without getting wet. Learn the difference between AR and VR.", "why": "VR lets you explore a shipwreck from home, and special AR masks can show divers their depth and direction." },
-            "igcse-ict-c1-u6": { "zone": "Boss: The Deep Dive", "intro": "Boss challenge: {marks} marks, about {minutes} minutes, no hints. Plan your dive, dive your plan.", "why": null }
-          }
-        }
-      }
-    },
-    {
-      "id": "footballer",
-      "label": "Footballer",
-      "pickerLine": "Play the beautiful game.",
-      "addressAs": "{name}",
-      "whyTitle": "Why does a footballer need this?",
-      "ranks": ["Academy Player", "Youth Team", "First Team", "Starter", "Captain", "Legend"],
-      "breakName": "Half-time",
-      "correct": ["Goal! That's right.", "Correct.", "Clean pass. Correct."],
-      "notYet": ["Hit the post! Try again.", "Close. Check the clue.", "Not yet. Reset and go again."],
-      "debrief": ["Full-time whistle! Here's how it went, {name}.", "Training done, {name}. Let's watch the replay."],
-      "avatarImagePrompt": "Friendly cartoon young footballer, about 13 years old, plain kit with no badge or sponsor, ball under one foot, flat vector style, plain light background, no text, no logos",
-      "chapters": {
-        "igcse-ict-c1": {
-          "worldName": "Smart Stadium",
-          "story": "The stadium is getting smart technology before the cup final. Help set it up, {name}.",
-          "units": {
-            "igcse-ict-c1-u1": { "zone": "Tactics Room", "intro": "The new tactics room answers to voice and gestures. Learn how these controls work.", "why": "Motion-sensing football games read your kicks and moves as gestures. Some training systems use the same idea to track how a player moves." },
-            "igcse-ict-c1-u2": { "zone": "Analysis Room", "intro": "Match analysts need the right computer for each job. Pick the winner.", "why": "Analysts can edit match video on powerful desktops, while the coach takes a laptop to away games." },
-            "igcse-ict-c1-u3": { "zone": "Training Ground", "intro": "On the training ground, phones and tablets are part of the kit. Find out what each does best.", "why": "Players can watch a replay of their own move on a tablet straight after a drill." },
-            "igcse-ict-c1-u4": { "zone": "Video Review Room", "intro": "Big decisions get checked here. Learn what AI can and can't do.", "why": "In some big competitions, computer systems track the players and the ball to help referees check offside." },
-            "igcse-ict-c1-u5": { "zone": "Training Pod", "intro": "Train your brain without kicking a ball. Learn how AR and VR are used.", "why": "Some players train their decision-making in VR, seeing the match from their own position on the pitch." },
-            "igcse-ict-c1-u6": { "zone": "Boss: Cup Final", "intro": "Boss challenge: the final! {marks} marks, about {minutes} minutes, no hints. Give it everything.", "why": null }
-          }
-        }
-      }
+     }
     }
-  ]
+   }
+  },
+  {
+   "id": "doctor",
+   "label": "Doctor",
+   "pickerLine": "Help people get better.",
+   "addressAs": "Dr. {name}",
+   "whyTitle": "Why does a doctor need this?",
+   "ranks": [
+    "Lab Rookie",
+    "Care Cadet",
+    "Health Scout",
+    "Clinic Captain",
+    "Healing Hero",
+    "Health Legend"
+   ],
+   "breakName": "Recharge break",
+   "correct": [
+    "Spot on, Dr. {name}.",
+    "That's right.",
+    "Correct. Nice thinking."
+   ],
+   "notYet": [
+    "Not yet. Check the clue.",
+    "Close. Have another look.",
+    "Not quite. Try once more."
+   ],
+   "debrief": [
+    "Shift complete, Dr. {name}. Here's how it went.",
+    "Good work today, Dr. {name}. Let's debrief."
+   ],
+   "avatarImagePrompt": "Friendly cartoon young doctor, about 13 years old, white coat and stethoscope, flat vector style, plain light background, no text, no logos",
+   "chapters": {
+    "igcse-ict-c1": {
+     "worldName": "Hospital Tech Upgrade",
+     "story": "The city hospital is getting brand-new technology. Learn how each system works and help set it up, Dr. {name}.",
+     "units": {
+      "igcse-ict-c1-u1": {
+       "zone": "Operating Theatre",
+       "intro": "The theatre's new screens can be controlled by voice and gesture. Learn how these controls work.",
+       "why": "Sterile gloves make touching a normal screen tricky during an operation, so some operating theatres use voice or gesture control to work hands-free."
+      },
+      "igcse-ict-c1-u2": {
+       "zone": "Records Office",
+       "intro": "Some hospital computers stay put and others move. Choose the right one for each job.",
+       "why": "A desktop can stay at the nurses' station, while a laptop on a trolley moves from bed to bed. The job decides the device."
+      },
+      "igcse-ict-c1-u3": {
+       "zone": "Ward Round",
+       "intro": "Doctors carry their information with them. Find out which mobile device fits each task.",
+       "why": "Doctors can check test results on a tablet at the bedside and get urgent alerts on a smartphone."
+      },
+      "igcse-ict-c1-u4": {
+       "zone": "Diagnosis Lab",
+       "intro": "The lab's new AI helps read scans. Learn what AI is good at, and where a doctor is still needed.",
+       "why": "AI can help doctors spot signs of illness in X-rays and scans, and a doctor usually checks the result and makes the final decision."
+      },
+      "igcse-ict-c1-u5": {
+       "zone": "Simulation Centre",
+       "intro": "Trainees practise here before working with real patients. Learn how AR and VR make that possible.",
+       "why": "Trainee doctors can practise an operation in VR many times before they ever help with a real one."
+      },
+      "igcse-ict-c1-u6": {
+       "zone": "Boss: The Big System Check",
+       "intro": "Boss challenge: {marks} marks, about {minutes} minutes, no hints. Show everything you've learned.",
+       "why": null
+      }
+     }
+    },
+    "cls9-phys-c11": {
+     "worldName": "The Floating Clinic",
+     "story": "A hospital ship is docking in the harbour, Dr. {name}. Learn why it floats and how to test what things are made of.",
+     "units": {
+      "cls9-phys-c11-u1": {
+       "zone": "Harbour Lab",
+       "intro": "Why does a giant hospital ship float while a tiny coin sinks? Find out.",
+       "why": "Bone is denser than muscle and fat is less dense, so scans can tell them apart. Density matters in medicine too."
+      },
+      "cls9-phys-c11-u2": {
+       "zone": "Pharmacy Detective",
+       "intro": "Is this medicine ingredient real or fake? Density can tell.",
+       "why": "Labs check that ingredients are genuine. Measuring density is one simple test."
+      },
+      "cls9-phys-c11-u3": {
+       "zone": "Boss: The Big Check-up",
+       "intro": "Boss challenge: {marks} marks, about {minutes} minutes, no hints. Start the shift and show what you know.",
+       "why": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "engineer",
+   "label": "Engineer",
+   "pickerLine": "Design and build things that work.",
+   "addressAs": "Engineer {name}",
+   "whyTitle": "Why does an engineer need this?",
+   "ranks": [
+    "Bolt Rookie",
+    "Gear Cadet",
+    "Circuit Builder",
+    "System Fixer",
+    "Master Builder",
+    "Engineering Legend"
+   ],
+   "breakName": "Tools-down break",
+   "correct": [
+    "Nailed it.",
+    "That's correct.",
+    "Correct. Solid work."
+   ],
+   "notYet": [
+    "Not yet. Let's troubleshoot.",
+    "Almost. Check the clue and retry.",
+    "Engineers test again. Try once more."
+   ],
+   "debrief": [
+    "System done, Engineer {name}. Here's how it went.",
+    "Shift done, Engineer {name}. Let's check the build."
+   ],
+   "avatarImagePrompt": "Friendly cartoon young engineer, about 13 years old, safety helmet and tablet, flat vector style, plain light background, no text, no logos",
+   "chapters": {
+    "igcse-ict-c1": {
+     "worldName": "City Grid Upgrade",
+     "story": "The city's control systems are getting a big upgrade, and you're on the build team, Engineer {name}.",
+     "units": {
+      "igcse-ict-c1-u1": {
+       "zone": "Control Room",
+       "intro": "The new control room uses voice commands and gestures. Learn how they work, and when they don't.",
+       "why": "With gloves on and hands full, an engineer can check a plan by voice or gesture. But on a noisy site, voice control can mishear: a real disadvantage."
+      },
+      "igcse-ict-c1-u2": {
+       "zone": "Design Office",
+       "intro": "Big design jobs and site visits need different computers. Pick the right one.",
+       "why": "Heavy 3D design often runs on a powerful desktop in the office, while a laptop can go to the site to show the client."
+      },
+      "igcse-ict-c1-u3": {
+       "zone": "Site Visit",
+       "intro": "Out on site, mobile devices are part of your toolkit. Find out what each one does best.",
+       "why": "A tablet can show the plans on site, and a phone photo of a problem can reach the team in seconds."
+      },
+      "igcse-ict-c1-u4": {
+       "zone": "Robotics Workshop",
+       "intro": "The workshop's robots need a smart brain. Learn how AI works and where it has limits.",
+       "why": "Engineers design robots and smart systems that can use AI to spot faults before a machine breaks down."
+      },
+      "igcse-ict-c1-u5": {
+       "zone": "Build Site",
+       "intro": "See the building before it's built. Learn how AR and VR help engineers plan.",
+       "why": "With AR, an engineer can point a tablet at an empty room and see where the walls and pipes will go."
+      },
+      "igcse-ict-c1-u6": {
+       "zone": "Boss: The Grand Test",
+       "intro": "Boss challenge: {marks} marks, about {minutes} minutes, no hints. Show everything you've learned.",
+       "why": null
+      }
+     }
+    },
+    "cls9-phys-c11": {
+     "worldName": "Shipyard Sea Trials",
+     "story": "The shipyard is building a brand-new submarine, the AIT Nautilus. Before it sails, someone has to master density. That's you, Engineer {name}.",
+     "units": {
+      "cls9-phys-c11-u1": {
+       "zone": "Float Test Dock",
+       "intro": "Steel ships float, coins sink, and the lab cat keeps knocking things into the tank. Find the real rule.",
+       "why": "Ship, submarine and oil-rig engineers calculate density and upthrust before anything touches the water. Get it wrong and it sinks."
+      },
+      "cls9-phys-c11-u2": {
+       "zone": "Materials Lab",
+       "intro": "A supplier says this metal is the real thing. Prove it with density, like a 1000-year-old engineer.",
+       "why": "Engineers check that materials are what the supplier says. Density testing is one of the quickest checks."
+      },
+      "cls9-phys-c11-u3": {
+       "zone": "Boss: Sea Trials",
+       "intro": "Boss challenge: {marks} marks, about {minutes} minutes, no hints. Fire up the engine and pass the sea trials.",
+       "why": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "astronaut",
+   "label": "Astronaut",
+   "pickerLine": "Explore space.",
+   "addressAs": "Astronaut {name}",
+   "whyTitle": "Why does an astronaut need this?",
+   "ranks": [
+    "Star Rookie",
+    "Launch Cadet",
+    "Orbit Runner",
+    "Moon Walker",
+    "Mars Pioneer",
+    "Galaxy Legend"
+   ],
+   "breakName": "Oxygen check",
+   "correct": [
+    "Confirmed, {name}. Correct.",
+    "Right on target.",
+    "That's correct."
+   ],
+   "notYet": [
+    "Not yet. Recalculating course.",
+    "Close. Check the clue and retry.",
+    "Not quite. Try once more."
+   ],
+   "debrief": [
+    "Mission complete, {name}. Here's how it went.",
+    "Good flight, Astronaut {name}. Time to debrief."
+   ],
+   "avatarImagePrompt": "Friendly cartoon young astronaut, about 13 years old, white spacesuit with helmet under one arm, flat vector style, plain light background, no text, no logos, no flags",
+   "chapters": {
+    "igcse-ict-c1": {
+     "worldName": "Space Base Prep",
+     "story": "The space base is preparing for a new mission. Get every system ready, Astronaut {name}.",
+     "units": {
+      "igcse-ict-c1-u1": {
+       "zone": "Mission Control",
+       "intro": "Mission Control is testing voice and gesture controls. Learn how these interfaces work.",
+       "why": "Spacesuit gloves are thick, so small buttons are hard to press. Voice control is being tested to help astronauts work hands-free."
+      },
+      "igcse-ict-c1-u2": {
+       "zone": "Launch Base",
+       "intro": "Some computers stay on the ground and some fly. Decide which computer goes where.",
+       "why": "Mission Control uses big desktop workstations, while astronauts take laptops up to the space station."
+      },
+      "igcse-ict-c1-u3": {
+       "zone": "Station Module",
+       "intro": "On the station, every device must earn its place. Find out what phones and tablets do best.",
+       "why": "Astronauts have used tablets to read step-by-step instructions while their hands do the work."
+      },
+      "igcse-ict-c1-u4": {
+       "zone": "Rover Garage",
+       "intro": "The rover must drive a long way from home. Learn what AI can and can't do.",
+       "why": "Mars is so far away that signals take minutes to arrive, so rovers can steer around nearby rocks on their own while the team on Earth plans the route."
+      },
+      "igcse-ict-c1-u5": {
+       "zone": "Training Centre",
+       "intro": "Before any spacewalk, astronauts rehearse. Learn how AR and VR help them train.",
+       "why": "Astronauts practise spacewalks in VR before they ever step outside the station."
+      },
+      "igcse-ict-c1-u6": {
+       "zone": "Boss: Launch Check",
+       "intro": "Boss challenge: {marks} marks, about {minutes} minutes, no hints. Show everything you've learned.",
+       "why": null
+      }
+     }
+    },
+    "cls9-phys-c11": {
+     "worldName": "Planet Density Mission",
+     "story": "Mission Control needs a density expert to study planets and stars. Suit up, Astronaut {name}.",
+     "units": {
+      "cls9-phys-c11-u1": {
+       "zone": "Splashdown Zone",
+       "intro": "Capsules land in the sea after space missions. Will yours float? Learn the rule.",
+       "why": "Saturn's average density is less than water's. If you found a big enough bathtub, Saturn would float in it!"
+      },
+      "cls9-phys-c11-u2": {
+       "zone": "Star Lab",
+       "intro": "How do you measure the density of the Earth or the Sun without a giant scale? Ask the scientists.",
+       "why": "Space scientists work out the densities of planets and stars using telescopes all over the world."
+      },
+      "cls9-phys-c11-u3": {
+       "zone": "Boss: Launch Check",
+       "intro": "Boss challenge: {marks} marks, about {minutes} minutes, no hints. Launch!",
+       "why": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "ocean-explorer",
+   "label": "Ocean Explorer",
+   "pickerLine": "Dive and discover the sea.",
+   "addressAs": "Diver {name}",
+   "whyTitle": "Why does an ocean explorer need this?",
+   "ranks": [
+    "Reef Rookie",
+    "Wave Rider",
+    "Kelp Explorer",
+    "Reef Ranger",
+    "Abyss Explorer",
+    "Deep Sea Legend"
+   ],
+   "breakName": "Surface interval",
+   "correct": [
+    "OK signal! That's right.",
+    "Correct.",
+    "That's right. Smooth work."
+   ],
+   "notYet": [
+    "Not yet. Let's fix it, like in training.",
+    "Good try. Here's a clue, then go again.",
+    "Stop, breathe, think. Try once more."
+   ],
+   "debrief": [
+    "Back on the boat, {name}. Let's debrief.",
+    "Dive logged, Diver {name}. Here's what went well."
+   ],
+   "avatarImagePrompt": "Friendly cartoon young scuba diver, about 13 years old, wetsuit with mask pushed up on forehead, flat vector style, plain light background, no text, no logos",
+   "chapters": {
+    "igcse-ict-c1": {
+     "worldName": "Sea Lab Setup",
+     "story": "The underwater research station is getting new technology. Dive in and set up each system, Diver {name}.",
+     "units": {
+      "igcse-ict-c1-u1": {
+       "zone": "Dive Deck",
+       "intro": "Divers already talk with their hands. Learn how computers understand voice and gestures.",
+       "why": "Most divers can't talk underwater, so they use hand signals like 'OK' and 'go up'. A gesture interface uses sensors to read hand movements in a similar way."
+      },
+      "igcse-ict-c1-u2": {
+       "zone": "Research Ship",
+       "intro": "The ship's lab needs the right computers on board. Choose the best one for each job.",
+       "why": "A desktop can stay fixed in the ship's lab, and a laptop can go out on the small boat to log the dive."
+      },
+      "igcse-ict-c1-u3": {
+       "zone": "Dive Boat",
+       "intro": "On the boat, small devices do big jobs. Find out what phones and tablets are best at.",
+       "why": "In a waterproof case, a tablet can show the dive plan and a fish chart, and a phone on the boat can record where each dive site is."
+      },
+      "igcse-ict-c1-u4": {
+       "zone": "Deep Sea Lab",
+       "intro": "Robots explore where divers can't go. Learn how AI helps them.",
+       "why": "Underwater robots can use AI to map the seabed and recognise fish and coral in thousands of photos."
+      },
+      "igcse-ict-c1-u5": {
+       "zone": "Wreck Dive",
+       "intro": "Explore a shipwreck without getting wet. Learn the difference between AR and VR.",
+       "why": "VR lets you explore a shipwreck from home, and special AR masks can show divers their depth and direction."
+      },
+      "igcse-ict-c1-u6": {
+       "zone": "Boss: The Deep Dive",
+       "intro": "Boss challenge: {marks} marks, about {minutes} minutes, no hints. Plan your dive, dive your plan.",
+       "why": null
+      }
+     }
+    },
+    "cls9-phys-c11": {
+     "worldName": "The Deep Blue Lab",
+     "story": "Your research sub is ready to dive, Diver {name}. Master density and you control the deep.",
+     "units": {
+      "cls9-phys-c11-u1": {
+       "zone": "Buoyancy Bay",
+       "intro": "Why do divers float, sink or hover? Learn the secret every scuba diver uses.",
+       "why": "Divers add or let out air from their BCD jacket to change their density and hover in mid-water."
+      },
+      "cls9-phys-c11-u2": {
+       "zone": "Shipwreck Gem Hunt",
+       "intro": "You've found gems on an old shipwreck. Are they real? Test them like Al-Biruni.",
+       "why": "Underwater scientists identify rocks, shells and minerals by measuring them carefully."
+      },
+      "cls9-phys-c11-u3": {
+       "zone": "Boss: The Deep Dive",
+       "intro": "Boss challenge: {marks} marks, about {minutes} minutes, no hints. Plan your dive, dive your plan.",
+       "why": null
+      }
+     }
+    }
+   }
+  },
+  {
+   "id": "footballer",
+   "label": "Footballer",
+   "pickerLine": "Play the beautiful game.",
+   "addressAs": "{name}",
+   "whyTitle": "Why does a footballer need this?",
+   "ranks": [
+    "Academy Player",
+    "Youth Team",
+    "First Team",
+    "Starter",
+    "Captain",
+    "Legend"
+   ],
+   "breakName": "Half-time",
+   "correct": [
+    "Goal! That's right.",
+    "Correct.",
+    "Clean pass. Correct."
+   ],
+   "notYet": [
+    "Hit the post! Try again.",
+    "Close. Check the clue.",
+    "Not yet. Reset and go again."
+   ],
+   "debrief": [
+    "Full-time whistle! Here's how it went, {name}.",
+    "Training done, {name}. Let's watch the replay."
+   ],
+   "avatarImagePrompt": "Friendly cartoon young footballer, about 13 years old, plain kit with no badge or sponsor, ball under one foot, flat vector style, plain light background, no text, no logos",
+   "chapters": {
+    "igcse-ict-c1": {
+     "worldName": "Smart Stadium",
+     "story": "The stadium is getting smart technology before the cup final. Help set it up, {name}.",
+     "units": {
+      "igcse-ict-c1-u1": {
+       "zone": "Tactics Room",
+       "intro": "The new tactics room answers to voice and gestures. Learn how these controls work.",
+       "why": "Motion-sensing football games read your kicks and moves as gestures. Some training systems use the same idea to track how a player moves."
+      },
+      "igcse-ict-c1-u2": {
+       "zone": "Analysis Room",
+       "intro": "Match analysts need the right computer for each job. Pick the winner.",
+       "why": "Analysts can edit match video on powerful desktops, while the coach takes a laptop to away games."
+      },
+      "igcse-ict-c1-u3": {
+       "zone": "Training Ground",
+       "intro": "On the training ground, phones and tablets are part of the kit. Find out what each does best.",
+       "why": "Players can watch a replay of their own move on a tablet straight after a drill."
+      },
+      "igcse-ict-c1-u4": {
+       "zone": "Video Review Room",
+       "intro": "Big decisions get checked here. Learn what AI can and can't do.",
+       "why": "In some big competitions, computer systems track the players and the ball to help referees check offside."
+      },
+      "igcse-ict-c1-u5": {
+       "zone": "Training Pod",
+       "intro": "Train your brain without kicking a ball. Learn how AR and VR are used.",
+       "why": "Some players train their decision-making in VR, seeing the match from their own position on the pitch."
+      },
+      "igcse-ict-c1-u6": {
+       "zone": "Boss: Cup Final",
+       "intro": "Boss challenge: the final! {marks} marks, about {minutes} minutes, no hints. Give it everything.",
+       "why": null
+      }
+     }
+    },
+    "cls9-phys-c11": {
+     "worldName": "Pool Training Day",
+     "story": "The team is training in the pool today, {name}. Why does the ball float while you have to swim? Time to find out.",
+     "units": {
+      "cls9-phys-c11-u1": {
+       "zone": "Pool Session",
+       "intro": "Why does a football float in the pool? Learn the sink-or-float rule.",
+       "why": "A football is mostly air, so it's far less dense than water. Recovery sessions in the pool use upthrust to take weight off players' legs."
+      },
+      "cls9-phys-c11-u2": {
+       "zone": "Trophy Room",
+       "intro": "Is the club's 'gold' trophy really gold? Test it with density.",
+       "why": "Fake trophies and medals are caught the same way as fake gems: measure the density."
+      },
+      "cls9-phys-c11-u3": {
+       "zone": "Boss: Cup Final",
+       "intro": "Boss challenge: {marks} marks, about {minutes} minutes, no hints. The final! Give it everything.",
+       "why": null
+      }
+     }
+    }
+   }
+  }
+ ]
 }

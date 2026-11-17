@@ -16,6 +16,8 @@ export const STRINGS = {
 
   // Home / Subject / Chapter / Map
   subjectsHeading: "Choose a subject",
+  openSubjectBtn: "Let's go →",
+  switchSubjectBtn: "📚 Switch subject",
   chaptersHeading: "Choose a chapter",
   chapterPrefix: "Chapter",
   mapZonesHeading: "Learning Zones",
@@ -114,7 +116,7 @@ export const STRINGS = {
   calloutTip: "Exam tip",
   calloutMistake: "Watch out",
   calloutExample: "Example",
-  calloutRealWorld: "In real life…",
+  calloutRealWorld: "In your world…",
   imageAltPlaceholder: "Illustration: {alt}",
   readAloudBtn: "🎤 Read it to me",
   stopReadAloudBtn: "⏹ Stop reading",

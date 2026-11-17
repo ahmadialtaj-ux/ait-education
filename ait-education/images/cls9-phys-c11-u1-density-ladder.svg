@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="640" height="420" rx="18" fill="#fffaf0"/>
+  <text x="320" y="34" text-anchor="middle" font-size="22" font-weight="800" fill="#1d3557">The density ladder (g/cm³)</text>
+  <rect x="40" y="52" width="560" height="146" rx="12" fill="#e0f7f4"/>
+  <text x="56" y="76" font-size="16" font-weight="700" fill="#2a9d8f">⬆ FLOATS in water</text>
+  <rect x="40" y="214" width="560" height="190" rx="12" fill="#fde8e8"/>
+  <text x="56" y="396" font-size="16" font-weight="700" fill="#e63946">⬇ SINKS in water</text>
+  <line x1="30" y1="206" x2="610" y2="206" stroke="#1e88e5" stroke-width="6" stroke-dasharray="14 8"/>
+  <rect x="215" y="191" width="210" height="30" rx="15" fill="#1e88e5"/>
+  <text x="320" y="212" text-anchor="middle" font-size="17" font-weight="800" fill="#fff">💧 WATER = 1.0</text>
+  <g font-size="16" fill="#1d3557">
+    <g><rect x="70" y="92" width="150" height="34" rx="17" fill="#fff" stroke="#adb5bd"/><text x="145" y="115" text-anchor="middle">🌋 pumice 0.3</text></g>
+    <g><rect x="245" y="92" width="150" height="34" rx="17" fill="#fff" stroke="#adb5bd"/><text x="320" y="115" text-anchor="middle">⛽ petrol 0.7</text></g>
+    <g><rect x="420" y="92" width="160" height="34" rx="17" fill="#fff" stroke="#adb5bd"/><text x="500" y="115" text-anchor="middle">🥥 coconut 0.8</text></g>
+    <g><rect x="245" y="142" width="150" height="34" rx="17" fill="#fff" stroke="#adb5bd"/><text x="320" y="165" text-anchor="middle">🧊 ice 0.92</text></g>
+    <g><rect x="70" y="236" width="170" height="34" rx="17" fill="#fff" stroke="#adb5bd"/><text x="155" y="259" text-anchor="middle">🧂 salt water 1.2</text></g>
+    <g><rect x="265" y="236" width="150" height="34" rx="17" fill="#fff" stroke="#adb5bd"/><text x="340" y="259" text-anchor="middle">🌳 ironwood 1.3</text></g>
+    <g><rect x="440" y="236" width="140" height="34" rx="17" fill="#fff" stroke="#adb5bd"/><text x="510" y="259" text-anchor="middle">🟤 bromine 3.12</text></g>
+    <g><rect x="150" y="296" width="150" height="34" rx="17" fill="#fff" stroke="#adb5bd"/><text x="225" y="319" text-anchor="middle">🔩 steel 7.8</text></g>
+    <g><rect x="340" y="296" width="170" height="34" rx="17" fill="#fff" stroke="#adb5bd"/><text x="425" y="319" text-anchor="middle">🪞 mercury 13.6</text></g>
+  </g>
+  <text x="320" y="364" text-anchor="middle" font-size="14" fill="#6c757d">Salt water is a liquid: things up to 1.2 float in it. Steel floats on mercury!</text>
+</svg>

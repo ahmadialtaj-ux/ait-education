@@ -2,6 +2,36 @@
   "schemaVersion": "0.3",
   "subjects": [
     {
+      "subjectId": "physics",
+      "title": "Physics",
+      "icon": "🔬",
+      "tagline": "Chapter 11: density, floating and sinking",
+      "chapters": [
+        {
+          "chapterNumber": 11,
+          "chapterKey": "cls9-phys-c11",
+          "title": "Forces: density, floating and sinking",
+          "units": [
+            {
+              "id": "cls9-phys-c11-u1",
+              "file": "cls9-phys-c11-u1.json",
+              "order": 1
+            },
+            {
+              "id": "cls9-phys-c11-u2",
+              "file": "cls9-phys-c11-u2.json",
+              "order": 2
+            },
+            {
+              "id": "cls9-phys-c11-u3",
+              "file": "cls9-phys-c11-u3.json",
+              "order": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
       "subjectId": "ict",
       "title": "Information and Communication Technology",
       "chapters": [
@@ -42,7 +72,9 @@
             }
           ]
         }
-      ]
+      ],
+      "icon": "💻",
+      "tagline": "Chapter 1: types and components of computer systems"
     }
   ]
 }
