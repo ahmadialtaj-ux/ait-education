@@ -189,9 +189,15 @@ function paintSentence() {
     if (r) {
       CSS.highlights.set("tts-sentence", new Highlight(r));
       const rect = r.getBoundingClientRect();
-      if (rect && (rect.top < 80 || rect.bottom > window.innerHeight - 90)) {
-        const target = window.scrollY + rect.top - window.innerHeight / 3;
-        window.scrollTo({ top: Math.max(0, target), behavior: "smooth" });
+      // v0.3.3: never jump away from a picture (its caption sits under it), and when the sentence is
+      // off-screen move only as far as needed, so the child keeps their place instead of being thrown down the page
+      const isPicture = state.el && state.el.matches && state.el.matches("figure, .block-image");
+      if (rect && !isPicture) {
+        if (rect.bottom > window.innerHeight - 40) {
+          window.scrollBy({ top: rect.bottom - window.innerHeight + 80, behavior: "smooth" });
+        } else if (rect.top < 70) {
+          window.scrollBy({ top: rect.top - 90, behavior: "smooth" });
+        }
       }
       return;
     }
@@ -228,7 +234,9 @@ const EMOJI_RE = /[\p{Extended_Pictographic}\u{1F1E6}-\u{1F1FF}\u{1F3FB}-\u{1F3F
 function speakable(text) {
   return String(text || "")
     .replace(EMOJI_RE, (m) => " ".repeat(m.length))
-    .replace(/[\u2190-\u21FF]/g, ",");
+    .replace(/[\u2190-\u21FF]/g, ",")
+    // v0.3.3: "100 000" (book-style space between thousands) is read as "100, zero zero zero" -> make it "100,000"
+    .replace(/(\d) (?=\d{3}(?!\d))/g, "$1,");
 }
 function speakCurrent() {
   const myToken = state.token;
