@@ -70,7 +70,8 @@ import {
 import {
   initTts,
   stopSpeech,
-  speakBlockText
+  toggleRead,
+  ttsAfterRender
 } from "./tts.js";
 import {
   escapeHtml,
@@ -106,8 +107,28 @@ const appState = {
   parentUnlocked: false,
   parentResetMode: false,
   parentStatusMsg: "",
-  pendingFocusTargetId: null
+  pendingFocusTargetId: null,
+  tour: null // v0.3.2: { kind: "kid" | "parent", step: 0 }
 };
+
+// v0.3.2: "How it works" tours (kid and parent). {name} = child's nickname, {theme} = dream label.
+const TOURS = {
+  kid: [
+    { icon: "🗺️", title: "Welcome, {name}!", body: "This is your base. Each learning zone is one part of your chapter. Do them in order, or jump to the one you need." },
+    { icon: "🚀", title: "Missions", body: "Every zone has short missions of about 5 to 8 minutes: a quick brief, some reading, then challenges. Finish them all to clear the zone." },
+    { icon: "💡", title: "Two tries on every challenge", body: "Got one wrong? You get a clue and a second try. Mistakes are part of the mission, not a problem." },
+    { icon: "🎤", title: "Let me read it to you", body: "Press \"Read it to me\" on any card. Pick Slow, Normal or Fast, pause any time, and click a sentence to jump there." },
+    { icon: "👾", title: "The Boss and Daily Review", body: "Clear the zones to unlock the Boss: a practice exam. Daily Review is 5 minutes of quick cards that help you remember everything. Good luck, {theme} {name}!" }
+  ],
+  parent: [
+    { icon: "👋", title: "Welcome to the parent area", body: "AIT Education teaches your child's textbook pages in short, game-like missions. You set the plan here; your child does the learning." },
+    { icon: "👥", title: "Your children", body: "Add each child once. Each one gets their own dream, avatar, progress and XP on this device. Press \"Use\" or pick a name in the menu at the top to switch." },
+    { icon: "📅", title: "Test and study plan", body: "Set the test date for a countdown, choose how many days a week to study, and open the mock test early if the test is close. Turn on the timer to practise exam timing." },
+    { icon: "✍️", title: "Checking written answers", body: "Children mark their own written answers by ticking the points they made. If a mark looks too generous, it appears under \"Written answers to check\" so you can look at it together." },
+    { icon: "💾", title: "Progress lives on this device", body: "Progress is saved in this browser. Use \"Save progress to a file\" under More settings to keep it safe or move it to another laptop or tablet." }
+  ]
+};
+const PARENT_TOUR_KEY = "ait-edu-parent-tour-seen";
 
 let sessionTimer = null;
 
@@ -147,7 +168,12 @@ function getDefaultHomeView() {
 
 export async function bootApp() {
   migrate();
-  initTts(() => renderApp());
+  initTts(() => renderApp(), {
+    onRateChange: (rate) =>
+      updateProgress((p) => {
+        p.settings.ttsRate = rate;
+      })
+  });
 
   try {
     const [manifest, themesJson] = await Promise.all([
@@ -354,6 +380,7 @@ export function renderApp() {
   root.innerHTML = `${headerHtml}<main id="main-content" class="app-main" tabindex="-1">${mainHtml}</main>${modalsHtml}`;
 
   restoreFocusSnapshot(root, focusSnap);
+  ttsAfterRender();
 }
 
 // M5: Header with Map, Daily Review, Profile & Dream + a "More" menu holding Calm mode and Parent view on screens under 600px
@@ -386,11 +413,13 @@ function renderHeader(prog) {
         <button type="button" class="nav-btn ${appState.view === "theme" ? "active" : ""}" data-action="nav-theme">${escapeHtml(STRINGS.navTheme)}</button>
         <button type="button" class="nav-btn nav-desktop-only" data-action="toggle-calm-mode" aria-pressed="${calmOn ? "true" : "false"}">${escapeHtml(calmOn ? STRINGS.navCalmOn : STRINGS.navCalmOff)}</button>
         <button type="button" class="nav-btn nav-desktop-only ${appState.view === "parent" ? "active" : ""}" data-action="nav-parent">${escapeHtml(STRINGS.navParent)}</button>
+        <button type="button" class="nav-btn nav-desktop-only" data-action="open-tour" data-tour="${appState.view === "parent" && appState.parentUnlocked ? "parent" : "kid"}">${escapeHtml(STRINGS.helpBtn)}</button>
         <details class="nav-more-menu">
           <summary class="nav-btn nav-more-summary">More ▾</summary>
           <div class="nav-more-dropdown">
             <button type="button" class="nav-btn" data-action="toggle-calm-mode" aria-pressed="${calmOn ? "true" : "false"}">${escapeHtml(calmOn ? STRINGS.navCalmOn : STRINGS.navCalmOff)}</button>
             <button type="button" class="nav-btn ${appState.view === "parent" ? "active" : ""}" data-action="nav-parent">${escapeHtml(STRINGS.navParent)}</button>
+            <button type="button" class="nav-btn" data-action="open-tour" data-tour="${appState.view === "parent" && appState.parentUnlocked ? "parent" : "kid"}">${escapeHtml(STRINGS.helpBtn)}</button>
           </div>
         </details>
       </nav>
@@ -544,7 +573,7 @@ function renderChapterMapView(prog) {
           <div>
             ${
               bossUnlock.unlocked
-                ? `<button type="button" class="btn btn-accent" data-action="open-boss" data-unit-id="${escapeHtml(unit.id)}">${escapeHtml(prog.units?.[unit.id]?.cleared ? STRINGS.retakeBossBtn : STRINGS.startBossBtn)}</button>`
+                ? `<button type="button" class="btn btn-accent" data-action="open-boss" data-unit-id="${escapeHtml(unit.id)}">${escapeHtml(prog.units?.[unit.id]?.cleared ? STRINGS.retakeBossBtn : STRINGS.openBossBtn)}</button>`
                 : `<p style="margin-block:0;font-size:0.9rem;color:var(--text-muted);">🔒 ${escapeHtml(STRINGS.bossLockedNote)}</p>`
             }
           </div>
@@ -1013,9 +1042,14 @@ function renderBossView(prog) {
         <h2 style="margin-block: 8px 4px;">${escapeHtml(uTheme.zone)}</h2>
         <p style="font-size:1.08rem;font-weight:700;">${escapeHtml(uTheme.intro)}</p>
         <p>${escapeHtml(STRINGS.bossRulesNote)}</p>
+        ${
+          session && session.firstScore !== null && session.firstScore !== undefined
+            ? `<p class="why-role-box" style="margin-block:8px;"><strong>📜 ${escapeHtml(fmt(STRINGS.bossPreviousScores, { first: session.firstScore, best: session.bestScore ?? session.firstScore, marks: unit.meta?.totalMarks || (unit.practice || []).reduce((t, q) => t + (q.marks || 0), 0) }))}</strong></p>`
+            : ""
+        }
         <p class="badge-pill">${escapeHtml(timerInfoLine)}</p>
         <div class="question-action-row">
-          <button type="button" class="btn btn-accent" data-action="begin-boss-session" data-unit-id="${escapeHtml(unit.id)}">${escapeHtml(STRINGS.startBossBtn)}</button>
+          <button type="button" class="btn btn-accent" data-action="begin-boss-session" data-unit-id="${escapeHtml(unit.id)}">${escapeHtml(STRINGS.bossStartLabels[prog.profile?.themeId || "explorer"] || STRINGS.startBossBtn)}</button>
           <button type="button" class="btn btn-secondary" data-action="nav-map">${escapeHtml(STRINGS.backToMapBtn)}</button>
         </div>
       </div>
@@ -1061,6 +1095,7 @@ function renderBossView(prog) {
           ${timerHtml}
         </div>
         <div class="unit-stepper" style="margin-block-end:0;">${navPillsHtml}</div>
+        ${session.timerChangedNotice === "on" && session.timerEnabled ? `<p class="helper-note" role="status" style="margin-block:8px 0;font-weight:700;">⏱️ ${escapeHtml(STRINGS.bossTimerChangedOn)}</p>` : ""}
       </div>
 
       ${renderQuestionCard({
@@ -1102,13 +1137,22 @@ function renderBossView(prog) {
     };
 
     const allConfirmed = writtenQs.every((wq) => session.writtenEvaluations?.[wq.id]?.confirmed);
+    const confirmedCount = writtenQs.filter((wq) => session.writtenEvaluations?.[wq.id]?.confirmed).length;
+    const markPillsHtml = writtenQs
+      .map((wq, idx) => {
+        const done = Boolean(session.writtenEvaluations?.[wq.id]?.confirmed);
+        const qNum = questions.findIndex((q) => q.id === wq.id) + 1;
+        return `<button type="button" class="step-pill ${idx === wIdx ? "step-active" : ""} ${done ? "step-done" : ""}" data-action="boss-mark-nav" data-w-index="${idx}" aria-label="Question ${qNum}${done ? ", marked" : ", not marked yet"}">${done ? "✓ " : ""}Q${qNum}</button>`;
+      })
+      .join("");
 
     return `<section>
       ${session.timeExpired ? `<div class="test-date-banner"><strong>⏰ ${escapeHtml(STRINGS.bossTimeUpBanner)}</strong></div>` : ""}
       <div class="card">
         <h2>${escapeHtml(STRINGS.bossMarkingHeading)}</h2>
         <p>${escapeHtml(STRINGS.bossMarkingIntro)}</p>
-        <p><strong>${escapeHtml(fmt(STRINGS.bossMarkingProgress, { current: wIdx + 1, total: writtenQs.length }))}</strong></p>
+        <p><strong>${escapeHtml(fmt(STRINGS.bossMarkingProgress, { current: wIdx + 1, total: writtenQs.length }))}</strong> · ${escapeHtml(fmt(STRINGS.bossMarkedCount, { done: confirmedCount, total: writtenQs.length }))}</p>
+        <div class="unit-stepper" style="margin-block-end:0;">${markPillsHtml}</div>
       </div>
 
       ${renderQuestionCard({
@@ -1126,8 +1170,9 @@ function renderBossView(prog) {
             <button type="button" class="btn btn-secondary" ${wIdx === 0 ? "disabled" : ""} data-action="boss-mark-nav" data-w-index="${wIdx - 1}">${escapeHtml(STRINGS.prevQuestionBtn)}</button>
             <button type="button" class="btn btn-secondary" ${wIdx >= writtenQs.length - 1 ? "disabled" : ""} data-action="boss-mark-nav" data-w-index="${wIdx + 1}">${escapeHtml(STRINGS.nextQuestionBtn)}</button>
           </div>
-          <button type="button" class="btn btn-primary" ${allConfirmed ? "" : "disabled"} data-action="boss-finish-marking">${escapeHtml(STRINGS.bossFinishMarkingBtn)}</button>
+          <button type="button" class="btn btn-primary" ${allConfirmed ? "" : "disabled aria-describedby=\"finish-lock-reason\""} data-action="boss-finish-marking">${escapeHtml(STRINGS.bossFinishMarkingBtn)}</button>
         </div>
+        ${allConfirmed ? "" : `<p id="finish-lock-reason" class="helper-note" style="margin-block:8px 0;text-align:end;">${escapeHtml(fmt(STRINGS.bossFinishLockedReason, { done: confirmedCount, total: writtenQs.length }))}</p>`}
       </div>
     </section>`;
   }
@@ -1151,9 +1196,13 @@ function renderBossView(prog) {
     })
     .join("");
 
+  const practiseNextHtml = renderPractiseNext(res, unit);
+  const headline = fmt(STRINGS.bossResultsHeadlines[themeId] || STRINGS.bossResultsHeadlines.explorer, { pct: res.pct });
+
   return `<section>
     <div class="card">
-      <h2>🏁 ${escapeHtml(STRINGS.bossResultsHeading)} — ${escapeHtml(uTheme.zone)}</h2>
+      <h2>🏁 ${escapeHtml(headline)}</h2>
+      <p style="margin-block:0;color:var(--text-muted);">${escapeHtml(STRINGS.bossResultsHeading)} · ${escapeHtml(uTheme.zone)}</p>
       <p style="font-size:1.3rem;font-weight:800;">
         ${escapeHtml(fmt(STRINGS.bossTotalScore, { score: res.totalEarned, marks: res.totalAvailable, pct: res.pct }))}
       </p>
@@ -1166,6 +1215,7 @@ function renderBossView(prog) {
             : escapeHtml(fmt(STRINGS.bossVsBestSameOrLower, { best: res.bestScore, first: res.firstScore, marks: res.totalAvailable }))
         }
       </p>
+      ${practiseNextHtml}
       <h3>${escapeHtml(STRINGS.bossTopicBreakdownHeading)}</h3>
       <div>${topicBarsHtml}</div>
       <div class="question-action-row">
@@ -1174,6 +1224,69 @@ function renderBossView(prog) {
       </div>
     </div>
   </section>`;
+}
+
+
+// v0.3.2: turn a page string like "p14-16, p18" or "13-14" into a list of page numbers
+function pagesFromRef(ref) {
+  const pages = [];
+  String(ref || "")
+    .split(",")
+    .forEach((part) => {
+      const m = part.replace(/p/gi, "").trim().match(/^(\d+)(?:\s*[-–]\s*(\d+))?$/);
+      if (!m) return;
+      const a = Number(m[1]);
+      const b = m[2] ? Number(m[2]) : a;
+      for (let n = a; n <= b; n += 1) pages.push(n);
+    });
+  return pages;
+}
+
+// v0.3.2: find the lesson unit (same chapter) whose book pages overlap most with a mock question's sourceRef
+function findLessonUnitForMockQuestion(mockUnit, question) {
+  const qPages = pagesFromRef(question?.sourceRef);
+  if (qPages.length === 0) return null;
+  let best = null;
+  let bestOverlap = 0;
+  Object.values(appState.unitsById).forEach((u) => {
+    if (u.meta?.mode === "mock") return;
+    if (u.meta?.chapterNumber !== mockUnit.meta?.chapterNumber || u.meta?.subjectId !== mockUnit.meta?.subjectId) return;
+    const uPages = new Set((u.meta?.sourceRefs || []).flatMap((r) => pagesFromRef(r.pages)));
+    const overlap = qPages.filter((pg) => uPages.has(pg)).length;
+    const better = overlap > bestOverlap || (overlap === bestOverlap && overlap > 0 && best && (u.meta?.unit ?? 99) < (best.meta?.unit ?? 99));
+    if (overlap > 0 && better) {
+      best = u;
+      bestOverlap = overlap;
+    }
+  });
+  return best;
+}
+
+// v0.3.2: "What to practise next" box on the Boss results screen (weakest topics under 70%, max 3)
+function renderPractiseNext(res, mockUnit) {
+  const weak = (res.topicBreakdown || [])
+    .filter((tb) => tb.marks > 0 && tb.earned / tb.marks < 0.7)
+    .sort((a, b) => a.earned / a.marks - b.earned / b.marks)
+    .slice(0, 3);
+  if (weak.length === 0) {
+    return `<div class="why-role-box"><strong>💪 ${escapeHtml(STRINGS.bossPractiseNextHeading)}</strong><p style="margin-block:6px 0;">${escapeHtml(STRINGS.bossAllStrong)}</p></div>`;
+  }
+  const shownUnits = new Set();
+  const rows = weak
+    .map((tb) => {
+      const q = (mockUnit.practice || []).find((pq) => pq.topic === tb.topicId || pq.topic === tb.topic || pq.topic === tb.id);
+      const lessonUnit = q ? findLessonUnitForMockQuestion(mockUnit, q) : null;
+      const repeat = lessonUnit && shownUnits.has(lessonUnit.id);
+      if (lessonUnit) shownUnits.add(lessonUnit.id);
+      const btn = repeat
+        ? `<span class="helper-note">(same lesson as above)</span>`
+        : lessonUnit
+        ? `<button type="button" class="btn btn-secondary" data-action="open-unit" data-unit-id="${escapeHtml(lessonUnit.id)}">${escapeHtml(fmt(STRINGS.bossPractiseNextBtn, { title: lessonUnit.meta.title }))}</button>`
+        : "";
+      return `<li style="margin-block-end:8px;"><strong>${escapeHtml(tb.label)}</strong> (${tb.earned} / ${tb.marks}) ${btn}</li>`;
+    })
+    .join("");
+  return `<div class="why-role-box"><strong>🎯 ${escapeHtml(STRINGS.bossPractiseNextHeading)}</strong><p style="margin-block:6px;">${escapeHtml(STRINGS.bossPractiseNextIntro)}</p><ul style="margin-block:0;padding-inline-start:20px;">${rows}</ul></div>`;
 }
 
 function renderDailyReviewView(prog) {
@@ -1398,25 +1511,24 @@ function renderParentView(prog) {
     </section>`;
   }
 
-  const rankInfo = getRankInfo(prog);
   const weeklyStatus = getWeeklyStatus(prog);
   const weakTopics = getTopicsNeedingPractice(prog, appState.unitsById);
   const themesErr = getThemesValidationError();
   const activeProfileId = getActiveProfileId();
+  const childName = prog.profile?.nickname || "your child";
 
   const unitRowsHtml = Object.values(appState.unitsById)
     .map((u) => {
       const isMock = u.meta?.mode === "mock";
-      const typeLabel = isMock ? STRINGS.parentMockTerm : "lesson unit";
+      const typeLabel = isMock ? STRINGS.parentMockTerm : "lesson";
       const firstPct = getUnitFirstAttemptPct(prog, u);
       const uRec = prog.units?.[u.id] || {};
       const mins = Math.round((uRec.timeSpentSec || 0) / 60);
       const attempts = uRec.attempts || (firstPct !== null ? 1 : 0);
-
       return `<tr>
         <td>${escapeHtml(u.meta.title)}</td>
-        <td><strong>${escapeHtml(typeLabel)}</strong></td>
-        <td>${firstPct !== null ? `${firstPct}%` : "Not attempted"}</td>
+        <td>${escapeHtml(typeLabel)}</td>
+        <td>${firstPct !== null ? `${firstPct}%` : "Not tried yet"}</td>
         <td>${attempts}</td>
         <td>${mins} min</td>
       </tr>`;
@@ -1427,20 +1539,21 @@ function renderParentView(prog) {
   const toDiscussList = writtenRecords.filter((q) => q.toDiscuss);
 
   const writtenReviewCardsHtml = writtenRecords
+    .sort((a, b) => Number(Boolean(b.toDiscuss)) - Number(Boolean(a.toDiscuss)))
     .map((rec) => {
       const unitObj = appState.unitsById[rec.unitId];
       const qObj = [...(unitObj?.check || []), ...(unitObj?.practice || [])].find((q) => q.id === rec.questionId);
       return `<div class="card" style="background:var(--bg-subtle);">
         <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;">
-          <strong>${escapeHtml(unitObj?.meta?.title || rec.unitId)} (${escapeHtml(rec.questionId)})</strong>
-          ${rec.toDiscuss ? `<span class="badge-pill badge-boss">To discuss (Self: ${rec.selfFirstScore}/${rec.marks}, Suggested: ${rec.suggestedFirstScore}/${rec.marks})</span>` : ""}
+          <strong>${escapeHtml(unitObj?.meta?.title || rec.unitId)}</strong>
+          ${rec.toDiscuss ? `<span class="badge-pill badge-boss">Please check together</span>` : ""}
         </div>
         <p style="margin-block:6px;"><em>${escapeHtml(qObj?.prompt || "")}</em></p>
-        <p style="margin-block:6px;"><strong>Child's answer:</strong> ${escapeHtml(rec.lastAnswer || "(blank)")}</p>
-        <p style="margin-block:6px;">Suggested: ${rec.suggestedFirstScore ?? 0}/${rec.marks} · Child Self-Mark: ${rec.selfFirstScore ?? 0}/${rec.marks} · Parent Mark: ${rec.parentScore ?? "None"}</p>
+        <p style="margin-block:6px;"><strong>${escapeHtml(childName)} wrote:</strong> ${escapeHtml(rec.lastAnswer || "(blank)")}</p>
+        <p style="margin-block:6px;">${escapeHtml(childName)}'s own mark: ${rec.selfFirstScore ?? 0}/${rec.marks} · App's guess: ${rec.suggestedFirstScore ?? 0}/${rec.marks} · Your mark: ${rec.parentScore ?? "not set"}</p>
         <div class="nav-actions">
-          <label>Set parent score (0–${rec.marks}):
-            <input type="number" min="0" max="${rec.marks}" value="${rec.parentScore ?? rec.selfFirstScore ?? 0}" id="parent-score-${escapeHtml(rec.globalQid)}" style="inline-size:64px;padding:6px;" />
+          <label>Your mark (0–${rec.marks}):
+            <input type="number" min="0" max="${rec.marks}" value="${rec.parentScore ?? rec.selfFirstScore ?? 0}" id="parent-score-${escapeHtml(rec.globalQid)}" class="big-number-input" />
           </label>
           <button type="button" class="btn btn-secondary" data-action="save-parent-score" data-global-qid="${escapeHtml(rec.globalQid)}">${escapeHtml(STRINGS.parentSaveScoreBtn)}</button>
         </div>
@@ -1448,23 +1561,54 @@ function renderParentView(prog) {
     })
     .join("");
 
+  const profiles = getProfiles();
+  const childrenRowsHtml = profiles
+    .map((pr) => {
+      const pProg = pr.id === activeProfileId ? prog : getProgress(pr.id);
+      const pRank = getRankInfo(pProg);
+      const themeLabel = getThemeById(pProg.profile?.themeId || "explorer")?.label || "Explorer";
+      const isActive = pr.id === activeProfileId;
+      return `<li class="child-row">
+        <span><strong>${escapeHtml(pProg.profile?.nickname || pr.nickname || pr.id)}</strong> · ${escapeHtml(themeLabel)} · ${pRank.xp} XP</span>
+        ${isActive ? `<span class="badge-pill">${escapeHtml(STRINGS.childActiveTag)}</span>` : `<button type="button" class="btn btn-secondary" data-action="parent-use-profile" data-profile-id="${escapeHtml(pr.id)}">${escapeHtml(STRINGS.childSwitchBtn)}</button>`}
+      </li>`;
+    })
+    .join("");
+
   const mockUnits = Object.values(appState.unitsById).filter((u) => u.meta?.mode === "mock");
+  const timerOn = Boolean(prog.settings?.mockTimer);
   const mockControlsHtml = mockUnits
     .map((mu) => {
       const unlocked = Boolean(prog.settings?.mockUnlocked?.[mu.id]);
-      const customMin = prog.settings?.mockTimerMinutes?.[mu.id] || mu.meta?.estMinutes || 35;
-      return `<div style="margin-block:10px;padding:10px;border:1px solid var(--border-color);border-radius:var(--radius-md);">
-        <strong>${escapeHtml(mu.meta.title)} (${escapeHtml(STRINGS.parentMockTerm)})</strong>
-        <div class="nav-actions" style="margin-block-top:8px;">
-          <label>
-            <input type="checkbox" ${unlocked ? "checked" : ""} data-action="parent-toggle-mock-unlock" data-unit-id="${escapeHtml(mu.id)}" />
-            ${escapeHtml(STRINGS.parentMockUnlockLabel)}
-          </label>
-          <label>
-            ${escapeHtml(STRINGS.parentMockTimerMinLabel)}:
-            <input type="number" min="5" max="120" value="${customMin}" style="inline-size:70px;padding:4px;" data-action="parent-set-mock-min" data-unit-id="${escapeHtml(mu.id)}" />
-          </label>
-        </div>
+      const customMin = Number(prog.settings?.mockTimerMinutes?.[mu.id]) || mu.meta?.estMinutes || 35;
+      const presetsHtml = [20, 30, 35, 45]
+        .map(
+          (m) =>
+            `<button type="button" class="btn ${customMin === m ? "btn-primary" : "btn-secondary"} timer-preset" aria-pressed="${customMin === m ? "true" : "false"}" data-action="parent-mock-min-preset" data-min="${m}" data-unit-id="${escapeHtml(mu.id)}">${m} min</button>`
+        )
+        .join("");
+      return `<div class="parent-setting">
+        <label class="big-toggle">
+          <input type="checkbox" ${unlocked ? "checked" : ""} data-action="parent-toggle-mock-unlock" data-unit-id="${escapeHtml(mu.id)}" />
+          <span>Let ${escapeHtml(childName)} take the <strong>${escapeHtml(mu.meta.title)}</strong> now</span>
+        </label>
+        <p class="setting-help">Normally the mock test (the "Boss") opens after all learning zones are finished. Tick this to open it early, for example a few days before the real test.</p>
+        <label class="big-toggle">
+          <input type="checkbox" ${timerOn ? "checked" : ""} data-action="parent-toggle-mock-timer" />
+          <span>Use a countdown timer</span>
+        </label>
+        <p class="setting-help">Off by default, so your child can take their time. Turn it on to practise exam timing. If a paper is already open, the clock starts when your child goes back to it.</p>
+        ${
+          timerOn
+            ? `<div class="timer-presets" role="group" aria-label="${escapeHtml(STRINGS.timerPresetsLabel)}">
+                 <span style="font-weight:700;">${escapeHtml(STRINGS.timerPresetsLabel)}:</span>
+                 ${presetsHtml}
+                 <label>${escapeHtml(STRINGS.timerCustomLabel)}
+                   <input type="number" min="5" max="120" value="${customMin}" class="big-number-input" data-action="parent-set-mock-min" data-unit-id="${escapeHtml(mu.id)}" />
+                 </label>
+               </div>`
+            : ""
+        }
       </div>`;
     })
     .join("");
@@ -1473,125 +1617,122 @@ function renderParentView(prog) {
     (bid) => BADGE_CATALOG.find((b) => b.id === bid)?.title || bid
   );
 
-  return `<section>
+  return `<section class="parent-area">
     <div class="card">
       <div class="block-header-row">
         <h2>👨‍👩‍👧 ${escapeHtml(STRINGS.parentPinHeading)}</h2>
-        <button type="button" class="btn btn-secondary" data-action="nav-map">${escapeHtml(STRINGS.parentExitBtn)}</button>
+        <div class="nav-actions">
+          <button type="button" class="btn btn-secondary" data-action="open-tour" data-tour="parent">${escapeHtml(STRINGS.helpBtn)}</button>
+          <button type="button" class="btn btn-primary" data-action="nav-map">${escapeHtml(STRINGS.parentExitBtn)}</button>
+        </div>
       </div>
-      <p><strong>${escapeHtml(STRINGS.parentPrivacyNotice)}</strong></p>
       ${themesErr ? `<p style="color:var(--accent);">Theme validation fallback active: ${escapeHtml(themesErr)}</p>` : ""}
-      ${appState.parentStatusMsg ? `<p style="color:var(--primary);font-weight:700;">${escapeHtml(appState.parentStatusMsg)}</p>` : ""}
+      ${appState.parentStatusMsg ? `<p class="status-msg" role="status">${escapeHtml(appState.parentStatusMsg)}</p>` : ""}
     </div>
 
     <div class="card">
       <h3>👥 ${escapeHtml(STRINGS.parentProfilesHeading)}</h3>
-      <p>Active child profile: <strong>${escapeHtml(prog.profile?.nickname || activeProfileId)}</strong> (Theme: ${escapeHtml(prog.profile?.themeId || "explorer")}, XP: ${rankInfo.xp}, Rank: ${escapeHtml(rankInfo.rankTitle)})</p>
-      <p>Earned badges: ${earnedBadges.length > 0 ? escapeHtml(earnedBadges.join(", ")) : "None yet"}</p>
+      <p class="setting-help">${escapeHtml(STRINGS.childrenExplain)}</p>
+      <ul class="child-list">${childrenRowsHtml}</ul>
       <div class="nav-actions">
-        <input id="new-profile-name" type="text" placeholder="Child nickname" class="written-textarea" style="max-inline-size:220px;" />
+        <input id="new-profile-name" type="text" placeholder="${escapeHtml(STRINGS.childNamePlaceholder)}" class="written-textarea" style="max-inline-size:240px;" />
         <button type="button" class="btn btn-primary" data-action="parent-add-profile">${escapeHtml(STRINGS.parentAddProfileBtn)}</button>
       </div>
     </div>
 
     <div class="card">
-      <h3>📊 ${escapeHtml(STRINGS.parentOverviewHeading)}</h3>
-      <p>
-        Weekly status: <strong>${escapeHtml(weeklyStatus.onTargetThisWeek ? STRINGS.parentWeeklyStatusOn : STRINGS.parentWeeklyStatusNot)}</strong>
-        (${weeklyStatus.doneDays} / ${weeklyStatus.target} days)
-        ${prog.weekly?.childAdjustedSettings ? ` · <em>${escapeHtml(STRINGS.parentBlockerAdjustedNote)}</em>` : ""}
-      </p>
-      <table class="parent-table">
-        <thead>
-          <tr>
-            <th>${escapeHtml(STRINGS.parentUnitCol)}</th>
-            <th>${escapeHtml(STRINGS.parentTypeCol)}</th>
-            <th>${escapeHtml(STRINGS.parentFirstScoreCol)}</th>
-            <th>${escapeHtml(STRINGS.parentAttemptsCol)}</th>
-            <th>${escapeHtml(STRINGS.parentTimeCol)}</th>
-          </tr>
-        </thead>
-        <tbody>${unitRowsHtml}</tbody>
-      </table>
+      <h3>📅 Test and study plan for ${escapeHtml(childName)}</h3>
+      <div class="parent-setting">
+        <label><strong>${escapeHtml(STRINGS.parentTestDateLabel)}</strong><br />
+          <input type="date" class="btn" value="${escapeHtml(prog.settings?.testDate || "")}" data-action="parent-set-test-date" />
+        </label>
+        <p class="setting-help">Shows a countdown and a simple study plan before the test. Leave it empty if no test is coming.</p>
+      </div>
+      <div class="parent-setting">
+        <label><strong>${escapeHtml(STRINGS.parentWeeklyTargetLabel)}</strong><br />
+          <select class="btn" data-action="parent-set-weekly-target">
+            ${[1, 2, 3, 4, 5, 6, 7].map((d) => `<option value="${d}" ${Number(prog.weekly?.target) === d ? "selected" : ""}>${d} days a week</option>`).join("")}
+          </select>
+        </label>
+        <p class="setting-help">How many days a week ${escapeHtml(childName)} aims to study. A missed week never resets progress or XP.</p>
+      </div>
+      ${mockControlsHtml}
+    </div>
 
-      <h4>${escapeHtml(STRINGS.parentTopicsNeedPracticeHeading)}</h4>
+    <div class="card">
+      <h3>📊 How ${escapeHtml(childName)} is doing</h3>
+      <p>This week: <strong>${escapeHtml(weeklyStatus.onTargetThisWeek ? STRINGS.parentWeeklyStatusOn : STRINGS.parentWeeklyStatusNot)}</strong> (${weeklyStatus.doneDays} of ${weeklyStatus.target} days)
+        ${prog.weekly?.childAdjustedSettings ? ` · <em>${escapeHtml(STRINGS.parentBlockerAdjustedNote)}</em>` : ""}</p>
+      <h4>Topics to practise</h4>
       ${
         weakTopics.length === 0
           ? `<p>${escapeHtml(STRINGS.parentNoTopicsNeedPractice)}</p>`
           : `<ul>${weakTopics.map((wt) => `<li><strong>${escapeHtml(wt.topicLabel)}</strong>: ${wt.earnedMarks}/${wt.availableMarks} marks (${wt.pct}%)</li>`).join("")}</ul>`
       }
+      <details class="parent-details">
+        <summary>Scores for each unit</summary>
+        <table class="parent-table">
+          <thead><tr><th>${escapeHtml(STRINGS.parentUnitCol)}</th><th>${escapeHtml(STRINGS.parentTypeCol)}</th><th>${escapeHtml(STRINGS.parentFirstScoreCol)}</th><th>${escapeHtml(STRINGS.parentAttemptsCol)}</th><th>${escapeHtml(STRINGS.parentTimeCol)}</th></tr></thead>
+          <tbody>${unitRowsHtml}</tbody>
+        </table>
+      </details>
+      <details class="parent-details" ${toDiscussList.length > 0 ? "open" : ""}>
+        <summary>✍️ Written answers to check${toDiscussList.length > 0 ? ` (${toDiscussList.length} to check together)` : ""}</summary>
+        <p class="setting-help">${escapeHtml(childName)} marks written answers by ticking each point they made. When their mark is much higher than the app's guess, it shows here as "Please check together". You can set your own mark.</p>
+        ${writtenReviewCardsHtml || "<p>No written answers yet.</p>"}
+      </details>
     </div>
 
-    <div class="card">
-      <h3>✍️ ${escapeHtml(STRINGS.parentToDiscussHeading)} (${toDiscussList.length})</h3>
-      ${writtenReviewCardsHtml || "<p>No written answers recorded yet.</p>"}
-    </div>
+    <details class="card parent-details">
+      <summary><strong>⚙️ More settings</strong> (read-aloud voice, breaks, rewards, saving progress)</summary>
 
-    <div class="card">
-      <h3>⚙️ ${escapeHtml(STRINGS.parentSettingsHeading)}</h3>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;">
-        <label>
-          <strong>${escapeHtml(STRINGS.parentWeeklyTargetLabel)}:</strong>
-          <select class="btn" data-action="parent-set-weekly-target">
-            ${[1, 2, 3, 4, 5, 6, 7].map((d) => `<option value="${d}" ${Number(prog.weekly?.target) === d ? "selected" : ""}>${d} days/week</option>`).join("")}
+      <div class="parent-setting">
+        <label class="big-toggle">
+          <input type="checkbox" ${prog.settings?.onlineVoices ? "checked" : ""} data-action="parent-toggle-online-voices" />
+          <span>Use nicer, more natural voices for read-aloud</span>
+        </label>
+        <p class="setting-help">These voices sound much more human, but the lesson text is sent to the browser's speech service (Microsoft in Edge, Google in Chrome). No names or answers are sent. Off by default.</p>
+      </div>
+      <div class="parent-setting">
+        <label><strong>${escapeHtml(STRINGS.parentTtsRateLabel)}</strong><br />
+          <select class="btn" data-action="parent-set-tts-rate">
+            ${[[0.8, "Slow"], [0.95, "Normal"], [1.1, "Fast"]].map(([r, l]) => `<option value="${r}" ${Number(prog.settings?.ttsRate) === r ? "selected" : ""}>${l}</option>`).join("")}
           </select>
         </label>
-
-        <label>
-          <strong>${escapeHtml(STRINGS.parentBreakIntervalLabel)}:</strong>
+        <p class="setting-help">${escapeHtml(childName)} can also change this while listening.</p>
+      </div>
+      <div class="parent-setting">
+        <label><strong>${escapeHtml(STRINGS.parentBreakIntervalLabel)}</strong><br />
           <select class="btn" data-action="parent-set-break-min">
-            ${[15, 20, 25, 30, 0].map((m) => `<option value="${m}" ${Number(prog.settings?.breakMin) === m ? "selected" : ""}>${m === 0 ? "Off" : `${m} min`}</option>`).join("")}
+            ${[15, 20, 25, 30, 0].map((m) => `<option value="${m}" ${Number(prog.settings?.breakMin) === m ? "selected" : ""}>${m === 0 ? "Off" : `Every ${m} min`}</option>`).join("")}
           </select>
         </label>
-
-        <label>
-          <strong>${escapeHtml(STRINGS.parentMissionCapLabel)}:</strong>
+        <p class="setting-help">Suggests a 5-minute break (water, stretch) after this much study time.</p>
+      </div>
+      <div class="parent-setting">
+        <label><strong>${escapeHtml(STRINGS.parentMissionCapLabel)}</strong><br />
           <select class="btn" data-action="parent-set-mission-cap">
             ${[6, 7, 8, 9, 10].map((c) => `<option value="${c}" ${Number(prog.settings?.missionCapMin) === c ? "selected" : ""}>${c} min</option>`).join("")}
           </select>
         </label>
-
-        <label>
-          <strong>${escapeHtml(STRINGS.parentTtsRateLabel)}:</strong>
-          <select class="btn" data-action="parent-set-tts-rate">
-            ${[0.8, 0.9, 0.95, 1.0, 1.1, 1.2].map((r) => `<option value="${r}" ${Number(prog.settings?.ttsRate) === r ? "selected" : ""}>${r}x</option>`).join("")}
-          </select>
-        </label>
-
-        <label>
-          <strong>${escapeHtml(STRINGS.parentTestDateLabel)}:</strong>
-          <input type="date" class="btn" value="${escapeHtml(prog.settings?.testDate || "")}" data-action="parent-set-test-date" />
-        </label>
+        <p class="setting-help">Lessons are split into missions of about this length. Shorter suits younger or easily tired learners.</p>
       </div>
-
-      <div style="margin-block-top:14px;display:flex;flex-direction:column;gap:8px;">
-        <label>
-          <input type="checkbox" ${prog.settings?.onlineVoices ? "checked" : ""} data-action="parent-toggle-online-voices" />
-          ${escapeHtml(STRINGS.parentOnlineVoicesLabel)}
-        </label>
-        <label>
+      <div class="parent-setting">
+        <label class="big-toggle">
           <input type="checkbox" ${prog.settings?.calmMode ? "checked" : ""} data-action="parent-toggle-calm" />
-          ${escapeHtml(STRINGS.parentCalmModeLabel)}
+          <span>Calm mode</span>
         </label>
-        <label>
-          <input type="checkbox" ${prog.settings?.mockTimer ? "checked" : ""} data-action="parent-toggle-mock-timer" />
-          ${escapeHtml(STRINGS.parentMockTimerLabel)}
-        </label>
+        <p class="setting-help">Turns off celebrations, sound effects and countdown banners, and softens colours. Helpful for children who get overexcited or anxious.</p>
       </div>
 
-      <h4 style="margin-block-top:16px;">Unlock / Configure ${escapeHtml(STRINGS.parentMockTerm)}</h4>
-      ${mockControlsHtml}
-    </div>
-
-    <div class="card">
       <h3>🎁 ${escapeHtml(STRINGS.parentRewardsHeading)}</h3>
-      <p style="font-size:0.92rem;color:var(--text-muted);">${escapeHtml(STRINGS.parentRewardsRules)}</p>
+      <p class="setting-help">${escapeHtml(STRINGS.parentRewardsRules)}</p>
       <ul>
         ${(prog.rewards?.menu || [])
           .map(
             (r) => `<li style="margin-block-end:6px;">
               ${escapeHtml(r.label)}
-              <button type="button" class="btn-inline-clear" data-action="parent-remove-reward" data-reward-id="${escapeHtml(r.id)}">✕</button>
+              <button type="button" class="btn-inline-clear" data-action="parent-remove-reward" data-reward-id="${escapeHtml(r.id)}" aria-label="Remove ${escapeHtml(r.label)}">✕</button>
             </li>`
           )
           .join("")}
@@ -1614,23 +1755,44 @@ function renderParentView(prog) {
                 .join("")
         }
       </ul>
-    </div>
+      <p>Badges earned: ${earnedBadges.length > 0 ? escapeHtml(earnedBadges.join(", ")) : "none yet"}</p>
 
-    <div class="card">
       <h3>💾 ${escapeHtml(STRINGS.parentBackupHeading)}</h3>
+      <p class="setting-help">Progress is saved in this browser on this device only. Save it to a file now and then. You can load that file on another laptop or tablet to carry on there, or to restore progress if the browser is cleared.</p>
       <div class="nav-actions">
         <button type="button" class="btn btn-primary" data-action="backup-export">${escapeHtml(STRINGS.parentExportBtn)}</button>
         <label class="btn btn-secondary">
           ${escapeHtml(STRINGS.parentImportLabel)}
-          <input type="file" accept="application/json" style="display:none;" data-action="backup-import" />
+          <input type="file" accept="application/json,.json" style="display:none;" data-action="backup-import" />
         </label>
       </div>
-    </div>
+      <p class="setting-help">${escapeHtml(STRINGS.parentPrivacyNotice)}</p>
+    </details>
   </section>`;
 }
 
 function renderActiveModals(prog) {
   const theme = getThemeById(prog.profile?.themeId || "explorer");
+
+  if (appState.tour && TOURS[appState.tour.kind]) {
+    const steps = TOURS[appState.tour.kind];
+    const i = Math.max(0, Math.min(appState.tour.step, steps.length - 1));
+    const st = steps[i];
+    const vars = { name: prog.profile?.nickname || "Explorer", theme: theme?.label || "Explorer" };
+    const dots = steps.map((_, k) => `<span class="tour-dot ${k === i ? "on" : ""}"></span>`).join("");
+    return `<div class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="tour-title">
+      <div class="modal-card tour-card">
+        <div class="tour-icon" aria-hidden="true">${st.icon}</div>
+        <h3 id="tour-title" tabindex="-1">${escapeHtml(fmt(st.title, vars))}</h3>
+        <p>${escapeHtml(fmt(st.body, vars))}</p>
+        <div class="tour-dots" aria-label="Step ${i + 1} of ${steps.length}">${dots}</div>
+        <div class="nav-actions tour-actions">
+          ${i > 0 ? `<button type="button" class="btn btn-secondary" data-action="tour-back">${escapeHtml(STRINGS.tourBack)}</button>` : `<button type="button" class="btn btn-secondary" data-action="tour-close">${escapeHtml(STRINGS.tourSkip)}</button>`}
+          ${i < steps.length - 1 ? `<button type="button" class="btn btn-primary" data-action="tour-next">${escapeHtml(STRINGS.tourNext)}</button>` : `<button type="button" class="btn btn-primary" data-action="tour-close">${escapeHtml(STRINGS.tourDone)}</button>`}
+        </div>
+      </div>
+    </div>`;
+  }
 
   if (appState.bossConfirmSubmitOpen && appState.activeUnitId) {
     const unit = appState.unitsById[appState.activeUnitId];
@@ -1846,12 +2008,41 @@ function bindGlobalEvents() {
 function handleAction(action, el, event) {
   const prog = getProgress();
 
+  if (action === "open-tour") {
+    appState.tour = { kind: el.getAttribute("data-tour") === "parent" ? "parent" : "kid", step: 0 };
+    appState.pendingFocusTargetId = "tour-title";
+    renderApp();
+    return;
+  }
+  if (action === "tour-next" || action === "tour-back") {
+    if (appState.tour) appState.tour.step += action === "tour-next" ? 1 : -1;
+    appState.pendingFocusTargetId = "tour-title";
+    renderApp();
+    return;
+  }
+  if (action === "tour-close") {
+    if (appState.tour?.kind === "kid") {
+      updateProgress((p) => {
+        p.profile.tourSeen = true;
+      });
+    } else if (appState.tour?.kind === "parent") {
+      try {
+        localStorage.setItem(PARENT_TOUR_KEY, "1");
+      } catch (_) {
+        /* ignore */
+      }
+    }
+    appState.tour = null;
+    renderApp();
+    return;
+  }
+
   if (action === "tts-speak") {
     event.preventDefault();
     const speech = decodeURIComponent(el.getAttribute("data-speech") || "");
     const targetId = el.getAttribute("data-target-id");
     const targetEl = targetId ? document.getElementById(targetId) : null;
-    speakBlockText(speech, targetEl, {
+    toggleRead(targetEl, speech, {
       rate: prog.settings?.ttsRate || 0.95,
       allowOnlineVoices: Boolean(prog.settings?.onlineVoices)
     });
@@ -1894,6 +2085,10 @@ function handleAction(action, el, event) {
       p.profile.onboarded = true;
     });
     appState.view = getDefaultHomeView();
+    if (!getProgress().profile?.tourSeen) {
+      appState.tour = { kind: "kid", step: 0 };
+      appState.pendingFocusTargetId = "tour-title";
+    }
     renderApp();
     return;
   }
@@ -2368,6 +2563,7 @@ function handleAction(action, el, event) {
     const qIndex = Number(el.getAttribute("data-q-index")) || 0;
     updateProgress((p) => {
       if (p.mock?.[appState.activeUnitId]) {
+        delete p.mock[appState.activeUnitId].timerChangedNotice;
         p.mock[appState.activeUnitId].currentIndex = qIndex;
       }
     });
@@ -2575,6 +2771,7 @@ function handleAction(action, el, event) {
   }
 
   if (action === "parent-pin-submit") {
+    const wasLocked = !appState.parentUnlocked;
     const input = document.getElementById("parent-pin-input");
     const val = (input?.value || "").trim();
     const saved = getParentPin();
@@ -2590,6 +2787,18 @@ function handleAction(action, el, event) {
       appState.parentStatusMsg = "";
     } else {
       appState.parentStatusMsg = "PIN did not match.";
+    }
+    if (wasLocked && appState.parentUnlocked) {
+      let seen = false;
+      try {
+        seen = localStorage.getItem(PARENT_TOUR_KEY) === "1";
+      } catch (_) {
+        /* ignore */
+      }
+      if (!seen) {
+        appState.tour = { kind: "parent", step: 0 };
+        appState.pendingFocusTargetId = "tour-title";
+      }
     }
     renderApp();
     return;
@@ -2617,8 +2826,35 @@ function handleAction(action, el, event) {
   if (action === "parent-add-profile") {
     const inp = document.getElementById("new-profile-name");
     const name = (inp?.value || "").trim() || "New Learner";
+    // v0.3.2: add the child but stay on the current child, and say clearly what happened
+    const keepId = getActiveProfileId();
     addProfile(name, "explorer");
-    appState.parentStatusMsg = `Added and switched to profile "${name}".`;
+    setActiveProfileId(keepId);
+    appState.parentStatusMsg = fmt(STRINGS.childAddedMsg, { name });
+    renderApp();
+    return;
+  }
+
+  if (action === "parent-use-profile") {
+    const pid = el.getAttribute("data-profile-id");
+    if (pid) {
+      setActiveProfileId(pid);
+      appState.draftAnswers = {};
+      appState.writtenState = {};
+      const switched = getProgress();
+      appState.parentStatusMsg = `Now using ${switched.profile?.nickname || "this child"}'s profile.`;
+    }
+    renderApp();
+    return;
+  }
+
+  if (action === "parent-mock-min-preset") {
+    const uid = el.getAttribute("data-unit-id");
+    const mins = Number(el.getAttribute("data-min")) || 35;
+    updateProgress((p) => {
+      if (!p.settings.mockTimerMinutes) p.settings.mockTimerMinutes = {};
+      p.settings.mockTimerMinutes[uid] = mins;
+    });
     renderApp();
     return;
   }

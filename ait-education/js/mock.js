@@ -29,6 +29,12 @@ export function initOrResumeMockSession(progress, unit, { startImmediately = fal
       existing.phase = "exam";
       existing.timerEnabled = timerEnabled;
       existing.timerLeftSec = timerEnabled ? customMin * 60 : null;
+    } else if (existing.phase === "exam" && Boolean(existing.timerEnabled) !== timerEnabled) {
+      // v0.3.2: the parent changed the timer setting while a paper was open.
+      // Turning it on starts the full time from now; turning it off removes the clock.
+      existing.timerEnabled = timerEnabled;
+      existing.timerLeftSec = timerEnabled ? customMin * 60 : null;
+      existing.timerChangedNotice = timerEnabled ? "on" : "off";
     }
     return existing;
   }
