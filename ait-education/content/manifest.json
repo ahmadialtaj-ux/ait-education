@@ -2,6 +2,46 @@
   "schemaVersion": "0.3",
   "subjects": [
     {
+      "subjectId": "english",
+      "title": "English",
+      "icon": "📖",
+      "tagline": "Reading comprehension: 10 minutes a day",
+      "chapters": [
+        {
+          "chapterNumber": 1,
+          "chapterKey": "eng-g8-w1",
+          "title": "Week 1: The Reader's Toolkit",
+          "units": [
+            {
+              "id": "eng-g8-w1-d1",
+              "file": "eng-g8-w1-d1.json",
+              "order": 1
+            },
+            {
+              "id": "eng-g8-w1-d2",
+              "file": "eng-g8-w1-d2.json",
+              "order": 2
+            },
+            {
+              "id": "eng-g8-w1-d3",
+              "file": "eng-g8-w1-d3.json",
+              "order": 3
+            },
+            {
+              "id": "eng-g8-w1-d4",
+              "file": "eng-g8-w1-d4.json",
+              "order": 4
+            },
+            {
+              "id": "eng-g8-w1-d5",
+              "file": "eng-g8-w1-d5.json",
+              "order": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
       "subjectId": "physics",
       "title": "Physics",
       "icon": "🔬",

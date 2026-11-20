@@ -1,0 +1,459 @@
+{
+ "schemaVersion": "0.3",
+ "id": "eng-g8-w1-d4",
+ "meta": {
+  "mode": "lesson",
+  "qualification": "General reading comprehension",
+  "qualificationCode": "AIT-ENG-RC",
+  "subject": "English",
+  "subjectId": "english",
+  "syllabusYears": "Grade 8",
+  "syllabusPoints": [
+   "Reading: find information that is stated in the text",
+   "Reading: work out (infer) meaning, using evidence from the text",
+   "Reading: explain the effect of a writer's choices",
+   "Reading strategies: predict, clarify, question, summarise",
+   "Vocabulary: work out word meaning from context and word parts; use new words"
+  ],
+  "chapterNumber": 1,
+  "chapterTitle": "Week 1: The Reader's Toolkit",
+  "unit": 4,
+  "title": "Day 4: Reef Rescue Week (leaflet)",
+  "schoolYear": 8,
+  "lang": "en",
+  "dir": "ltr",
+  "sourceRefs": [
+   {
+    "book": "AIT Education original passage (not from a textbook)",
+    "pages": "n/a"
+   }
+  ],
+  "estMinutes": 13,
+  "version": "0.4",
+  "status": "draft"
+ },
+ "topics": {
+  "predict": "Predict: use the title and the type of text",
+  "word-power": "Power words: meaning from context and word parts, then use them",
+  "find-it": "Find it: the answer is written in the text",
+  "work-it-out": "Work it out: clue + think = answer",
+  "clue-hunt": "Clue hunt: which part of the text proves it",
+  "writers-choice": "Why did the writer...?",
+  "summarise": "Sum it up in one sentence",
+  "own-question": "Ask your own Work it out question",
+  "own-words": "Answer in your own words: point + because + proof",
+  "question-types": "Telling the question types apart"
+ },
+ "objectives": [
+  "Work out who a leaflet is written for.",
+  "Spot the tricks a writer uses to persuade.",
+  "Run the toolkit yourself with small nudges.",
+  "Use 3 new words: volunteer, identify, provided."
+ ],
+ "learn": [
+  {
+   "id": "b1",
+   "topic": "predict",
+   "type": "text",
+   "title": "Brief: your turn, with a nudge",
+   "body": "Today's toolkit focus: ✍️ **Why did the writer...?** A leaflet wants you to **do** something: come, buy, join, sign up. Everything in it is chosen to persuade you. Always ask: \"How does this part make me want to join?\"\n\n🧠 Leaflets also hide clues about **who** they are written for. Look at ages, prices and words like \"ask a parent\".\n\nToday the expert reader steps back. You'll only get a nudge for each tool.\n\nToday's leaflet is from a marine centre that needs help with its coral reef. 🐢"
+  },
+  {
+   "id": "b2",
+   "topic": "word-power",
+   "type": "keypoints",
+   "title": "📚 Power words for today",
+   "items": [
+    "**volunteer** (noun or verb): someone who offers to do a job without being paid. Use it: \"She volunteered to help at the school fair.\"",
+    "**identify** (verb): to recognise something and say what it is. Use it: \"Can you identify this bird from its colours?\"",
+    "**provided** (verb): given or supplied for you. If equipment is provided, you don't need to bring your own. Use it: \"Lunch is provided on the school trip.\""
+   ]
+  },
+  {
+   "id": "b3",
+   "topic": "work-it-out",
+   "type": "text",
+   "title": "The leaflet: Reef Rescue Week",
+   "body": "REEF RESCUE WEEK\nBlue Fin Marine Centre, 14 to 18 March\n\nUnder the water, just two hundred metres from our beach, lives a whole city. Parrotfish crunch on coral like it's breakfast cereal. Octopuses squeeze through gaps the size of a coin. Turtles glide past as if they own the place, which, to be fair, they do.\n\nBut our city has a problem. Every week, the tide carries in plastic bags, fishing line and bottle caps. Turtles can mistake a floating bag for a jellyfish, one of their favourite meals. Fishing line wraps around coral and stops it from growing.\n\nThat is where YOU come in.\n\nDuring Reef Rescue Week, volunteers aged 12 and over will:\n• collect rubbish from the beach and the shallow water (no diving experience needed)\n• learn to identify twenty reef fish with our marine biologists\n• help count and photograph the coral for our yearly reef report\n\nLast year, 86 volunteers removed more than 400 kilograms of rubbish in just five days. That is about the weight of a grand piano. This year, we want to beat it.\n\nAll equipment is provided: gloves, bags, masks and snorkels. Bring a water bottle, a hat and a sense of adventure. Every volunteer gets a free Reef Rescuer T-shirt and a certificate.\n\nPlaces are limited to 100 volunteers, and last year we were full in nine days.\n\nSign up at the front desk or ask a parent to call us. The reef can't wait, and neither should you!"
+  },
+  {
+   "id": "b4",
+   "topic": "work-it-out",
+   "type": "example",
+   "title": "🧭 Your turn, with a nudge",
+   "body": "Run the toolkit in your head. Just a nudge for each tool this time:\n\n🔮 **Predict:** Was your prediction right? What made this text a leaflet and not a story?\n🧐 **Clarify:** Find one word or phrase you weren't sure about. Read the sentence before and after it. What's your best guess?\n🙋 **Question:** Ask yourself: what does the writer WANT me to do?\n🧠 **Infer:** Who is this leaflet for? Look for clues about age and parents.\n📝 **Summarise:** What does the leaflet want, and why? One sentence."
+  }
+ ],
+ "check": [
+  {
+   "id": "c1",
+   "type": "mcq",
+   "command": "identify",
+   "marks": 1,
+   "prompt": "🔮 Predict: Today's text is a leaflet called \"Reef Rescue Week: volunteers wanted\". What will it most likely try to do?",
+   "hint": "Look at the words \"volunteers wanted\". What does the writer want from the reader?",
+   "options": [
+    "Persuade readers to sign up and help the reef",
+    "Explain how to cook fish",
+    "Tell the life story of one turtle",
+    "Report football results"
+   ],
+   "answers": [
+    0
+   ],
+   "topic": "predict",
+   "difficulty": 1,
+   "sourceRef": "title and text type",
+   "explanation": "\"Volunteers wanted\" tells you the leaflet is looking for people. Leaflets like this try to persuade you to join. After reading, check: was your prediction right? Good readers change their prediction as they go.",
+   "afterBlock": "b1"
+  },
+  {
+   "id": "c2",
+   "type": "mcq",
+   "command": "identify",
+   "marks": 1,
+   "prompt": "🔤 Word detective: \"Turtles glide past as if they own the place.\" What does \"glide\" mean here?",
+   "hint": "How would a creature move if it acted like it owned the place? Calm and confident, or rushed?",
+   "options": [
+    "Move smoothly and easily",
+    "Bump into things clumsily",
+    "Hide quickly",
+    "Swim backwards"
+   ],
+   "answers": [
+    0
+   ],
+   "topic": "word-power",
+   "difficulty": 1,
+   "sourceRef": "warm-up",
+   "explanation": "To glide is to move smoothly and without effort. Someone who acts like they own the place is relaxed and confident, not clumsy.",
+   "afterBlock": "b2"
+  },
+  {
+   "id": "c3",
+   "type": "mcq",
+   "command": "state",
+   "marks": 1,
+   "prompt": "🔎 Find it: What does every volunteer receive?",
+   "hint": "Find the sentence that starts with \"Every volunteer\". Read it carefully.",
+   "options": [
+    "A free T-shirt and a certificate",
+    "Free diving lessons",
+    "A grand piano",
+    "A mask and snorkel to keep"
+   ],
+   "answers": [
+    0
+   ],
+   "topic": "find-it",
+   "difficulty": 1,
+   "sourceRef": "paragraph 7",
+   "explanation": "It's written: a free Reef Rescuer T-shirt and a certificate. Masks and snorkels are PROVIDED, which means lent for the week, not given to keep.",
+   "afterBlock": "b3"
+  },
+  {
+   "id": "c4",
+   "type": "mcq",
+   "command": "explain",
+   "marks": 1,
+   "prompt": "🧠 Work it out: Who is the leaflet mainly written for?",
+   "hint": "Find the clues about age, about parents and about experience. Who do they point to?",
+   "options": [
+    "Young people aged 12 and over, and their families",
+    "Professional marine biologists",
+    "Expert divers only",
+    "People who sell fishing line"
+   ],
+   "answers": [
+    0
+   ],
+   "topic": "work-it-out",
+   "difficulty": 2,
+   "sourceRef": "whole leaflet",
+   "explanation": "The leaflet never says \"this is for teenagers\". Clues: \"aged 12 and over\", \"ask a parent to call us\", \"no diving experience needed\", and a free T-shirt. Put the clues together and you get young people and their families.",
+   "afterBlock": "b3"
+  },
+  {
+   "id": "c5",
+   "type": "mcq",
+   "command": "identify",
+   "marks": 1,
+   "prompt": "🧩 Clue hunt: Plastic bags can harm turtles. Which sentence explains why?",
+   "hint": "Which sentence links turtles AND bags together?",
+   "options": [
+    "\"Turtles can mistake a floating bag for a jellyfish, one of their favourite meals.\"",
+    "\"Turtles glide past as if they own the place.\"",
+    "\"Fishing line wraps around coral and stops it from growing.\"",
+    "\"Bring a water bottle, a hat and a sense of adventure.\""
+   ],
+   "answers": [
+    0
+   ],
+   "topic": "clue-hunt",
+   "difficulty": 1,
+   "sourceRef": "paragraph 2",
+   "explanation": "Turtles think the bag is food. The fishing line sentence is about a real problem too, but it's about coral, not turtles.",
+   "afterBlock": "b3"
+  },
+  {
+   "id": "c6",
+   "type": "mcq",
+   "command": "explain",
+   "marks": 1,
+   "prompt": "✍️ Why did the writer...? Why does the writer say that places were full in nine days last year?",
+   "hint": "How would you feel if you heard places ran out fast last year? What would you want to do?",
+   "options": [
+    "To make readers sign up quickly, before it's too late",
+    "To complain that the centre is too small",
+    "To prove the beach is dirty",
+    "To tell readers the event is cancelled"
+   ],
+   "answers": [
+    0
+   ],
+   "topic": "writers-choice",
+   "difficulty": 2,
+   "sourceRef": "paragraph 8",
+   "explanation": "This is a persuasive trick called urgency: if places run out fast, you'd better sign up NOW. The last line does the same: \"neither should you!\"",
+   "afterBlock": "b3"
+  },
+  {
+   "id": "c7",
+   "type": "written",
+   "command": "outline",
+   "marks": 1,
+   "prompt": "📝 Sum it up: In ONE sentence, what is this text mainly about? Start with: \"This text is mainly about...\"",
+   "markPoints": [
+    {
+     "id": "a1",
+     "point": "Says it's trying to get people to volunteer to help or clean the reef",
+     "accept": [
+      "volunteer",
+      "sign up",
+      "join",
+      "help",
+      "clean",
+      "rubbish",
+      "reef",
+      "persuad",
+      "recruit"
+     ]
+    }
+   ],
+   "modelAnswer": "This text is mainly about persuading young people to volunteer to clean up a coral reef during Reef Rescue Week.",
+   "topic": "summarise",
+   "difficulty": 2,
+   "sourceRef": "whole text",
+   "explanation": "A good summary names WHO or WHAT the text is about and the MAIN thing that happens, in one sentence. Small details (numbers, colours, names of places) usually stay out.",
+   "afterBlock": "b3"
+  },
+  {
+   "id": "c8",
+   "type": "written",
+   "command": "give",
+   "marks": 1,
+   "prompt": "🙋 Your question: Write one Work it out question about the text: a question whose answer is NOT written in it.",
+   "markPoints": [
+    {
+     "id": "a1",
+     "point": "Asks a question that has to be worked out, not found (often starts with Why, How or What do you think)",
+     "accept": [
+      "why",
+      "how do",
+      "how did",
+      "how does",
+      "how might",
+      "how would",
+      "how could",
+      "how come",
+      "how can",
+      "what do you think",
+      "what might",
+      "what would",
+      "what does this suggest",
+      "what does it suggest",
+      "what does this show",
+      "what does it show",
+      "what can we",
+      "do you think",
+      "would you",
+      "would he",
+      "would she",
+      "would they",
+      "what if",
+      "is it likely",
+      "was he",
+      "was she",
+      "did he feel",
+      "did she feel",
+      "how do you think"
+     ]
+    }
+   ],
+   "modelAnswer": "Why do you think the centre wants to beat last year's total?",
+   "topic": "own-question",
+   "difficulty": 2,
+   "sourceRef": "whole text",
+   "explanation": "Asking your own questions is one of the strongest reading habits there is. A Find it question (\"What colour was the car?\") is too easy. A Work it out question makes you think: \"Why...?\", \"How did he feel when...?\", \"What do you think...?\"",
+   "afterBlock": "b3"
+  }
+ ],
+ "practice": [
+  {
+   "id": "p1",
+   "type": "tick",
+   "command": "identify",
+   "marks": 3,
+   "prompt": "🗂️ Sort it: Is each question about today's text Find it, Work it out, or Why did the writer...?",
+   "hint": "Ask yourself: could I point at the answer with my finger? If not, is it about the text, or about the writer's choices?",
+   "columns": [
+    "Find it",
+    "Work it out",
+    "Why did the writer...?"
+   ],
+   "rowsPerMark": 2,
+   "rows": [
+    {
+     "id": "r1",
+     "statement": "How many volunteers came last year?",
+     "answer": 0,
+     "explanation": "It's written: 86."
+    },
+    {
+     "id": "r2",
+     "statement": "Could an 11-year-old join on their own? How do you know?",
+     "answer": 1,
+     "explanation": "Not written directly. Clue: aged 12 and over."
+    },
+    {
+     "id": "r3",
+     "statement": "What should volunteers bring?",
+     "answer": 0,
+     "explanation": "It's written: a water bottle, a hat and a sense of adventure."
+    },
+    {
+     "id": "r4",
+     "statement": "Why does the writer call the reef \"a whole city\"?",
+     "answer": 2,
+     "explanation": "It's about the effect: it makes the reef sound busy and full of life."
+    },
+    {
+     "id": "r5",
+     "statement": "Do you think the centre will be full again this year? Why?",
+     "answer": 1,
+     "explanation": "Not written. Clues: full in nine days last year, they want to beat it."
+    },
+    {
+     "id": "r6",
+     "statement": "Why does the leaflet end with an exclamation mark?",
+     "answer": 2,
+     "explanation": "It's about the effect: it sounds excited and urgent."
+    }
+   ],
+   "topic": "question-types",
+   "difficulty": 2,
+   "sourceRef": "today's text",
+   "explanation": "Find it = the answer is written in the text. Work it out = clue + think. Why did the writer = what a word or idea does to the reader."
+  },
+  {
+   "id": "p2",
+   "type": "written",
+   "command": "explain",
+   "marks": 2,
+   "prompt": "💬 Own words: The writer says 400 kilograms of rubbish is about the weight of a grand piano. Explain why the writer does this. Start with \"This suggests that...\" and use \"because\" to add your clue.",
+   "markPoints": [
+    {
+     "id": "a1",
+     "point": "To help the reader picture / imagine how much 400 kg is",
+     "accept": [
+      "picture",
+      "imagine",
+      "understand how much",
+      "understand how heavy",
+      "see how much",
+      "see how heavy",
+      "know how much",
+      "know how heavy",
+      "easier to understand",
+      "easy to understand",
+      "make sense",
+      "visual",
+      "compare",
+      "something we know",
+      "something you know",
+      "real life",
+      "how big",
+      "how heavy",
+      "how much"
+     ]
+    },
+    {
+     "id": "a2",
+     "point": "To impress or persuade the reader, so they want to help / join",
+     "accept": [
+      "impress",
+      "wow",
+      "amaz",
+      "shock",
+      "surpris",
+      "persuad",
+      "convinc",
+      "want to join",
+      "want to help",
+      "sign up",
+      "join",
+      "make people want",
+      "make readers want",
+      "make you want",
+      "make them want",
+      "encourage",
+      "feel proud",
+      "beat it",
+      "a lot of rubbish",
+      "so much rubbish"
+     ]
+    }
+   ],
+   "modelAnswer": "This suggests that the writer wants us to picture how much rubbish there was, because most people can't imagine 400 kilograms but can imagine a piano. It also impresses readers and makes them want to join.",
+   "topic": "own-words",
+   "difficulty": 2,
+   "sourceRef": "paragraph 6",
+   "explanation": "One mark for helping the reader picture the amount. One mark for the effect on the reader: it impresses them and persuades them to help."
+  }
+ ],
+ "recap": {
+  "summary": [
+   "Leaflets persuade: ask how each part makes you want to join.",
+   "Clues about age and parents show who a text is for.",
+   "Urgency trick: \"places are limited\" makes you act fast.",
+   "👪 Talk card for a parent (2 minutes): \"Would you sign up for Reef Rescue Week? Why?\" and \"Which line in the leaflet persuaded you most?\""
+  ],
+  "flashcards": [
+   {
+    "id": "f1",
+    "front": "Who is it for?",
+    "back": "Look for clues about age, parents and experience to work out who a text is written for."
+   },
+   {
+    "id": "f2",
+    "front": "volunteer",
+    "back": "someone who offers to do a job without being paid"
+   },
+   {
+    "id": "f3",
+    "front": "identify",
+    "back": "recognise something and say what it is"
+   },
+   {
+    "id": "f4",
+    "front": "provided",
+    "back": "given or supplied for you"
+   },
+   {
+    "id": "f5",
+    "front": "glide",
+    "back": "move smoothly and easily"
+   }
+  ]
+ }
+}

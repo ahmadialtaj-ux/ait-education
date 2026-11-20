@@ -21,8 +21,18 @@ export function formatSafeText(str) {
   return escaped.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
 }
 
+// v0.3.4: a prompt that starts with its own question-type label (an emoji label such as "🔎 Find it: ")
+// keeps that label instead of getting a "Command:" prefix; the label is shown in bold.
+export function promptHasOwnLabel(promptText) {
+  return /^\p{Extended_Pictographic}/u.test(String(promptText || "").trim());
+}
+
 export function formatPromptWithBoldCommand(promptText, commandWord) {
   const safePrompt = escapeHtml(promptText || "");
+  if (promptHasOwnLabel(promptText)) {
+    const m = safePrompt.match(/^([^:?]{1,40}[:?])\s*/);
+    return m ? `<strong class="question-type-label">${m[1]}</strong> ${safePrompt.slice(m[0].length)}` : safePrompt;
+  }
   if (!commandWord) return safePrompt;
   const escapedCmd = escapeHtml(commandWord);
   const regex = new RegExp(`\\b(${escapedCmd})\\b`, "i");
@@ -171,7 +181,7 @@ export function renderQuestionCard({
   const isRevealedOrDone = !isBossExam && (state === "correct" || state === "correct2" || state === "revealed");
   const isTry2 = !isBossExam && state === "try2";
 
-  let promptSpeech = `${question.command}. ${question.prompt}. ${question.marks} ${question.marks === 1 ? "mark" : "marks"}.`;
+  let promptSpeech = `${promptHasOwnLabel(question.prompt) ? "" : question.command + ". "}${question.prompt}. ${question.marks} ${question.marks === 1 ? "mark" : "marks"}.`;
   if (question.type === "mcq" && Array.isArray(question.options)) {
     promptSpeech += " Options: " + question.options.join(". ");
   } else if (question.type === "tick" && Array.isArray(question.rows)) {

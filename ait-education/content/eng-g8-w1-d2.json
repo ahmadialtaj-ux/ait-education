@@ -1,0 +1,456 @@
+{
+ "schemaVersion": "0.3",
+ "id": "eng-g8-w1-d2",
+ "meta": {
+  "mode": "lesson",
+  "qualification": "General reading comprehension",
+  "qualificationCode": "AIT-ENG-RC",
+  "subject": "English",
+  "subjectId": "english",
+  "syllabusYears": "Grade 8",
+  "syllabusPoints": [
+   "Reading: find information that is stated in the text",
+   "Reading: work out (infer) meaning, using evidence from the text",
+   "Reading: explain the effect of a writer's choices",
+   "Reading strategies: predict, clarify, question, summarise",
+   "Vocabulary: work out word meaning from context and word parts; use new words"
+  ],
+  "chapterNumber": 1,
+  "chapterTitle": "Week 1: The Reader's Toolkit",
+  "unit": 2,
+  "title": "Day 2: The Spaghetti Bridge (news report)",
+  "schoolYear": 8,
+  "lang": "en",
+  "dir": "ltr",
+  "sourceRefs": [
+   {
+    "book": "AIT Education original passage (not from a textbook)",
+    "pages": "n/a"
+   }
+  ],
+  "estMinutes": 13,
+  "version": "0.4",
+  "status": "draft"
+ },
+ "topics": {
+  "predict": "Predict: use the title and the type of text",
+  "word-power": "Power words: meaning from context and word parts, then use them",
+  "find-it": "Find it: the answer is written in the text",
+  "work-it-out": "Work it out: clue + think = answer",
+  "clue-hunt": "Clue hunt: which part of the text proves it",
+  "writers-choice": "Why did the writer...?",
+  "summarise": "Sum it up in one sentence",
+  "own-question": "Ask your own Work it out question",
+  "own-words": "Answer in your own words: point + because + proof",
+  "question-types": "Telling the question types apart"
+ },
+ "objectives": [
+  "Clarify a long word by splitting it into parts.",
+  "Find facts and numbers in a news report without falling for the number trap.",
+  "Ask your own Work it out question.",
+  "Use 3 new words: admitted, structural, opposite."
+ ],
+ "learn": [
+  {
+   "id": "b1",
+   "topic": "predict",
+   "type": "text",
+   "title": "Brief: Clarify with word parts",
+   "body": "Today's toolkit focus: 🧐 **Clarify.** When you meet a long word, don't skip it. Split it into parts you know. \"Structural\" = **structure** + **-al** (about). So structural means \"about how something is built\". 🔧\n\nToday's text is a **news report**. News reports are packed with facts: names, numbers, places. They also use **quotes** (words people really said), and quotes often hide a feeling or an opinion.\n\n⚠️ **Number trap:** a report can have lots of numbers. Before you answer, check you've got the number for the right thing."
+  },
+  {
+   "id": "b2",
+   "topic": "word-power",
+   "type": "keypoints",
+   "title": "📚 Power words for today",
+   "items": [
+    "**admitted** (verb): said that something is true, usually when it's a bit embarrassing. Use it: \"He admitted he had forgotten his homework.\"",
+    "**structural** (adjective): about how something is built and holds together. structure + **-al**. A structural engineer makes sure bridges and buildings stay up. Use it: \"The storm caused structural damage to the roof.\"",
+    "**opposite** (noun or adjective): completely different; the other way round. Use it: \"My sister loves maths, but I'm the opposite.\""
+   ]
+  },
+  {
+   "id": "b3",
+   "topic": "work-it-out",
+   "type": "text",
+   "title": "The report: Student engineers win with a bridge made of pasta",
+   "body": "A team of four Grade 8 students has won the regional Young Engineers Challenge with a bridge made from nothing but dry spaghetti and glue.\n\nThe bridge weighed just 180 grams, yet it held 23 kilograms of sand before it finally cracked on Saturday afternoon. That is more than 120 times its own weight. The second-placed team's bridge, which was almost twice as heavy, gave way at 15 kilograms.\n\nTeam captain Lina Haddad, 13, said the group tested more than thirty small models in her family's kitchen before choosing their final design. \"Most of them snapped in the first ten seconds,\" she admitted. \"My dad stopped asking what was for dinner.\"\n\nThe winning bridge used triangles along both sides. Engineers love triangles because a triangle cannot change shape unless one of its sides breaks or bends, while a square can easily be pushed sideways into a diamond shape.\n\nJudge Omar Farouk, a structural engineer, said the result surprised him. \"Every year, teams try to win by making their bridges thicker and heavier. This team did the opposite. They spent their time thinking instead of gluing.\"\n\nThe students will receive new laboratory equipment for their school and a visit to a construction site in the spring. When asked what she would like to build next, Lina did not hesitate. \"Something people can actually walk across,\" she said."
+  },
+  {
+   "id": "b4",
+   "topic": "work-it-out",
+   "type": "example",
+   "title": "🎧 Watch me think: an expert reader's thoughts",
+   "body": "🔮 **Predict:** \"A news report about a competition. I expect names, numbers and quotes.\"\n🧐 **Clarify:** \"'Regional'? Region + -al: about a region, an area. So it's a competition for this area, not the whole world.\"\n🙋 **Question:** \"How can a lighter bridge beat a heavier one? That's the big question.\"\n🧠 **Infer:** \"'My dad stopped asking what was for dinner.' Clue: thirty models in the kitchen. Think: it's a joke. Cooking had stopped.\"\n📝 **Summarise:** \"Students won because their clever, light design was stronger than heavier bridges.\"\n\nNotice how the expert stopped at a word, split it, and kept going. Your turn now."
+  }
+ ],
+ "check": [
+  {
+   "id": "c1",
+   "type": "mcq",
+   "command": "identify",
+   "marks": 1,
+   "prompt": "🔮 Predict: Today's text is a news report called \"Student engineers win with a bridge made of pasta\". What will it most likely contain?",
+   "hint": "Think about the type of text (a news report) and the headline. What do news reports usually give you?",
+   "options": [
+    "Facts about a competition: who won, how they did it, and numbers about the bridge",
+    "A made-up story about a talking bridge",
+    "A recipe for spaghetti",
+    "A diary about a holiday"
+   ],
+   "answers": [
+    0
+   ],
+   "topic": "predict",
+   "difficulty": 1,
+   "sourceRef": "title and text type",
+   "explanation": "News reports give facts: who, what, where, when, how. The headline tells you it's about winning a competition. After reading, check: was your prediction right? Good readers change their prediction as they go.",
+   "afterBlock": "b1"
+  },
+  {
+   "id": "c2",
+   "type": "mcq",
+   "command": "identify",
+   "marks": 1,
+   "prompt": "🔤 Word detective: \"When asked what she would like to build next, Lina did not hesitate.\" What does \"hesitate\" mean here?",
+   "hint": "If you \"did not hesitate\", did you answer fast or slowly? So what does hesitate mean?",
+   "options": [
+    "Stop and wait for a moment because you're unsure",
+    "Laugh loudly",
+    "Build something quickly",
+    "Forget the question"
+   ],
+   "answers": [
+    0
+   ],
+   "topic": "word-power",
+   "difficulty": 1,
+   "sourceRef": "warm-up",
+   "explanation": "To hesitate is to pause because you're unsure. \"Did not hesitate\" means she answered straight away: she already knew what she wanted to build.",
+   "afterBlock": "b2"
+  },
+  {
+   "id": "c3",
+   "type": "mcq",
+   "command": "state",
+   "marks": 1,
+   "prompt": "🔎 Find it: How much sand did the winning bridge hold before it cracked?",
+   "hint": "Find the sentence about sand. Check the number belongs to the WINNING bridge.",
+   "options": [
+    "180 grams",
+    "15 kilograms",
+    "23 kilograms",
+    "120 kilograms"
+   ],
+   "answers": [
+    2
+   ],
+   "topic": "find-it",
+   "difficulty": 1,
+   "sourceRef": "paragraph 2",
+   "explanation": "23 kilograms. 180 grams is the bridge's own weight, 15 kilograms is the other team's result, and 120 is how many times its own weight. That's the number trap: every option is a number from the report.",
+   "afterBlock": "b3"
+  },
+  {
+   "id": "c4",
+   "type": "mcq",
+   "command": "explain",
+   "marks": 1,
+   "prompt": "🧠 Work it out: Lina says, \"My dad stopped asking what was for dinner.\" What does this suggest?",
+   "hint": "Clue: where did the team test their models? Think about what that kitchen looked like for weeks.",
+   "options": [
+    "The kitchen was so busy with bridge testing that normal dinners stopped happening",
+    "Her dad doesn't like spaghetti",
+    "Her dad was one of the judges",
+    "The family always eats at a restaurant"
+   ],
+   "answers": [
+    0
+   ],
+   "topic": "work-it-out",
+   "difficulty": 2,
+   "sourceRef": "paragraph 3",
+   "explanation": "It's a joke. Clue: they tested more than thirty models in the kitchen. Think: a kitchen full of spaghetti and glue is not a place for cooking dinner, so her dad gave up asking.",
+   "afterBlock": "b3"
+  },
+  {
+   "id": "c5",
+   "type": "mcq",
+   "command": "identify",
+   "marks": 1,
+   "prompt": "🧩 Clue hunt: The judge thinks the team won because they planned cleverly. Which sentence is the best proof?",
+   "hint": "Look for the judge's own words about HOW the team worked.",
+   "options": [
+    "\"They spent their time thinking instead of gluing.\"",
+    "\"The bridge weighed just 180 grams.\"",
+    "\"Judge Omar Farouk, a structural engineer, said the result surprised him.\"",
+    "\"The students will receive new laboratory equipment for their school.\""
+   ],
+   "answers": [
+    0
+   ],
+   "topic": "clue-hunt",
+   "difficulty": 2,
+   "sourceRef": "paragraph 5",
+   "explanation": "\"Thinking instead of gluing\" is the judge saying their planning won it. The other sentences are true, but they don't prove anything about planning.",
+   "afterBlock": "b3"
+  },
+  {
+   "id": "c6",
+   "type": "mcq",
+   "command": "explain",
+   "marks": 1,
+   "prompt": "✍️ Why did the writer...? Why does the writer explain why engineers use triangles?",
+   "hint": "Read the paragraph just before the one about triangles. What would a reader want explained at that point?",
+   "options": [
+    "To help readers understand why the bridge was so strong",
+    "To teach readers how to draw triangles",
+    "To show that squares are better",
+    "To turn the report into maths homework"
+   ],
+   "answers": [
+    0
+   ],
+   "topic": "writers-choice",
+   "difficulty": 2,
+   "sourceRef": "paragraph 4",
+   "explanation": "The paragraph comes right after we hear how much weight the bridge held. It explains the secret behind that strength, so the reader understands the win.",
+   "afterBlock": "b3"
+  },
+  {
+   "id": "c7",
+   "type": "written",
+   "command": "outline",
+   "marks": 1,
+   "prompt": "📝 Sum it up: In ONE sentence, what is this text mainly about? Start with: \"This text is mainly about...\"",
+   "markPoints": [
+    {
+     "id": "a1",
+     "point": "Says it's about students winning a competition with their spaghetti bridge",
+     "accept": [
+      "win",
+      "won",
+      "competition",
+      "challenge",
+      "bridge",
+      "spaghetti",
+      "pasta",
+      "design",
+      "engineer"
+     ]
+    }
+   ],
+   "modelAnswer": "This text is mainly about students who won a competition with a light spaghetti bridge that was stronger because of its clever design.",
+   "topic": "summarise",
+   "difficulty": 2,
+   "sourceRef": "whole text",
+   "explanation": "A good summary names WHO or WHAT the text is about and the MAIN thing that happens, in one sentence. Small details (numbers, colours, names of places) usually stay out.",
+   "afterBlock": "b3"
+  },
+  {
+   "id": "c8",
+   "type": "written",
+   "command": "give",
+   "marks": 1,
+   "prompt": "🙋 Your question: Write one Work it out question about the text: a question whose answer is NOT written in it.",
+   "markPoints": [
+    {
+     "id": "a1",
+     "point": "Asks a question that has to be worked out, not found (often starts with Why, How or What do you think)",
+     "accept": [
+      "why",
+      "how do",
+      "how did",
+      "how does",
+      "how might",
+      "how would",
+      "how could",
+      "how come",
+      "how can",
+      "what do you think",
+      "what might",
+      "what would",
+      "what does this suggest",
+      "what does it suggest",
+      "what does this show",
+      "what does it show",
+      "what can we",
+      "do you think",
+      "would you",
+      "would he",
+      "would she",
+      "would they",
+      "what if",
+      "is it likely",
+      "was he",
+      "was she",
+      "did he feel",
+      "did she feel",
+      "how do you think"
+     ]
+    }
+   ],
+   "modelAnswer": "Why do you think the other teams kept making their bridges heavier?",
+   "topic": "own-question",
+   "difficulty": 2,
+   "sourceRef": "whole text",
+   "explanation": "Asking your own questions is one of the strongest reading habits there is. A Find it question (\"What colour was the car?\") is too easy. A Work it out question makes you think: \"Why...?\", \"How did he feel when...?\", \"What do you think...?\"",
+   "afterBlock": "b3"
+  }
+ ],
+ "practice": [
+  {
+   "id": "p1",
+   "type": "tick",
+   "command": "identify",
+   "marks": 3,
+   "prompt": "🗂️ Sort it: Is each question about today's text Find it, Work it out, or Why did the writer...?",
+   "hint": "Ask yourself: could I point at the answer with my finger? If not, is it about the text, or about the writer's choices?",
+   "columns": [
+    "Find it",
+    "Work it out",
+    "Why did the writer...?"
+   ],
+   "rowsPerMark": 2,
+   "rows": [
+    {
+     "id": "r1",
+     "statement": "How many students were in the team?",
+     "answer": 0,
+     "explanation": "It's written: four."
+    },
+    {
+     "id": "r2",
+     "statement": "Why do you think the judge was surprised?",
+     "answer": 1,
+     "explanation": "Not written. Clue: other teams make bridges thicker and heavier."
+    },
+    {
+     "id": "r3",
+     "statement": "What will the students receive?",
+     "answer": 0,
+     "explanation": "It's written: lab equipment and a site visit."
+    },
+    {
+     "id": "r4",
+     "statement": "Is Lina likely to keep building things? Why?",
+     "answer": 1,
+     "explanation": "Not written. Clue: she didn't hesitate about what to build next."
+    },
+    {
+     "id": "r5",
+     "statement": "Why does the writer end the report with Lina's quote?",
+     "answer": 2,
+     "explanation": "It's about the effect: it ends on a funny, hopeful note."
+    },
+    {
+     "id": "r6",
+     "statement": "Why does the writer say the bridge held more than 120 times its own weight?",
+     "answer": 2,
+     "explanation": "It's about the effect: it makes the result sound amazing."
+    }
+   ],
+   "topic": "question-types",
+   "difficulty": 2,
+   "sourceRef": "today's text",
+   "explanation": "Find it = the answer is written in the text. Work it out = clue + think. Why did the writer = what a word or idea does to the reader."
+  },
+  {
+   "id": "p2",
+   "type": "written",
+   "command": "explain",
+   "marks": 2,
+   "prompt": "💬 Own words: The second team's bridge was almost twice as heavy but held less. What does this tell you about building a strong bridge? Start with \"This suggests that...\" and use \"because\" to add your clue.",
+   "markPoints": [
+    {
+     "id": "a1",
+     "point": "Heavier / thicker is not always stronger; the shape or design matters more",
+     "accept": [
+      "heavier is not",
+      "heavy is not",
+      "heavier isn't",
+      "heavy isn't",
+      "heavier doesn't",
+      "heavy doesn't",
+      "heavier does not",
+      "thicker is not",
+      "thicker isn't",
+      "thicker doesn't",
+      "not about weight",
+      "not how heavy",
+      "not the weight",
+      "not always stronger",
+      "doesn't mean strong",
+      "does not mean strong",
+      "design",
+      "shape",
+      "plan",
+      "how you build",
+      "the way you build",
+      "smart",
+      "clever",
+      "lighter can"
+     ]
+    },
+    {
+     "id": "a2",
+     "point": "Evidence: triangles / 23 kg against 15 kg / the judge's quote about thicker and heavier",
+     "accept": [
+      "triangle",
+      "23 k",
+      "23k",
+      "15 k",
+      "15k",
+      "23 and 15",
+      "thinking instead",
+      "thicker and heavier",
+      "did the opposite",
+      "120 times",
+      "180 grams",
+      "held more"
+     ]
+    }
+   ],
+   "modelAnswer": "This suggests that a heavier bridge is not always stronger and the design matters more, because the winning bridge used triangles and held 23 kilograms, while the heavier one broke at 15.",
+   "topic": "own-words",
+   "difficulty": 3,
+   "sourceRef": "paragraphs 2, 4 and 5",
+   "explanation": "One mark for the idea (shape and design beat weight). One mark for proof from the report (triangles, 23 kg against 15 kg, or the judge's words)."
+  }
+ ],
+ "recap": {
+  "summary": [
+   "Clarify long words by splitting them: structure + -al = structural.",
+   "News reports: facts for Find it, quotes for Work it out.",
+   "Number trap: check the number belongs to the right thing.",
+   "👪 Talk card for a parent (2 minutes): \"What's the cleverest thing you've ever built or fixed?\" and \"Why did the lighter bridge win?\""
+  ],
+  "flashcards": [
+   {
+    "id": "f1",
+    "front": "Clarify with word parts",
+    "back": "Split a long word into parts you know: structure + -al = about how something is built."
+   },
+   {
+    "id": "f2",
+    "front": "admitted",
+    "back": "said something true that is a bit embarrassing"
+   },
+   {
+    "id": "f3",
+    "front": "structural",
+    "back": "about how something is built and holds together"
+   },
+   {
+    "id": "f4",
+    "front": "opposite",
+    "back": "completely different; the other way round"
+   },
+   {
+    "id": "f5",
+    "front": "hesitate",
+    "back": "pause because you're unsure"
+   }
+  ]
+ }
+}

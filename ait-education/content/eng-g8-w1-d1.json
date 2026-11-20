@@ -1,0 +1,444 @@
+{
+ "schemaVersion": "0.3",
+ "id": "eng-g8-w1-d1",
+ "meta": {
+  "mode": "lesson",
+  "qualification": "General reading comprehension",
+  "qualificationCode": "AIT-ENG-RC",
+  "subject": "English",
+  "subjectId": "english",
+  "syllabusYears": "Grade 8",
+  "syllabusPoints": [
+   "Reading: find information that is stated in the text",
+   "Reading: work out (infer) meaning, using evidence from the text",
+   "Reading: explain the effect of a writer's choices",
+   "Reading strategies: predict, clarify, question, summarise",
+   "Vocabulary: work out word meaning from context and word parts; use new words"
+  ],
+  "chapterNumber": 1,
+  "chapterTitle": "Week 1: The Reader's Toolkit",
+  "unit": 1,
+  "title": "Day 1: The Last Kick (story)",
+  "schoolYear": 8,
+  "lang": "en",
+  "dir": "ltr",
+  "sourceRefs": [
+   {
+    "book": "AIT Education original passage (not from a textbook)",
+    "pages": "n/a"
+   }
+  ],
+  "estMinutes": 13,
+  "version": "0.4",
+  "status": "draft"
+ },
+ "topics": {
+  "predict": "Predict: use the title and the type of text",
+  "word-power": "Power words: meaning from context and word parts, then use them",
+  "find-it": "Find it: the answer is written in the text",
+  "work-it-out": "Work it out: clue + think = answer",
+  "clue-hunt": "Clue hunt: which part of the text proves it",
+  "writers-choice": "Why did the writer...?",
+  "summarise": "Sum it up in one sentence",
+  "own-words": "Answer in your own words: point + because + proof",
+  "question-types": "Telling the question types apart"
+ },
+ "objectives": [
+  "Know the 5 tools of the Reader's Toolkit.",
+  "Tell Find it, Work it out and Why did the writer questions apart.",
+  "Use a clue to work out how a character feels.",
+  "Use 3 new words: echoed, clearly, grinned."
+ ],
+ "learn": [
+  {
+   "id": "b1",
+   "topic": "predict",
+   "type": "text",
+   "title": "Brief: your Reader's Toolkit",
+   "body": "Good readers don't just read the words. They run a toolkit in their heads:\n\n🔮 **Predict:** guess what's coming from the title and the type of text.\n🧐 **Clarify:** stop when a word or sentence is unclear and work it out.\n🙋 **Question:** ask yourself questions while you read.\n🧠 **Infer:** for things the writer doesn't say, **Clue + Think = Answer.**\n📝 **Summarise:** say the main idea in one sentence.\n\nThis week you'll start by watching an expert reader use the toolkit. By Friday, you'll run it solo. 🚀\n\nReading tests ask 3 kinds of question: 🔎 **Find it** (the answer is written), 🧠 **Work it out** (it isn't), and ✍️ **Why did the writer...?** (what a choice does to you, the reader). ⚠️ Watch for the **copy trap**: words copied from the text that don't answer the question."
+  },
+  {
+   "id": "b2",
+   "topic": "word-power",
+   "type": "keypoints",
+   "title": "📚 Power words for today",
+   "items": [
+    "**echoed** (verb): a sound bounced off walls and was heard again. Word family: echo, echoes, echoing. Use it: \"Our laughter echoed around the empty classroom.\"",
+    "**clearly** (adverb): in a way that is easy to see, so it's obvious. clear + **-ly** (the -ly ending tells you HOW). Use it: \"She was clearly tired after the long trip.\"",
+    "**grinned** (verb): smiled widely, showing teeth. A grin is bigger and happier than a small smile. Use it: \"He grinned when he saw his test score.\""
+   ]
+  },
+  {
+   "id": "b3",
+   "topic": "work-it-out",
+   "type": "text",
+   "title": "The story: The Last Kick",
+   "body": "Yusuf had stayed behind after training for eleven days in a row. Every evening, when the others ran for the car park, he collected the balls nobody else wanted to carry and lined them up on the edge of the penalty area.\n\nTonight the floodlights were already buzzing. His left boot had a split along the side, and he had wrapped tape around it twice. He placed the first ball, took four steps back, and stared at the top corner of the goal as if it owed him money.\n\nThe kick sailed high over the bar. So did the second. The third hit the post with a clang that echoed around the empty stands.\n\n\"You're leaning back,\" said a voice behind him. Coach Saleh was standing by the fence with his car keys in his hand. He had clearly been on his way home.\n\n\"I know,\" Yusuf said, although he hadn't known.\n\nThe coach didn't leave. He walked onto the grass, put his keys in his pocket and pressed a hand flat against Yusuf's chest. \"Over the ball. Head down until it's gone. Try again.\"\n\nYusuf tried again. The ball stayed low, skidded across the wet grass and tucked itself inside the post.\n\nNeither of them said anything for a moment. Then Coach Saleh picked up the next ball, rolled it to Yusuf's feet and looked at his watch. \"Twenty more,\" he said. \"Then I'm driving you home. Your mother has called me twice.\"\n\nYusuf grinned and lined up the ball."
+  },
+  {
+   "id": "b4",
+   "topic": "work-it-out",
+   "type": "example",
+   "title": "🎧 Watch me think: an expert reader's thoughts",
+   "body": "Here's what went on in an expert reader's head while reading this story:\n\n🔮 **Predict:** \"The Last Kick... I think someone is practising a penalty.\"\n🧐 **Clarify:** \"He stared at the goal 'as if it owed him money'? A goal can't owe money. Oh, it's a comparison: he's staring HARD.\"\n🙋 **Question:** \"Why does he say 'I know' when he didn't know? I'll keep reading.\"\n🧠 **Infer:** \"The coach was going home, but he didn't leave. Clue + think: he cares about Yusuf.\"\n📝 **Summarise:** \"A boy practises alone until his coach stays to help, and the kick finally works.\"\n✅ **Check:** \"My prediction was right: it was about practising a kick.\"\n\nNow it's your turn with the challenges. The story is still above if you need it."
+  }
+ ],
+ "check": [
+  {
+   "id": "c1",
+   "type": "mcq",
+   "command": "identify",
+   "marks": 1,
+   "prompt": "🔮 Predict: Today's text is a story called \"The Last Kick\", about a boy who plays football. Which prediction uses the clues best?",
+   "hint": "Use both clues: the word \"Kick\" in the title, and what you know the story is about.",
+   "options": [
+    "Someone is practising, or trying to score, an important kick",
+    "It's a recipe for a football-shaped cake",
+    "It explains the rules of tennis",
+    "It's a weather report"
+   ],
+   "answers": [
+    0
+   ],
+   "topic": "predict",
+   "difficulty": 1,
+   "sourceRef": "title and text type",
+   "explanation": "The title (\"Kick\") and the topic (a boy who plays football) point to a story about a kick. A good prediction uses the clues you have. After reading, check: was your prediction right? Good readers change their prediction as they go.",
+   "afterBlock": "b1"
+  },
+  {
+   "id": "c2",
+   "type": "mcq",
+   "command": "identify",
+   "marks": 1,
+   "prompt": "🔤 Word detective: \"Coach Saleh's whistle cut through the noise, and the whole field went still.\" What does \"went still\" mean here?",
+   "hint": "What usually happens on a football field when the coach blows the whistle?",
+   "options": [
+    "Everyone stopped moving and went quiet",
+    "The grass became wet",
+    "Everyone kept playing",
+    "The field got darker"
+   ],
+   "answers": [
+    0
+   ],
+   "topic": "word-power",
+   "difficulty": 1,
+   "sourceRef": "warm-up",
+   "explanation": "\"Still\" here means not moving. A whistle cuts through the noise, so everybody stops. The sentence around the word gave you the clue: that's how you clarify.",
+   "afterBlock": "b2"
+  },
+  {
+   "id": "c3",
+   "type": "mcq",
+   "command": "state",
+   "marks": 1,
+   "prompt": "🔎 Find it: How many days in a row had Yusuf stayed behind after training?",
+   "hint": "This one is written in the text. Which paragraph talks about staying behind after training?",
+   "options": [
+    "Four",
+    "Eleven",
+    "Twenty",
+    "Two"
+   ],
+   "answers": [
+    1
+   ],
+   "topic": "find-it",
+   "difficulty": 1,
+   "sourceRef": "paragraph 1",
+   "explanation": "It's in the very first sentence: \"eleven days in a row\". Four is the number of steps he took back, and twenty is the number of extra kicks. Careful readers check they have the right number for the right thing.",
+   "afterBlock": "b3"
+  },
+  {
+   "id": "c4",
+   "type": "mcq",
+   "command": "explain",
+   "marks": 1,
+   "prompt": "🧠 Work it out: Yusuf says \"I know\", although he hadn't known. Why does he say it?",
+   "hint": "Clue + Think. Have you ever said \"I know\" when you didn't? Why do people do that?",
+   "options": [
+    "He doesn't want the coach to think he needs help",
+    "Because he was leaning back",
+    "The coach had told him before training",
+    "He was leaning back on purpose"
+   ],
+   "answers": [
+    0
+   ],
+   "topic": "work-it-out",
+   "difficulty": 2,
+   "sourceRef": "paragraphs 4-5",
+   "explanation": "The story never tells you why. Clue: he hadn't known. Think: people often say \"I know\" when they feel embarrassed or proud and don't want help. \"Because he was leaning back\" is the copy trap: it uses the story's words, but it doesn't explain why he said \"I know\".",
+   "afterBlock": "b3"
+  },
+  {
+   "id": "c5",
+   "type": "mcq",
+   "command": "identify",
+   "marks": 1,
+   "prompt": "🧩 Clue hunt: Which sentence is the best clue that Coach Saleh cares about Yusuf?",
+   "hint": "Which sentence shows the coach choosing to do something for Yusuf, even though he was going home?",
+   "options": [
+    "\"Tonight the floodlights were already buzzing.\"",
+    "\"The coach didn't leave.\"",
+    "\"The third hit the post with a clang that echoed around the empty stands.\"",
+    "\"Coach Saleh was standing by the fence with his car keys in his hand.\""
+   ],
+   "answers": [
+    1
+   ],
+   "topic": "clue-hunt",
+   "difficulty": 2,
+   "sourceRef": "paragraph 6",
+   "explanation": "He was on his way home, but he stayed to help. That choice shows he cares. The keys in his hand only tell us he was leaving, which is the opposite.",
+   "afterBlock": "b3"
+  },
+  {
+   "id": "c6",
+   "type": "mcq",
+   "command": "explain",
+   "marks": 1,
+   "prompt": "✍️ Why did the writer...? The writer says Yusuf stared at the goal \"as if it owed him money\". Why?",
+   "hint": "A goal can't owe anyone money. So what picture of Yusuf's face does the comparison put in your head?",
+   "options": [
+    "To show how serious and determined he was",
+    "To tell us Yusuf had lent someone money",
+    "To show that the goal was expensive",
+    "To make the story longer"
+   ],
+   "answers": [
+    0
+   ],
+   "topic": "writers-choice",
+   "difficulty": 2,
+   "sourceRef": "paragraph 2",
+   "explanation": "Nobody really thinks a goal owes him money. The writer uses this funny comparison to show Yusuf's hard, determined stare: he wants that goal badly.",
+   "afterBlock": "b3"
+  },
+  {
+   "id": "c7",
+   "type": "written",
+   "command": "outline",
+   "marks": 1,
+   "prompt": "📝 Sum it up: In ONE sentence, what is this text mainly about? Start with: \"This text is mainly about...\"",
+   "markPoints": [
+    {
+     "id": "a1",
+     "point": "Says it's about Yusuf practising and his coach helping him",
+     "accept": [
+      "practis",
+      "practic",
+      "kick",
+      "penalt",
+      "coach",
+      "help",
+      "train",
+      "improv",
+      "better",
+      "score"
+     ]
+    }
+   ],
+   "modelAnswer": "This text is mainly about Yusuf practising his kicks alone until his coach stays to help him get it right.",
+   "topic": "summarise",
+   "difficulty": 2,
+   "sourceRef": "whole text",
+   "explanation": "A good summary names WHO or WHAT the text is about and the MAIN thing that happens, in one sentence. Small details (numbers, colours, names of places) usually stay out.",
+   "afterBlock": "b3"
+  },
+  {
+   "id": "c8",
+   "type": "written",
+   "command": "give",
+   "marks": 1,
+   "prompt": "🧱 Use it: Write your own sentence using \"clearly\". Make it about something in YOUR life, not about today's text.",
+   "markPoints": [
+    {
+     "id": "a1",
+     "point": "Uses \"clearly\" with the right meaning (obviously / easy to see)",
+     "accept": [
+      "clearly"
+     ]
+    }
+   ],
+   "modelAnswer": "My little brother was clearly hungry because he ate three sandwiches.",
+   "topic": "word-power",
+   "difficulty": 2,
+   "sourceRef": "power words",
+   "explanation": "Using a new word in your own sentence is how it moves from \"I've seen it\" to \"I own it\". Check: does \"clearly\" mean obviously / easy to see in your sentence?",
+   "afterBlock": "b3"
+  }
+ ],
+ "practice": [
+  {
+   "id": "p1",
+   "type": "tick",
+   "command": "identify",
+   "marks": 3,
+   "prompt": "🗂️ Sort it: Is each question about today's text Find it, Work it out, or Why did the writer...?",
+   "hint": "Ask yourself: could I point at the answer with my finger? If not, is it about the text, or about the writer's choices?",
+   "columns": [
+    "Find it",
+    "Work it out",
+    "Why did the writer...?"
+   ],
+   "rowsPerMark": 2,
+   "rows": [
+    {
+     "id": "r1",
+     "statement": "What had Yusuf wrapped around his boot?",
+     "answer": 0,
+     "explanation": "It's written: tape."
+    },
+    {
+     "id": "r2",
+     "statement": "How does Yusuf feel at the end of the story?",
+     "answer": 1,
+     "explanation": "Not written. Clue: he grinned."
+    },
+    {
+     "id": "r3",
+     "statement": "What did the third kick hit?",
+     "answer": 0,
+     "explanation": "It's written: the post."
+    },
+    {
+     "id": "r4",
+     "statement": "Why do you think Yusuf stays behind every evening?",
+     "answer": 1,
+     "explanation": "Not written. Clues: eleven days, top corner. He wants to get better."
+    },
+    {
+     "id": "r5",
+     "statement": "Why does the writer say the clang \"echoed around the empty stands\"?",
+     "answer": 2,
+     "explanation": "It's about the effect: it shows how alone he is."
+    },
+    {
+     "id": "r6",
+     "statement": "Why does the writer end with Yusuf lining up the ball again?",
+     "answer": 2,
+     "explanation": "It's about the effect: it shows he won't give up."
+    }
+   ],
+   "topic": "question-types",
+   "difficulty": 2,
+   "sourceRef": "today's text",
+   "explanation": "Find it = the answer is written in the text. Work it out = clue + think. Why did the writer = what a word or idea does to the reader."
+  },
+  {
+   "id": "p2",
+   "type": "written",
+   "command": "explain",
+   "marks": 2,
+   "prompt": "💬 Own words: Read Coach Saleh's last words again. What do they suggest about how he feels about Yusuf? Start with \"This suggests that...\" and use \"because\" to add your clue.",
+   "markPoints": [
+    {
+     "id": "a1",
+     "point": "He is pleased / proud / impressed, or wants to help him keep improving",
+     "accept": [
+      "proud",
+      "pleased",
+      "happy",
+      "impressed",
+      "likes him",
+      "cares",
+      "care about",
+      "believes in",
+      "wants to help",
+      "wants him to improve",
+      "wants him to get better",
+      "wants him to practi",
+      "supports",
+      "support him",
+      "glad",
+      "respect",
+      "thinks he is good",
+      "thinks he can",
+      "not angry",
+      "doesn't mind",
+      "does not mind",
+      "kind",
+      "nice to him"
+     ]
+    },
+    {
+     "id": "a2",
+     "point": "Clue: twenty more kicks / staying late / driving him home / his mother called",
+     "accept": [
+      "twenty more",
+      "20 more",
+      "more kicks",
+      "keep practi",
+      "stays",
+      "stayed",
+      "staying",
+      "didn't leave",
+      "did not leave",
+      "driv",
+      "take him home",
+      "home",
+      "mother",
+      "mum",
+      "mom",
+      "called",
+      "rolled",
+      "next ball",
+      "watch"
+     ]
+    }
+   ],
+   "modelAnswer": "This suggests that he is pleased with Yusuf and wants to help him get better, because he stays late and gives him twenty more kicks before driving him home.",
+   "topic": "own-words",
+   "difficulty": 2,
+   "sourceRef": "last paragraph",
+   "explanation": "One mark for what the coach feels (pleased, proud, wants to help). One mark for the clue that proves it (twenty more kicks, driving him home). Point + because + proof is how you get both marks."
+  }
+ ],
+ "recap": {
+  "summary": [
+   "Toolkit: Predict, Clarify, Question, Infer, Summarise.",
+   "Find it = it's written. Work it out = Clue + Think. Why did the writer = the effect on you.",
+   "Copy trap: the text's words, but not an answer to the question.",
+   "👪 Talk card for a parent (2 minutes): \"Have you ever practised something until it finally worked?\" and \"Why do you think the coach stayed?\""
+  ],
+  "flashcards": [
+   {
+    "id": "f1",
+    "front": "Find it question",
+    "back": "The answer is written in the text. Find it and point at it."
+   },
+   {
+    "id": "f2",
+    "front": "Work it out question",
+    "back": "The answer is NOT written in the text. Clue + Think = Answer."
+   },
+   {
+    "id": "f3",
+    "front": "The copy trap",
+    "back": "An answer that copies the text's exact words but does not answer the question."
+   },
+   {
+    "id": "f4",
+    "front": "The Reader's Toolkit",
+    "back": "Predict, Clarify, Question, Infer, Summarise."
+   },
+   {
+    "id": "f5",
+    "front": "echoed",
+    "back": "a sound bounced off walls and was heard again"
+   },
+   {
+    "id": "f6",
+    "front": "clearly",
+    "back": "in a way that is easy to see; obviously"
+   },
+   {
+    "id": "f7",
+    "front": "grinned",
+    "back": "smiled widely, showing teeth"
+   }
+  ]
+ }
+}

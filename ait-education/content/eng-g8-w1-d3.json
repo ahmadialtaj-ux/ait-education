@@ -1,0 +1,419 @@
+{
+ "schemaVersion": "0.3",
+ "id": "eng-g8-w1-d3",
+ "meta": {
+  "mode": "lesson",
+  "qualification": "General reading comprehension",
+  "qualificationCode": "AIT-ENG-RC",
+  "subject": "English",
+  "subjectId": "english",
+  "syllabusYears": "Grade 8",
+  "syllabusPoints": [
+   "Reading: find information that is stated in the text",
+   "Reading: work out (infer) meaning, using evidence from the text",
+   "Reading: explain the effect of a writer's choices",
+   "Reading strategies: predict, clarify, question, summarise",
+   "Vocabulary: work out word meaning from context and word parts; use new words"
+  ],
+  "chapterNumber": 1,
+  "chapterTitle": "Week 1: The Reader's Toolkit",
+  "unit": 3,
+  "title": "Day 3: White Lines in the Sky (explanation)",
+  "schoolYear": 8,
+  "lang": "en",
+  "dir": "ltr",
+  "sourceRefs": [
+   {
+    "book": "AIT Education original passage (not from a textbook)",
+    "pages": "n/a"
+   }
+  ],
+  "estMinutes": 13,
+  "version": "0.4",
+  "status": "draft"
+ },
+ "topics": {
+  "predict": "Predict: use the title and the type of text",
+  "word-power": "Power words: meaning from context and word parts, then use them",
+  "find-it": "Find it: the answer is written in the text",
+  "work-it-out": "Work it out: clue + think = answer",
+  "clue-hunt": "Clue hunt: which part of the text proves it",
+  "writers-choice": "Why did the writer...?",
+  "summarise": "Sum it up in one sentence",
+  "own-words": "Answer in your own words: point + because + proof",
+  "question-types": "Telling the question types apart"
+ },
+ "objectives": [
+  "Use the rules in an explanation on a new situation.",
+  "Finish an expert reader's thinking yourself.",
+  "Sum up a process in one sentence of your own.",
+  "Use 3 new words: invisible, vanish, moisture."
+ ],
+ "learn": [
+  {
+   "id": "b1",
+   "topic": "predict",
+   "type": "text",
+   "title": "Brief: rules + new situations",
+   "body": "Today's toolkit focus: 🧠 **Infer with rules.** An explanation text tells you **how** or **why** something happens. It gives you rules. A Work it out question then asks you to use those rules on a **new** situation the text never mentions. That's real detective work. 🕵️\n\nToday the expert reader only starts each thought. **You** finish it.\n\nToday's text explains the long white lines planes leave across the sky. ✈️"
+  },
+  {
+   "id": "b2",
+   "topic": "word-power",
+   "type": "keypoints",
+   "title": "📚 Power words for today",
+   "items": [
+    "**invisible** (adjective): cannot be seen. **in-** (not) + **vis** (see, as in vision) + **-ible** (able to be). So: not able to be seen. Use it: \"Air is invisible, but you can feel the wind.\"",
+    "**vanish** (verb): disappear suddenly. Use it: \"The cat vanished under the bed when the doorbell rang.\"",
+    "**moisture** (noun): small amounts of water in the air or in something. Use it: \"The bathroom mirror was covered in moisture after my shower.\""
+   ]
+  },
+  {
+   "id": "b3",
+   "topic": "work-it-out",
+   "type": "text",
+   "title": "The explanation: Why do planes leave white lines in the sky?",
+   "body": "Look up on a clear day and you may see a long white line stretching behind a plane, as if someone has drawn across the sky with chalk. These lines are called contrails, which is short for condensation trails. They are not smoke, and they are not a sign that something is wrong with the plane.\n\nA jet engine burns fuel, and one of the things this produces is water vapour: water in the form of an invisible gas. The exhaust coming out of the engine is extremely hot, but the air around the plane, about ten kilometres up, is far colder than any freezer, often below minus forty degrees Celsius. When the hot, wet exhaust meets this freezing air, the water vapour cools so fast that it turns into tiny drops of water and then into ice crystals. Millions of these crystals together make the white line you can see.\n\nYou have probably made a small contrail yourself. On a cold morning, the little cloud that appears when you breathe out is made in almost the same way.\n\nContrails do not all behave the same. Some vanish within seconds, leaving the sky blue again. Others spread out and stay for hours, slowly turning into thin, wispy clouds. The difference depends on the air the plane flies through. If that air is dry, the ice crystals quickly turn back into vapour and disappear. If the air is already full of moisture, the crystals last and grow.\n\nPilots and weather forecasters pay attention to this. A sky full of long-lasting contrails can be an early sign that the weather is about to change."
+  },
+  {
+   "id": "b4",
+   "topic": "work-it-out",
+   "type": "example",
+   "title": "🤝 Think with me: I start, you finish",
+   "body": "🔮 **Predict:** \"The title asks why, so this text will probably...\" (finish it in your head)\n🧐 **Clarify:** \"'Condensation' is long. Condense means to turn from a gas into a liquid. So a condensation trail is a trail made when...\"\n🙋 **Question:** \"Why do some lines vanish fast while others stay for hours? The answer is in paragraph 4. Can you find it?\"\n🧠 **Infer:** \"If long contrails can warn about the weather, a pilot who sees lots of them would probably think...\"\n📝 **Summarise:** \"Planes leave white lines because...\" (try it in one sentence before the challenges)"
+  }
+ ],
+ "check": [
+  {
+   "id": "c1",
+   "type": "mcq",
+   "command": "identify",
+   "marks": 1,
+   "prompt": "🔮 Predict: Today's text is called \"Why do planes leave white lines in the sky?\" What kind of text will it most likely be?",
+   "hint": "The title is a Why question. What will the text probably do with that question?",
+   "options": [
+    "An explanation that goes step by step through what causes the lines",
+    "A story about a pilot's birthday",
+    "An advert for cheap plane tickets",
+    "A list of the world's longest bridges"
+   ],
+   "answers": [
+    0
+   ],
+   "topic": "predict",
+   "difficulty": 1,
+   "sourceRef": "title and text type",
+   "explanation": "A title that asks \"Why...?\" usually belongs to an explanation: the text will answer the question, step by step. After reading, check: was your prediction right? Good readers change their prediction as they go.",
+   "afterBlock": "b1"
+  },
+  {
+   "id": "c2",
+   "type": "mcq",
+   "command": "identify",
+   "marks": 1,
+   "prompt": "🔤 Word detective: \"Others spread out and stay for hours, slowly turning into thin, wispy clouds.\" What does \"wispy\" mean here?",
+   "hint": "Look at the word just before it in the sentence. It's a strong clue.",
+   "options": [
+    "Thin and light, like fine strands",
+    "Heavy and dark",
+    "Very loud",
+    "Square-shaped"
+   ],
+   "answers": [
+    0
+   ],
+   "topic": "word-power",
+   "difficulty": 1,
+   "sourceRef": "warm-up",
+   "explanation": "\"Wispy\" describes something thin and light, like a few strands of hair. The clue is right next to it: \"thin\".",
+   "afterBlock": "b2"
+  },
+  {
+   "id": "c3",
+   "type": "mcq",
+   "command": "state",
+   "marks": 1,
+   "prompt": "🔎 Find it: What is the word \"contrail\" short for?",
+   "hint": "This is written in the first paragraph. Look for the words \"short for\".",
+   "options": [
+    "Contrast trail",
+    "Condensation trail",
+    "Control trail",
+    "Cloud trail"
+   ],
+   "answers": [
+    1
+   ],
+   "topic": "find-it",
+   "difficulty": 1,
+   "sourceRef": "paragraph 1",
+   "explanation": "It's written in the second sentence: contrails is short for condensation trails.",
+   "afterBlock": "b3"
+  },
+  {
+   "id": "c4",
+   "type": "mcq",
+   "command": "explain",
+   "marks": 1,
+   "prompt": "🧠 Work it out: A plane flies over and its contrail disappears after a few seconds. What can you work out about the air up there?",
+   "hint": "Find the rule in the text about contrails that vanish quickly. Then use it on this plane.",
+   "options": [
+    "It is dry",
+    "It is full of moisture",
+    "It is far colder than any freezer",
+    "The plane's engine has stopped"
+   ],
+   "answers": [
+    0
+   ],
+   "topic": "work-it-out",
+   "difficulty": 2,
+   "sourceRef": "paragraph 4",
+   "explanation": "The text never talks about THIS plane. But it gives you a rule: in dry air, the crystals turn back into vapour and disappear. Rule + new situation = dry air. \"Far colder than any freezer\" is the copy trap: it's true and it's from the text, but it doesn't explain why the line disappeared.",
+   "afterBlock": "b3"
+  },
+  {
+   "id": "c5",
+   "type": "mcq",
+   "command": "identify",
+   "marks": 1,
+   "prompt": "🧩 Clue hunt: Which sentence best supports the idea that contrails are NOT dangerous?",
+   "hint": "Which sentence tells you directly that nothing is going wrong?",
+   "options": [
+    "\"They are not smoke, and they are not a sign that something is wrong with the plane.\"",
+    "\"A jet engine burns fuel.\"",
+    "\"Millions of these crystals together make the white line you can see.\"",
+    "\"Pilots and weather forecasters pay attention to this.\""
+   ],
+   "answers": [
+    0
+   ],
+   "topic": "clue-hunt",
+   "difficulty": 1,
+   "sourceRef": "paragraph 1",
+   "explanation": "This sentence says directly that nothing is wrong with the plane. \"Pilots pay attention\" might sound worrying, but they watch contrails for the weather, not for danger.",
+   "afterBlock": "b3"
+  },
+  {
+   "id": "c6",
+   "type": "mcq",
+   "command": "explain",
+   "marks": 1,
+   "prompt": "✍️ Why did the writer...? Why does the writer mention breathing out on a cold morning?",
+   "hint": "Have you seen your breath on a cold day? How does that help you picture what happens behind a plane?",
+   "options": [
+    "To compare contrails with something the reader has already seen, so the idea is easier to understand",
+    "To warn readers not to go outside in the cold",
+    "To show that people cause pollution",
+    "To change the topic to health"
+   ],
+   "answers": [
+    0
+   ],
+   "topic": "writers-choice",
+   "difficulty": 2,
+   "sourceRef": "paragraph 3",
+   "explanation": "Writers of explanations often link a hard idea to something familiar. You've seen your breath make a cloud, so now you can picture how a contrail forms.",
+   "afterBlock": "b3"
+  },
+  {
+   "id": "c7",
+   "type": "written",
+   "command": "outline",
+   "marks": 1,
+   "prompt": "📝 Sum it up: In ONE sentence, what is this text mainly about? Start with: \"This text is mainly about...\"",
+   "markPoints": [
+    {
+     "id": "a1",
+     "point": "Says it explains why planes leave white lines (contrails)",
+     "accept": [
+      "contrail",
+      "white line",
+      "planes leave",
+      "ice",
+      "vapour",
+      "vapor",
+      "freez",
+      "cold air",
+      "why planes",
+      "condensation"
+     ]
+    }
+   ],
+   "modelAnswer": "This text is mainly about why planes leave white lines: water vapour from the engine freezes into ice crystals in the very cold air.",
+   "topic": "summarise",
+   "difficulty": 2,
+   "sourceRef": "whole text",
+   "explanation": "A good summary names WHO or WHAT the text is about and the MAIN thing that happens, in one sentence. Small details (numbers, colours, names of places) usually stay out.",
+   "afterBlock": "b3"
+  },
+  {
+   "id": "c8",
+   "type": "written",
+   "command": "give",
+   "marks": 1,
+   "prompt": "🧱 Use it: Write your own sentence using \"invisible\". Make it about something in YOUR life, not about today's text.",
+   "markPoints": [
+    {
+     "id": "a1",
+     "point": "Uses \"invisible\" with the right meaning (cannot be seen)",
+     "accept": [
+      "invisible"
+     ]
+    }
+   ],
+   "modelAnswer": "The glass door was so clean it was almost invisible, and I nearly walked into it.",
+   "topic": "word-power",
+   "difficulty": 2,
+   "sourceRef": "power words",
+   "explanation": "Using a new word in your own sentence is how it moves from \"I've seen it\" to \"I own it\". Check: does \"invisible\" mean cannot be seen in your sentence?",
+   "afterBlock": "b3"
+  }
+ ],
+ "practice": [
+  {
+   "id": "p1",
+   "type": "tick",
+   "command": "identify",
+   "marks": 3,
+   "prompt": "🗂️ Sort it: Is each question about today's text Find it, Work it out, or Why did the writer...?",
+   "hint": "Ask yourself: could I point at the answer with my finger? If not, is it about the text, or about the writer's choices?",
+   "columns": [
+    "Find it",
+    "Work it out",
+    "Why did the writer...?"
+   ],
+   "rowsPerMark": 2,
+   "rows": [
+    {
+     "id": "r1",
+     "statement": "How cold is the air about ten kilometres up?",
+     "answer": 0,
+     "explanation": "It's written: often below minus forty."
+    },
+    {
+     "id": "r2",
+     "statement": "Would you expect long-lasting contrails on a very humid day? Why?",
+     "answer": 1,
+     "explanation": "Not written. Use the rule: moist air makes crystals last."
+    },
+    {
+     "id": "r3",
+     "statement": "What is water vapour?",
+     "answer": 0,
+     "explanation": "It's written: water as an invisible gas."
+    },
+    {
+     "id": "r4",
+     "statement": "Why might a forecaster care about contrails that stay for hours?",
+     "answer": 1,
+     "explanation": "Not written directly. Clue: long contrails can mean the weather will change."
+    },
+    {
+     "id": "r5",
+     "statement": "Why does the writer compare a contrail to a line drawn with chalk?",
+     "answer": 2,
+     "explanation": "It's about the effect: it helps you picture it."
+    },
+    {
+     "id": "r6",
+     "statement": "Why does the writer say \"You have probably made a small contrail yourself\"?",
+     "answer": 2,
+     "explanation": "It's about the effect: it links the idea to the reader's life."
+    }
+   ],
+   "topic": "question-types",
+   "difficulty": 2,
+   "sourceRef": "today's text",
+   "explanation": "Find it = the answer is written in the text. Work it out = clue + think. Why did the writer = what a word or idea does to the reader."
+  },
+  {
+   "id": "p2",
+   "type": "written",
+   "command": "explain",
+   "marks": 2,
+   "prompt": "💬 Own words: Explain, in your own words, why a contrail forms. Don't copy whole sentences from the text. Start with \"This suggests that...\" and use \"because\" to add your clue.",
+   "markPoints": [
+    {
+     "id": "a1",
+     "point": "The engine gives out hot, wet exhaust / water vapour",
+     "accept": [
+      "water vapour",
+      "water vapor",
+      "vapour",
+      "vapor",
+      "steam",
+      "water from the engine",
+      "wet",
+      "hot gas",
+      "hot air from the engine",
+      "exhaust",
+      "burns fuel",
+      "burning fuel",
+      "fuel"
+     ]
+    },
+    {
+     "id": "a2",
+     "point": "The very cold air cools it quickly, so it turns into water drops / ice crystals",
+     "accept": [
+      "ice",
+      "freez",
+      "frozen",
+      "cold air",
+      "very cold",
+      "cools",
+      "cooled",
+      "cooling",
+      "turns into drops",
+      "droplet",
+      "condens",
+      "crystal",
+      "minus 40",
+      "-40"
+     ]
+    }
+   ],
+   "modelAnswer": "This suggests that contrails are made by the engine, because burning fuel gives out hot water vapour, and the freezing air cools it so fast that it turns into ice crystals.",
+   "topic": "own-words",
+   "difficulty": 2,
+   "sourceRef": "paragraph 2",
+   "explanation": "One mark for where the water comes from (the engine's hot exhaust). One mark for what the cold does (turns it into drops and ice crystals). If you used your own words, you've shown you really understand it."
+  }
+ ],
+ "recap": {
+  "summary": [
+   "Explanations give you rules: use them on new situations.",
+   "Word parts: in- (not) + vis (see) + -ible (able to be) = invisible.",
+   "A summary names who or what, plus the main thing that happens.",
+   "👪 Talk card for a parent (2 minutes): \"Have you ever seen your breath on a cold day? Where?\" and explain a contrail in your own words."
+  ],
+  "flashcards": [
+   {
+    "id": "f1",
+    "front": "Rule + new situation",
+    "back": "Explanations give rules. Work it out questions ask you to use a rule on something new."
+   },
+   {
+    "id": "f2",
+    "front": "invisible",
+    "back": "cannot be seen (in- = not, vis = see, -ible = able to be)"
+   },
+   {
+    "id": "f3",
+    "front": "vanish",
+    "back": "disappear suddenly"
+   },
+   {
+    "id": "f4",
+    "front": "moisture",
+    "back": "small amounts of water in the air or in something"
+   },
+   {
+    "id": "f5",
+    "front": "wispy",
+    "back": "thin and light, like fine strands"
+   }
+  ]
+ }
+}

@@ -236,7 +236,11 @@ function speakable(text) {
     .replace(EMOJI_RE, (m) => " ".repeat(m.length))
     .replace(/[\u2190-\u21FF]/g, ",")
     // v0.3.3: "100 000" (book-style space between thousands) is read as "100, zero zero zero" -> make it "100,000"
-    .replace(/(\d) (?=\d{3}(?!\d))/g, "$1,");
+    .replace(/(\d) (?=\d{3}(?!\d))/g, "$1,")
+    // v0.3.3: "100,000-tonne" -> "100,000 ton": voices skip the hyphenated word and garble the British "tonne"
+    .replace(/(\d)-(?=[A-Za-z])/g, "$1 ")
+    .replace(/\btonnes\b/gi, "tons  ")
+    .replace(/\btonne\b/gi, "ton  ");
 }
 function speakCurrent() {
   const myToken = state.token;
